@@ -83,7 +83,6 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onLoad, lang, currentFil
       <div className="sample-buttons">
         <span className="sample-label">{t('loadSample', lang)}:</span>
         <button onClick={() => loadSample('tio2-wide.csv')}>{t('sampleTiO2', lang)}</button>
-        <button onClick={() => loadSample('alf3-wide.csv')}>{t('sampleAlF3', lang)}</button>
       </div>
     </div>
   );

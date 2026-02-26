@@ -6,8 +6,7 @@ const translations = {
   // File Upload
   dropZone: { en: 'Drop CSV file here or click to browse', ja: 'CSVファイルをドロップまたはクリックして選択' },
   loadSample: { en: 'Load Sample', ja: 'サンプル読込' },
-  sampleTiO2: { en: 'TiO2/FTO', ja: 'TiO2/FTO' },
-  sampleAlF3: { en: 'AlF3', ja: 'AlF3' },
+  sampleTiO2: { en: 'TiO2 Wide', ja: 'TiO2 Wide' },
   fileLoaded: { en: 'Loaded', ja: '読込済' },
   // Settings
   settings: { en: 'Settings', ja: '設定' },
