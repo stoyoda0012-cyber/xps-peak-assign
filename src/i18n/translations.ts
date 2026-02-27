@@ -4,7 +4,7 @@ const translations = {
   appTitle: { en: 'XPS Peak Assign', ja: 'XPS ピークアサイン' },
   appSubtitle: { en: 'Automatic Element Identification from Survey Spectra', ja: 'サーベイスペクトルからの自動元素同定' },
   // File Upload
-  dropZone: { en: 'Drop file here or click to browse (CSV/NPL/VMS/TXT)', ja: 'ファイルをドロップまたはクリック (CSV/NPL/VMS/TXT)' },
+  dropZone: { en: 'Drop file here or click to browse (CSV/NPL/VMS/TXT/PXT/IBW)', ja: 'ファイルをドロップまたはクリック (CSV/NPL/VMS/TXT/PXT/IBW)' },
   loadSample: { en: 'Load Sample', ja: 'サンプル読込' },
   sampleTiO2: { en: 'TiO2 Wide', ja: 'TiO2 Wide' },
   sampleAuSiHAXPES: { en: 'Au/Si (Ga Ka)', ja: 'Au/Si (Ga Ka)' },

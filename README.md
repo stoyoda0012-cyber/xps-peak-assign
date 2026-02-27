@@ -5,7 +5,7 @@ Automatic peak assignment for XPS (X-ray Photoelectron Spectroscopy) survey spec
 ## Features
 
 - **Automatic element identification** from wide-scan survey spectra
-- **Multi-format support**: CSV, TSV, NPL, VAMAS, SES TXT
+- **Multi-format support**: CSV, TSV, NPL, VAMAS, SES TXT, PXT, IBW
 - **HAXPES support**: Ga Ka (9.25 keV) with Scofield cross-sections
 - **KE/BE display toggle** with sticky interpretation
 - **Synchrotron source** support (custom photon energy)
@@ -38,6 +38,8 @@ Open http://localhost:5173 in your browser. Drag & drop an XPS survey file or tr
 | NPL | `.npl` | National Physical Laboratory format |
 | VAMAS | `.vms` | ISO 14976 |
 | SES TXT | `.txt` | Scienta Omicron SES format |
+| PXT | `.pxt` | Igor Pro Packed Experiment (multi-region) |
+| IBW | `.ibw` | Igor Pro Binary Wave (single-region) |
 
 ## Tech Stack
 

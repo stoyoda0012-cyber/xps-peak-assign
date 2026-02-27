@@ -32,7 +32,8 @@ xps-peak-assign/
 │   │   ├── peak-detection.ts # SG smoothing + findPeaks + prominence
 │   │   ├── scoring.ts       # 6-component heuristic scoring (A-F)
 │   │   ├── auto-identify.ts # Main orchestrator pipeline
-│   │   └── parsers.ts       # CSV/TSV parser
+│   │   ├── parsers.ts       # CSV/NPL/VAMAS/SES text parsers
+│   │   └── pxt-parser.ts    # PXT/IBW binary parser (Igor Pro)
 │   ├── data/
 │   │   ├── binding-energies.json  # NIST BE data (103 elements)
 │   │   ├── cross-sections-al.json # Yeh-Lindau CS (Al Ka)

@@ -1,9 +1,12 @@
 import { useCallback, useRef, useState } from 'react';
 import type { AnalysisSettings, Language, SpectrumData } from '../types';
 import { parseFile, parseCSV, regionToSpectrum } from '../lib/parsers';
+import { parsePXT } from '../lib/pxt-parser';
 import type { ParsedFile } from '../lib/parsers';
 import { resolveSource } from '../lib/energy';
 import { t } from '../i18n/translations';
+
+const BINARY_EXTENSIONS = new Set(['pxt', 'ibw']);
 
 interface FileUploadProps {
   onLoad: (data: SpectrumData) => void;
@@ -32,11 +35,20 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onLoad, lang, currentFil
   }, [onLoad, onSettingsChange]);
 
   const handleFile = useCallback((file: File) => {
+    const ext = file.name.split('.').pop()?.toLowerCase() || '';
+    const isBinary = BINARY_EXTENSIONS.has(ext);
+
     const reader = new FileReader();
     reader.onload = (e) => {
       try {
-        const text = e.target?.result as string;
-        const parsed = parseFile(text, file.name);
+        let parsed: ParsedFile;
+        if (isBinary) {
+          const buf = e.target?.result as ArrayBuffer;
+          parsed = parsePXT(buf, file.name);
+        } else {
+          const text = e.target?.result as string;
+          parsed = parseFile(text, file.name);
+        }
         setParsedFile(parsed);
         setSelectedRegion(0);
         applyRegion(parsed, 0, file.name);
@@ -44,7 +56,11 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onLoad, lang, currentFil
         alert(err instanceof Error ? err.message : 'Failed to parse file');
       }
     };
-    reader.readAsText(file);
+    if (isBinary) {
+      reader.readAsArrayBuffer(file);
+    } else {
+      reader.readAsText(file);
+    }
   }, [applyRegion]);
 
   const handleRegionChange = useCallback((e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -103,7 +119,7 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onLoad, lang, currentFil
         <input
           ref={inputRef}
           type="file"
-          accept=".csv,.txt,.tsv,.npl,.vms"
+          accept=".csv,.txt,.tsv,.npl,.vms,.pxt,.ibw"
           onChange={handleChange}
           style={{ display: 'none' }}
         />

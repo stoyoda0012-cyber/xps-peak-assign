@@ -27,7 +27,7 @@ export interface ParsedRegion {
 }
 
 export interface ParsedFile {
-  format: 'csv' | 'npl' | 'vamas' | 'ses';
+  format: 'csv' | 'npl' | 'vamas' | 'ses' | 'pxt' | 'ibw';
   regions: ParsedRegion[];
 }
 
