@@ -75,18 +75,23 @@ export interface IdentificationResult {
 // ============================================================================
 
 export interface SpectrumData {
-  energy: number[];       // BE axis (eV)
+  energy: number[];       // energy axis (eV) — may be BE or KE
   intensity: number[];    // raw counts
   name: string;           // filename or sample name
+  energyType: 'BE' | 'KE';          // what the energy axis represents
+  source?: string;                    // auto-detected from file metadata
+  excitationEnergy?: number;          // hv from file metadata (eV)
 }
 
 export interface AnalysisSettings {
-  source: string;         // 'Al' for MVP
+  source: string;         // 'Al' for MVP, 'Synchrotron' for custom
   toleranceEV: number;    // default 2.0
   minConfidence: number;  // default 0.3
   bgMethod: 'shirley';
   includeAuger: boolean;
   chargingCorrection: boolean;
+  energyType: 'auto' | 'BE' | 'KE';  // display energy axis
+  customEnergy?: number;  // photon energy (eV) for Synchrotron source
 }
 
 export type Language = 'en' | 'ja';

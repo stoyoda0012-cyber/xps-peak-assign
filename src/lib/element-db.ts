@@ -8,9 +8,10 @@ import type {
   CoreLevel, AugerLine, SpinOrbitPair, XPSElement,
   CrossSectionEntry,
 } from '../types';
-import { AL_KA, getSourceEnergy } from './energy';
+import { AL_KA, XRAY_SOURCES, getSourceEnergy } from './energy';
 import bindingEnergiesData from '../data/binding-energies.json';
-import crossSectionsData from '../data/cross-sections-al.json';
+import crossSectionsAlData from '../data/cross-sections-al.json';
+import crossSectionsGaData from '../data/cross-sections-ga.json';
 
 // ============================================================================
 // Constants
@@ -101,11 +102,22 @@ function isJHigh(name: string): boolean | null {
 // Cross-section matching
 // ============================================================================
 
-// Build CS lookup from JSON: {symbol: {unresolved_orbital: cs_Mb}}
-const csLookup: Record<string, Record<string, number>> = {};
-for (const entry of crossSectionsData as CrossSectionEntry[]) {
-  if (!csLookup[entry.symbol]) csLookup[entry.symbol] = {};
-  csLookup[entry.symbol][entry.orbital] = entry.crossSection;
+// Build CS lookups from JSON: {symbol: {unresolved_orbital: cs_Mb}}
+function buildCSLookup(data: CrossSectionEntry[]): Record<string, Record<string, number>> {
+  const lookup: Record<string, Record<string, number>> = {};
+  for (const entry of data) {
+    if (!lookup[entry.symbol]) lookup[entry.symbol] = {};
+    lookup[entry.symbol][entry.orbital] = entry.crossSection;
+  }
+  return lookup;
+}
+
+const csLookupAl = buildCSLookup(crossSectionsAlData as CrossSectionEntry[]);
+const csLookupGa = buildCSLookup(crossSectionsGaData as CrossSectionEntry[]);
+
+function getCSLookup(source: string): Record<string, Record<string, number>> {
+  if (source === 'Ga') return csLookupGa;
+  return csLookupAl;
 }
 
 function matchOrbitalToCS(orbitalName: string, elementCS: Record<string, number> | undefined): number {
@@ -183,17 +195,21 @@ function detectSpinOrbitPairs(orbitals: Record<string, number>): SpinOrbitPair[]
 // Database builder
 // ============================================================================
 
-let _db: Map<string, XPSElement> | null = null;
+// Cache per source energy (key = source name)
+const _dbCache = new Map<string, Map<string, XPSElement>>();
+let _currentSource = 'Al';
 
-function buildDB(): Map<string, XPSElement> {
-  if (_db) return _db;
+function buildDB(source: string = 'Al'): Map<string, XPSElement> {
+  if (_dbCache.has(source)) return _dbCache.get(source)!;
 
+  const maxBE = XRAY_SOURCES[source] ?? AL_KA;
   const db = new Map<string, XPSElement>();
 
   for (const entry of (bindingEnergiesData as unknown as Array<{Z: number; symbol: string; orbitals: Record<string, number>}>)) {
     const { Z, symbol, orbitals } = entry;
     if (EXCLUDED_ELEMENTS.has(symbol)) continue;
 
+    const csLookup = getCSLookup(source);
     const elemCS = csLookup[symbol];
     const coreLevels: CoreLevel[] = [];
 
@@ -201,7 +217,7 @@ function buildDB(): Map<string, XPSElement> {
     const sortedOrbitals = Object.entries(orbitals).sort((a, b) => b[1] - a[1]);
 
     for (const [name, be] of sortedOrbitals) {
-      if (be > AL_KA) continue; // not accessible with Al Ka
+      if (be > maxBE) continue; // not accessible with this source
 
       let otype: string;
       try { otype = parseOrbitalType(name); }
@@ -229,28 +245,41 @@ function buildDB(): Map<string, XPSElement> {
     });
   }
 
-  _db = db;
+  _dbCache.set(source, db);
   return db;
+}
+
+export function setSource(source: string): void {
+  _currentSource = source;
+}
+
+/** Clear cached DB for a source (needed when Synchrotron energy changes). */
+export function clearDBCache(source?: string): void {
+  if (source) {
+    _dbCache.delete(source);
+  } else {
+    _dbCache.clear();
+  }
 }
 
 // ============================================================================
 // Public API
 // ============================================================================
 
-export function getDB(): Map<string, XPSElement> {
-  return buildDB();
+export function getDB(source?: string): Map<string, XPSElement> {
+  return buildDB(source ?? _currentSource);
 }
 
-export function getElement(symbol: string): XPSElement | undefined {
-  return getDB().get(symbol);
+export function getElement(symbol: string, source?: string): XPSElement | undefined {
+  return getDB(source).get(symbol);
 }
 
-export function getAllElements(): string[] {
-  return Array.from(getDB().keys());
+export function getAllElements(source?: string): string[] {
+  return Array.from(getDB(source).keys());
 }
 
-export function getCrossSection(symbol: string, orbitalName: string): number {
-  const elem = getElement(symbol);
+export function getCrossSection(symbol: string, orbitalName: string, source?: string): number {
+  const elem = getElement(symbol, source);
   if (!elem) return 0;
   const cl = elem.coreLevels.find(c => c.name === orbitalName);
   return cl ? cl.crossSection : 0;
@@ -265,7 +294,7 @@ export function identifyCandidates(
   source: string = 'Al',
   includeAuger: boolean = true,
 ): Array<Array<[string, string, number, number]>> {
-  const db = getDB();
+  const db = getDB(source);
   const [, hv] = getSourceEnergy(source);
 
   // Build flat list of all peaks (symbol, lineName, BE)

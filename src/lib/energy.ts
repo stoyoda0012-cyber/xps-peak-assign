@@ -15,6 +15,14 @@ export const XRAY_SOURCES: Record<string, number> = {
 
 export const AL_KA = 1486.6;
 
+/**
+ * Set custom photon energy for Synchrotron source.
+ * Dynamically updates XRAY_SOURCES so all downstream code picks it up.
+ */
+export function setSynchrotronEnergy(eV: number): void {
+  XRAY_SOURCES['Synchrotron'] = eV;
+}
+
 export function getSourceEnergy(source: string): [string, number] {
   for (const [key, energy] of Object.entries(XRAY_SOURCES)) {
     if (key.toLowerCase() === source.toLowerCase()) {
@@ -32,4 +40,12 @@ export function beToKe(bindingEnergy: number, source: string = 'Al'): number {
 export function keToBe(kineticEnergy: number, source: string = 'Al'): number {
   const [, hv] = getSourceEnergy(source);
   return hv - kineticEnergy;
+}
+
+/** Map photon energy (eV) to source name. Returns undefined if no match (±5 eV). */
+export function resolveSource(hv: number): string | undefined {
+  for (const [name, energy] of Object.entries(XRAY_SOURCES)) {
+    if (Math.abs(energy - hv) < 5) return name;
+  }
+  return undefined;
 }

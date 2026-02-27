@@ -1,0 +1,4676 @@
+[
+ {
+  "symbol": "Ac",
+  "orbital": "3d",
+  "bindingEnergy": 3370.0,
+  "crossSection": 0.02648193
+ },
+ {
+  "symbol": "Ac",
+  "orbital": "3p",
+  "bindingEnergy": 4656.0,
+  "crossSection": 0.02370859
+ },
+ {
+  "symbol": "Ac",
+  "orbital": "3s",
+  "bindingEnergy": 5002.0,
+  "crossSection": 0.00565563
+ },
+ {
+  "symbol": "Ac",
+  "orbital": "4d",
+  "bindingEnergy": 675.0,
+  "crossSection": 0.00556074
+ },
+ {
+  "symbol": "Ac",
+  "orbital": "4f",
+  "bindingEnergy": 319.0,
+  "crossSection": 0.00092092
+ },
+ {
+  "symbol": "Ac",
+  "orbital": "4p",
+  "bindingEnergy": 1080.0,
+  "crossSection": 0.00604667
+ },
+ {
+  "symbol": "Ac",
+  "orbital": "4s",
+  "bindingEnergy": 1269.0,
+  "crossSection": 0.00172861
+ },
+ {
+  "symbol": "Ac",
+  "orbital": "5d",
+  "bindingEnergy": 80.0,
+  "crossSection": 0.00099106
+ },
+ {
+  "symbol": "Ac",
+  "orbital": "5p",
+  "bindingEnergy": 215.0,
+  "crossSection": 0.00137722
+ },
+ {
+  "symbol": "Ac",
+  "orbital": "5s",
+  "bindingEnergy": 272.0,
+  "crossSection": 0.00044221
+ },
+ {
+  "symbol": "Ac",
+  "orbital": "7s",
+  "bindingEnergy": 4.6,
+  "crossSection": 1.037e-05
+ },
+ {
+  "symbol": "Ag",
+  "orbital": "2p",
+  "bindingEnergy": 3524.0,
+  "crossSection": 0.01437699
+ },
+ {
+  "symbol": "Ag",
+  "orbital": "2s",
+  "bindingEnergy": 3806.0,
+  "crossSection": 0.00668925
+ },
+ {
+  "symbol": "Ag",
+  "orbital": "3d",
+  "bindingEnergy": 374.0,
+  "crossSection": 0.00046471
+ },
+ {
+  "symbol": "Ag",
+  "orbital": "3p",
+  "bindingEnergy": 604.0,
+  "crossSection": 0.0022451
+ },
+ {
+  "symbol": "Ag",
+  "orbital": "3s",
+  "bindingEnergy": 719.0,
+  "crossSection": 0.00129855
+ },
+ {
+  "symbol": "Ag",
+  "orbital": "4p",
+  "bindingEnergy": 64.0,
+  "crossSection": 0.00036847
+ },
+ {
+  "symbol": "Ag",
+  "orbital": "4s",
+  "bindingEnergy": 97.0,
+  "crossSection": 0.00024907
+ },
+ {
+  "symbol": "Al",
+  "orbital": "1s",
+  "bindingEnergy": 1560.0,
+  "crossSection": 0.00134153
+ },
+ {
+  "symbol": "Al",
+  "orbital": "2p",
+  "bindingEnergy": 73.0,
+  "crossSection": 1.037e-05
+ },
+ {
+  "symbol": "Al",
+  "orbital": "2s",
+  "bindingEnergy": 118.0,
+  "crossSection": 8.442e-05
+ },
+ {
+  "symbol": "Am",
+  "orbital": "4d",
+  "bindingEnergy": 859.1,
+  "crossSection": 0.007875
+ },
+ {
+  "symbol": "Am",
+  "orbital": "4f",
+  "bindingEnergy": 505.9,
+  "crossSection": 0.00166706
+ },
+ {
+  "symbol": "Am",
+  "orbital": "4p",
+  "bindingEnergy": 1112.0,
+  "crossSection": 0.00740683
+ },
+ {
+  "symbol": "Am",
+  "orbital": "4s",
+  "bindingEnergy": 1246.6,
+  "crossSection": 0.00195188
+ },
+ {
+  "symbol": "Am",
+  "orbital": "5d",
+  "bindingEnergy": 125.5,
+  "crossSection": 0.0015744
+ },
+ {
+  "symbol": "Am",
+  "orbital": "5f",
+  "bindingEnergy": 15.9,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Am",
+  "orbital": "5p",
+  "bindingEnergy": 220.5,
+  "crossSection": 0.00184239
+ },
+ {
+  "symbol": "Am",
+  "orbital": "5s",
+  "bindingEnergy": 274.2,
+  "crossSection": 0.00054309
+ },
+ {
+  "symbol": "Am",
+  "orbital": "6p",
+  "bindingEnergy": 25.4,
+  "crossSection": 0.00028963
+ },
+ {
+  "symbol": "Am",
+  "orbital": "6s",
+  "bindingEnergy": 40.4,
+  "crossSection": 0.00011082
+ },
+ {
+  "symbol": "Am",
+  "orbital": "7s",
+  "bindingEnergy": 4.6,
+  "crossSection": 9.91e-06
+ },
+ {
+  "symbol": "Ar",
+  "orbital": "1s",
+  "bindingEnergy": 3206.0,
+  "crossSection": 0.00469232
+ },
+ {
+  "symbol": "Ar",
+  "orbital": "2p",
+  "bindingEnergy": 251.0,
+  "crossSection": 8.652e-05
+ },
+ {
+  "symbol": "Ar",
+  "orbital": "2s",
+  "bindingEnergy": 326.0,
+  "crossSection": 0.00032554
+ },
+ {
+  "symbol": "Ar",
+  "orbital": "3p",
+  "bindingEnergy": 16.0,
+  "crossSection": 7.67e-06
+ },
+ {
+  "symbol": "Ar",
+  "orbital": "3s",
+  "bindingEnergy": 29.0,
+  "crossSection": 3.649e-05
+ },
+ {
+  "symbol": "As",
+  "orbital": "2p",
+  "bindingEnergy": 1359.0,
+  "crossSection": 0.0026295
+ },
+ {
+  "symbol": "As",
+  "orbital": "2s",
+  "bindingEnergy": 1527.0,
+  "crossSection": 0.00261366
+ },
+ {
+  "symbol": "As",
+  "orbital": "3d",
+  "bindingEnergy": 42.0,
+  "crossSection": 2.271e-05
+ },
+ {
+  "symbol": "As",
+  "orbital": "3p",
+  "bindingEnergy": 146.0,
+  "crossSection": 0.00036024
+ },
+ {
+  "symbol": "As",
+  "orbital": "3s",
+  "bindingEnergy": 205.0,
+  "crossSection": 0.00040389
+ },
+ {
+  "symbol": "At",
+  "orbital": "3d",
+  "bindingEnergy": 2909.0,
+  "crossSection": 0.02072982
+ },
+ {
+  "symbol": "At",
+  "orbital": "3p",
+  "bindingEnergy": 4008.0,
+  "crossSection": 0.02099863
+ },
+ {
+  "symbol": "At",
+  "orbital": "3s",
+  "bindingEnergy": 4317.0,
+  "crossSection": 0.00534749
+ },
+ {
+  "symbol": "At",
+  "orbital": "4d",
+  "bindingEnergy": 533.0,
+  "crossSection": 0.00429469
+ },
+ {
+  "symbol": "At",
+  "orbital": "4f",
+  "bindingEnergy": 210.0,
+  "crossSection": 0.00058895
+ },
+ {
+  "symbol": "At",
+  "orbital": "4p",
+  "bindingEnergy": 886.0,
+  "crossSection": 0.00517731
+ },
+ {
+  "symbol": "At",
+  "orbital": "4s",
+  "bindingEnergy": 1042.0,
+  "crossSection": 0.0015623
+ },
+ {
+  "symbol": "At",
+  "orbital": "5d",
+  "bindingEnergy": 40.0,
+  "crossSection": 0.0006372
+ },
+ {
+  "symbol": "At",
+  "orbital": "5p",
+  "bindingEnergy": 148.0,
+  "crossSection": 0.00107004
+ },
+ {
+  "symbol": "At",
+  "orbital": "5s",
+  "bindingEnergy": 195.0,
+  "crossSection": 0.00037001
+ },
+ {
+  "symbol": "Au",
+  "orbital": "3d",
+  "bindingEnergy": 2291.0,
+  "crossSection": 0.01385079
+ },
+ {
+  "symbol": "Au",
+  "orbital": "3p",
+  "bindingEnergy": 3148.0,
+  "crossSection": 0.01698777
+ },
+ {
+  "symbol": "Au",
+  "orbital": "3s",
+  "bindingEnergy": 3425.0,
+  "crossSection": 0.00475854
+ },
+ {
+  "symbol": "Au",
+  "orbital": "4d",
+  "bindingEnergy": 353.0,
+  "crossSection": 0.00279157
+ },
+ {
+  "symbol": "Au",
+  "orbital": "4f",
+  "bindingEnergy": 88.0,
+  "crossSection": 0.00027441
+ },
+ {
+  "symbol": "Au",
+  "orbital": "4p",
+  "bindingEnergy": 643.0,
+  "crossSection": 0.00398173
+ },
+ {
+  "symbol": "Au",
+  "orbital": "4s",
+  "bindingEnergy": 762.0,
+  "crossSection": 0.00130641
+ },
+ {
+  "symbol": "Au",
+  "orbital": "5p",
+  "bindingEnergy": 74.0,
+  "crossSection": 0.00068418
+ },
+ {
+  "symbol": "Au",
+  "orbital": "5s",
+  "bindingEnergy": 107.0,
+  "crossSection": 0.00026974
+ },
+ {
+  "symbol": "B",
+  "orbital": "1s",
+  "bindingEnergy": 188.0,
+  "crossSection": 2.212e-05
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "2p",
+  "bindingEnergy": 5624.0,
+  "crossSection": 0.03080389
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "2s",
+  "bindingEnergy": 5989.0,
+  "crossSection": 0.0097499
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "3d",
+  "bindingEnergy": 796.0,
+  "crossSection": 0.00162383
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "3p",
+  "bindingEnergy": 1137.0,
+  "crossSection": 0.0048505
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "3s",
+  "bindingEnergy": 1293.0,
+  "crossSection": 0.00213722
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "4d",
+  "bindingEnergy": 93.0,
+  "crossSection": 0.00029848
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "4p",
+  "bindingEnergy": 192.0,
+  "crossSection": 0.00099881
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "4s",
+  "bindingEnergy": 254.0,
+  "crossSection": 0.0004946
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "5p",
+  "bindingEnergy": 17.0,
+  "crossSection": 0.00014373
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "5s",
+  "bindingEnergy": 30.0,
+  "crossSection": 8.68e-05
+ },
+ {
+  "symbol": "Be",
+  "orbital": "1s",
+  "bindingEnergy": 112.0,
+  "crossSection": 7.87e-06
+ },
+ {
+  "symbol": "Bi",
+  "orbital": "3d",
+  "bindingEnergy": 2688.0,
+  "crossSection": 0.01821317
+ },
+ {
+  "symbol": "Bi",
+  "orbital": "3p",
+  "bindingEnergy": 3696.0,
+  "crossSection": 0.01965053
+ },
+ {
+  "symbol": "Bi",
+  "orbital": "3s",
+  "bindingEnergy": 3999.0,
+  "crossSection": 0.00515834
+ },
+ {
+  "symbol": "Bi",
+  "orbital": "4d",
+  "bindingEnergy": 464.0,
+  "crossSection": 0.00374274
+ },
+ {
+  "symbol": "Bi",
+  "orbital": "4f",
+  "bindingEnergy": 162.0,
+  "crossSection": 0.00046289
+ },
+ {
+  "symbol": "Bi",
+  "orbital": "4p",
+  "bindingEnergy": 805.0,
+  "crossSection": 0.00476253
+ },
+ {
+  "symbol": "Bi",
+  "orbital": "4s",
+  "bindingEnergy": 939.0,
+  "crossSection": 0.00147711
+ },
+ {
+  "symbol": "Bi",
+  "orbital": "5d",
+  "bindingEnergy": 27.0,
+  "crossSection": 0.00049227
+ },
+ {
+  "symbol": "Bi",
+  "orbital": "5p",
+  "bindingEnergy": 119.0,
+  "crossSection": 0.00093055
+ },
+ {
+  "symbol": "Bi",
+  "orbital": "5s",
+  "bindingEnergy": 159.0,
+  "crossSection": 0.00033514
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "4d",
+  "bindingEnergy": 933.9,
+  "crossSection": 0.00875933
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "4f",
+  "bindingEnergy": 566.2,
+  "crossSection": 0.00199698
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "4p",
+  "bindingEnergy": 1196.7,
+  "crossSection": 0.00786342
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "4s",
+  "bindingEnergy": 1336.5,
+  "crossSection": 0.00201605
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "5d",
+  "bindingEnergy": 142.1,
+  "crossSection": 0.00180897
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "5f",
+  "bindingEnergy": 23.4,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "5p",
+  "bindingEnergy": 242.7,
+  "crossSection": 0.00200542
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "5s",
+  "bindingEnergy": 299.3,
+  "crossSection": 0.00057474
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "6d",
+  "bindingEnergy": 6.2,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "6p",
+  "bindingEnergy": 28.9,
+  "crossSection": 0.00032782
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "6s",
+  "bindingEnergy": 45.1,
+  "crossSection": 0.00012233
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "7s",
+  "bindingEnergy": 5.0,
+  "crossSection": 1.19e-05
+ },
+ {
+  "symbol": "Br",
+  "orbital": "2p",
+  "bindingEnergy": 1596.0,
+  "crossSection": 0.00353883
+ },
+ {
+  "symbol": "Br",
+  "orbital": "2s",
+  "bindingEnergy": 1782.0,
+  "crossSection": 0.00310119
+ },
+ {
+  "symbol": "Br",
+  "orbital": "3d",
+  "bindingEnergy": 70.0,
+  "crossSection": 3.986e-05
+ },
+ {
+  "symbol": "Br",
+  "orbital": "3p",
+  "bindingEnergy": 189.0,
+  "crossSection": 0.00050024
+ },
+ {
+  "symbol": "Br",
+  "orbital": "3s",
+  "bindingEnergy": 257.0,
+  "crossSection": 0.00049702
+ },
+ {
+  "symbol": "C",
+  "orbital": "1s",
+  "bindingEnergy": 284.0,
+  "crossSection": 5.048e-05
+ },
+ {
+  "symbol": "Ca",
+  "orbital": "1s",
+  "bindingEnergy": 4039.0,
+  "crossSection": 0.00688912
+ },
+ {
+  "symbol": "Ca",
+  "orbital": "2p",
+  "bindingEnergy": 350.0,
+  "crossSection": 0.00016405
+ },
+ {
+  "symbol": "Ca",
+  "orbital": "2s",
+  "bindingEnergy": 438.0,
+  "crossSection": 0.00048701
+ },
+ {
+  "symbol": "Ca",
+  "orbital": "3p",
+  "bindingEnergy": 25.0,
+  "crossSection": 1.898e-05
+ },
+ {
+  "symbol": "Ca",
+  "orbital": "3s",
+  "bindingEnergy": 44.0,
+  "crossSection": 6.345e-05
+ },
+ {
+  "symbol": "Cd",
+  "orbital": "2p",
+  "bindingEnergy": 3727.0,
+  "crossSection": 0.01580429
+ },
+ {
+  "symbol": "Cd",
+  "orbital": "2s",
+  "bindingEnergy": 4018.0,
+  "crossSection": 0.00701644
+ },
+ {
+  "symbol": "Cd",
+  "orbital": "3d",
+  "bindingEnergy": 412.0,
+  "crossSection": 0.00054389
+ },
+ {
+  "symbol": "Cd",
+  "orbital": "3p",
+  "bindingEnergy": 653.0,
+  "crossSection": 0.00247442
+ },
+ {
+  "symbol": "Cd",
+  "orbital": "3s",
+  "bindingEnergy": 772.0,
+  "crossSection": 0.00138254
+ },
+ {
+  "symbol": "Cd",
+  "orbital": "4d",
+  "bindingEnergy": 12.0,
+  "crossSection": 6.352e-05
+ },
+ {
+  "symbol": "Cd",
+  "orbital": "4p",
+  "bindingEnergy": 64.0,
+  "crossSection": 0.00041832
+ },
+ {
+  "symbol": "Cd",
+  "orbital": "4s",
+  "bindingEnergy": 110.0,
+  "crossSection": 0.00027139
+ },
+ {
+  "symbol": "Ce",
+  "orbital": "2p",
+  "bindingEnergy": 6164.0,
+  "crossSection": 0.0356718
+ },
+ {
+  "symbol": "Ce",
+  "orbital": "2s",
+  "bindingEnergy": 6549.0,
+  "crossSection": 0.0104324
+ },
+ {
+  "symbol": "Ce",
+  "orbital": "3d",
+  "bindingEnergy": 902.0,
+  "crossSection": 0.00206025
+ },
+ {
+  "symbol": "Ce",
+  "orbital": "3p",
+  "bindingEnergy": 1274.0,
+  "crossSection": 0.00560634
+ },
+ {
+  "symbol": "Ce",
+  "orbital": "3s",
+  "bindingEnergy": 1436.0,
+  "crossSection": 0.00234872
+ },
+ {
+  "symbol": "Ce",
+  "orbital": "4d",
+  "bindingEnergy": 109.0,
+  "crossSection": 0.00016487
+ },
+ {
+  "symbol": "Ce",
+  "orbital": "4p",
+  "bindingEnergy": 223.0,
+  "crossSection": 0.00117466
+ },
+ {
+  "symbol": "Ce",
+  "orbital": "4s",
+  "bindingEnergy": 291.0,
+  "crossSection": 0.00055422
+ },
+ {
+  "symbol": "Ce",
+  "orbital": "5p",
+  "bindingEnergy": 20.0,
+  "crossSection": 0.00016715
+ },
+ {
+  "symbol": "Ce",
+  "orbital": "5s",
+  "bindingEnergy": 38.0,
+  "crossSection": 9.692e-05
+ },
+ {
+  "symbol": "Cf",
+  "orbital": "4d",
+  "bindingEnergy": 968.6,
+  "crossSection": 0.00922203
+ },
+ {
+  "symbol": "Cf",
+  "orbital": "4f",
+  "bindingEnergy": 593.5,
+  "crossSection": 0.00217885
+ },
+ {
+  "symbol": "Cf",
+  "orbital": "4p",
+  "bindingEnergy": 1236.3,
+  "crossSection": 0.00808967
+ },
+ {
+  "symbol": "Cf",
+  "orbital": "4s",
+  "bindingEnergy": 1378.6,
+  "crossSection": 0.00204493
+ },
+ {
+  "symbol": "Cf",
+  "orbital": "5d",
+  "bindingEnergy": 147.4,
+  "crossSection": 0.00191508
+ },
+ {
+  "symbol": "Cf",
+  "orbital": "5f",
+  "bindingEnergy": 24.7,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Cf",
+  "orbital": "5p",
+  "bindingEnergy": 250.8,
+  "crossSection": 0.00208058
+ },
+ {
+  "symbol": "Cf",
+  "orbital": "5s",
+  "bindingEnergy": 308.8,
+  "crossSection": 0.00058909
+ },
+ {
+  "symbol": "Cf",
+  "orbital": "6d",
+  "bindingEnergy": 6.1,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Cf",
+  "orbital": "6p",
+  "bindingEnergy": 29.4,
+  "crossSection": 0.00032067
+ },
+ {
+  "symbol": "Cf",
+  "orbital": "6s",
+  "bindingEnergy": 46.0,
+  "crossSection": 0.00012057
+ },
+ {
+  "symbol": "Cf",
+  "orbital": "7s",
+  "bindingEnergy": 5.1,
+  "crossSection": 1.006e-05
+ },
+ {
+  "symbol": "Cl",
+  "orbital": "1s",
+  "bindingEnergy": 2822.0,
+  "crossSection": 0.00379098
+ },
+ {
+  "symbol": "Cl",
+  "orbital": "2p",
+  "bindingEnergy": 202.0,
+  "crossSection": 6.066e-05
+ },
+ {
+  "symbol": "Cl",
+  "orbital": "2s",
+  "bindingEnergy": 270.0,
+  "crossSection": 0.00025997
+ },
+ {
+  "symbol": "Cm",
+  "orbital": "4d",
+  "bindingEnergy": 899.6,
+  "crossSection": 0.00831025
+ },
+ {
+  "symbol": "Cm",
+  "orbital": "4f",
+  "bindingEnergy": 539.2,
+  "crossSection": 0.0018265
+ },
+ {
+  "symbol": "Cm",
+  "orbital": "4p",
+  "bindingEnergy": 1157.5,
+  "crossSection": 0.00763578
+ },
+ {
+  "symbol": "Cm",
+  "orbital": "4s",
+  "bindingEnergy": 1294.7,
+  "crossSection": 0.00198498
+ },
+ {
+  "symbol": "Cm",
+  "orbital": "5d",
+  "bindingEnergy": 136.7,
+  "crossSection": 0.00169508
+ },
+ {
+  "symbol": "Cm",
+  "orbital": "5f",
+  "bindingEnergy": 22.0,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Cm",
+  "orbital": "5p",
+  "bindingEnergy": 234.7,
+  "crossSection": 0.00192598
+ },
+ {
+  "symbol": "Cm",
+  "orbital": "5s",
+  "bindingEnergy": 289.9,
+  "crossSection": 0.00055938
+ },
+ {
+  "symbol": "Cm",
+  "orbital": "6d",
+  "bindingEnergy": 6.2,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Cm",
+  "orbital": "6p",
+  "bindingEnergy": 28.4,
+  "crossSection": 0.00031681
+ },
+ {
+  "symbol": "Cm",
+  "orbital": "6s",
+  "bindingEnergy": 44.2,
+  "crossSection": 0.00011754
+ },
+ {
+  "symbol": "Cm",
+  "orbital": "7s",
+  "bindingEnergy": 5.0,
+  "crossSection": 1.178e-05
+ },
+ {
+  "symbol": "Co",
+  "orbital": "1s",
+  "bindingEnergy": 7709.0,
+  "crossSection": 0.0191651
+ },
+ {
+  "symbol": "Co",
+  "orbital": "2p",
+  "bindingEnergy": 793.0,
+  "crossSection": 0.00091279
+ },
+ {
+  "symbol": "Co",
+  "orbital": "2s",
+  "bindingEnergy": 925.0,
+  "crossSection": 0.00139782
+ },
+ {
+  "symbol": "Co",
+  "orbital": "3p",
+  "bindingEnergy": 60.0,
+  "crossSection": 0.00011826
+ },
+ {
+  "symbol": "Co",
+  "orbital": "3s",
+  "bindingEnergy": 101.0,
+  "crossSection": 0.00020168
+ },
+ {
+  "symbol": "Cr",
+  "orbital": "1s",
+  "bindingEnergy": 5989.0,
+  "crossSection": 0.01300975
+ },
+ {
+  "symbol": "Cr",
+  "orbital": "2p",
+  "bindingEnergy": 584.0,
+  "crossSection": 0.00047516
+ },
+ {
+  "symbol": "Cr",
+  "orbital": "2s",
+  "bindingEnergy": 696.0,
+  "crossSection": 0.00094023
+ },
+ {
+  "symbol": "Cr",
+  "orbital": "3p",
+  "bindingEnergy": 42.0,
+  "crossSection": 5.891e-05
+ },
+ {
+  "symbol": "Cr",
+  "orbital": "3s",
+  "bindingEnergy": 74.0,
+  "crossSection": 0.00013028
+ },
+ {
+  "symbol": "Cs",
+  "orbital": "2p",
+  "bindingEnergy": 5359.0,
+  "crossSection": 0.0285624
+ },
+ {
+  "symbol": "Cs",
+  "orbital": "2s",
+  "bindingEnergy": 5714.0,
+  "crossSection": 0.00938837
+ },
+ {
+  "symbol": "Cs",
+  "orbital": "3d",
+  "bindingEnergy": 741.0,
+  "crossSection": 0.00143609
+ },
+ {
+  "symbol": "Cs",
+  "orbital": "3p",
+  "bindingEnergy": 1071.0,
+  "crossSection": 0.0044988
+ },
+ {
+  "symbol": "Cs",
+  "orbital": "3s",
+  "bindingEnergy": 1211.0,
+  "crossSection": 0.00203509
+ },
+ {
+  "symbol": "Cs",
+  "orbital": "4d",
+  "bindingEnergy": 80.0,
+  "crossSection": 0.00025454
+ },
+ {
+  "symbol": "Cs",
+  "orbital": "4p",
+  "bindingEnergy": 172.0,
+  "crossSection": 0.0009077
+ },
+ {
+  "symbol": "Cs",
+  "orbital": "4s",
+  "bindingEnergy": 232.0,
+  "crossSection": 0.00046252
+ },
+ {
+  "symbol": "Cs",
+  "orbital": "5p",
+  "bindingEnergy": 14.0,
+  "crossSection": 0.00011653
+ },
+ {
+  "symbol": "Cs",
+  "orbital": "5s",
+  "bindingEnergy": 23.0,
+  "crossSection": 7.532e-05
+ },
+ {
+  "symbol": "Cu",
+  "orbital": "1s",
+  "bindingEnergy": 8979.0,
+  "crossSection": 0.02365328
+ },
+ {
+  "symbol": "Cu",
+  "orbital": "2p",
+  "bindingEnergy": 952.0,
+  "crossSection": 0.00134377
+ },
+ {
+  "symbol": "Cu",
+  "orbital": "2s",
+  "bindingEnergy": 1097.0,
+  "crossSection": 0.0017629
+ },
+ {
+  "symbol": "Cu",
+  "orbital": "3p",
+  "bindingEnergy": 77.0,
+  "crossSection": 0.00017217
+ },
+ {
+  "symbol": "Cu",
+  "orbital": "3s",
+  "bindingEnergy": 123.0,
+  "crossSection": 0.00025471
+ },
+ {
+  "symbol": "Dy",
+  "orbital": "2p",
+  "bindingEnergy": 8581.0,
+  "crossSection": 0.05952864
+ },
+ {
+  "symbol": "Dy",
+  "orbital": "2s",
+  "bindingEnergy": 9046.0,
+  "crossSection": 0.01288787
+ },
+ {
+  "symbol": "Dy",
+  "orbital": "3d",
+  "bindingEnergy": 1333.0,
+  "crossSection": 0.00477617
+ },
+ {
+  "symbol": "Dy",
+  "orbital": "3p",
+  "bindingEnergy": 1842.0,
+  "crossSection": 0.00928336
+ },
+ {
+  "symbol": "Dy",
+  "orbital": "3s",
+  "bindingEnergy": 2047.0,
+  "crossSection": 0.00326057
+ },
+ {
+  "symbol": "Dy",
+  "orbital": "4d",
+  "bindingEnergy": 154.0,
+  "crossSection": 0.00092088
+ },
+ {
+  "symbol": "Dy",
+  "orbital": "4f",
+  "bindingEnergy": 8.0,
+  "crossSection": 2.372e-05
+ },
+ {
+  "symbol": "Dy",
+  "orbital": "4p",
+  "bindingEnergy": 334.0,
+  "crossSection": 0.00201431
+ },
+ {
+  "symbol": "Dy",
+  "orbital": "4s",
+  "bindingEnergy": 414.0,
+  "crossSection": 0.0008095
+ },
+ {
+  "symbol": "Dy",
+  "orbital": "5p",
+  "bindingEnergy": 26.0,
+  "crossSection": 0.00026154
+ },
+ {
+  "symbol": "Dy",
+  "orbital": "5s",
+  "bindingEnergy": 50.0,
+  "crossSection": 0.00013451
+ },
+ {
+  "symbol": "Er",
+  "orbital": "2p",
+  "bindingEnergy": 8358.0,
+  "crossSection": 0.04130134
+ },
+ {
+  "symbol": "Er",
+  "orbital": "3d",
+  "bindingEnergy": 1453.0,
+  "crossSection": 0.0057515
+ },
+ {
+  "symbol": "Er",
+  "orbital": "3p",
+  "bindingEnergy": 2006.0,
+  "crossSection": 0.01035275
+ },
+ {
+  "symbol": "Er",
+  "orbital": "3s",
+  "bindingEnergy": 2207.0,
+  "crossSection": 0.00349691
+ },
+ {
+  "symbol": "Er",
+  "orbital": "4d",
+  "bindingEnergy": 168.0,
+  "crossSection": 0.00110683
+ },
+ {
+  "symbol": "Er",
+  "orbital": "4f",
+  "bindingEnergy": 5.0,
+  "crossSection": 2.154e-05
+ },
+ {
+  "symbol": "Er",
+  "orbital": "4p",
+  "bindingEnergy": 366.0,
+  "crossSection": 0.00225827
+ },
+ {
+  "symbol": "Er",
+  "orbital": "4s",
+  "bindingEnergy": 450.0,
+  "crossSection": 0.00087742
+ },
+ {
+  "symbol": "Er",
+  "orbital": "5p",
+  "bindingEnergy": 31.0,
+  "crossSection": 0.00028649
+ },
+ {
+  "symbol": "Er",
+  "orbital": "5s",
+  "bindingEnergy": 51.0,
+  "crossSection": 0.00014392
+ },
+ {
+  "symbol": "Es",
+  "orbital": "4d",
+  "bindingEnergy": 1003.6,
+  "crossSection": 0.00969928
+ },
+ {
+  "symbol": "Es",
+  "orbital": "4f",
+  "bindingEnergy": 621.2,
+  "crossSection": 0.00237338
+ },
+ {
+  "symbol": "Es",
+  "orbital": "4p",
+  "bindingEnergy": 1276.4,
+  "crossSection": 0.008315
+ },
+ {
+  "symbol": "Es",
+  "orbital": "4s",
+  "bindingEnergy": 1421.2,
+  "crossSection": 0.00207201
+ },
+ {
+  "symbol": "Es",
+  "orbital": "5d",
+  "bindingEnergy": 152.7,
+  "crossSection": 0.00203575
+ },
+ {
+  "symbol": "Es",
+  "orbital": "5f",
+  "bindingEnergy": 26.1,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Es",
+  "orbital": "5p",
+  "bindingEnergy": 258.7,
+  "crossSection": 0.00216006
+ },
+ {
+  "symbol": "Es",
+  "orbital": "5s",
+  "bindingEnergy": 318.1,
+  "crossSection": 0.00060352
+ },
+ {
+  "symbol": "Es",
+  "orbital": "6d",
+  "bindingEnergy": 6.1,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Es",
+  "orbital": "6p",
+  "bindingEnergy": 29.8,
+  "crossSection": 0.00033032
+ },
+ {
+  "symbol": "Es",
+  "orbital": "6s",
+  "bindingEnergy": 46.8,
+  "crossSection": 0.00012355
+ },
+ {
+  "symbol": "Es",
+  "orbital": "7s",
+  "bindingEnergy": 5.1,
+  "crossSection": 1.01e-05
+ },
+ {
+  "symbol": "Eu",
+  "orbital": "2p",
+  "bindingEnergy": 7617.0,
+  "crossSection": 0.04983352
+ },
+ {
+  "symbol": "Eu",
+  "orbital": "2s",
+  "bindingEnergy": 8052.0,
+  "crossSection": 0.01206288
+ },
+ {
+  "symbol": "Eu",
+  "orbital": "3d",
+  "bindingEnergy": 1159.0,
+  "crossSection": 0.00354795
+ },
+ {
+  "symbol": "Eu",
+  "orbital": "3p",
+  "bindingEnergy": 1614.0,
+  "crossSection": 0.0077761
+ },
+ {
+  "symbol": "Eu",
+  "orbital": "3s",
+  "bindingEnergy": 1800.0,
+  "crossSection": 0.00290729
+ },
+ {
+  "symbol": "Eu",
+  "orbital": "4d",
+  "bindingEnergy": 133.0,
+  "crossSection": 0.00068283
+ },
+ {
+  "symbol": "Eu",
+  "orbital": "4p",
+  "bindingEnergy": 284.0,
+  "crossSection": 0.0016714
+ },
+ {
+  "symbol": "Eu",
+  "orbital": "4s",
+  "bindingEnergy": 360.0,
+  "crossSection": 0.00071011
+ },
+ {
+  "symbol": "Eu",
+  "orbital": "5p",
+  "bindingEnergy": 22.0,
+  "crossSection": 0.000225
+ },
+ {
+  "symbol": "Eu",
+  "orbital": "5s",
+  "bindingEnergy": 32.0,
+  "crossSection": 0.00012044
+ },
+ {
+  "symbol": "F",
+  "orbital": "1s",
+  "bindingEnergy": 685.0,
+  "crossSection": 0.00029525
+ },
+ {
+  "symbol": "Fe",
+  "orbital": "1s",
+  "bindingEnergy": 7112.0,
+  "crossSection": 0.01699186
+ },
+ {
+  "symbol": "Fe",
+  "orbital": "2p",
+  "bindingEnergy": 720.0,
+  "crossSection": 0.00074232
+ },
+ {
+  "symbol": "Fe",
+  "orbital": "2s",
+  "bindingEnergy": 845.0,
+  "crossSection": 0.00123378
+ },
+ {
+  "symbol": "Fe",
+  "orbital": "3p",
+  "bindingEnergy": 53.0,
+  "crossSection": 9.573e-05
+ },
+ {
+  "symbol": "Fe",
+  "orbital": "3s",
+  "bindingEnergy": 91.0,
+  "crossSection": 0.00017674
+ },
+ {
+  "symbol": "Fm",
+  "orbital": "4d",
+  "bindingEnergy": 1039.1,
+  "crossSection": 0.01019085
+ },
+ {
+  "symbol": "Fm",
+  "orbital": "4f",
+  "bindingEnergy": 649.2,
+  "crossSection": 0.00258057
+ },
+ {
+  "symbol": "Fm",
+  "orbital": "4p",
+  "bindingEnergy": 1316.8,
+  "crossSection": 0.00853844
+ },
+ {
+  "symbol": "Fm",
+  "orbital": "4s",
+  "bindingEnergy": 1464.3,
+  "crossSection": 0.00209742
+ },
+ {
+  "symbol": "Fm",
+  "orbital": "5d",
+  "bindingEnergy": 157.9,
+  "crossSection": 0.00216006
+ },
+ {
+  "symbol": "Fm",
+  "orbital": "5f",
+  "bindingEnergy": 27.4,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Fm",
+  "orbital": "5p",
+  "bindingEnergy": 266.7,
+  "crossSection": 0.00223926
+ },
+ {
+  "symbol": "Fm",
+  "orbital": "5s",
+  "bindingEnergy": 327.5,
+  "crossSection": 0.00061745
+ },
+ {
+  "symbol": "Fm",
+  "orbital": "6d",
+  "bindingEnergy": 6.1,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Fm",
+  "orbital": "6p",
+  "bindingEnergy": 30.3,
+  "crossSection": 0.00033969
+ },
+ {
+  "symbol": "Fm",
+  "orbital": "6s",
+  "bindingEnergy": 47.6,
+  "crossSection": 0.00012641
+ },
+ {
+  "symbol": "Fm",
+  "orbital": "7s",
+  "bindingEnergy": 5.1,
+  "crossSection": 1.012e-05
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "3d",
+  "bindingEnergy": 3136.0,
+  "crossSection": 0.0234966
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "3p",
+  "bindingEnergy": 4327.0,
+  "crossSection": 0.02236609
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "3s",
+  "bindingEnergy": 4652.0,
+  "crossSection": 0.0055186
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "4d",
+  "bindingEnergy": 603.0,
+  "crossSection": 0.00490018
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "4f",
+  "bindingEnergy": 268.0,
+  "crossSection": 0.00074044
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "4p",
+  "bindingEnergy": 980.0,
+  "crossSection": 0.00560603
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "4s",
+  "bindingEnergy": 1153.0,
+  "crossSection": 0.00164639
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "5d",
+  "bindingEnergy": 58.0,
+  "crossSection": 0.00080241
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "5p",
+  "bindingEnergy": 182.0,
+  "crossSection": 0.00121885
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "5s",
+  "bindingEnergy": 234.0,
+  "crossSection": 0.00040576
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "6p",
+  "bindingEnergy": 15.0,
+  "crossSection": 0.00016667
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "6s",
+  "bindingEnergy": 34.0,
+  "crossSection": 7.248e-05
+ },
+ {
+  "symbol": "Ga",
+  "orbital": "2p",
+  "bindingEnergy": 1143.0,
+  "crossSection": 0.00190562
+ },
+ {
+  "symbol": "Ga",
+  "orbital": "2s",
+  "bindingEnergy": 1299.0,
+  "crossSection": 0.00216574
+ },
+ {
+  "symbol": "Ga",
+  "orbital": "3d",
+  "bindingEnergy": 19.0,
+  "crossSection": 1.201e-05
+ },
+ {
+  "symbol": "Ga",
+  "orbital": "3p",
+  "bindingEnergy": 104.0,
+  "crossSection": 0.00025215
+ },
+ {
+  "symbol": "Ga",
+  "orbital": "3s",
+  "bindingEnergy": 160.0,
+  "crossSection": 0.0003229
+ },
+ {
+  "symbol": "Gd",
+  "orbital": "2p",
+  "bindingEnergy": 7930.0,
+  "crossSection": 0.05300618
+ },
+ {
+  "symbol": "Gd",
+  "orbital": "2s",
+  "bindingEnergy": 8376.0,
+  "crossSection": 0.01235325
+ },
+ {
+  "symbol": "Gd",
+  "orbital": "3d",
+  "bindingEnergy": 1222.0,
+  "crossSection": 0.00392419
+ },
+ {
+  "symbol": "Gd",
+  "orbital": "3p",
+  "bindingEnergy": 1688.0,
+  "crossSection": 0.00826109
+ },
+ {
+  "symbol": "Gd",
+  "orbital": "3s",
+  "bindingEnergy": 1881.0,
+  "crossSection": 0.00302333
+ },
+ {
+  "symbol": "Gd",
+  "orbital": "4d",
+  "bindingEnergy": 143.0,
+  "crossSection": 0.00043699
+ },
+ {
+  "symbol": "Gd",
+  "orbital": "4f",
+  "bindingEnergy": 9.0,
+  "crossSection": 1.263e-05
+ },
+ {
+  "symbol": "Gd",
+  "orbital": "4p",
+  "bindingEnergy": 286.0,
+  "crossSection": 0.00179172
+ },
+ {
+  "symbol": "Gd",
+  "orbital": "4s",
+  "bindingEnergy": 379.0,
+  "crossSection": 0.00074559
+ },
+ {
+  "symbol": "Gd",
+  "orbital": "5p",
+  "bindingEnergy": 28.0,
+  "crossSection": 0.00025416
+ },
+ {
+  "symbol": "Gd",
+  "orbital": "5s",
+  "bindingEnergy": 36.0,
+  "crossSection": 0.00013112
+ },
+ {
+  "symbol": "Ge",
+  "orbital": "2p",
+  "bindingEnergy": 1248.0,
+  "crossSection": 0.00224603
+ },
+ {
+  "symbol": "Ge",
+  "orbital": "2s",
+  "bindingEnergy": 1415.0,
+  "crossSection": 0.00238449
+ },
+ {
+  "symbol": "Ge",
+  "orbital": "3d",
+  "bindingEnergy": 30.0,
+  "crossSection": 1.669e-05
+ },
+ {
+  "symbol": "Ge",
+  "orbital": "3p",
+  "bindingEnergy": 125.0,
+  "crossSection": 0.00030246
+ },
+ {
+  "symbol": "Ge",
+  "orbital": "3s",
+  "bindingEnergy": 180.0,
+  "crossSection": 0.00036186
+ },
+ {
+  "symbol": "H",
+  "orbital": "1s",
+  "bindingEnergy": 14.0,
+  "crossSection": 1e-08
+ },
+ {
+  "symbol": "He",
+  "orbital": "1s",
+  "bindingEnergy": 25.0,
+  "crossSection": 2.5e-07
+ },
+ {
+  "symbol": "Hf",
+  "orbital": "3d",
+  "bindingEnergy": 1716.0,
+  "crossSection": 0.00811985
+ },
+ {
+  "symbol": "Hf",
+  "orbital": "3p",
+  "bindingEnergy": 2365.0,
+  "crossSection": 0.01262253
+ },
+ {
+  "symbol": "Hf",
+  "orbital": "3s",
+  "bindingEnergy": 2601.0,
+  "crossSection": 0.003969
+ },
+ {
+  "symbol": "Hf",
+  "orbital": "4d",
+  "bindingEnergy": 220.0,
+  "crossSection": 0.00157195
+ },
+ {
+  "symbol": "Hf",
+  "orbital": "4f",
+  "bindingEnergy": 16.0,
+  "crossSection": 9.159e-05
+ },
+ {
+  "symbol": "Hf",
+  "orbital": "4p",
+  "bindingEnergy": 438.0,
+  "crossSection": 0.00280241
+ },
+ {
+  "symbol": "Hf",
+  "orbital": "4s",
+  "bindingEnergy": 538.0,
+  "crossSection": 0.0010217
+ },
+ {
+  "symbol": "Hf",
+  "orbital": "5p",
+  "bindingEnergy": 38.0,
+  "crossSection": 0.00038335
+ },
+ {
+  "symbol": "Hf",
+  "orbital": "5s",
+  "bindingEnergy": 64.0,
+  "crossSection": 0.00017661
+ },
+ {
+  "symbol": "Hg",
+  "orbital": "3d",
+  "bindingEnergy": 2385.0,
+  "crossSection": 0.01486528
+ },
+ {
+  "symbol": "Hg",
+  "orbital": "3p",
+  "bindingEnergy": 3279.0,
+  "crossSection": 0.01765116
+ },
+ {
+  "symbol": "Hg",
+  "orbital": "3s",
+  "bindingEnergy": 3562.0,
+  "crossSection": 0.00486444
+ },
+ {
+  "symbol": "Hg",
+  "orbital": "4d",
+  "bindingEnergy": 378.0,
+  "crossSection": 0.00301087
+ },
+ {
+  "symbol": "Hg",
+  "orbital": "4f",
+  "bindingEnergy": 104.0,
+  "crossSection": 0.00031453
+ },
+ {
+  "symbol": "Hg",
+  "orbital": "4p",
+  "bindingEnergy": 680.0,
+  "crossSection": 0.00417032
+ },
+ {
+  "symbol": "Hg",
+  "orbital": "4s",
+  "bindingEnergy": 802.0,
+  "crossSection": 0.00134885
+ },
+ {
+  "symbol": "Hg",
+  "orbital": "5d",
+  "bindingEnergy": 10.0,
+  "crossSection": 0.00030618
+ },
+ {
+  "symbol": "Hg",
+  "orbital": "5p",
+  "bindingEnergy": 83.0,
+  "crossSection": 0.00074112
+ },
+ {
+  "symbol": "Hg",
+  "orbital": "5s",
+  "bindingEnergy": 127.0,
+  "crossSection": 0.00028544
+ },
+ {
+  "symbol": "Ho",
+  "orbital": "2p",
+  "bindingEnergy": 8918.0,
+  "crossSection": 0.06280184
+ },
+ {
+  "symbol": "Ho",
+  "orbital": "3d",
+  "bindingEnergy": 1392.0,
+  "crossSection": 0.0052474
+ },
+ {
+  "symbol": "Ho",
+  "orbital": "3p",
+  "bindingEnergy": 1923.0,
+  "crossSection": 0.00981202
+ },
+ {
+  "symbol": "Ho",
+  "orbital": "3s",
+  "bindingEnergy": 2128.0,
+  "crossSection": 0.00337918
+ },
+ {
+  "symbol": "Ho",
+  "orbital": "4d",
+  "bindingEnergy": 160.0,
+  "crossSection": 0.00101104
+ },
+ {
+  "symbol": "Ho",
+  "orbital": "4f",
+  "bindingEnergy": 9.0,
+  "crossSection": 3.076e-05
+ },
+ {
+  "symbol": "Ho",
+  "orbital": "4p",
+  "bindingEnergy": 344.0,
+  "crossSection": 0.0021348
+ },
+ {
+  "symbol": "Ho",
+  "orbital": "4s",
+  "bindingEnergy": 432.0,
+  "crossSection": 0.00084332
+ },
+ {
+  "symbol": "Ho",
+  "orbital": "5p",
+  "bindingEnergy": 31.0,
+  "crossSection": 0.00027396
+ },
+ {
+  "symbol": "Ho",
+  "orbital": "5s",
+  "bindingEnergy": 49.0,
+  "crossSection": 0.00013922
+ },
+ {
+  "symbol": "I",
+  "orbital": "2p",
+  "bindingEnergy": 4852.0,
+  "crossSection": 0.02437692
+ },
+ {
+  "symbol": "I",
+  "orbital": "2s",
+  "bindingEnergy": 5188.0,
+  "crossSection": 0.00870848
+ },
+ {
+  "symbol": "I",
+  "orbital": "3d",
+  "bindingEnergy": 631.0,
+  "crossSection": 0.00111117
+ },
+ {
+  "symbol": "I",
+  "orbital": "3p",
+  "bindingEnergy": 931.0,
+  "crossSection": 0.00384337
+ },
+ {
+  "symbol": "I",
+  "orbital": "3s",
+  "bindingEnergy": 1072.0,
+  "crossSection": 0.00183748
+ },
+ {
+  "symbol": "I",
+  "orbital": "4d",
+  "bindingEnergy": 51.0,
+  "crossSection": 0.00018126
+ },
+ {
+  "symbol": "I",
+  "orbital": "4p",
+  "bindingEnergy": 123.0,
+  "crossSection": 0.00074227
+ },
+ {
+  "symbol": "I",
+  "orbital": "4s",
+  "bindingEnergy": 186.0,
+  "crossSection": 0.000402
+ },
+ {
+  "symbol": "In",
+  "orbital": "2p",
+  "bindingEnergy": 3938.0,
+  "crossSection": 0.017333
+ },
+ {
+  "symbol": "In",
+  "orbital": "2s",
+  "bindingEnergy": 4238.0,
+  "crossSection": 0.00734784
+ },
+ {
+  "symbol": "In",
+  "orbital": "3d",
+  "bindingEnergy": 451.0,
+  "crossSection": 0.00063326
+ },
+ {
+  "symbol": "In",
+  "orbital": "3p",
+  "bindingEnergy": 703.0,
+  "crossSection": 0.00271815
+ },
+ {
+  "symbol": "In",
+  "orbital": "3s",
+  "bindingEnergy": 827.0,
+  "crossSection": 0.00146884
+ },
+ {
+  "symbol": "In",
+  "orbital": "4d",
+  "bindingEnergy": 18.0,
+  "crossSection": 8.109e-05
+ },
+ {
+  "symbol": "In",
+  "orbital": "4p",
+  "bindingEnergy": 74.0,
+  "crossSection": 0.0004731
+ },
+ {
+  "symbol": "In",
+  "orbital": "4s",
+  "bindingEnergy": 123.0,
+  "crossSection": 0.00029499
+ },
+ {
+  "symbol": "Ir",
+  "orbital": "3d",
+  "bindingEnergy": 2116.0,
+  "crossSection": 0.01197982
+ },
+ {
+  "symbol": "Ir",
+  "orbital": "3p",
+  "bindingEnergy": 2909.0,
+  "crossSection": 0.01568935
+ },
+ {
+  "symbol": "Ir",
+  "orbital": "3s",
+  "bindingEnergy": 3174.0,
+  "crossSection": 0.00453579
+ },
+ {
+  "symbol": "Ir",
+  "orbital": "4d",
+  "bindingEnergy": 312.0,
+  "crossSection": 0.00238801
+ },
+ {
+  "symbol": "Ir",
+  "orbital": "4f",
+  "bindingEnergy": 64.0,
+  "crossSection": 0.00020619
+ },
+ {
+  "symbol": "Ir",
+  "orbital": "4p",
+  "bindingEnergy": 578.0,
+  "crossSection": 0.00361851
+ },
+ {
+  "symbol": "Ir",
+  "orbital": "4s",
+  "bindingEnergy": 691.0,
+  "crossSection": 0.00122243
+ },
+ {
+  "symbol": "Ir",
+  "orbital": "5p",
+  "bindingEnergy": 63.0,
+  "crossSection": 0.00058376
+ },
+ {
+  "symbol": "Ir",
+  "orbital": "5s",
+  "bindingEnergy": 95.0,
+  "crossSection": 0.00024054
+ },
+ {
+  "symbol": "K",
+  "orbital": "1s",
+  "bindingEnergy": 3608.0,
+  "crossSection": 0.00571992
+ },
+ {
+  "symbol": "K",
+  "orbital": "2p",
+  "bindingEnergy": 297.0,
+  "crossSection": 0.00012042
+ },
+ {
+  "symbol": "K",
+  "orbital": "2s",
+  "bindingEnergy": 379.0,
+  "crossSection": 0.00040105
+ },
+ {
+  "symbol": "K",
+  "orbital": "3p",
+  "bindingEnergy": 18.0,
+  "crossSection": 1.251e-05
+ },
+ {
+  "symbol": "K",
+  "orbital": "3s",
+  "bindingEnergy": 35.0,
+  "crossSection": 4.876e-05
+ },
+ {
+  "symbol": "Kr",
+  "orbital": "2p",
+  "bindingEnergy": 1731.0,
+  "crossSection": 0.00407138
+ },
+ {
+  "symbol": "Kr",
+  "orbital": "2s",
+  "bindingEnergy": 1921.0,
+  "crossSection": 0.00335966
+ },
+ {
+  "symbol": "Kr",
+  "orbital": "3d",
+  "bindingEnergy": 95.0,
+  "crossSection": 5.161e-05
+ },
+ {
+  "symbol": "Kr",
+  "orbital": "3p",
+  "bindingEnergy": 222.0,
+  "crossSection": 0.00058352
+ },
+ {
+  "symbol": "Kr",
+  "orbital": "3s",
+  "bindingEnergy": 293.0,
+  "crossSection": 0.00054803
+ },
+ {
+  "symbol": "Kr",
+  "orbital": "4p",
+  "bindingEnergy": 14.0,
+  "crossSection": 5.09e-05
+ },
+ {
+  "symbol": "Kr",
+  "orbital": "4s",
+  "bindingEnergy": 28.0,
+  "crossSection": 6.752e-05
+ },
+ {
+  "symbol": "La",
+  "orbital": "2p",
+  "bindingEnergy": 5891.0,
+  "crossSection": 0.03316197
+ },
+ {
+  "symbol": "La",
+  "orbital": "2s",
+  "bindingEnergy": 6266.0,
+  "crossSection": 0.01010256
+ },
+ {
+  "symbol": "La",
+  "orbital": "3d",
+  "bindingEnergy": 853.0,
+  "crossSection": 0.00182992
+ },
+ {
+  "symbol": "La",
+  "orbital": "3p",
+  "bindingEnergy": 1209.0,
+  "crossSection": 0.00521812
+ },
+ {
+  "symbol": "La",
+  "orbital": "3s",
+  "bindingEnergy": 1362.0,
+  "crossSection": 0.00224117
+ },
+ {
+  "symbol": "La",
+  "orbital": "4d",
+  "bindingEnergy": 105.0,
+  "crossSection": 0.00034756
+ },
+ {
+  "symbol": "La",
+  "orbital": "4p",
+  "bindingEnergy": 206.0,
+  "crossSection": 0.00109537
+ },
+ {
+  "symbol": "La",
+  "orbital": "4s",
+  "bindingEnergy": 275.0,
+  "crossSection": 0.00052772
+ },
+ {
+  "symbol": "La",
+  "orbital": "5p",
+  "bindingEnergy": 19.0,
+  "crossSection": 0.00016906
+ },
+ {
+  "symbol": "La",
+  "orbital": "5s",
+  "bindingEnergy": 34.0,
+  "crossSection": 9.759e-05
+ },
+ {
+  "symbol": "Li",
+  "orbital": "1s",
+  "bindingEnergy": 55.0,
+  "crossSection": 2e-06
+ },
+ {
+  "symbol": "Lr",
+  "orbital": "4d",
+  "bindingEnergy": 1147.9,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Lr",
+  "orbital": "4f",
+  "bindingEnergy": 735.7,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Lr",
+  "orbital": "4p",
+  "bindingEnergy": 1440.7,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Lr",
+  "orbital": "5d",
+  "bindingEnergy": 173.6,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Lr",
+  "orbital": "5f",
+  "bindingEnergy": 31.3,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Lr",
+  "orbital": "5p",
+  "bindingEnergy": 290.6,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Lr",
+  "orbital": "5s",
+  "bindingEnergy": 355.6,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Lr",
+  "orbital": "6d",
+  "bindingEnergy": 5.9,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Lr",
+  "orbital": "6p",
+  "bindingEnergy": 31.5,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Lr",
+  "orbital": "6s",
+  "bindingEnergy": 50.0,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Lr",
+  "orbital": "7s",
+  "bindingEnergy": 5.2,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Lu",
+  "orbital": "2p",
+  "bindingEnergy": 9244.0,
+  "crossSection": 0.04726
+ },
+ {
+  "symbol": "Lu",
+  "orbital": "3d",
+  "bindingEnergy": 1639.0,
+  "crossSection": 0.00747902
+ },
+ {
+  "symbol": "Lu",
+  "orbital": "3p",
+  "bindingEnergy": 2264.0,
+  "crossSection": 0.01204929
+ },
+ {
+  "symbol": "Lu",
+  "orbital": "3s",
+  "bindingEnergy": 2491.0,
+  "crossSection": 0.00385415
+ },
+ {
+  "symbol": "Lu",
+  "orbital": "4d",
+  "bindingEnergy": 206.0,
+  "crossSection": 0.00144043
+ },
+ {
+  "symbol": "Lu",
+  "orbital": "4f",
+  "bindingEnergy": 9.0,
+  "crossSection": 7.543e-05
+ },
+ {
+  "symbol": "Lu",
+  "orbital": "4p",
+  "bindingEnergy": 412.0,
+  "crossSection": 0.00265719
+ },
+ {
+  "symbol": "Lu",
+  "orbital": "4s",
+  "bindingEnergy": 507.0,
+  "crossSection": 0.00098398
+ },
+ {
+  "symbol": "Lu",
+  "orbital": "5p",
+  "bindingEnergy": 34.0,
+  "crossSection": 0.00034688
+ },
+ {
+  "symbol": "Lu",
+  "orbital": "5s",
+  "bindingEnergy": 57.0,
+  "crossSection": 0.00016475
+ },
+ {
+  "symbol": "Md",
+  "orbital": "4d",
+  "bindingEnergy": 1074.9,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Md",
+  "orbital": "4f",
+  "bindingEnergy": 677.7,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Md",
+  "orbital": "4p",
+  "bindingEnergy": 1357.7,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Md",
+  "orbital": "5d",
+  "bindingEnergy": 163.2,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Md",
+  "orbital": "5f",
+  "bindingEnergy": 28.7,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Md",
+  "orbital": "5p",
+  "bindingEnergy": 274.7,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Md",
+  "orbital": "5s",
+  "bindingEnergy": 336.9,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Md",
+  "orbital": "6d",
+  "bindingEnergy": 6.0,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Md",
+  "orbital": "6p",
+  "bindingEnergy": 30.7,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Md",
+  "orbital": "6s",
+  "bindingEnergy": 48.4,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Md",
+  "orbital": "7s",
+  "bindingEnergy": 5.2,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Mg",
+  "orbital": "1s",
+  "bindingEnergy": 1303.0,
+  "crossSection": 0.00097281
+ },
+ {
+  "symbol": "Mg",
+  "orbital": "2p",
+  "bindingEnergy": 50.0,
+  "crossSection": 5.89e-06
+ },
+ {
+  "symbol": "Mg",
+  "orbital": "2s",
+  "bindingEnergy": 89.0,
+  "crossSection": 5.901e-05
+ },
+ {
+  "symbol": "Mn",
+  "orbital": "1s",
+  "bindingEnergy": 6539.0,
+  "crossSection": 0.01493306
+ },
+ {
+  "symbol": "Mn",
+  "orbital": "2p",
+  "bindingEnergy": 650.0,
+  "crossSection": 0.00059724
+ },
+ {
+  "symbol": "Mn",
+  "orbital": "2s",
+  "bindingEnergy": 769.0,
+  "crossSection": 0.00108116
+ },
+ {
+  "symbol": "Mn",
+  "orbital": "3p",
+  "bindingEnergy": 47.0,
+  "crossSection": 7.651e-05
+ },
+ {
+  "symbol": "Mn",
+  "orbital": "3s",
+  "bindingEnergy": 82.0,
+  "crossSection": 0.00015359
+ },
+ {
+  "symbol": "Mo",
+  "orbital": "2p",
+  "bindingEnergy": 2625.0,
+  "crossSection": 0.00856927
+ },
+ {
+  "symbol": "Mo",
+  "orbital": "2s",
+  "bindingEnergy": 2866.0,
+  "crossSection": 0.00508158
+ },
+ {
+  "symbol": "Mo",
+  "orbital": "3d",
+  "bindingEnergy": 231.0,
+  "crossSection": 0.00019349
+ },
+ {
+  "symbol": "Mo",
+  "orbital": "3p",
+  "bindingEnergy": 412.0,
+  "crossSection": 0.00130538
+ },
+ {
+  "symbol": "Mo",
+  "orbital": "3s",
+  "bindingEnergy": 506.0,
+  "crossSection": 0.0009166
+ },
+ {
+  "symbol": "Mo",
+  "orbital": "4p",
+  "bindingEnergy": 38.0,
+  "crossSection": 0.0001884
+ },
+ {
+  "symbol": "Mo",
+  "orbital": "4s",
+  "bindingEnergy": 63.0,
+  "crossSection": 0.00015737
+ },
+ {
+  "symbol": "N",
+  "orbital": "1s",
+  "bindingEnergy": 398.0,
+  "crossSection": 9.993e-05
+ },
+ {
+  "symbol": "N",
+  "orbital": "2s",
+  "bindingEnergy": 37.0,
+  "crossSection": 5.37e-06
+ },
+ {
+  "symbol": "Na",
+  "orbital": "1s",
+  "bindingEnergy": 1071.0,
+  "crossSection": 0.00068229
+ },
+ {
+  "symbol": "Na",
+  "orbital": "2p",
+  "bindingEnergy": 31.0,
+  "crossSection": 3.11e-06
+ },
+ {
+  "symbol": "Na",
+  "orbital": "2s",
+  "bindingEnergy": 64.0,
+  "crossSection": 3.955e-05
+ },
+ {
+  "symbol": "Nb",
+  "orbital": "2p",
+  "bindingEnergy": 2465.0,
+  "crossSection": 0.00764787
+ },
+ {
+  "symbol": "Nb",
+  "orbital": "2s",
+  "bindingEnergy": 2698.0,
+  "crossSection": 0.00477456
+ },
+ {
+  "symbol": "Nb",
+  "orbital": "3d",
+  "bindingEnergy": 205.0,
+  "crossSection": 0.00015897
+ },
+ {
+  "symbol": "Nb",
+  "orbital": "3p",
+  "bindingEnergy": 376.0,
+  "crossSection": 0.00115635
+ },
+ {
+  "symbol": "Nb",
+  "orbital": "3s",
+  "bindingEnergy": 467.0,
+  "crossSection": 0.00084805
+ },
+ {
+  "symbol": "Nb",
+  "orbital": "4p",
+  "bindingEnergy": 33.0,
+  "crossSection": 0.00016038
+ },
+ {
+  "symbol": "Nb",
+  "orbital": "4s",
+  "bindingEnergy": 56.0,
+  "crossSection": 0.000141
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "2p",
+  "bindingEnergy": 6722.0,
+  "crossSection": 0.04100098
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "2s",
+  "bindingEnergy": 7126.0,
+  "crossSection": 0.01104786
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "3d",
+  "bindingEnergy": 1003.0,
+  "crossSection": 0.0025819
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "3p",
+  "bindingEnergy": 1403.0,
+  "crossSection": 0.00642638
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "3s",
+  "bindingEnergy": 1575.0,
+  "crossSection": 0.00256764
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "4d",
+  "bindingEnergy": 121.0,
+  "crossSection": 0.00049223
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "4f",
+  "bindingEnergy": 2.0,
+  "crossSection": 3.02e-06
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "4p",
+  "bindingEnergy": 243.0,
+  "crossSection": 0.00136316
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "4s",
+  "bindingEnergy": 319.0,
+  "crossSection": 0.00061529
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "5p",
+  "bindingEnergy": 21.0,
+  "crossSection": 0.00019007
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "5s",
+  "bindingEnergy": 38.0,
+  "crossSection": 0.00010646
+ },
+ {
+  "symbol": "Ne",
+  "orbital": "1s",
+  "bindingEnergy": 870.0,
+  "crossSection": 0.00045984
+ },
+ {
+  "symbol": "Ne",
+  "orbital": "2p",
+  "bindingEnergy": 22.0,
+  "crossSection": 1.49e-06
+ },
+ {
+  "symbol": "Ne",
+  "orbital": "2s",
+  "bindingEnergy": 49.0,
+  "crossSection": 2.526e-05
+ },
+ {
+  "symbol": "Ni",
+  "orbital": "1s",
+  "bindingEnergy": 8333.0,
+  "crossSection": 0.02149272
+ },
+ {
+  "symbol": "Ni",
+  "orbital": "2p",
+  "bindingEnergy": 870.0,
+  "crossSection": 0.00111205
+ },
+ {
+  "symbol": "Ni",
+  "orbital": "2s",
+  "bindingEnergy": 1009.0,
+  "crossSection": 0.00157412
+ },
+ {
+  "symbol": "Ni",
+  "orbital": "3p",
+  "bindingEnergy": 68.0,
+  "crossSection": 0.00014449
+ },
+ {
+  "symbol": "Ni",
+  "orbital": "3s",
+  "bindingEnergy": 111.0,
+  "crossSection": 0.00022851
+ },
+ {
+  "symbol": "No",
+  "orbital": "4d",
+  "bindingEnergy": 1111.2,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "No",
+  "orbital": "4f",
+  "bindingEnergy": 706.5,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "No",
+  "orbital": "4p",
+  "bindingEnergy": 1399.0,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "No",
+  "orbital": "5d",
+  "bindingEnergy": 168.4,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "No",
+  "orbital": "5f",
+  "bindingEnergy": 30.0,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "No",
+  "orbital": "5p",
+  "bindingEnergy": 282.6,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "No",
+  "orbital": "5s",
+  "bindingEnergy": 346.3,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "No",
+  "orbital": "6d",
+  "bindingEnergy": 6.0,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "No",
+  "orbital": "6p",
+  "bindingEnergy": 31.1,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "No",
+  "orbital": "6s",
+  "bindingEnergy": 49.2,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "No",
+  "orbital": "7s",
+  "bindingEnergy": 5.2,
+  "crossSection": 0.0
+ },
+ {
+  "symbol": "Np",
+  "orbital": "4d",
+  "bindingEnergy": 799.0,
+  "crossSection": 0.00704796
+ },
+ {
+  "symbol": "Np",
+  "orbital": "4f",
+  "bindingEnergy": 460.4,
+  "crossSection": 0.00138066
+ },
+ {
+  "symbol": "Np",
+  "orbital": "4p",
+  "bindingEnergy": 1042.1,
+  "crossSection": 0.00695008
+ },
+ {
+  "symbol": "Np",
+  "orbital": "4s",
+  "bindingEnergy": 1171.7,
+  "crossSection": 0.00188239
+ },
+ {
+  "symbol": "Np",
+  "orbital": "5d",
+  "bindingEnergy": 120.4,
+  "crossSection": 0.00137417
+ },
+ {
+  "symbol": "Np",
+  "orbital": "5p",
+  "bindingEnergy": 210.3,
+  "crossSection": 0.00168872
+ },
+ {
+  "symbol": "Np",
+  "orbital": "5s",
+  "bindingEnergy": 261.3,
+  "crossSection": 0.00051102
+ },
+ {
+  "symbol": "Np",
+  "orbital": "6p",
+  "bindingEnergy": 26.7,
+  "crossSection": 0.00028142
+ },
+ {
+  "symbol": "Np",
+  "orbital": "6s",
+  "bindingEnergy": 41.4,
+  "crossSection": 0.0001067
+ },
+ {
+  "symbol": "Np",
+  "orbital": "7s",
+  "bindingEnergy": 4.9,
+  "crossSection": 1.136e-05
+ },
+ {
+  "symbol": "O",
+  "orbital": "1s",
+  "bindingEnergy": 531.0,
+  "crossSection": 0.00017852
+ },
+ {
+  "symbol": "O",
+  "orbital": "2s",
+  "bindingEnergy": 42.0,
+  "crossSection": 9.74e-06
+ },
+ {
+  "symbol": "Os",
+  "orbital": "3d",
+  "bindingEnergy": 2031.0,
+  "crossSection": 0.01111785
+ },
+ {
+  "symbol": "Os",
+  "orbital": "3p",
+  "bindingEnergy": 2792.0,
+  "crossSection": 0.01505457
+ },
+ {
+  "symbol": "Os",
+  "orbital": "3s",
+  "bindingEnergy": 3049.0,
+  "crossSection": 0.0044231
+ },
+ {
+  "symbol": "Os",
+  "orbital": "4d",
+  "bindingEnergy": 293.0,
+  "crossSection": 0.00220283
+ },
+ {
+  "symbol": "Os",
+  "orbital": "4f",
+  "bindingEnergy": 53.0,
+  "crossSection": 0.00017753
+ },
+ {
+  "symbol": "Os",
+  "orbital": "4p",
+  "bindingEnergy": 549.0,
+  "crossSection": 0.00344397
+ },
+ {
+  "symbol": "Os",
+  "orbital": "4s",
+  "bindingEnergy": 658.0,
+  "crossSection": 0.001181
+ },
+ {
+  "symbol": "Os",
+  "orbital": "5p",
+  "bindingEnergy": 58.0,
+  "crossSection": 0.00054856
+ },
+ {
+  "symbol": "Os",
+  "orbital": "5s",
+  "bindingEnergy": 84.0,
+  "crossSection": 0.00022856
+ },
+ {
+  "symbol": "P",
+  "orbital": "1s",
+  "bindingEnergy": 2146.0,
+  "crossSection": 0.00235328
+ },
+ {
+  "symbol": "P",
+  "orbital": "2p",
+  "bindingEnergy": 136.0,
+  "crossSection": 2.72e-05
+ },
+ {
+  "symbol": "P",
+  "orbital": "2s",
+  "bindingEnergy": 189.0,
+  "crossSection": 0.00015604
+ },
+ {
+  "symbol": "Pa",
+  "orbital": "3d",
+  "bindingEnergy": 3611.0,
+  "crossSection": 0.02974255
+ },
+ {
+  "symbol": "Pa",
+  "orbital": "3p",
+  "bindingEnergy": 5001.0,
+  "crossSection": 0.02499909
+ },
+ {
+  "symbol": "Pa",
+  "orbital": "3s",
+  "bindingEnergy": 5367.0,
+  "crossSection": 0.00577234
+ },
+ {
+  "symbol": "Pa",
+  "orbital": "4d",
+  "bindingEnergy": 743.0,
+  "crossSection": 0.00627651
+ },
+ {
+  "symbol": "Pa",
+  "orbital": "4f",
+  "bindingEnergy": 371.0,
+  "crossSection": 0.0011331
+ },
+ {
+  "symbol": "Pa",
+  "orbital": "4p",
+  "bindingEnergy": 1224.0,
+  "crossSection": 0.00649571
+ },
+ {
+  "symbol": "Pa",
+  "orbital": "4s",
+  "bindingEnergy": 1387.0,
+  "crossSection": 0.00180752
+ },
+ {
+  "symbol": "Pa",
+  "orbital": "5d",
+  "bindingEnergy": 94.0,
+  "crossSection": 0.00117674
+ },
+ {
+  "symbol": "Pa",
+  "orbital": "5p",
+  "bindingEnergy": 232.0,
+  "crossSection": 0.00153222
+ },
+ {
+  "symbol": "Pa",
+  "orbital": "5s",
+  "bindingEnergy": 310.0,
+  "crossSection": 0.00047715
+ },
+ {
+  "symbol": "Pa",
+  "orbital": "7s",
+  "bindingEnergy": 4.8,
+  "crossSection": 1.097e-05
+ },
+ {
+  "symbol": "Pb",
+  "orbital": "3d",
+  "bindingEnergy": 2586.0,
+  "crossSection": 0.01704604
+ },
+ {
+  "symbol": "Pb",
+  "orbital": "3p",
+  "bindingEnergy": 3554.0,
+  "crossSection": 0.01898335
+ },
+ {
+  "symbol": "Pb",
+  "orbital": "3s",
+  "bindingEnergy": 3851.0,
+  "crossSection": 0.00506262
+ },
+ {
+  "symbol": "Pb",
+  "orbital": "4d",
+  "bindingEnergy": 434.0,
+  "crossSection": 0.00348616
+ },
+ {
+  "symbol": "Pb",
+  "orbital": "4f",
+  "bindingEnergy": 142.0,
+  "crossSection": 0.00040838
+ },
+ {
+  "symbol": "Pb",
+  "orbital": "4p",
+  "bindingEnergy": 762.0,
+  "crossSection": 0.00456088
+ },
+ {
+  "symbol": "Pb",
+  "orbital": "4s",
+  "bindingEnergy": 892.0,
+  "crossSection": 0.00143429
+ },
+ {
+  "symbol": "Pb",
+  "orbital": "5d",
+  "bindingEnergy": 21.0,
+  "crossSection": 0.00042647
+ },
+ {
+  "symbol": "Pb",
+  "orbital": "5p",
+  "bindingEnergy": 106.0,
+  "crossSection": 0.00086449
+ },
+ {
+  "symbol": "Pb",
+  "orbital": "5s",
+  "bindingEnergy": 147.0,
+  "crossSection": 0.00031816
+ },
+ {
+  "symbol": "Pd",
+  "orbital": "2p",
+  "bindingEnergy": 3330.0,
+  "crossSection": 0.01304952
+ },
+ {
+  "symbol": "Pd",
+  "orbital": "2s",
+  "bindingEnergy": 3604.0,
+  "crossSection": 0.00635865
+ },
+ {
+  "symbol": "Pd",
+  "orbital": "3d",
+  "bindingEnergy": 341.0,
+  "crossSection": 0.00039493
+ },
+ {
+  "symbol": "Pd",
+  "orbital": "3p",
+  "bindingEnergy": 560.0,
+  "crossSection": 0.00203011
+ },
+ {
+  "symbol": "Pd",
+  "orbital": "3s",
+  "bindingEnergy": 672.0,
+  "crossSection": 0.00121723
+ },
+ {
+  "symbol": "Pd",
+  "orbital": "4p",
+  "bindingEnergy": 56.0,
+  "crossSection": 0.00032362
+ },
+ {
+  "symbol": "Pd",
+  "orbital": "4s",
+  "bindingEnergy": 87.0,
+  "crossSection": 0.00022819
+ },
+ {
+  "symbol": "Pm",
+  "orbital": "2p",
+  "bindingEnergy": 7013.0,
+  "crossSection": 0.04385424
+ },
+ {
+  "symbol": "Pm",
+  "orbital": "2s",
+  "bindingEnergy": 7428.0,
+  "crossSection": 0.01137772
+ },
+ {
+  "symbol": "Pm",
+  "orbital": "3d",
+  "bindingEnergy": 1052.0,
+  "crossSection": 0.00287805
+ },
+ {
+  "symbol": "Pm",
+  "orbital": "3p",
+  "bindingEnergy": 1471.0,
+  "crossSection": 0.00686025
+ },
+ {
+  "symbol": "Pm",
+  "orbital": "4d",
+  "bindingEnergy": 120.0,
+  "crossSection": 0.00055103
+ },
+ {
+  "symbol": "Pm",
+  "orbital": "4p",
+  "bindingEnergy": 242.0,
+  "crossSection": 0.00146242
+ },
+ {
+  "symbol": "Po",
+  "orbital": "3d",
+  "bindingEnergy": 2798.0,
+  "crossSection": 0.01943913
+ },
+ {
+  "symbol": "Po",
+  "orbital": "3p",
+  "bindingEnergy": 3854.0,
+  "crossSection": 0.02032088
+ },
+ {
+  "symbol": "Po",
+  "orbital": "3s",
+  "bindingEnergy": 4149.0,
+  "crossSection": 0.00525369
+ },
+ {
+  "symbol": "Po",
+  "orbital": "4d",
+  "bindingEnergy": 500.0,
+  "crossSection": 0.00401215
+ },
+ {
+  "symbol": "Po",
+  "orbital": "4f",
+  "bindingEnergy": 184.0,
+  "crossSection": 0.00052296
+ },
+ {
+  "symbol": "Po",
+  "orbital": "4p",
+  "bindingEnergy": 851.0,
+  "crossSection": 0.00496802
+ },
+ {
+  "symbol": "Po",
+  "orbital": "4s",
+  "bindingEnergy": 995.0,
+  "crossSection": 0.00151972
+ },
+ {
+  "symbol": "Po",
+  "orbital": "5d",
+  "bindingEnergy": 31.0,
+  "crossSection": 0.00056251
+ },
+ {
+  "symbol": "Po",
+  "orbital": "5p",
+  "bindingEnergy": 132.0,
+  "crossSection": 0.00099916
+ },
+ {
+  "symbol": "Po",
+  "orbital": "5s",
+  "bindingEnergy": 177.0,
+  "crossSection": 0.00035245
+ },
+ {
+  "symbol": "Pr",
+  "orbital": "2p",
+  "bindingEnergy": 6440.0,
+  "crossSection": 0.03829351
+ },
+ {
+  "symbol": "Pr",
+  "orbital": "2s",
+  "bindingEnergy": 6835.0,
+  "crossSection": 0.01073481
+ },
+ {
+  "symbol": "Pr",
+  "orbital": "3d",
+  "bindingEnergy": 948.0,
+  "crossSection": 0.00230982
+ },
+ {
+  "symbol": "Pr",
+  "orbital": "3p",
+  "bindingEnergy": 1337.0,
+  "crossSection": 0.00600844
+ },
+ {
+  "symbol": "Pr",
+  "orbital": "3s",
+  "bindingEnergy": 1511.0,
+  "crossSection": 0.00245749
+ },
+ {
+  "symbol": "Pr",
+  "orbital": "4d",
+  "bindingEnergy": 115.0,
+  "crossSection": 0.00043781
+ },
+ {
+  "symbol": "Pr",
+  "orbital": "4f",
+  "bindingEnergy": 2.0,
+  "crossSection": 1.81e-06
+ },
+ {
+  "symbol": "Pr",
+  "orbital": "4p",
+  "bindingEnergy": 236.0,
+  "crossSection": 0.00126727
+ },
+ {
+  "symbol": "Pr",
+  "orbital": "4s",
+  "bindingEnergy": 305.0,
+  "crossSection": 0.00058455
+ },
+ {
+  "symbol": "Pr",
+  "orbital": "5p",
+  "bindingEnergy": 22.0,
+  "crossSection": 0.00017861
+ },
+ {
+  "symbol": "Pr",
+  "orbital": "5s",
+  "bindingEnergy": 37.0,
+  "crossSection": 0.00010173
+ },
+ {
+  "symbol": "Pt",
+  "orbital": "3d",
+  "bindingEnergy": 2202.0,
+  "crossSection": 0.01288949
+ },
+ {
+  "symbol": "Pt",
+  "orbital": "3p",
+  "bindingEnergy": 3027.0,
+  "crossSection": 0.01633363
+ },
+ {
+  "symbol": "Pt",
+  "orbital": "3s",
+  "bindingEnergy": 3296.0,
+  "crossSection": 0.00464834
+ },
+ {
+  "symbol": "Pt",
+  "orbital": "4d",
+  "bindingEnergy": 332.0,
+  "crossSection": 0.00258405
+ },
+ {
+  "symbol": "Pt",
+  "orbital": "4f",
+  "bindingEnergy": 75.0,
+  "crossSection": 0.00023846
+ },
+ {
+  "symbol": "Pt",
+  "orbital": "4p",
+  "bindingEnergy": 609.0,
+  "crossSection": 0.00379774
+ },
+ {
+  "symbol": "Pt",
+  "orbital": "4s",
+  "bindingEnergy": 725.0,
+  "crossSection": 0.00126426
+ },
+ {
+  "symbol": "Pt",
+  "orbital": "5p",
+  "bindingEnergy": 65.0,
+  "crossSection": 0.00063553
+ },
+ {
+  "symbol": "Pt",
+  "orbital": "5s",
+  "bindingEnergy": 102.0,
+  "crossSection": 0.00025543
+ },
+ {
+  "symbol": "Pu",
+  "orbital": "4d",
+  "bindingEnergy": 825.7,
+  "crossSection": 0.00745424
+ },
+ {
+  "symbol": "Pu",
+  "orbital": "4f",
+  "bindingEnergy": 479.8,
+  "crossSection": 0.00151858
+ },
+ {
+  "symbol": "Pu",
+  "orbital": "4p",
+  "bindingEnergy": 1073.7,
+  "crossSection": 0.00717798
+ },
+ {
+  "symbol": "Pu",
+  "orbital": "4s",
+  "bindingEnergy": 1205.8,
+  "crossSection": 0.0019177
+ },
+ {
+  "symbol": "Pu",
+  "orbital": "5d",
+  "bindingEnergy": 120.2,
+  "crossSection": 0.00146778
+ },
+ {
+  "symbol": "Pu",
+  "orbital": "5p",
+  "bindingEnergy": 212.5,
+  "crossSection": 0.00176336
+ },
+ {
+  "symbol": "Pu",
+  "orbital": "5s",
+  "bindingEnergy": 264.9,
+  "crossSection": 0.00052695
+ },
+ {
+  "symbol": "Pu",
+  "orbital": "6p",
+  "bindingEnergy": 24.9,
+  "crossSection": 0.00027852
+ },
+ {
+  "symbol": "Pu",
+  "orbital": "6s",
+  "bindingEnergy": 39.5,
+  "crossSection": 0.00010728
+ },
+ {
+  "symbol": "Pu",
+  "orbital": "7s",
+  "bindingEnergy": 4.6,
+  "crossSection": 9.83e-06
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "3d",
+  "bindingEnergy": 3248.0,
+  "crossSection": 0.02496187
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "3p",
+  "bindingEnergy": 4490.0,
+  "crossSection": 0.02304486
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "3s",
+  "bindingEnergy": 4822.0,
+  "crossSection": 0.00559119
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "4d",
+  "bindingEnergy": 636.0,
+  "crossSection": 0.00522358
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "4f",
+  "bindingEnergy": 299.0,
+  "crossSection": 0.00082685
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "4p",
+  "bindingEnergy": 1058.0,
+  "crossSection": 0.00582505
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "4s",
+  "bindingEnergy": 1208.0,
+  "crossSection": 0.00168778
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "5d",
+  "bindingEnergy": 68.0,
+  "crossSection": 0.00089403
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "5p",
+  "bindingEnergy": 200.0,
+  "crossSection": 0.00129693
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "5s",
+  "bindingEnergy": 254.0,
+  "crossSection": 0.00042393
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "6p",
+  "bindingEnergy": 19.0,
+  "crossSection": 0.00019721
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "6s",
+  "bindingEnergy": 44.0,
+  "crossSection": 8.11e-05
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "7s",
+  "bindingEnergy": 4.2,
+  "crossSection": 8.33e-06
+ },
+ {
+  "symbol": "Rb",
+  "orbital": "2p",
+  "bindingEnergy": 1864.0,
+  "crossSection": 0.00465954
+ },
+ {
+  "symbol": "Rb",
+  "orbital": "2s",
+  "bindingEnergy": 2065.0,
+  "crossSection": 0.003626
+ },
+ {
+  "symbol": "Rb",
+  "orbital": "3d",
+  "bindingEnergy": 113.0,
+  "crossSection": 6.604e-05
+ },
+ {
+  "symbol": "Rb",
+  "orbital": "3p",
+  "bindingEnergy": 249.0,
+  "crossSection": 0.00067656
+ },
+ {
+  "symbol": "Rb",
+  "orbital": "3s",
+  "bindingEnergy": 327.0,
+  "crossSection": 0.00060211
+ },
+ {
+  "symbol": "Rb",
+  "orbital": "4p",
+  "bindingEnergy": 16.0,
+  "crossSection": 7.038e-05
+ },
+ {
+  "symbol": "Rb",
+  "orbital": "4s",
+  "bindingEnergy": 31.0,
+  "crossSection": 8.13e-05
+ },
+ {
+  "symbol": "Re",
+  "orbital": "3d",
+  "bindingEnergy": 1949.0,
+  "crossSection": 0.01029991
+ },
+ {
+  "symbol": "Re",
+  "orbital": "3p",
+  "bindingEnergy": 2682.0,
+  "crossSection": 0.01442757
+ },
+ {
+  "symbol": "Re",
+  "orbital": "3s",
+  "bindingEnergy": 2932.0,
+  "crossSection": 0.00431096
+ },
+ {
+  "symbol": "Re",
+  "orbital": "4d",
+  "bindingEnergy": 274.0,
+  "crossSection": 0.00202868
+ },
+ {
+  "symbol": "Re",
+  "orbital": "4f",
+  "bindingEnergy": 43.0,
+  "crossSection": 0.0001519
+ },
+ {
+  "symbol": "Re",
+  "orbital": "4p",
+  "bindingEnergy": 519.0,
+  "crossSection": 0.00327454
+ },
+ {
+  "symbol": "Re",
+  "orbital": "4s",
+  "bindingEnergy": 625.0,
+  "crossSection": 0.00114003
+ },
+ {
+  "symbol": "Re",
+  "orbital": "5p",
+  "bindingEnergy": 46.0,
+  "crossSection": 0.00050447
+ },
+ {
+  "symbol": "Re",
+  "orbital": "5s",
+  "bindingEnergy": 83.0,
+  "crossSection": 0.000215
+ },
+ {
+  "symbol": "Rh",
+  "orbital": "2p",
+  "bindingEnergy": 3146.0,
+  "crossSection": 0.0118066
+ },
+ {
+  "symbol": "Rh",
+  "orbital": "2s",
+  "bindingEnergy": 3412.0,
+  "crossSection": 0.00602815
+ },
+ {
+  "symbol": "Rh",
+  "orbital": "3d",
+  "bindingEnergy": 312.0,
+  "crossSection": 0.00033371
+ },
+ {
+  "symbol": "Rh",
+  "orbital": "3p",
+  "bindingEnergy": 521.0,
+  "crossSection": 0.00182893
+ },
+ {
+  "symbol": "Rh",
+  "orbital": "3s",
+  "bindingEnergy": 628.0,
+  "crossSection": 0.0011382
+ },
+ {
+  "symbol": "Rh",
+  "orbital": "4p",
+  "bindingEnergy": 51.0,
+  "crossSection": 0.00028811
+ },
+ {
+  "symbol": "Rh",
+  "orbital": "4s",
+  "bindingEnergy": 81.0,
+  "crossSection": 0.00021041
+ },
+ {
+  "symbol": "Rn",
+  "orbital": "3d",
+  "bindingEnergy": 3022.0,
+  "crossSection": 0.02208438
+ },
+ {
+  "symbol": "Rn",
+  "orbital": "3p",
+  "bindingEnergy": 4159.0,
+  "crossSection": 0.02168046
+ },
+ {
+  "symbol": "Rn",
+  "orbital": "3s",
+  "bindingEnergy": 4482.0,
+  "crossSection": 0.00543694
+ },
+ {
+  "symbol": "Rn",
+  "orbital": "4d",
+  "bindingEnergy": 567.0,
+  "crossSection": 0.00459064
+ },
+ {
+  "symbol": "Rn",
+  "orbital": "4f",
+  "bindingEnergy": 238.0,
+  "crossSection": 0.00066129
+ },
+ {
+  "symbol": "Rn",
+  "orbital": "4p",
+  "bindingEnergy": 929.0,
+  "crossSection": 0.00538989
+ },
+ {
+  "symbol": "Rn",
+  "orbital": "4s",
+  "bindingEnergy": 1097.0,
+  "crossSection": 0.00160449
+ },
+ {
+  "symbol": "Rn",
+  "orbital": "5d",
+  "bindingEnergy": 48.0,
+  "crossSection": 0.00071658
+ },
+ {
+  "symbol": "Rn",
+  "orbital": "5p",
+  "bindingEnergy": 164.0,
+  "crossSection": 0.00114312
+ },
+ {
+  "symbol": "Rn",
+  "orbital": "5s",
+  "bindingEnergy": 214.0,
+  "crossSection": 0.00038777
+ },
+ {
+  "symbol": "Rn",
+  "orbital": "6s",
+  "bindingEnergy": 26.0,
+  "crossSection": 6.412e-05
+ },
+ {
+  "symbol": "Ru",
+  "orbital": "2p",
+  "bindingEnergy": 2967.0,
+  "crossSection": 0.01064264
+ },
+ {
+  "symbol": "Ru",
+  "orbital": "2s",
+  "bindingEnergy": 3224.0,
+  "crossSection": 0.00570595
+ },
+ {
+  "symbol": "Ru",
+  "orbital": "3d",
+  "bindingEnergy": 284.0,
+  "crossSection": 0.00028018
+ },
+ {
+  "symbol": "Ru",
+  "orbital": "3p",
+  "bindingEnergy": 484.0,
+  "crossSection": 0.00164129
+ },
+ {
+  "symbol": "Ru",
+  "orbital": "3s",
+  "bindingEnergy": 586.0,
+  "crossSection": 0.00106173
+ },
+ {
+  "symbol": "Ru",
+  "orbital": "4p",
+  "bindingEnergy": 46.0,
+  "crossSection": 0.00025216
+ },
+ {
+  "symbol": "Ru",
+  "orbital": "4s",
+  "bindingEnergy": 75.0,
+  "crossSection": 0.00019207
+ },
+ {
+  "symbol": "S",
+  "orbital": "1s",
+  "bindingEnergy": 2472.0,
+  "crossSection": 0.0030149
+ },
+ {
+  "symbol": "S",
+  "orbital": "2p",
+  "bindingEnergy": 164.0,
+  "crossSection": 4.131e-05
+ },
+ {
+  "symbol": "S",
+  "orbital": "2s",
+  "bindingEnergy": 231.0,
+  "crossSection": 0.00020365
+ },
+ {
+  "symbol": "Sb",
+  "orbital": "2p",
+  "bindingEnergy": 4380.0,
+  "crossSection": 0.02064948
+ },
+ {
+  "symbol": "Sb",
+  "orbital": "2s",
+  "bindingEnergy": 4698.0,
+  "crossSection": 0.00803936
+ },
+ {
+  "symbol": "Sb",
+  "orbital": "3d",
+  "bindingEnergy": 538.0,
+  "crossSection": 0.00084625
+ },
+ {
+  "symbol": "Sb",
+  "orbital": "3p",
+  "bindingEnergy": 813.0,
+  "crossSection": 0.0032504
+ },
+ {
+  "symbol": "Sb",
+  "orbital": "3s",
+  "bindingEnergy": 946.0,
+  "crossSection": 0.00164861
+ },
+ {
+  "symbol": "Sb",
+  "orbital": "4d",
+  "bindingEnergy": 33.0,
+  "crossSection": 0.00012438
+ },
+ {
+  "symbol": "Sb",
+  "orbital": "4p",
+  "bindingEnergy": 96.0,
+  "crossSection": 0.00059767
+ },
+ {
+  "symbol": "Sb",
+  "orbital": "4s",
+  "bindingEnergy": 153.0,
+  "crossSection": 0.00034611
+ },
+ {
+  "symbol": "Sc",
+  "orbital": "1s",
+  "bindingEnergy": 4492.0,
+  "crossSection": 0.00818943
+ },
+ {
+  "symbol": "Sc",
+  "orbital": "2p",
+  "bindingEnergy": 404.0,
+  "crossSection": 0.0002194
+ },
+ {
+  "symbol": "Sc",
+  "orbital": "2s",
+  "bindingEnergy": 498.0,
+  "crossSection": 0.00058381
+ },
+ {
+  "symbol": "Sc",
+  "orbital": "3p",
+  "bindingEnergy": 28.0,
+  "crossSection": 2.633e-05
+ },
+ {
+  "symbol": "Sc",
+  "orbital": "3s",
+  "bindingEnergy": 51.0,
+  "crossSection": 7.821e-05
+ },
+ {
+  "symbol": "Se",
+  "orbital": "2p",
+  "bindingEnergy": 1474.0,
+  "crossSection": 0.00305942
+ },
+ {
+  "symbol": "Se",
+  "orbital": "2s",
+  "bindingEnergy": 1652.0,
+  "crossSection": 0.00285265
+ },
+ {
+  "symbol": "Se",
+  "orbital": "3d",
+  "bindingEnergy": 56.0,
+  "crossSection": 3.033e-05
+ },
+ {
+  "symbol": "Se",
+  "orbital": "3p",
+  "bindingEnergy": 167.0,
+  "crossSection": 0.000426
+ },
+ {
+  "symbol": "Se",
+  "orbital": "3s",
+  "bindingEnergy": 230.0,
+  "crossSection": 0.00044897
+ },
+ {
+  "symbol": "Si",
+  "orbital": "1s",
+  "bindingEnergy": 1839.0,
+  "crossSection": 0.00179848
+ },
+ {
+  "symbol": "Si",
+  "orbital": "2p",
+  "bindingEnergy": 100.0,
+  "crossSection": 1.72e-05
+ },
+ {
+  "symbol": "Si",
+  "orbital": "2s",
+  "bindingEnergy": 150.0,
+  "crossSection": 0.00011652
+ },
+ {
+  "symbol": "Sm",
+  "orbital": "2p",
+  "bindingEnergy": 7312.0,
+  "crossSection": 0.04671214
+ },
+ {
+  "symbol": "Sm",
+  "orbital": "2s",
+  "bindingEnergy": 7737.0,
+  "crossSection": 0.01177143
+ },
+ {
+  "symbol": "Sm",
+  "orbital": "3d",
+  "bindingEnergy": 1111.0,
+  "crossSection": 0.00319938
+ },
+ {
+  "symbol": "Sm",
+  "orbital": "3p",
+  "bindingEnergy": 1541.0,
+  "crossSection": 0.00730974
+ },
+ {
+  "symbol": "Sm",
+  "orbital": "3s",
+  "bindingEnergy": 1723.0,
+  "crossSection": 0.00279229
+ },
+ {
+  "symbol": "Sm",
+  "orbital": "4d",
+  "bindingEnergy": 129.0,
+  "crossSection": 0.00061445
+ },
+ {
+  "symbol": "Sm",
+  "orbital": "4f",
+  "bindingEnergy": 5.0,
+  "crossSection": 6.87e-06
+ },
+ {
+  "symbol": "Sm",
+  "orbital": "4p",
+  "bindingEnergy": 266.0,
+  "crossSection": 0.00156507
+ },
+ {
+  "symbol": "Sm",
+  "orbital": "4s",
+  "bindingEnergy": 347.0,
+  "crossSection": 0.00067804
+ },
+ {
+  "symbol": "Sm",
+  "orbital": "5p",
+  "bindingEnergy": 21.0,
+  "crossSection": 0.00021323
+ },
+ {
+  "symbol": "Sm",
+  "orbital": "5s",
+  "bindingEnergy": 37.0,
+  "crossSection": 0.00011579
+ },
+ {
+  "symbol": "Sn",
+  "orbital": "2p",
+  "bindingEnergy": 4156.0,
+  "crossSection": 0.01894764
+ },
+ {
+  "symbol": "Sn",
+  "orbital": "2s",
+  "bindingEnergy": 4465.0,
+  "crossSection": 0.00769094
+ },
+ {
+  "symbol": "Sn",
+  "orbital": "3d",
+  "bindingEnergy": 493.0,
+  "crossSection": 0.00073375
+ },
+ {
+  "symbol": "Sn",
+  "orbital": "3p",
+  "bindingEnergy": 757.0,
+  "crossSection": 0.00297675
+ },
+ {
+  "symbol": "Sn",
+  "orbital": "3s",
+  "bindingEnergy": 885.0,
+  "crossSection": 0.0015576
+ },
+ {
+  "symbol": "Sn",
+  "orbital": "4d",
+  "bindingEnergy": 25.0,
+  "crossSection": 0.00010118
+ },
+ {
+  "symbol": "Sn",
+  "orbital": "4p",
+  "bindingEnergy": 84.0,
+  "crossSection": 0.00053289
+ },
+ {
+  "symbol": "Sn",
+  "orbital": "4s",
+  "bindingEnergy": 137.0,
+  "crossSection": 0.00031993
+ },
+ {
+  "symbol": "Sr",
+  "orbital": "2p",
+  "bindingEnergy": 2007.0,
+  "crossSection": 0.00530831
+ },
+ {
+  "symbol": "Sr",
+  "orbital": "2s",
+  "bindingEnergy": 2216.0,
+  "crossSection": 0.00390168
+ },
+ {
+  "symbol": "Sr",
+  "orbital": "3d",
+  "bindingEnergy": 136.0,
+  "crossSection": 8.355e-05
+ },
+ {
+  "symbol": "Sr",
+  "orbital": "3p",
+  "bindingEnergy": 280.0,
+  "crossSection": 0.00077998
+ },
+ {
+  "symbol": "Sr",
+  "orbital": "3s",
+  "bindingEnergy": 359.0,
+  "crossSection": 0.00065928
+ },
+ {
+  "symbol": "Sr",
+  "orbital": "4p",
+  "bindingEnergy": 21.0,
+  "crossSection": 9.195e-05
+ },
+ {
+  "symbol": "Sr",
+  "orbital": "4s",
+  "bindingEnergy": 39.0,
+  "crossSection": 9.646e-05
+ },
+ {
+  "symbol": "Ta",
+  "orbital": "3d",
+  "bindingEnergy": 1793.0,
+  "crossSection": 0.00879929
+ },
+ {
+  "symbol": "Ta",
+  "orbital": "3p",
+  "bindingEnergy": 2469.0,
+  "crossSection": 0.01320504
+ },
+ {
+  "symbol": "Ta",
+  "orbital": "3s",
+  "bindingEnergy": 2708.0,
+  "crossSection": 0.00408309
+ },
+ {
+  "symbol": "Ta",
+  "orbital": "4d",
+  "bindingEnergy": 238.0,
+  "crossSection": 0.00171296
+ },
+ {
+  "symbol": "Ta",
+  "orbital": "4f",
+  "bindingEnergy": 24.0,
+  "crossSection": 0.00010915
+ },
+ {
+  "symbol": "Ta",
+  "orbital": "4p",
+  "bindingEnergy": 463.0,
+  "crossSection": 0.00295277
+ },
+ {
+  "symbol": "Ta",
+  "orbital": "4s",
+  "bindingEnergy": 563.0,
+  "crossSection": 0.00106019
+ },
+ {
+  "symbol": "Ta",
+  "orbital": "5p",
+  "bindingEnergy": 42.0,
+  "crossSection": 0.00042174
+ },
+ {
+  "symbol": "Ta",
+  "orbital": "5s",
+  "bindingEnergy": 70.0,
+  "crossSection": 0.00018896
+ },
+ {
+  "symbol": "Tb",
+  "orbital": "2p",
+  "bindingEnergy": 8252.0,
+  "crossSection": 0.05625167
+ },
+ {
+  "symbol": "Tb",
+  "orbital": "2s",
+  "bindingEnergy": 8708.0,
+  "crossSection": 0.01261549
+ },
+ {
+  "symbol": "Tb",
+  "orbital": "3d",
+  "bindingEnergy": 1277.0,
+  "crossSection": 0.00433587
+ },
+ {
+  "symbol": "Tb",
+  "orbital": "3p",
+  "bindingEnergy": 1768.0,
+  "crossSection": 0.00876556
+ },
+ {
+  "symbol": "Tb",
+  "orbital": "3s",
+  "bindingEnergy": 1968.0,
+  "crossSection": 0.00314167
+ },
+ {
+  "symbol": "Tb",
+  "orbital": "4d",
+  "bindingEnergy": 151.0,
+  "crossSection": 0.00083602
+ },
+ {
+  "symbol": "Tb",
+  "orbital": "4f",
+  "bindingEnergy": 8.0,
+  "crossSection": 1.799e-05
+ },
+ {
+  "symbol": "Tb",
+  "orbital": "4p",
+  "bindingEnergy": 322.0,
+  "crossSection": 0.00189645
+ },
+ {
+  "symbol": "Tb",
+  "orbital": "4s",
+  "bindingEnergy": 396.0,
+  "crossSection": 0.00077595
+ },
+ {
+  "symbol": "Tb",
+  "orbital": "5p",
+  "bindingEnergy": 29.0,
+  "crossSection": 0.00024921
+ },
+ {
+  "symbol": "Tb",
+  "orbital": "5s",
+  "bindingEnergy": 46.0,
+  "crossSection": 0.0001298
+ },
+ {
+  "symbol": "Tc",
+  "orbital": "2p",
+  "bindingEnergy": 2793.0,
+  "crossSection": 0.00956429
+ },
+ {
+  "symbol": "Tc",
+  "orbital": "2s",
+  "bindingEnergy": 3043.0,
+  "crossSection": 0.00539222
+ },
+ {
+  "symbol": "Tc",
+  "orbital": "3d",
+  "bindingEnergy": 258.0,
+  "crossSection": 0.00023367
+ },
+ {
+  "symbol": "Tc",
+  "orbital": "3p",
+  "bindingEnergy": 448.0,
+  "crossSection": 0.0014669
+ },
+ {
+  "symbol": "Tc",
+  "orbital": "3s",
+  "bindingEnergy": 544.0,
+  "crossSection": 0.00098784
+ },
+ {
+  "symbol": "Tc",
+  "orbital": "4p",
+  "bindingEnergy": 42.0,
+  "crossSection": 0.00021894
+ },
+ {
+  "symbol": "Tc",
+  "orbital": "4s",
+  "bindingEnergy": 70.0,
+  "crossSection": 0.00017439
+ },
+ {
+  "symbol": "Te",
+  "orbital": "2p",
+  "bindingEnergy": 4612.0,
+  "crossSection": 0.0224502
+ },
+ {
+  "symbol": "Te",
+  "orbital": "2s",
+  "bindingEnergy": 4939.0,
+  "crossSection": 0.0083804
+ },
+ {
+  "symbol": "Te",
+  "orbital": "3d",
+  "bindingEnergy": 583.0,
+  "crossSection": 0.00097173
+ },
+ {
+  "symbol": "Te",
+  "orbital": "3p",
+  "bindingEnergy": 871.0,
+  "crossSection": 0.00353917
+ },
+ {
+  "symbol": "Te",
+  "orbital": "3s",
+  "bindingEnergy": 1006.0,
+  "crossSection": 0.00174194
+ },
+ {
+  "symbol": "Te",
+  "orbital": "4d",
+  "bindingEnergy": 42.0,
+  "crossSection": 0.00015097
+ },
+ {
+  "symbol": "Te",
+  "orbital": "4p",
+  "bindingEnergy": 103.0,
+  "crossSection": 0.00066744
+ },
+ {
+  "symbol": "Te",
+  "orbital": "4s",
+  "bindingEnergy": 169.0,
+  "crossSection": 0.00037348
+ },
+ {
+  "symbol": "Th",
+  "orbital": "3d",
+  "bindingEnergy": 3491.0,
+  "crossSection": 0.02807234
+ },
+ {
+  "symbol": "Th",
+  "orbital": "3p",
+  "bindingEnergy": 4830.0,
+  "crossSection": 0.02436031
+ },
+ {
+  "symbol": "Th",
+  "orbital": "3s",
+  "bindingEnergy": 5182.0,
+  "crossSection": 0.00571631
+ },
+ {
+  "symbol": "Th",
+  "orbital": "4d",
+  "bindingEnergy": 712.0,
+  "crossSection": 0.00591224
+ },
+ {
+  "symbol": "Th",
+  "orbital": "4f",
+  "bindingEnergy": 342.0,
+  "crossSection": 0.0010231
+ },
+ {
+  "symbol": "Th",
+  "orbital": "4p",
+  "bindingEnergy": 1168.0,
+  "crossSection": 0.00627094
+ },
+ {
+  "symbol": "Th",
+  "orbital": "4s",
+  "bindingEnergy": 1330.0,
+  "crossSection": 0.00176861
+ },
+ {
+  "symbol": "Th",
+  "orbital": "5d",
+  "bindingEnergy": 93.0,
+  "crossSection": 0.00109327
+ },
+ {
+  "symbol": "Th",
+  "orbital": "5p",
+  "bindingEnergy": 229.0,
+  "crossSection": 0.00145942
+ },
+ {
+  "symbol": "Th",
+  "orbital": "5s",
+  "bindingEnergy": 290.0,
+  "crossSection": 0.00046051
+ },
+ {
+  "symbol": "Th",
+  "orbital": "6p",
+  "bindingEnergy": 25.0,
+  "crossSection": 0.00025471
+ },
+ {
+  "symbol": "Th",
+  "orbital": "6s",
+  "bindingEnergy": 41.0,
+  "crossSection": 9.734e-05
+ },
+ {
+  "symbol": "Th",
+  "orbital": "7s",
+  "bindingEnergy": 5.0,
+  "crossSection": 1.204e-05
+ },
+ {
+  "symbol": "Ti",
+  "orbital": "1s",
+  "bindingEnergy": 4966.0,
+  "crossSection": 0.00965196
+ },
+ {
+  "symbol": "Ti",
+  "orbital": "2p",
+  "bindingEnergy": 460.0,
+  "crossSection": 0.00028825
+ },
+ {
+  "symbol": "Ti",
+  "orbital": "2s",
+  "bindingEnergy": 561.0,
+  "crossSection": 0.00069146
+ },
+ {
+  "symbol": "Ti",
+  "orbital": "3p",
+  "bindingEnergy": 33.0,
+  "crossSection": 3.548e-05
+ },
+ {
+  "symbol": "Ti",
+  "orbital": "3s",
+  "bindingEnergy": 59.0,
+  "crossSection": 9.454e-05
+ },
+ {
+  "symbol": "Tl",
+  "orbital": "3d",
+  "bindingEnergy": 2485.0,
+  "crossSection": 0.01593089
+ },
+ {
+  "symbol": "Tl",
+  "orbital": "3p",
+  "bindingEnergy": 3416.0,
+  "crossSection": 0.01831757
+ },
+ {
+  "symbol": "Tl",
+  "orbital": "3s",
+  "bindingEnergy": 3704.0,
+  "crossSection": 0.00496531
+ },
+ {
+  "symbol": "Tl",
+  "orbital": "4d",
+  "bindingEnergy": 406.0,
+  "crossSection": 0.00324232
+ },
+ {
+  "symbol": "Tl",
+  "orbital": "4f",
+  "bindingEnergy": 122.0,
+  "crossSection": 0.00035905
+ },
+ {
+  "symbol": "Tl",
+  "orbital": "4p",
+  "bindingEnergy": 721.0,
+  "crossSection": 0.00436339
+ },
+ {
+  "symbol": "Tl",
+  "orbital": "4s",
+  "bindingEnergy": 846.0,
+  "crossSection": 0.00139155
+ },
+ {
+  "symbol": "Tl",
+  "orbital": "5d",
+  "bindingEnergy": 15.0,
+  "crossSection": 0.00036388
+ },
+ {
+  "symbol": "Tl",
+  "orbital": "5p",
+  "bindingEnergy": 95.0,
+  "crossSection": 0.00080115
+ },
+ {
+  "symbol": "Tl",
+  "orbital": "5s",
+  "bindingEnergy": 136.0,
+  "crossSection": 0.00030155
+ },
+ {
+  "symbol": "Tm",
+  "orbital": "2p",
+  "bindingEnergy": 8648.0,
+  "crossSection": 0.04343636
+ },
+ {
+  "symbol": "Tm",
+  "orbital": "3d",
+  "bindingEnergy": 1515.0,
+  "crossSection": 0.00628801
+ },
+ {
+  "symbol": "Tm",
+  "orbital": "3p",
+  "bindingEnergy": 2090.0,
+  "crossSection": 0.01089934
+ },
+ {
+  "symbol": "Tm",
+  "orbital": "3s",
+  "bindingEnergy": 2307.0,
+  "crossSection": 0.00361483
+ },
+ {
+  "symbol": "Tm",
+  "orbital": "4d",
+  "bindingEnergy": 176.0,
+  "crossSection": 0.00120783
+ },
+ {
+  "symbol": "Tm",
+  "orbital": "4f",
+  "bindingEnergy": 5.0,
+  "crossSection": 2.715e-05
+ },
+ {
+  "symbol": "Tm",
+  "orbital": "4p",
+  "bindingEnergy": 386.0,
+  "crossSection": 0.00238375
+ },
+ {
+  "symbol": "Tm",
+  "orbital": "4s",
+  "bindingEnergy": 471.0,
+  "crossSection": 0.00091165
+ },
+ {
+  "symbol": "Tm",
+  "orbital": "5p",
+  "bindingEnergy": 32.0,
+  "crossSection": 0.00029903
+ },
+ {
+  "symbol": "Tm",
+  "orbital": "5s",
+  "bindingEnergy": 55.0,
+  "crossSection": 0.00014869
+ },
+ {
+  "symbol": "U",
+  "orbital": "3d",
+  "bindingEnergy": 3728.0,
+  "crossSection": 0.03149097
+ },
+ {
+  "symbol": "U",
+  "orbital": "3p",
+  "bindingEnergy": 5182.0,
+  "crossSection": 0.02563971
+ },
+ {
+  "symbol": "U",
+  "orbital": "3s",
+  "bindingEnergy": 5548.0,
+  "crossSection": 0.00582198
+ },
+ {
+  "symbol": "U",
+  "orbital": "4d",
+  "bindingEnergy": 778.0,
+  "crossSection": 0.00665528
+ },
+ {
+  "symbol": "U",
+  "orbital": "4f",
+  "bindingEnergy": 388.0,
+  "crossSection": 0.00125222
+ },
+ {
+  "symbol": "U",
+  "orbital": "4p",
+  "bindingEnergy": 1271.0,
+  "crossSection": 0.00672238
+ },
+ {
+  "symbol": "U",
+  "orbital": "4s",
+  "bindingEnergy": 1439.0,
+  "crossSection": 0.00184565
+ },
+ {
+  "symbol": "U",
+  "orbital": "5d",
+  "bindingEnergy": 103.0,
+  "crossSection": 0.00127385
+ },
+ {
+  "symbol": "U",
+  "orbital": "5p",
+  "bindingEnergy": 257.0,
+  "crossSection": 0.00161027
+ },
+ {
+  "symbol": "U",
+  "orbital": "5s",
+  "bindingEnergy": 321.0,
+  "crossSection": 0.00049424
+ },
+ {
+  "symbol": "U",
+  "orbital": "6p",
+  "bindingEnergy": 27.0,
+  "crossSection": 0.00026869
+ },
+ {
+  "symbol": "U",
+  "orbital": "6s",
+  "bindingEnergy": 44.0,
+  "crossSection": 0.00010274
+ },
+ {
+  "symbol": "U",
+  "orbital": "7s",
+  "bindingEnergy": 4.8,
+  "crossSection": 1.118e-05
+ },
+ {
+  "symbol": "V",
+  "orbital": "1s",
+  "bindingEnergy": 5465.0,
+  "crossSection": 0.01124471
+ },
+ {
+  "symbol": "V",
+  "orbital": "2p",
+  "bindingEnergy": 520.0,
+  "crossSection": 0.00037267
+ },
+ {
+  "symbol": "V",
+  "orbital": "2s",
+  "bindingEnergy": 627.0,
+  "crossSection": 0.00081013
+ },
+ {
+  "symbol": "V",
+  "orbital": "3p",
+  "bindingEnergy": 37.0,
+  "crossSection": 4.669e-05
+ },
+ {
+  "symbol": "V",
+  "orbital": "3s",
+  "bindingEnergy": 66.0,
+  "crossSection": 0.00011251
+ },
+ {
+  "symbol": "W",
+  "orbital": "3d",
+  "bindingEnergy": 1872.0,
+  "crossSection": 0.00952536
+ },
+ {
+  "symbol": "W",
+  "orbital": "3p",
+  "bindingEnergy": 2575.0,
+  "crossSection": 0.01380792
+ },
+ {
+  "symbol": "W",
+  "orbital": "3s",
+  "bindingEnergy": 2820.0,
+  "crossSection": 0.00419745
+ },
+ {
+  "symbol": "W",
+  "orbital": "4d",
+  "bindingEnergy": 256.0,
+  "crossSection": 0.00186515
+ },
+ {
+  "symbol": "W",
+  "orbital": "4f",
+  "bindingEnergy": 34.0,
+  "crossSection": 0.00012917
+ },
+ {
+  "symbol": "W",
+  "orbital": "4p",
+  "bindingEnergy": 490.0,
+  "crossSection": 0.00311032
+ },
+ {
+  "symbol": "W",
+  "orbital": "4s",
+  "bindingEnergy": 594.0,
+  "crossSection": 0.00109964
+ },
+ {
+  "symbol": "W",
+  "orbital": "5p",
+  "bindingEnergy": 45.0,
+  "crossSection": 0.00046212
+ },
+ {
+  "symbol": "W",
+  "orbital": "5s",
+  "bindingEnergy": 76.0,
+  "crossSection": 0.00020177
+ },
+ {
+  "symbol": "Xe",
+  "orbital": "2p",
+  "bindingEnergy": 5107.0,
+  "crossSection": 0.02642304
+ },
+ {
+  "symbol": "Xe",
+  "orbital": "2s",
+  "bindingEnergy": 5453.0,
+  "crossSection": 0.00903267
+ },
+ {
+  "symbol": "Xe",
+  "orbital": "3d",
+  "bindingEnergy": 689.0,
+  "crossSection": 0.00126554
+ },
+ {
+  "symbol": "Xe",
+  "orbital": "3p",
+  "bindingEnergy": 1002.0,
+  "crossSection": 0.00416309
+ },
+ {
+  "symbol": "Xe",
+  "orbital": "3s",
+  "bindingEnergy": 1149.0,
+  "crossSection": 0.00193518
+ },
+ {
+  "symbol": "Xe",
+  "orbital": "4d",
+  "bindingEnergy": 70.0,
+  "crossSection": 0.00021556
+ },
+ {
+  "symbol": "Xe",
+  "orbital": "4p",
+  "bindingEnergy": 147.0,
+  "crossSection": 0.00082221
+ },
+ {
+  "symbol": "Xe",
+  "orbital": "4s",
+  "bindingEnergy": 213.0,
+  "crossSection": 0.00043167
+ },
+ {
+  "symbol": "Xe",
+  "orbital": "5p",
+  "bindingEnergy": 13.0,
+  "crossSection": 8.973e-05
+ },
+ {
+  "symbol": "Xe",
+  "orbital": "5s",
+  "bindingEnergy": 23.0,
+  "crossSection": 6.449e-05
+ },
+ {
+  "symbol": "Y",
+  "orbital": "2p",
+  "bindingEnergy": 2156.0,
+  "crossSection": 0.00602032
+ },
+ {
+  "symbol": "Y",
+  "orbital": "2s",
+  "bindingEnergy": 2373.0,
+  "crossSection": 0.00418618
+ },
+ {
+  "symbol": "Y",
+  "orbital": "3d",
+  "bindingEnergy": 158.0,
+  "crossSection": 0.00010456
+ },
+ {
+  "symbol": "Y",
+  "orbital": "3p",
+  "bindingEnergy": 311.0,
+  "crossSection": 0.00089414
+ },
+ {
+  "symbol": "Y",
+  "orbital": "3s",
+  "bindingEnergy": 392.0,
+  "crossSection": 0.00071938
+ },
+ {
+  "symbol": "Y",
+  "orbital": "4p",
+  "bindingEnergy": 24.0,
+  "crossSection": 0.0001136
+ },
+ {
+  "symbol": "Y",
+  "orbital": "4s",
+  "bindingEnergy": 44.0,
+  "crossSection": 0.00011124
+ },
+ {
+  "symbol": "Yb",
+  "orbital": "2p",
+  "bindingEnergy": 8944.0,
+  "crossSection": 0.04566542
+ },
+ {
+  "symbol": "Yb",
+  "orbital": "3d",
+  "bindingEnergy": 1576.0,
+  "crossSection": 0.0068646
+ },
+ {
+  "symbol": "Yb",
+  "orbital": "3p",
+  "bindingEnergy": 2173.0,
+  "crossSection": 0.01146597
+ },
+ {
+  "symbol": "Yb",
+  "orbital": "3s",
+  "bindingEnergy": 2398.0,
+  "crossSection": 0.00373428
+ },
+ {
+  "symbol": "Yb",
+  "orbital": "4d",
+  "bindingEnergy": 191.0,
+  "crossSection": 0.00131587
+ },
+ {
+  "symbol": "Yb",
+  "orbital": "4f",
+  "bindingEnergy": 3.0,
+  "crossSection": 6.2e-05
+ },
+ {
+  "symbol": "Yb",
+  "orbital": "4p",
+  "bindingEnergy": 389.0,
+  "crossSection": 0.00251388
+ },
+ {
+  "symbol": "Yb",
+  "orbital": "4s",
+  "bindingEnergy": 481.0,
+  "crossSection": 0.00094646
+ },
+ {
+  "symbol": "Yb",
+  "orbital": "5p",
+  "bindingEnergy": 30.0,
+  "crossSection": 0.0003119
+ },
+ {
+  "symbol": "Yb",
+  "orbital": "5s",
+  "bindingEnergy": 52.0,
+  "crossSection": 0.00015348
+ },
+ {
+  "symbol": "Zn",
+  "orbital": "2p",
+  "bindingEnergy": 1045.0,
+  "crossSection": 0.00160669
+ },
+ {
+  "symbol": "Zn",
+  "orbital": "2s",
+  "bindingEnergy": 1196.0,
+  "crossSection": 0.00195949
+ },
+ {
+  "symbol": "Zn",
+  "orbital": "3d",
+  "bindingEnergy": 10.0,
+  "crossSection": 8.41e-06
+ },
+ {
+  "symbol": "Zn",
+  "orbital": "3p",
+  "bindingEnergy": 91.0,
+  "crossSection": 0.00020906
+ },
+ {
+  "symbol": "Zn",
+  "orbital": "3s",
+  "bindingEnergy": 140.0,
+  "crossSection": 0.00028736
+ },
+ {
+  "symbol": "Zr",
+  "orbital": "2p",
+  "bindingEnergy": 2307.0,
+  "crossSection": 0.00679752
+ },
+ {
+  "symbol": "Zr",
+  "orbital": "2s",
+  "bindingEnergy": 2532.0,
+  "crossSection": 0.00447644
+ },
+ {
+  "symbol": "Zr",
+  "orbital": "3d",
+  "bindingEnergy": 181.0,
+  "crossSection": 0.00012954
+ },
+ {
+  "symbol": "Zr",
+  "orbital": "3p",
+  "bindingEnergy": 344.0,
+  "crossSection": 0.00101946
+ },
+ {
+  "symbol": "Zr",
+  "orbital": "3s",
+  "bindingEnergy": 430.0,
+  "crossSection": 0.00078235
+ },
+ {
+  "symbol": "Zr",
+  "orbital": "4p",
+  "bindingEnergy": 29.0,
+  "crossSection": 0.00013724
+ },
+ {
+  "symbol": "Zr",
+  "orbital": "4s",
+  "bindingEnergy": 51.0,
+  "crossSection": 0.0001265
+ }
+]

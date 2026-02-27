@@ -145,7 +145,8 @@ export function scoreCandidates(
     if (dScore > 0) details.push(`auger=${dScore.toFixed(2)}`);
 
     // --- E. Strongest-line penalty (x0.3) ---
-    if (elemData && elemData.coreLevels.length > 0) {
+    // Skip penalty if SO pair was confirmed (chemical shift moves both members)
+    if (elemData && elemData.coreLevels.length > 0 && bScore === 0) {
       const strongest = elemData.coreLevels.reduce((a, b) =>
         a.crossSection > b.crossSection ? a : b
       );
@@ -187,7 +188,7 @@ export function resolveAndRank(
 
   // Build prominence ranking
   const sortedPeaks = [...detected].sort((a, b) => b.prominence - a.prominence);
-  const nTop = Math.max(3, Math.floor(sortedPeaks.length / 4));
+  const nTop = Math.max(3, Math.floor(sortedPeaks.length / 3));
   const topPositions = new Set(sortedPeaks.slice(0, nTop).map(p => p.position));
 
   for (const cand of ranked) {
@@ -195,9 +196,12 @@ export function resolveAndRank(
 
     // Prominence-based minimum floor
     const hasPenalty = cand.detail.includes('penalty(');
+    const hasSOPair = cand.detail.includes('SO(');
+    // Wider delta tolerance for elements with confirmed SO pairs (chemical shift)
+    const floorDelta = hasSOPair ? toleranceEV * 4 : toleranceEV;
     if (cand.confidence < minConfidence && !hasPenalty) {
       for (const ml of cand.matchedLines) {
-        if (topPositions.has(ml.detectedBE) && Math.abs(ml.deltaEV) <= toleranceEV) {
+        if (topPositions.has(ml.detectedBE) && Math.abs(ml.deltaEV) <= floorDelta) {
           cand.confidence = Math.max(cand.confidence, minConfidence);
           if (!cand.detail.includes('prom_floor')) {
             cand.detail += '; prom_floor';

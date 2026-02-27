@@ -1,9 +1,12 @@
+import { useEffect, useRef } from 'react';
 import type { IdentificationResult, Language } from '../types';
 import { t } from '../i18n/translations';
 
 interface ElementTableProps {
   result: IdentificationResult | null;
   lang: Language;
+  selectedElement?: string | null;
+  onElementClick?: (element: string | null) => void;
 }
 
 function confidenceColor(conf: number): string {
@@ -12,7 +15,18 @@ function confidenceColor(conf: number): string {
   return '#e74c3c';
 }
 
-export const ElementTable: React.FC<ElementTableProps> = ({ result, lang }) => {
+export const ElementTable: React.FC<ElementTableProps> = ({
+  result, lang, selectedElement, onElementClick,
+}) => {
+  const selectedRowRef = useRef<HTMLTableRowElement>(null);
+
+  // Scroll selected row into view
+  useEffect(() => {
+    if (selectedElement && selectedRowRef.current) {
+      selectedRowRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }, [selectedElement]);
+
   if (!result || result.candidates.length === 0) {
     return <div className="element-table-empty">{t('noResults', lang)}</div>;
   }
@@ -37,37 +51,46 @@ export const ElementTable: React.FC<ElementTableProps> = ({ result, lang }) => {
           </tr>
         </thead>
         <tbody>
-          {result.candidates.map((cand) => (
-            <tr key={cand.element}>
-              <td>
-                <span className="element-badge" style={{ background: confidenceColor(cand.confidence) }}>
-                  {cand.element}
-                </span>
-              </td>
-              <td>
-                <div className="confidence-bar-container">
-                  <div
-                    className="confidence-bar"
-                    style={{
-                      width: `${cand.confidence * 100}%`,
-                      background: confidenceColor(cand.confidence),
-                    }}
-                  />
-                  <span className="confidence-value">{(cand.confidence * 100).toFixed(0)}%</span>
-                </div>
-              </td>
-              <td className="lines-cell">
-                {cand.matchedLines
-                  .filter(ml => ml.lineType === 'photo')
-                  .map(ml => ml.lineName)
-                  .join(', ')}
-                {cand.matchedLines.some(ml => ml.lineType === 'auger') && (
-                  <span className="auger-tag"> +Auger</span>
-                )}
-              </td>
-              <td className="detail-cell">{cand.detail}</td>
-            </tr>
-          ))}
+          {result.candidates.map((cand) => {
+            const isSelected = selectedElement === cand.element;
+            return (
+              <tr
+                key={cand.element}
+                ref={isSelected ? selectedRowRef : undefined}
+                className={isSelected ? 'selected' : ''}
+                onClick={() => onElementClick?.(isSelected ? null : cand.element)}
+                style={{ cursor: 'pointer' }}
+              >
+                <td>
+                  <span className="element-badge" style={{ background: confidenceColor(cand.confidence) }}>
+                    {cand.element}
+                  </span>
+                </td>
+                <td>
+                  <div className="confidence-bar-container">
+                    <div
+                      className="confidence-bar"
+                      style={{
+                        width: `${cand.confidence * 100}%`,
+                        background: confidenceColor(cand.confidence),
+                      }}
+                    />
+                    <span className="confidence-value">{(cand.confidence * 100).toFixed(0)}%</span>
+                  </div>
+                </td>
+                <td className="lines-cell">
+                  {cand.matchedLines
+                    .filter(ml => ml.lineType === 'photo')
+                    .map(ml => ml.lineName)
+                    .join(', ')}
+                  {cand.matchedLines.some(ml => ml.lineType === 'auger') && (
+                    <span className="auger-tag"> +Auger</span>
+                  )}
+                </td>
+                <td className="detail-cell">{cand.detail}</td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
 

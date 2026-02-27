@@ -16,7 +16,7 @@ import type {
 } from '../types';
 import { subtractBackground } from './background';
 import { detectPeaks } from './peak-detection';
-import { identifyCandidates, getCrossSection } from './element-db';
+import { identifyCandidates, getCrossSection, getElement, setSource } from './element-db';
 import { scoreCandidates, resolveAndRank, MIN_CROSS_SECTION } from './scoring';
 
 // Charging constants
@@ -45,6 +45,107 @@ function estimateCharging(detected: DetectedPeak[]): number {
 }
 
 // ============================================================================
+// SO pair recovery by splitting pattern
+// ============================================================================
+
+/**
+ * Recover spin-orbit pair assignments using the splitting pattern.
+ * When only one SO member matched (or both mapped to the same peak),
+ * search detected peaks for a pair whose splitting matches the expected value.
+ * This handles chemical-state shifts that move both peaks by the same amount.
+ */
+function recoverSOPairMatches(
+  candidates: Map<string, ElementCandidate>,
+  detected: DetectedPeak[],
+  toleranceEV: number,
+): void {
+  const splitTolerance = Math.max(toleranceEV, 2.0);
+
+  for (const [elemSym, cand] of candidates) {
+    const elem = getElement(elemSym);
+    if (!elem) continue;
+
+    for (const soPair of elem.spinOrbitPairs) {
+      const clHi = elem.coreLevels.find(c => c.name === soPair.levelHigh);
+      const clLo = elem.coreLevels.find(c => c.name === soPair.levelLow);
+      if (!clHi || !clLo) continue;
+
+      // Check current match state
+      const hiLines = cand.matchedLines.filter(ml => ml.lineName === soPair.levelHigh);
+      const loLines = cand.matchedLines.filter(ml => ml.lineName === soPair.levelLow);
+
+      // Only recover when at least one member already matched
+      if (hiLines.length === 0 && loLines.length === 0) continue;
+
+      // Already matched to two different peaks? Skip
+      if (hiLines.length > 0 && loLines.length > 0) {
+        const hiPeaks = new Set(hiLines.map(m => m.detectedBE));
+        const loPeaks = new Set(loLines.map(m => m.detectedBE));
+        let different = false;
+        for (const hp of hiPeaks) for (const lp of loPeaks) if (hp !== lp) different = true;
+        if (different) continue;
+      }
+
+      // Search all pairs of detected peaks for a matching splitting pattern
+      const expectedSplit = soPair.splitting;
+      const expectedCenter = (clHi.bindingEnergy + clLo.bindingEnergy) / 2;
+      const centerTolerance = 8.0; // Wide enough for chemical shifts
+
+      let bestScore = Infinity;
+      let bestHiPk: DetectedPeak | null = null;
+      let bestLoPk: DetectedPeak | null = null;
+
+      for (let i = 0; i < detected.length; i++) {
+        for (let j = i + 1; j < detected.length; j++) {
+          const split = Math.abs(detected[i].position - detected[j].position);
+          if (Math.abs(split - expectedSplit) > splitTolerance) continue;
+
+          // Lower BE = high-j (e.g., 2p3/2), higher BE = low-j (e.g., 2p1/2)
+          const [pkHi, pkLo] = detected[i].position < detected[j].position
+            ? [detected[i], detected[j]]
+            : [detected[j], detected[i]];
+
+          const observedCenter = (pkHi.position + pkLo.position) / 2;
+          const centerDiff = Math.abs(observedCenter - expectedCenter);
+          if (centerDiff > centerTolerance) continue;
+
+          const score = centerDiff + Math.abs(split - expectedSplit) * 2;
+          if (score < bestScore) {
+            bestScore = score;
+            bestHiPk = pkHi;
+            bestLoPk = pkLo;
+          }
+        }
+      }
+
+      if (bestHiPk && bestLoPk) {
+        // Remove any existing matches for these SO pair lines
+        cand.matchedLines = cand.matchedLines.filter(ml =>
+          ml.lineName !== soPair.levelHigh && ml.lineName !== soPair.levelLow
+        );
+
+        cand.matchedLines.push({
+          lineName: soPair.levelHigh,
+          lineType: 'photo',
+          databaseBE: clHi.bindingEnergy,
+          detectedBE: bestHiPk.position,
+          deltaEV: bestHiPk.position - clHi.bindingEnergy,
+          crossSection: clHi.crossSection,
+        });
+        cand.matchedLines.push({
+          lineName: soPair.levelLow,
+          lineType: 'photo',
+          databaseBE: clLo.bindingEnergy,
+          detectedBE: bestLoPk.position,
+          deltaEV: bestLoPk.position - clLo.bindingEnergy,
+          crossSection: clLo.crossSection,
+        });
+      }
+    }
+  }
+}
+
+// ============================================================================
 // Main identification
 // ============================================================================
 
@@ -60,6 +161,9 @@ export function autoIdentify(
     includeAuger,
     chargingCorrection,
   } = settings;
+
+  // Set active source for element DB (controls accessible BE range)
+  setSource(source);
 
   // 1. Background subtraction
   const [signal, background] = subtractBackground(energy, intensity);
@@ -137,6 +241,9 @@ export function autoIdentify(
       candidates.get(elemSym)!.matchedLines.push(ml);
     }
   }
+
+  // 4b. Recover SO pairs by splitting pattern (handles chemical shifts)
+  recoverSOPairMatches(candidates, detected, toleranceEV);
 
   // 5. Score candidates
   const eMin = Math.min(...eAsc);
