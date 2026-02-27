@@ -318,11 +318,14 @@ export function identifyCandidates(
   }
 
   // For each observed position, find matches
+  // Search slightly wider than user tolerance to catch chemical shifts
+  // SO pair recovery (recoverSOPairMatches) handles larger shifts via splitting patterns
+  const searchTolerance = Math.max(toleranceEV * 1.5, 4.5);
   return positions.map(pos => {
     const matches: Array<[string, string, number, number]> = [];
     for (const [sym, name, be] of allPeaks) {
       const delta = pos - be;
-      if (Math.abs(delta) <= toleranceEV) {
+      if (Math.abs(delta) <= searchTolerance) {
         matches.push([sym, name, be, delta]);
       }
     }

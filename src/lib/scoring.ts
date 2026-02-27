@@ -25,7 +25,8 @@ export function scoreCandidates(
   eMax: number,
   toleranceEV: number,
 ): void {
-  const sigmaPos = toleranceEV / 2.0;
+  // Use toleranceEV as sigma (not /2) — chemical shifts in survey spectra can be large
+  const sigmaPos = toleranceEV;
 
   // Build quick lookups
   const peakHeightMap = new Map<number, number>();
@@ -157,16 +158,57 @@ export function scoreCandidates(
       }
     }
 
-    // --- F. Multi-line bonus (x1.3 per extra shell group) ---
-    const shellSet = new Set<string>();
-    for (const ml of photoLines) {
-      shellSet.add(ml.lineName.slice(0, 2));
+    // --- E2. Missing SO partner penalty (x0.5) ---
+    // If one SO member matched but partner is in range and not found, penalize
+    if (elemData && bScore === 0) {
+      for (const soPair of elemData.spinOrbitPairs) {
+        const hasHi = seenLines.has(soPair.levelHigh);
+        const hasLo = seenLines.has(soPair.levelLow);
+        if ((hasHi || hasLo) && !(hasHi && hasLo)) {
+          // One matched, one missing — check if missing partner is in accessible range
+          const missingLevel = hasHi ? soPair.levelLow : soPair.levelHigh;
+          const missingCL = elemData.coreLevels.find(c => c.name === missingLevel);
+          if (missingCL && eMin <= missingCL.bindingEnergy && missingCL.bindingEnergy <= eMax
+              && soPair.splitting > 2.0) {  // only if splitting is resolvable
+            score *= 0.5;
+            details.push(`SO_miss(${missingLevel})`);
+            break;  // apply once
+          }
+        }
+      }
     }
-    const nGroups = shellSet.size;
-    if (nGroups >= 2) {
-      const multiplier = 1.0 + 0.3 * (nGroups - 1);
-      score *= multiplier;
-      details.push(`multi(${nGroups}grp/${photoLines.length}lines)x${multiplier.toFixed(1)}`);
+
+    // --- F+G. Delta consistency then multi-line bonus ---
+    // Real elements have consistent chemical shifts (low delta std).
+    // Coincidental matches show scattered deltas → skip multi-line bonus.
+    let isScattered = false;
+    if (photoLines.length >= 3) {
+      const deltas = photoLines.map(ml => ml.deltaEV);
+      const meanDelta = deltas.reduce((a, b) => a + b, 0) / deltas.length;
+      const variance = deltas.reduce((a, d) => a + (d - meanDelta) ** 2, 0) / deltas.length;
+      const std = Math.sqrt(variance);
+      if (std > toleranceEV) {
+        score *= 0.3;
+        isScattered = true;
+        details.push(`scatter(σ=${std.toFixed(1)})`);
+      } else if (std < toleranceEV / 2) {
+        score *= 1.3;
+        details.push(`chem_shift(μ=${meanDelta.toFixed(1)},σ=${std.toFixed(1)})`);
+      }
+    }
+
+    // Multi-line bonus: x1.3 per extra shell group (skip if scattered)
+    if (!isScattered) {
+      const shellSet = new Set<string>();
+      for (const ml of photoLines) {
+        shellSet.add(ml.lineName.slice(0, 2));
+      }
+      const nGroups = shellSet.size;
+      if (nGroups >= 2) {
+        const multiplier = 1.0 + 0.3 * (nGroups - 1);
+        score *= multiplier;
+        details.push(`multi(${nGroups}grp/${photoLines.length}lines)x${multiplier.toFixed(1)}`);
+      }
     }
 
     cand.rawScore = score;
@@ -195,7 +237,7 @@ export function resolveAndRank(
     cand.confidence = cand.rawScore / maxScore;
 
     // Prominence-based minimum floor
-    const hasPenalty = cand.detail.includes('penalty(');
+    const hasPenalty = cand.detail.includes('penalty(') || cand.detail.includes('SO_miss(') || cand.detail.includes('scatter(');
     const hasSOPair = cand.detail.includes('SO(');
     // Wider delta tolerance for elements with confirmed SO pairs (chemical shift)
     const floorDelta = hasSOPair ? toleranceEV * 4 : toleranceEV;

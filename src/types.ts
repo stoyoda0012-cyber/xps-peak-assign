@@ -85,7 +85,7 @@ export interface SpectrumData {
 
 export interface AnalysisSettings {
   source: string;         // 'Al' for MVP, 'Synchrotron' for custom
-  toleranceEV: number;    // default 2.0
+  toleranceEV: number;    // default 3.0
   minConfidence: number;  // default 0.3
   bgMethod: 'shirley';
   includeAuger: boolean;

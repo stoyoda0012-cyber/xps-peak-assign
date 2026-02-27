@@ -14,7 +14,7 @@ type Theme = 'light' | 'dark';
 
 const defaultSettings: AnalysisSettings = {
   source: 'Al',
-  toleranceEV: 2.0,
+  toleranceEV: 3.0,
   minConfidence: 0.3,
   bgMethod: 'shirley',
   includeAuger: true,

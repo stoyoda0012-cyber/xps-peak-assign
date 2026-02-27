@@ -5,16 +5,16 @@
 
 import type { DetectedPeak } from '../types';
 
-// Constants (from auto_identify.py)
-const SMOOTH_WINDOW_EV = 3.0;
+// Constants (from auto_identify.py, tuned for survey spectra)
+const SMOOTH_WINDOW_EV = 2.0;  // narrower to preserve SO doublets (e.g., Ta 4f split=1.9)
 const SMOOTH_ORDER = 3;
 const MIN_PEAK_DISTANCE_EV = 2.0;
 const MAX_PEAKS = 30;
 const MIN_PEAK_HEIGHT = 0.03;
 const MIN_PEAK_PROMINENCE = 0.02;
-const NOISE_PROMINENCE_SIGMA = 5.0;
+const NOISE_PROMINENCE_SIGMA = 3.5;  // lowered: noisy PXT data inflates noise estimate
 const NOISE_HEIGHT_SIGMA = 3.0;
-const MIN_RELATIVE_PROMINENCE = 0.04;
+const MIN_RELATIVE_PROMINENCE = 0.03;  // slightly relaxed for weaker edge peaks
 
 // ============================================================================
 // Savitzky-Golay filter (simplified)
