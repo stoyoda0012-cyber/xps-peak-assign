@@ -4,7 +4,9 @@ import sys
 import os
 import numpy as np
 
-sys.path.insert(0, "/Users/toyodasatoshi/MATLAB-Drive/SourceCode")
+sys.path.insert(
+    0, os.environ.get("XPS_SOURCE_ROOT", os.path.expanduser("~/xps-source"))
+)
 
 from peak_analysis.wide_spectrum.data_loader import load_spectrum
 
@@ -33,7 +35,9 @@ def export_npl(npl_path, out_name, region_index=0):
 if __name__ == "__main__":
     os.makedirs(OUT_DIR, exist_ok=True)
 
-    npl_dir = "/Users/toyodasatoshi/MATLAB-Drive/TestData/Fitting/readtest/npl"
+    npl_dir = os.environ.get(
+        "XPS_NPL_DIR", os.path.expanduser("~/xps-testdata/readtest/npl")
+    )
     # AlF3 Wide survey (has charging ~24 eV)
     export_npl(os.path.join(npl_dir, "AlF3_ion_off.npl"), "alf3-wide.csv", region_index=0)
     # TiO2/FTO Wide survey

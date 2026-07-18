@@ -74,7 +74,8 @@ xps-peak-assign/
 | `lib/scoring.ts` | `auto_identify.py` _score_candidates() |
 | `lib/auto-identify.ts` | `auto_identify.py` ElementIdentifier.identify() |
 
-Python source: `/Users/toyodasatoshi/MATLAB-Drive/SourceCode/peak_analysis/wide_spectrum/`
+Python source (private): the `peak_analysis/wide_spectrum/` package. Build
+scripts locate it via `XPS_SOURCE_ROOT` (see `scripts/`).
 
 ## Key Conventions
 

@@ -5,7 +5,9 @@ import os
 import sys
 import math
 
-COMMON_DATA = "/Users/toyodasatoshi/MATLAB-Drive/SourceCode/Common/data"
+COMMON_DATA = os.environ.get(
+    "XPS_COMMON_DATA", os.path.expanduser("~/xps-source/Common/data")
+)
 OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "src", "data")
 
 AL_KA = 1486.6  # eV
