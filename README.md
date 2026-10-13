@@ -2,6 +2,10 @@
 
 Automatic peak assignment for XPS (X-ray Photoelectron Spectroscopy) survey spectra. Runs entirely in the browser -- no server required.
 
+**Try it without installing anything:** https://stoyoda0012-cyber.github.io/xps-peak-assign/
+
+> **Synchrotron data:** set the X-ray source (photon energy) by hand under *X-ray Source -> Synchrotron*. The default is Al Ka (1486.6 eV), and the automatic KE/BE detection also depends on this value.
+
 ## Features
 
 - **Automatic element identification** from wide-scan survey spectra
@@ -15,7 +19,11 @@ Automatic peak assignment for XPS (X-ray Photoelectron Spectroscopy) survey spec
 
 ## Quick Start
 
+To run it locally instead of using the web version, you need [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/) 20 or newer.
+
 ```bash
+git clone https://github.com/stoyoda0012-cyber/xps-peak-assign.git
+cd xps-peak-assign
 npm install
 npm run dev
 ```
@@ -50,4 +58,4 @@ Open http://localhost:5173 in your browser. Drag & drop an XPS survey file or tr
 
 ## License
 
-MIT
+MIT -- see [LICENSE](LICENSE).
