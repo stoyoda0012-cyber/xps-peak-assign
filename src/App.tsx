@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, useEffect } from 'react';
+import { useState, useMemo, useCallback, useEffect, useLayoutEffect } from 'react';
 import type { AnalysisSettings, IdentificationResult, Language, SpectrumData } from './types';
 import { autoIdentify } from './lib/auto-identify';
 import { XRAY_SOURCES, setSynchrotronEnergy } from './lib/energy';
@@ -38,9 +38,16 @@ function App() {
   // even when switching to BE display. Reset by clicking Auto or loading a new file.
   const [interpretAsKE, setInterpretAsKE] = useState(false);
 
-  // Apply theme to document
-  useEffect(() => {
+  // Apply theme to document.
+  // useLayoutEffect (not useEffect): SpectrumChart reads the theme's CSS variables via
+  // getComputedStyle inside its own useEffect, and child passive effects run before the
+  // parent's. A layout effect runs before every passive effect, so the attribute is in
+  // place before the chart is rebuilt and it picks up the new theme's colors.
+  useLayoutEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
+
+  useEffect(() => {
     localStorage.setItem('xps-theme', theme);
   }, [theme]);
 
