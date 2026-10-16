@@ -11,7 +11,7 @@ Automatic peak assignment for XPS (X-ray Photoelectron Spectroscopy) survey spec
 - **Automatic element identification** from wide-scan survey spectra
 - **Multi-format support**: CSV, TSV, NPL, VAMAS, SES TXT, PXT, IBW
 - **HAXPES support**: Ga Ka (9.25 keV) with Scofield cross-sections
-- **KE/BE display toggle** with sticky interpretation
+- **Input unit (BE/KE) auto-detection** with manual override, separate from the **BE/KE display axis**
 - **Synchrotron source** support (custom photon energy)
 - **6-component scoring**: position match, spin-orbit pairs, cross-section ratios, Auger confirmation, strongest-line penalty, multi-line bonus
 - **Dark mode** with theme persistence
