@@ -42,7 +42,9 @@ function readNonEmptyLines(
   const result: string[] = [];
   let i = cursor;
   while (result.length < n && i < allLines.length) {
-    const stripped = allLines[i].trim().replace(/\x00/g, '');
+    // Strip NUL padding (seen in some instrument exports). replaceAll with a
+    // string literal is equivalent to /\x00/g and avoids no-control-regex.
+    const stripped = allLines[i].trim().replaceAll('\u0000', '');
     i++;
     if (stripped) result.push(stripped);
   }
@@ -107,8 +109,8 @@ export function parseNPL(text: string, _filename: string = 'uploaded'): ParsedFi
   let cursor = 0;
 
   // File header: 14 non-empty lines
-  let fileHeader: string[];
-  [fileHeader, cursor] = readNonEmptyLines(allLines, cursor, 14);
+  const [fileHeader, headerEnd] = readNonEmptyLines(allLines, cursor, 14);
+  cursor = headerEnd;
   const nRegions = parseInt(fileHeader[7], 10);
   if (isNaN(nRegions) || nRegions < 1) {
     throw new Error('Invalid NPL file: cannot read number of regions');
@@ -201,8 +203,8 @@ export function parseVAMAS(text: string, _filename: string = 'uploaded'): Parsed
   let cursor = 0;
 
   // File header: 12 non-empty lines
-  let fileHeader: string[];
-  [fileHeader, cursor] = readNonEmptyLines(allLines, cursor, 12);
+  const [fileHeader, headerEnd] = readNonEmptyLines(allLines, cursor, 12);
+  cursor = headerEnd;
   const nRegions = parseInt(fileHeader[5], 10);
   if (isNaN(nRegions) || nRegions < 1) {
     throw new Error('Invalid VAMAS file: cannot read number of regions');
