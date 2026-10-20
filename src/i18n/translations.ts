@@ -44,6 +44,19 @@ const translations = {
   results: { en: 'Identification Results', ja: '同定結果' },
   element: { en: 'Element', ja: '元素' },
   confidence: { en: 'Confidence', ja: '信頼度' },
+  confidenceLegend: {
+    en: 'Green ≥ 80%, orange ≥ 50%, red below. Gray = single-line element: only one photoelectron line is available, so it cannot be cross-checked and its confidence is structurally low.',
+    ja: '緑 ≥ 80%、橙 ≥ 50%、赤はそれ未満。灰色 = 単線元素: 光電子ラインが 1 本しかなく相互確認できないため、信頼度は構造的に低くなります。',
+  },
+  singleLine: { en: 'single line', ja: '単線' },
+  singleLineHint: {
+    en: 'Only one photoelectron line (e.g. C 1s, O 1s). A single line cannot be cross-checked against spin-orbit partners or other shells, so the confidence stays low even when the peak is clearly present.',
+    ja: '光電子ラインが 1 本だけ (C 1s, O 1s など)。スピン軌道対や他の殻と照合できないため、ピークが明確でも信頼度は低いままです。',
+  },
+  promFloorHint: {
+    en: 'Kept at the minimum confidence because one of its lines is among the strongest peaks in the spectrum.',
+    ja: 'スペクトル中で最も強いピークの 1 つに一致しているため、最低信頼度に据え置かれています。',
+  },
   matchedLines: { en: 'Matched Lines', ja: 'マッチしたライン' },
   scoring: { en: 'Scoring Detail', ja: 'スコア詳細' },
   noResults: { en: 'No elements identified. Upload a spectrum to begin.', ja: '元素が同定されていません。スペクトルをアップロードしてください。' },

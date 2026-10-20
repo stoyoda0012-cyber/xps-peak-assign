@@ -9,7 +9,13 @@ interface ElementTableProps {
   onElementClick?: (element: string | null) => void;
 }
 
-function confidenceColor(conf: number): string {
+const SINGLE_LINE_COLOR = '#7f8c8d';
+
+function confidenceColor(conf: number, singleLine: boolean): string {
+  // A single-line element (C 1s, O 1s, F 1s, ...) has nothing to cross-check against,
+  // so its confidence is structurally low. Showing it red reads as "suspicious element",
+  // which is misleading for e.g. O in TiO2; gray says "cannot be rated" instead.
+  if (singleLine) return SINGLE_LINE_COLOR;
   if (conf >= 0.8) return '#27ae60';
   if (conf >= 0.5) return '#f39c12';
   return '#e74c3c';
@@ -45,7 +51,7 @@ export const ElementTable: React.FC<ElementTableProps> = ({
         <thead>
           <tr>
             <th>{t('element', lang)}</th>
-            <th>{t('confidence', lang)}</th>
+            <th title={t('confidenceLegend', lang)} className="th-help">{t('confidence', lang)}</th>
             <th>{t('matchedLines', lang)}</th>
             <th>{t('scoring', lang)}</th>
           </tr>
@@ -53,6 +59,10 @@ export const ElementTable: React.FC<ElementTableProps> = ({
         <tbody>
           {result.candidates.map((cand) => {
             const isSelected = selectedElement === cand.element;
+            const photoLines = cand.matchedLines.filter(ml => ml.lineType === 'photo');
+            const isSingleLine = photoLines.length <= 1;
+            const atFloor = cand.detail.includes('prom_floor');
+            const color = confidenceColor(cand.confidence, isSingleLine);
             return (
               <tr
                 key={cand.element}
@@ -62,17 +72,25 @@ export const ElementTable: React.FC<ElementTableProps> = ({
                 style={{ cursor: 'pointer' }}
               >
                 <td>
-                  <span className="element-badge" style={{ background: confidenceColor(cand.confidence) }}>
+                  <span className="element-badge" style={{ background: color }}>
                     {cand.element}
                   </span>
+                  {isSingleLine && (
+                    <span className="single-line-tag" title={t('singleLineHint', lang)}>
+                      {t('singleLine', lang)}
+                    </span>
+                  )}
                 </td>
                 <td>
-                  <div className="confidence-bar-container">
+                  <div
+                    className="confidence-bar-container"
+                    title={atFloor ? t('promFloorHint', lang) : undefined}
+                  >
                     <div
                       className="confidence-bar"
                       style={{
                         width: `${cand.confidence * 100}%`,
-                        background: confidenceColor(cand.confidence),
+                        background: color,
                       }}
                     />
                     <span className="confidence-value">{(cand.confidence * 100).toFixed(0)}%</span>
