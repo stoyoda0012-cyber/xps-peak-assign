@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import type { Language } from '../types';
 import { t } from '../i18n/translations';
-import { FEEDBACK_FORM_URL, buildFeedbackBody, buildIssueUrl } from '../lib/feedback';
+import { buildFeedbackBody, buildFormUrl, buildIssueUrl } from '../lib/feedback';
 import type { FeedbackContext } from '../lib/feedback';
 
 interface FeedbackMenuProps {
@@ -11,8 +11,9 @@ interface FeedbackMenuProps {
 
 /**
  * Header button that opens a small popover with the ways to send feedback:
- * a pre-filled GitHub issue (needs an account), an optional external form,
- * and "copy the message" for e-mail or chat. No backend involved.
+ * a pre-filled Google Form (no account needed; primary), a pre-filled GitHub
+ * issue (needs an account), and "copy the message" for e-mail or chat.
+ * No backend involved.
  */
 export const FeedbackMenu: React.FC<FeedbackMenuProps> = ({ lang, context }) => {
   const [open, setOpen] = useState(false);
@@ -33,6 +34,8 @@ export const FeedbackMenu: React.FC<FeedbackMenuProps> = ({ lang, context }) => 
       document.removeEventListener('keydown', onKey);
     };
   }, [open]);
+
+  const formUrl = buildFormUrl(context);
 
   const copyBody = async () => {
     const text = buildFeedbackBody(context);
@@ -60,20 +63,10 @@ export const FeedbackMenu: React.FC<FeedbackMenuProps> = ({ lang, context }) => 
         <div className="feedback-popover" role="dialog" aria-label={t('feedbackTitle', lang)}>
           <div className="feedback-title">{t('feedbackTitle', lang)}</div>
           <p className="feedback-intro">{t('feedbackIntro', lang)}</p>
-          <a
-            className="feedback-action primary"
-            href={buildIssueUrl(context)}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setOpen(false)}
-          >
-            {t('feedbackGitHub', lang)}
-            <span className="feedback-sub">{t('feedbackGitHubSub', lang)}</span>
-          </a>
-          {FEEDBACK_FORM_URL && (
+          {formUrl && (
             <a
-              className="feedback-action"
-              href={FEEDBACK_FORM_URL}
+              className="feedback-action primary"
+              href={formUrl}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
@@ -82,6 +75,16 @@ export const FeedbackMenu: React.FC<FeedbackMenuProps> = ({ lang, context }) => 
               <span className="feedback-sub">{t('feedbackFormSub', lang)}</span>
             </a>
           )}
+          <a
+            className={'feedback-action' + (formUrl ? '' : ' primary')}
+            href={buildIssueUrl(context)}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+          >
+            {t('feedbackGitHub', lang)}
+            <span className="feedback-sub">{t('feedbackGitHubSub', lang)}</span>
+          </a>
           <button className="feedback-action" onClick={copyBody}>
             {copied ? t('feedbackCopied', lang) : t('feedbackCopy', lang)}
             <span className="feedback-sub">{t('feedbackCopySub', lang)}</span>

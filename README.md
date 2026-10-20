@@ -58,10 +58,11 @@ Open http://localhost:5173 in your browser. Drag & drop an XPS survey file or tr
 
 ## Feedback
 
-The **Feedback** button in the header opens a pre-filled GitHub issue
-(settings, file name and element list included; never the spectrum data),
-or copies the same message for e-mail. To offer a form for people without a
-GitHub account, set `FEEDBACK_FORM_URL` in `src/lib/feedback.ts`.
+The **Feedback** button in the header opens a Google Form (no account
+needed) with the environment field pre-filled, or a pre-filled GitHub issue,
+or copies the same message for e-mail. The message carries the settings, the
+file name and the element list, never the spectrum data. The form URL and
+its question IDs live in `FEEDBACK_FORM` in `src/lib/feedback.ts`.
 
 ## License
 

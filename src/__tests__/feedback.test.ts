@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { buildFeedbackBody, buildIssueUrl, REPO_URL } from '../lib/feedback';
+import { buildFeedbackBody, buildFormUrl, buildIssueUrl, FEEDBACK_FORM, REPO_URL } from '../lib/feedback';
 import type { FeedbackContext } from '../lib/feedback';
 import type { IdentificationResult } from '../types';
 
@@ -67,5 +67,21 @@ describe('buildIssueUrl', () => {
     expect(url.startsWith(`${REPO_URL}/issues/new?labels=feedback&title=`)).toBe(true);
     expect(decodeURIComponent(url)).toContain('[feedback] ');
     expect(url.length).toBeLessThan(6000);
+  });
+});
+
+describe('buildFormUrl', () => {
+  it('opens the Google Form with only the environment field pre-filled', () => {
+    const url = new URL(buildFormUrl(ctx));
+    expect(url.origin + url.pathname).toBe(FEEDBACK_FORM.url);
+    expect(url.searchParams.get('usp')).toBe('pp_url');
+    const env = url.searchParams.get(FEEDBACK_FORM.entries.environment)!;
+    expect(env).toContain('## Environment (auto-filled)');
+    expect(env).toContain('File: tio2-wide.csv');
+    expect(env).toContain('Accepted: Ti 100%, O 30%');
+    expect(env).not.toContain('## What');                      // template stays out of the form
+    expect(url.searchParams.has(FEEDBACK_FORM.entries.content)).toBe(false);
+    expect(url.searchParams.has(FEEDBACK_FORM.entries.contact)).toBe(false);
+    expect(url.href.length).toBeLessThan(4000);
   });
 });
