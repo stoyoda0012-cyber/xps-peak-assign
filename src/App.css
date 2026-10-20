@@ -548,6 +548,24 @@ body {
   text-align: center;
 }
 
+.th-help {
+  cursor: help;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+}
+
+.single-line-tag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  cursor: help;
+  vertical-align: middle;
+}
+
 .confidence-bar-container {
   position: relative;
   height: 18px;
