@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, useEffect } from 'react';
+import { useState, useMemo, useCallback, useEffect, useLayoutEffect } from 'react';
 import type { AnalysisSettings, IdentificationResult, Language, SpectrumData } from './types';
 import { autoIdentify } from './lib/auto-identify';
 import { XRAY_SOURCES, setSynchrotronEnergy } from './lib/energy';
@@ -19,7 +19,8 @@ const defaultSettings: AnalysisSettings = {
   bgMethod: 'shirley',
   includeAuger: true,
   chargingCorrection: true,
-  energyType: 'auto',
+  inputEnergyType: 'auto',
+  displayEnergy: 'BE',
 };
 
 function getInitialTheme(): Theme {
@@ -34,13 +35,17 @@ function App() {
   const [settings, setSettings] = useState<AnalysisSettings>(defaultSettings);
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
   const [selectedElement, setSelectedElement] = useState<string | null>(null);
-  // "Sticky" KE declaration: once user explicitly selects KE, interpretation stays KE
-  // even when switching to BE display. Reset by clicking Auto or loading a new file.
-  const [interpretAsKE, setInterpretAsKE] = useState(false);
 
-  // Apply theme to document
-  useEffect(() => {
+  // Apply theme to document.
+  // useLayoutEffect (not useEffect): SpectrumChart reads the theme's CSS variables via
+  // getComputedStyle inside its own useEffect, and child passive effects run before the
+  // parent's. A layout effect runs before every passive effect, so the attribute is in
+  // place before the chart is rebuilt and it picks up the new theme's colors.
+  useLayoutEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
+
+  useEffect(() => {
     localStorage.setItem('xps-theme', theme);
   }, [theme]);
 
@@ -54,33 +59,23 @@ function App() {
     }
   }, [settings.source, settings.customEnergy]);
 
-  // Produce "working" spectrum: always convert to BE for analysis.
-  // Interpretation logic:
-  //   interpretAsKE=true → always treat raw data as KE (sticky after user clicks KE)
-  //   'auto' → auto-detect (parser hint + heuristic)
-  //   'BE'   → force interpret as BE (only when interpretAsKE is false)
-  //   'KE'   → force interpret as KE (also sets interpretAsKE=true)
-  // Display is controlled separately by settings.energyType (KE → show KE axis).
+  // What the raw energy column actually is. This is the only thing that decides whether
+  // the data gets converted before analysis; the display axis never affects it.
+  //   'auto' → trust the parser hint, then run the heuristic for ambiguous formats
+  //            (CSV defaults to 'BE')
+  //   'BE' / 'KE' → user override for this file
+  const effectiveInputType: 'BE' | 'KE' | undefined = useMemo(() => {
+    if (!spectrum) return undefined;
+    if (settings.inputEnergyType !== 'auto') return settings.inputEnergyType;
+    if (spectrum.energyType === 'KE') return 'KE';
+    const hv = spectrum.excitationEnergy ?? XRAY_SOURCES[settings.source] ?? 1486.6;
+    return detectEnergyType(spectrum.energy, hv);
+  }, [spectrum, settings.source, settings.customEnergy, settings.inputEnergyType]);
+
+  // Produce "working" spectrum: always BE for analysis.
   const workingSpectrum: SpectrumData | null = useMemo(() => {
     if (!spectrum) return null;
-
-    let effectiveType = spectrum.energyType;
-
-    if (interpretAsKE) {
-      // User has declared this is KE data — always convert, regardless of display toggle
-      effectiveType = 'KE';
-    } else if (settings.energyType === 'auto') {
-      // Auto: trust parser, then run heuristic for ambiguous formats (CSV defaults to 'BE')
-      if (effectiveType === 'BE') {
-        const hv = spectrum.excitationEnergy ?? XRAY_SOURCES[settings.source] ?? 1486.6;
-        effectiveType = detectEnergyType(spectrum.energy, hv);
-      }
-    } else {
-      // Manual override: 'BE' or 'KE' (KE only if interpretAsKE hasn't been set yet)
-      effectiveType = settings.energyType;
-    }
-
-    if (effectiveType === 'KE') {
+    if (effectiveInputType === 'KE') {
       const hv = spectrum.excitationEnergy ?? XRAY_SOURCES[settings.source] ?? 1486.6;
       return {
         ...spectrum,
@@ -89,10 +84,10 @@ function App() {
       };
     }
     return spectrum;
-  }, [spectrum, settings.source, settings.customEnergy, settings.energyType, interpretAsKE]);
+  }, [spectrum, effectiveInputType, settings.source, settings.customEnergy]);
 
-  // Display mode: KE when user explicitly selects KE, otherwise BE
-  const displayMode: 'BE' | 'KE' = settings.energyType === 'KE' ? 'KE' : 'BE';
+  // Display axis is presentation only
+  const displayMode: 'BE' | 'KE' = settings.displayEnergy;
   const displayHv = spectrum?.excitationEnergy ?? XRAY_SOURCES[settings.source] ?? 1486.6;
 
   // Auto-analyze when spectrum or settings change
@@ -108,27 +103,15 @@ function App() {
 
   const handleLoad = useCallback((data: SpectrumData) => {
     setSpectrum(data);
-    setInterpretAsKE(false); // Reset KE declaration for new file
+    // The input-unit override belongs to one file; a new file starts from auto-detection.
+    setSettings(prev => prev.inputEnergyType === 'auto' ? prev : { ...prev, inputEnergyType: 'auto' });
   }, []);
 
   const handleSettingsChange = useCallback((newSettings: AnalysisSettings) => {
-    // Track sticky KE declaration:
-    //   KE clicked → set sticky (user declares "this is KE data")
-    //   Auto clicked → clear sticky (reset to auto-detection)
-    //   BE clicked → no change (keep KE interpretation if previously declared)
-    if (newSettings.energyType === 'KE') {
-      setInterpretAsKE(true);
-    } else if (newSettings.energyType === 'auto') {
-      setInterpretAsKE(false);
-    }
     setSettings(newSettings);
   }, []);
 
   const handleSettingsPatch = useCallback((patch: Partial<AnalysisSettings>) => {
-    if ('energyType' in patch) {
-      if (patch.energyType === 'KE') setInterpretAsKE(true);
-      else if (patch.energyType === 'auto') setInterpretAsKE(false);
-    }
     setSettings(prev => ({ ...prev, ...patch }));
   }, []);
 
@@ -182,7 +165,7 @@ function App() {
             settings={settings}
             onChange={handleSettingsChange}
             lang={lang}
-            detectedEnergyType={spectrum?.energyType}
+            effectiveInputType={effectiveInputType}
           />
         </aside>
 

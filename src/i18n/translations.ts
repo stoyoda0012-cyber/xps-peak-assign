@@ -19,7 +19,16 @@ const translations = {
   synchrotron: { en: 'Synchrotron', ja: 'シンクロトロン' },
   photonEnergy: { en: 'Photon Energy (eV)', ja: '光子エネルギー (eV)' },
   enterPhotonEnergy: { en: 'Enter photon energy', ja: '光子エネルギーを入力' },
-  energyAxis: { en: 'Energy Axis', ja: 'エネルギー軸' },
+  inputEnergy: { en: 'Input Data Unit', ja: '入力データの単位' },
+  inputEnergyHint: {
+    en: 'What the energy column of the loaded file represents. Changes the analysis.',
+    ja: '読み込んだファイルのエネルギー列が何を表すか。解析結果が変わります。',
+  },
+  displayAxis: { en: 'Display Axis', ja: '表示軸' },
+  displayAxisHint: {
+    en: 'Which axis the chart shows. Does not change the analysis.',
+    ja: 'グラフに表示する軸。解析結果は変わりません。',
+  },
   energyAuto: { en: 'Auto', ja: '自動' },
   detectedAs: { en: 'detected:', ja: '検出:' },
   regionSelect: { en: 'Region', ja: 'リージョン' },

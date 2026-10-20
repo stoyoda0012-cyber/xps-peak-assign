@@ -90,7 +90,11 @@ export interface AnalysisSettings {
   bgMethod: 'shirley';
   includeAuger: boolean;
   chargingCorrection: boolean;
-  energyType: 'auto' | 'BE' | 'KE';  // display energy axis
+  // What the loaded file's energy column means. 'auto' trusts the parser hint and
+  // falls back to a heuristic; 'BE'/'KE' override it. Reset to 'auto' on every load.
+  inputEnergyType: 'auto' | 'BE' | 'KE';
+  // Which axis the chart shows. Pure presentation; never changes the analysis.
+  displayEnergy: 'BE' | 'KE';
   customEnergy?: number;  // photon energy (eV) for Synchrotron source
 }
 

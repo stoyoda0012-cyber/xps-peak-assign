@@ -18,11 +18,12 @@ interface SettingsPanelProps {
   settings: AnalysisSettings;
   onChange: (settings: AnalysisSettings) => void;
   lang: Language;
-  detectedEnergyType?: 'BE' | 'KE';
+  // How the loaded file's energy column is currently being interpreted (after auto-detection)
+  effectiveInputType?: 'BE' | 'KE';
 }
 
 export const SettingsPanel: React.FC<SettingsPanelProps> = ({
-  settings, onChange, lang, detectedEnergyType,
+  settings, onChange, lang, effectiveInputType,
 }) => {
   const [showEnergyDialog, setShowEnergyDialog] = useState(false);
   const [dialogEnergy, setDialogEnergy] = useState('');
@@ -135,21 +136,38 @@ export const SettingsPanel: React.FC<SettingsPanelProps> = ({
         </div>
       )}
 
+      {/* What the file's energy column means. Changes the analysis. */}
       <div className="param-section">
         <label className="slider-label">
-          {t('energyAxis', lang)}
-          {settings.energyType === 'auto' && detectedEnergyType && (
-            <span className="energy-hint"> ({t('detectedAs', lang)} {detectedEnergyType})</span>
+          {t('inputEnergy', lang)}
+          {settings.inputEnergyType === 'auto' && effectiveInputType && (
+            <span className="energy-hint"> ({t('detectedAs', lang)} {effectiveInputType})</span>
           )}
         </label>
-        <div className="energy-type-toggle">
+        <div className="energy-type-toggle" title={t('inputEnergyHint', lang)}>
           {(['auto', 'BE', 'KE'] as const).map((val) => (
             <button
               key={val}
-              className={settings.energyType === val ? 'active' : ''}
-              onClick={() => update('energyType', val)}
+              className={settings.inputEnergyType === val ? 'active' : ''}
+              onClick={() => update('inputEnergyType', val)}
             >
               {val === 'auto' ? t('energyAuto', lang) : val}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Which axis the chart shows. Presentation only. */}
+      <div className="param-section">
+        <label className="slider-label">{t('displayAxis', lang)}</label>
+        <div className="energy-type-toggle" title={t('displayAxisHint', lang)}>
+          {(['BE', 'KE'] as const).map((val) => (
+            <button
+              key={val}
+              className={settings.displayEnergy === val ? 'active' : ''}
+              onClick={() => update('displayEnergy', val)}
+            >
+              {val}
             </button>
           ))}
         </div>
