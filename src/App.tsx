@@ -8,6 +8,7 @@ import { t } from './i18n/translations';
 import FileUpload from './components/FileUpload';
 import EmptyState from './components/EmptyState';
 import MethodPage from './components/MethodPage';
+import FeedbackMenu from './components/FeedbackMenu';
 import { fetchSample } from './lib/samples';
 import type { SampleDef } from './lib/samples';
 import { regionToSpectrum } from './lib/parsers';
@@ -180,6 +181,10 @@ function App() {
             rel="noopener noreferrer"
             className="github-link"
           >GitHub</a>
+          <FeedbackMenu
+            lang={lang}
+            context={{ lang, theme, settings, fileName: spectrum?.name ?? null, result }}
+          />
         </div>
       </header>
 
