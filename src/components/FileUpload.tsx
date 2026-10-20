@@ -1,6 +1,8 @@
 import { useCallback, useRef, useState } from 'react';
 import type { AnalysisSettings, Language, SpectrumData } from '../types';
-import { parseFile, parseCSV, regionToSpectrum } from '../lib/parsers';
+import { parseFile, regionToSpectrum } from '../lib/parsers';
+import { SAMPLES, fetchSample } from '../lib/samples';
+import type { SampleDef } from '../lib/samples';
 import { parsePXT } from '../lib/pxt-parser';
 import type { ParsedFile } from '../lib/parsers';
 import { resolveSource } from '../lib/energy';
@@ -19,11 +21,14 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onLoad, lang, currentFil
   const inputRef = useRef<HTMLInputElement>(null);
   const [parsedFile, setParsedFile] = useState<ParsedFile | null>(null);
   const [selectedRegion, setSelectedRegion] = useState(0);
+  // Shown under the drop zone instead of a blocking alert(); cleared on the next successful load
+  const [error, setError] = useState<string | null>(null);
 
   const applyRegion = useCallback((parsed: ParsedFile, regionIdx: number, filename: string) => {
     const region = parsed.regions[regionIdx];
     const spectrum = regionToSpectrum(region, filename);
     onLoad(spectrum);
+    setError(null);
 
     // Auto-set source from file metadata
     if (region.excitationEnergy) {
@@ -53,15 +58,16 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onLoad, lang, currentFil
         setSelectedRegion(0);
         applyRegion(parsed, 0, file.name);
       } catch (err) {
-        alert(err instanceof Error ? err.message : 'Failed to parse file');
+        setError(`${file.name}: ${err instanceof Error ? err.message : String(err)}`);
       }
     };
+    reader.onerror = () => setError(`${file.name}: ${t('readFailed', lang)}`);
     if (isBinary) {
       reader.readAsArrayBuffer(file);
     } else {
       reader.readAsText(file);
     }
-  }, [applyRegion]);
+  }, [applyRegion, lang]);
 
   const handleRegionChange = useCallback((e: React.ChangeEvent<HTMLSelectElement>) => {
     const idx = parseInt(e.target.value, 10);
@@ -93,20 +99,18 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onLoad, lang, currentFil
     if (file) handleFile(file);
   }, [handleFile]);
 
-  const loadSample = useCallback(async (name: string) => {
+  const loadSample = useCallback(async (sample: SampleDef) => {
     try {
-      const base = import.meta.env.BASE_URL || '/';
-      const resp = await fetch(`${base}samples/${name}`);
-      const text = await resp.text();
-      const parsed = parseCSV(text, name);
+      const parsed = await fetchSample(sample);
       setParsedFile(parsed);
       setSelectedRegion(0);
-      const spectrum = regionToSpectrum(parsed.regions[0], name);
-      onLoad(spectrum);
+      onLoad(regionToSpectrum(parsed.regions[0], sample.file));
+      onSettingsChange?.({ source: sample.source });
+      setError(null);
     } catch (err) {
-      alert(`Failed to load sample: ${err}`);
+      setError(`${t('loadFailed', lang)}: ${err instanceof Error ? err.message : String(err)}`);
     }
-  }, [onLoad]);
+  }, [onLoad, onSettingsChange, lang]);
 
   return (
     <div className="file-upload">
@@ -129,6 +133,12 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onLoad, lang, currentFil
           <div className="file-info">{'\u2713'} {t('fileLoaded', lang)}: {currentFile}</div>
         )}
       </div>
+      {error && (
+        <div className="inline-error" role="alert">
+          {'\u26A0'} {error}
+          <button className="inline-error-close" onClick={() => setError(null)} aria-label="dismiss">{'\u00D7'}</button>
+        </div>
+      )}
       {parsedFile && parsedFile.regions.length > 1 && (
         <div className="region-selector">
           <label className="slider-label">{t('regionSelect', lang)}</label>
@@ -145,14 +155,9 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onLoad, lang, currentFil
       )}
       <div className="sample-buttons">
         <span className="sample-label">{t('loadSample', lang)}:</span>
-        <button onClick={() => {
-          loadSample('tio2-wide.csv');
-          onSettingsChange?.({ source: 'Al' });
-        }}>{t('sampleTiO2', lang)}</button>
-        <button onClick={() => {
-          loadSample('au-si-haxpes.csv');
-          onSettingsChange?.({ source: 'Ga' });
-        }}>{t('sampleAuSiHAXPES', lang)}</button>
+        {SAMPLES.map(s => (
+          <button key={s.file} onClick={() => loadSample(s)}>{t(s.labelKey, lang)}</button>
+        ))}
       </div>
     </div>
   );
