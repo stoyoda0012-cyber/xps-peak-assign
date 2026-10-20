@@ -34,7 +34,7 @@ export const ElementTable: React.FC<ElementTableProps> = ({
   }, [selectedElement]);
 
   if (!result || result.candidates.length === 0) {
-    return <div className="element-table-empty">{t('noResults', lang)}</div>;
+    return <div className="element-table-empty">{t('noCandidates', lang)}</div>;
   }
 
   return (
@@ -116,7 +116,7 @@ export const ElementTable: React.FC<ElementTableProps> = ({
         <details className="rejected-section">
           <summary>{t('rejected', lang)} ({result.rejected.length})</summary>
           <div className="rejected-list">
-            {result.rejected.slice(0, 10).map((cand) => (
+            {result.rejected.map((cand) => (
               <span key={cand.element} className="rejected-item">
                 {cand.element} ({(cand.confidence * 100).toFixed(0)}%)
               </span>

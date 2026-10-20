@@ -398,6 +398,7 @@ export const SpectrumChart: React.FC<SpectrumChartProps> = ({
       <div ref={containerRef} className="spectrum-chart">
         <div ref={overlayRef} className="peak-overlay" />
       </div>
+      {spectrum && <div className="chart-hint">{t('chartHint', lang)}</div>}
       {popup && (
         <div
           className="peak-popup"

@@ -6,6 +6,10 @@ import { clearDBCache } from './lib/element-db';
 import { detectEnergyType } from './lib/parsers';
 import { t } from './i18n/translations';
 import FileUpload from './components/FileUpload';
+import EmptyState from './components/EmptyState';
+import { fetchSample } from './lib/samples';
+import type { SampleDef } from './lib/samples';
+import { regionToSpectrum } from './lib/parsers';
 import SpectrumChart from './components/SpectrumChart';
 import ElementTable from './components/ElementTable';
 import SettingsPanel from './components/SettingsPanel';
@@ -23,6 +27,12 @@ const defaultSettings: AnalysisSettings = {
   displayEnergy: 'BE',
 };
 
+function getInitialLang(): Language {
+  const saved = localStorage.getItem('xps-lang');
+  if (saved === 'en' || saved === 'ja') return saved;
+  return navigator.language.toLowerCase().startsWith('ja') ? 'ja' : 'en';
+}
+
 function getInitialTheme(): Theme {
   const saved = localStorage.getItem('xps-theme');
   if (saved === 'light' || saved === 'dark') return saved;
@@ -30,7 +40,7 @@ function getInitialTheme(): Theme {
 }
 
 function App() {
-  const [lang, setLang] = useState<Language>('en');
+  const [lang, setLang] = useState<Language>(getInitialLang);
   const [spectrum, setSpectrum] = useState<SpectrumData | null>(null);
   const [settings, setSettings] = useState<AnalysisSettings>(defaultSettings);
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
@@ -48,6 +58,10 @@ function App() {
   useEffect(() => {
     localStorage.setItem('xps-theme', theme);
   }, [theme]);
+
+  useEffect(() => {
+    localStorage.setItem('xps-lang', lang);
+  }, [lang]);
 
   // Keep Synchrotron energy in sync with XRAY_SOURCES registry (must run before useMemo)
   useMemo(() => {
@@ -106,6 +120,14 @@ function App() {
     // The input-unit override belongs to one file; a new file starts from auto-detection.
     setSettings(prev => prev.inputEnergyType === 'auto' ? prev : { ...prev, inputEnergyType: 'auto' });
   }, []);
+
+  // Used by the empty-state "try a sample" buttons; the sidebar has its own copy
+  // because it also tracks the parsed file for the region selector.
+  const handleLoadSample = useCallback(async (sample: SampleDef) => {
+    const parsed = await fetchSample(sample);
+    handleLoad(regionToSpectrum(parsed.regions[0], sample.file));
+    setSettings(prev => ({ ...prev, source: sample.source }));
+  }, [handleLoad]);
 
   const handleSettingsChange = useCallback((newSettings: AnalysisSettings) => {
     setSettings(newSettings);
@@ -170,23 +192,29 @@ function App() {
         </aside>
 
         <main className="content">
-          <SpectrumChart
-            spectrum={workingSpectrum}
-            result={result}
-            lang={lang}
-            theme={theme}
-            settings={settings}
-            selectedElement={selectedElement}
-            onPeakClick={handlePeakClick}
-            displayMode={displayMode}
-            displayHv={displayHv}
-          />
-          <ElementTable
-            result={result}
-            lang={lang}
-            selectedElement={selectedElement}
-            onElementClick={handlePeakClick}
-          />
+          {!workingSpectrum ? (
+            <EmptyState lang={lang} onLoadSample={handleLoadSample} />
+          ) : (
+            <>
+              <SpectrumChart
+                spectrum={workingSpectrum}
+                result={result}
+                lang={lang}
+                theme={theme}
+                settings={settings}
+                selectedElement={selectedElement}
+                onPeakClick={handlePeakClick}
+                displayMode={displayMode}
+                displayHv={displayHv}
+              />
+              <ElementTable
+                result={result}
+                lang={lang}
+                selectedElement={selectedElement}
+                onElementClick={handlePeakClick}
+              />
+            </>
+          )}
         </main>
       </div>
 

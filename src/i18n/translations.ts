@@ -9,6 +9,14 @@ const translations = {
   sampleTiO2: { en: 'TiO2 Wide', ja: 'TiO2 Wide' },
   sampleAuSiHAXPES: { en: 'Au/Si (Ga Ka)', ja: 'Au/Si (Ga Ka)' },
   fileLoaded: { en: 'Loaded', ja: '読込済' },
+  loadFailed: { en: 'Could not load', ja: '読み込めませんでした' },
+  readFailed: { en: 'could not read the file', ja: 'ファイルを読めませんでした' },
+  trySample: { en: 'Try a sample:', ja: 'サンプルで試す:' },
+  emptyTitle: { en: 'Drop a survey spectrum to identify its elements', ja: 'サーベイスペクトルを読み込むと元素を同定します' },
+  emptyBody: {
+    en: 'Use the drop zone on the left (CSV, NPL, VAMAS, SES TXT, PXT, IBW), or start with a built-in sample. Everything runs in your browser; nothing is uploaded.',
+    ja: '左のドロップ欄にファイル (CSV, NPL, VAMAS, SES TXT, PXT, IBW) を入れるか、内蔵サンプルから始められます。処理はすべてブラウザ内で行われ、データは送信されません。',
+  },
   // Settings
   settings: { en: 'Settings', ja: '設定' },
   xraySource: { en: 'X-ray Source', ja: 'X線源' },
@@ -60,6 +68,14 @@ const translations = {
   matchedLines: { en: 'Matched Lines', ja: 'マッチしたライン' },
   scoring: { en: 'Scoring Detail', ja: 'スコア詳細' },
   noResults: { en: 'No elements identified. Upload a spectrum to begin.', ja: '元素が同定されていません。スペクトルをアップロードしてください。' },
+  noCandidates: {
+    en: 'No element passed the confidence threshold. Try lowering Min Confidence or raising Tolerance, or check the input data unit.',
+    ja: '信頼度のしきい値を超えた元素がありません。最低信頼度を下げる、トレランスを上げる、または入力データの単位を確認してください。',
+  },
+  chartHint: {
+    en: 'Drag to zoom \u00B7 double-click to reset \u00B7 click a peak (or anywhere on the trace) to list candidate lines',
+    ja: 'ドラッグでズーム \u00B7 ダブルクリックで戻す \u00B7 ピークや任意の位置をクリックすると候補ラインを表示',
+  },
   charging: { en: 'Charging', ja: '帯電' },
   rejected: { en: 'Rejected', ja: '棄却' },
   // Footer
