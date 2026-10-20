@@ -672,14 +672,65 @@ body {
   font-size: 0.7rem;
 }
 
-.detail-cell {
+.why-header { width: 1%; white-space: nowrap; }
+.why-cell { white-space: nowrap; }
+
+.detail-toggle {
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+.detail-toggle:hover, .detail-toggle.open {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
+.detail-row td {
+  background: var(--bg-input);
+  padding: 10px 12px 12px 48px;
+  font-size: 0.78rem;
+}
+.explain-list {
+  margin: 0 0 10px;
+  padding-left: 18px;
+  color: var(--text-primary);
+}
+.explain-list li { margin: 2px 0; }
+
+.lines-table {
+  border-collapse: collapse;
+  font-size: 0.72rem;
   font-family: monospace;
+  margin-bottom: 8px;
+}
+.lines-table th, .lines-table td {
+  padding: 2px 10px 2px 0;
+  border-bottom: none;
+  text-align: right;
+}
+.lines-table th:first-child, .lines-table td:first-child { text-align: left; }
+.lines-table th {
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: none;
+  font-size: 0.68rem;
+}
+
+.raw-detail summary {
   font-size: 0.7rem;
   color: var(--text-secondary);
-  max-width: 300px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  cursor: pointer;
+}
+.raw-detail code {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+  word-break: break-all;
 }
 
 .rejected-section {
@@ -821,8 +872,8 @@ body {
   .element-table {
     min-width: 560px;
   }
-  .detail-cell {
-    max-width: 200px;
+  .detail-row td {
+    padding-left: 16px;
   }
 
   .app-footer {

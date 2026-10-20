@@ -1,6 +1,7 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState, Fragment } from 'react';
 import type { IdentificationResult, Language } from '../types';
 import { t } from '../i18n/translations';
+import { explainDetail } from '../lib/explain-detail';
 
 interface ElementTableProps {
   result: IdentificationResult | null;
@@ -25,6 +26,16 @@ export const ElementTable: React.FC<ElementTableProps> = ({
   result, lang, selectedElement, onElementClick,
 }) => {
   const selectedRowRef = useRef<HTMLTableRowElement>(null);
+  // Elements whose "why" panel is open. The raw scoring string is developer-facing,
+  // so it stays hidden until asked for.
+  const [expanded, setExpanded] = useState<Set<string>>(() => new Set());
+  const toggleExpanded = (element: string) => {
+    setExpanded(prev => {
+      const next = new Set(prev);
+      if (next.has(element)) next.delete(element); else next.add(element);
+      return next;
+    });
+  };
 
   // Scroll selected row into view
   useEffect(() => {
@@ -53,7 +64,7 @@ export const ElementTable: React.FC<ElementTableProps> = ({
             <th>{t('element', lang)}</th>
             <th title={t('confidenceLegend', lang)} className="th-help">{t('confidence', lang)}</th>
             <th>{t('matchedLines', lang)}</th>
-            <th>{t('scoring', lang)}</th>
+            <th className="why-header">{t('why', lang)}</th>
           </tr>
         </thead>
         <tbody>
@@ -63,9 +74,10 @@ export const ElementTable: React.FC<ElementTableProps> = ({
             const isSingleLine = photoLines.length <= 1;
             const atFloor = cand.detail.includes('prom_floor');
             const color = confidenceColor(cand.confidence, isSingleLine);
+            const isExpanded = expanded.has(cand.element);
             return (
+              <Fragment key={cand.element}>
               <tr
-                key={cand.element}
                 ref={isSelected ? selectedRowRef : undefined}
                 className={isSelected ? 'selected' : ''}
                 onClick={() => onElementClick?.(isSelected ? null : cand.element)}
@@ -105,8 +117,53 @@ export const ElementTable: React.FC<ElementTableProps> = ({
                     <span className="auger-tag"> +Auger</span>
                   )}
                 </td>
-                <td className="detail-cell">{cand.detail}</td>
+                <td className="why-cell">
+                  <button
+                    className={'detail-toggle' + (isExpanded ? ' open' : '')}
+                    onClick={(e) => { e.stopPropagation(); toggleExpanded(cand.element); }}
+                    aria-expanded={isExpanded}
+                    title={t('whyHint', lang)}
+                  >
+                    {isExpanded ? '\u25BE' : '\u25B8'} {t('why', lang)}
+                  </button>
+                </td>
               </tr>
+              {isExpanded && (
+                <tr className="detail-row">
+                  <td colSpan={4}>
+                    <ul className="explain-list">
+                      {explainDetail(cand.detail, lang).map((line, i) => (
+                        <li key={i}>{line}</li>
+                      ))}
+                    </ul>
+                    <table className="lines-table">
+                      <thead>
+                        <tr>
+                          <th>{t('lineCol', lang)}</th>
+                          <th>{t('dbBE', lang)}</th>
+                          <th>{t('detectedBE', lang)}</th>
+                          <th>{'\u0394'} (eV)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {cand.matchedLines.map(ml => (
+                          <tr key={ml.lineName}>
+                            <td>{ml.lineName}{ml.lineType === 'auger' && <span className="auger-tag"> Auger</span>}</td>
+                            <td>{ml.databaseBE.toFixed(1)}</td>
+                            <td>{ml.detectedBE.toFixed(1)}</td>
+                            <td>{ml.deltaEV >= 0 ? '+' : ''}{ml.deltaEV.toFixed(1)}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                    <details className="raw-detail">
+                      <summary>{t('rawScoring', lang)}</summary>
+                      <code>{cand.detail}</code>
+                    </details>
+                  </td>
+                </tr>
+              )}
+              </Fragment>
             );
           })}
         </tbody>
