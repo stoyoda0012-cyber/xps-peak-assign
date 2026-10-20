@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import type { Language } from '../types';
 import { t } from '../i18n/translations';
 import { buildFeedbackBody, buildFormUrl, buildIssueUrl } from '../lib/feedback';
+import { trackEvent } from '../lib/analytics';
 import type { FeedbackContext } from '../lib/feedback';
 
 interface FeedbackMenuProps {
@@ -53,7 +54,7 @@ export const FeedbackMenu: React.FC<FeedbackMenuProps> = ({ lang, context }) => 
     <div className="feedback-menu" ref={rootRef}>
       <button
         className={'feedback-button' + (open ? ' open' : '')}
-        onClick={() => setOpen(o => !o)}
+        onClick={() => { if (!open) trackEvent('feedback-opened'); setOpen(!open); }}
         aria-expanded={open}
         aria-haspopup="dialog"
       >
