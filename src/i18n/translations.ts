@@ -67,6 +67,12 @@ const translations = {
   },
   matchedLines: { en: 'Matched Lines', ja: 'マッチしたライン' },
   scoring: { en: 'Scoring Detail', ja: 'スコア詳細' },
+  why: { en: 'Why', ja: '根拠' },
+  whyHint: { en: 'Show why this element got its confidence', ja: 'この信頼度になった理由を表示' },
+  lineCol: { en: 'Line', ja: 'ライン' },
+  dbBE: { en: 'Database BE (eV)', ja: 'DB 結合エネルギー (eV)' },
+  detectedBE: { en: 'Detected BE (eV)', ja: '検出 BE (eV)' },
+  rawScoring: { en: 'Raw scoring string', ja: '生のスコア文字列' },
   noResults: { en: 'No elements identified. Upload a spectrum to begin.', ja: '元素が同定されていません。スペクトルをアップロードしてください。' },
   noCandidates: {
     en: 'No element passed the confidence threshold. Try lowering Min Confidence or raising Tolerance, or check the input data unit.',
