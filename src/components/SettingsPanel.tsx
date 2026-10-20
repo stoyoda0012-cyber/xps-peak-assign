@@ -20,10 +20,12 @@ interface SettingsPanelProps {
   lang: Language;
   // How the loaded file's energy column is currently being interpreted (after auto-detection)
   effectiveInputType?: 'BE' | 'KE';
+  showRaw?: boolean;
+  onShowRawChange?: (v: boolean) => void;
 }
 
 export const SettingsPanel: React.FC<SettingsPanelProps> = ({
-  settings, onChange, lang, effectiveInputType,
+  settings, onChange, lang, effectiveInputType, showRaw = false, onShowRawChange,
 }) => {
   const [showEnergyDialog, setShowEnergyDialog] = useState(false);
   const [dialogEnergy, setDialogEnergy] = useState('');
@@ -204,6 +206,17 @@ export const SettingsPanel: React.FC<SettingsPanelProps> = ({
             onChange={(e) => update('chargingCorrection', e.target.checked)}
           />
           {t('chargingCorrection', lang)}
+        </label>
+      </div>
+
+      <div className="checkbox-group dev-group">
+        <label title={t('showRawHint', lang)}>
+          <input
+            type="checkbox"
+            checked={showRaw}
+            onChange={(e) => onShowRawChange?.(e.target.checked)}
+          />
+          {t('showRaw', lang)}
         </label>
       </div>
     </div>

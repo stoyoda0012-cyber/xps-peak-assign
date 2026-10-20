@@ -73,6 +73,20 @@ const translations = {
   dbBE: { en: 'Database BE (eV)', ja: 'DB 結合エネルギー (eV)' },
   detectedBE: { en: 'Detected BE (eV)', ja: '検出 BE (eV)' },
   rawScoring: { en: 'Raw scoring string', ja: '生のスコア文字列' },
+  explainWhat: { en: 'Check', ja: '項目' },
+  explainFound: { en: 'Finding', ja: '結果' },
+  explainEffect: { en: 'Effect', ja: '効果' },
+  scoreTotal: { en: 'Score', ja: 'スコア' },
+  scoreTop: { en: 'top score', ja: '最上位' },
+  scoreFloored: { en: 'raised to the minimum confidence', ja: '最低信頼度まで引き上げ' },
+  methodLink: { en: 'How is this computed? \u2192', ja: '計算方法を見る \u2192' },
+  methodTitle: { en: 'How it works', ja: '仕組みと計算の根拠' },
+  howItWorks: { en: 'How it works', ja: '仕組み' },
+  showRaw: { en: 'Developer: show raw scoring string', ja: '開発者向け: 生のスコア文字列を表示' },
+  showRawHint: {
+    en: 'Adds the internal scoring string (pos=..., SO(...)=...) to the Why panel. Useful when reporting a bug.',
+    ja: '根拠パネルに内部のスコア文字列 (pos=..., SO(...)=...) を追加します。不具合報告のときに役立ちます。',
+  },
   noResults: { en: 'No elements identified. Upload a spectrum to begin.', ja: '元素が同定されていません。スペクトルをアップロードしてください。' },
   noCandidates: {
     en: 'No element passed the confidence threshold. Try lowering Min Confidence or raising Tolerance, or check the input data unit.',
@@ -85,7 +99,10 @@ const translations = {
   charging: { en: 'Charging', ja: '帯電' },
   rejected: { en: 'Rejected', ja: '棄却' },
   // Footer
-  poweredBy: { en: 'Powered by NIST binding energies & Yeh-Lindau cross-sections', ja: 'NIST 結合エネルギー & Yeh-Lindau 断面積データ使用' },
+  poweredBy: {
+    en: 'Binding energies: standard core-level table \u00B7 Cross-sections: Yeh & Lindau (Al K\u03B1), Scofield (Ga K\u03B1)',
+    ja: '結合エネルギー: 標準内殻準位表 \u00B7 断面積: Yeh & Lindau (Al K\u03B1), Scofield (Ga K\u03B1)',
+  },
 } as const;
 
 type TranslationKey = keyof typeof translations;
