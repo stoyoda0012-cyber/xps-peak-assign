@@ -56,6 +56,13 @@ Open http://localhost:5173 in your browser. Drag & drop an XPS survey file or tr
 - uPlot (high-performance canvas charting)
 - Zero backend dependencies
 
+## Feedback
+
+The **Feedback** button in the header opens a pre-filled GitHub issue
+(settings, file name and element list included; never the spectrum data),
+or copies the same message for e-mail. To offer a form for people without a
+GitHub account, set `FEEDBACK_FORM_URL` in `src/lib/feedback.ts`.
+
 ## License
 
 MIT -- see [LICENSE](LICENSE).

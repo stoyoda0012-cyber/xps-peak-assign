@@ -84,6 +84,25 @@ const translations = {
   },
   charging: { en: 'Charging', ja: '帯電' },
   rejected: { en: 'Rejected', ja: '棄却' },
+  // Feedback
+  feedback: { en: 'Feedback', ja: 'フィードバック' },
+  feedbackTitle: { en: 'Send feedback', ja: '要望・不具合を送る' },
+  feedbackIntro: {
+    en: 'Requests, bugs and questions are all welcome. The message is pre-filled with your settings and the current result so problems can be reproduced.',
+    ja: '要望・不具合・質問、何でもどうぞ。再現できるよう、設定と現在の結果が本文に自動で入ります。',
+  },
+  feedbackGitHub: { en: 'Open a GitHub issue', ja: 'GitHub の Issue を開く' },
+  feedbackGitHubSub: { en: 'needs a GitHub account; opens in a new tab', ja: 'GitHub アカウントが必要。新しいタブで開きます' },
+  feedbackForm: { en: 'Send via form', ja: 'フォームで送る' },
+  feedbackFormSub: { en: 'no account needed', ja: 'アカウント不要' },
+  feedbackCopy: { en: 'Copy the message', ja: '本文をコピー' },
+  feedbackCopied: { en: 'Copied!', ja: 'コピーしました' },
+  feedbackCopySub: { en: 'paste it into an e-mail or chat', ja: 'メールやチャットに貼り付けてください' },
+  feedbackCopyFallback: { en: 'Copy this text:', ja: 'この文章をコピーしてください:' },
+  feedbackPrivacy: {
+    en: 'Included: app version, browser, settings, file name, element list. Not included: the spectrum data itself.',
+    ja: '含まれる情報: アプリの版、ブラウザ、設定、ファイル名、元素の一覧。スペクトルのデータ自体は含まれません。',
+  },
   // Footer
   poweredBy: { en: 'Powered by NIST binding energies & Yeh-Lindau cross-sections', ja: 'NIST 結合エネルギー & Yeh-Lindau 断面積データ使用' },
 } as const;
