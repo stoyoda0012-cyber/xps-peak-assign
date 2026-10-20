@@ -8,6 +8,7 @@ import { t } from './i18n/translations';
 import FileUpload from './components/FileUpload';
 import EmptyState from './components/EmptyState';
 import MethodPage from './components/MethodPage';
+import NarrowScanNotice, { NARROW_SCAN_EV } from './components/NarrowScanNotice';
 import FeedbackMenu from './components/FeedbackMenu';
 import { fetchSample } from './lib/samples';
 import type { SampleDef } from './lib/samples';
@@ -108,6 +109,15 @@ function App() {
     }
     return spectrum;
   }, [spectrum, effectiveInputType, settings.source, settings.customEnergy]);
+
+  // Energy span of the loaded data; narrow scans get a notice instead of a confident ranking
+  const spanEV = useMemo(() => {
+    if (!workingSpectrum || workingSpectrum.energy.length === 0) return 0;
+    let lo = Infinity, hi = -Infinity;
+    for (const e of workingSpectrum.energy) { if (e < lo) lo = e; if (e > hi) hi = e; }
+    return hi - lo;
+  }, [workingSpectrum]);
+  const isNarrowScan = spanEV > 0 && spanEV < NARROW_SCAN_EV;
 
   // Display axis is presentation only
   const displayMode: 'BE' | 'KE' = settings.displayEnergy;
@@ -222,6 +232,9 @@ function App() {
                 displayMode={displayMode}
                 displayHv={displayHv}
               />
+              {isNarrowScan && result && (
+                <NarrowScanNotice lang={lang} spanEV={spanEV} result={result} settings={settings} />
+              )}
               <ElementTable
                 result={result}
                 lang={lang}

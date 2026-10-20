@@ -120,6 +120,36 @@ function getCSLookup(source: string): Record<string, Record<string, number>> {
   return csLookupAl;
 }
 
+/** Largest cross-section in a table (Mb); used to express thresholds relative to the table's scale. */
+function maxCrossSection(data: CrossSectionEntry[]): number {
+  let max = 0;
+  for (const e of data) if (e.crossSection > max) max = e.crossSection;
+  return max;
+}
+
+const MAX_CS_AL = maxCrossSection(crossSectionsAlData as CrossSectionEntry[]);
+const MAX_CS_GA = maxCrossSection(crossSectionsGaData as CrossSectionEntry[]);
+
+/**
+ * Lines weaker than this fraction of the table's strongest line are not used
+ * as candidates. Defined as a fraction, not an absolute value, because the
+ * Scofield table at Ga Ka is ~20x smaller in absolute terms than the
+ * Yeh-Lindau table at Al Ka; an absolute 0.001 Mb cut-off removed every
+ * line of H..Mg (including O 1s and C 1s) for HAXPES. The fraction is chosen
+ * so the Al Ka threshold stays exactly at the historical 0.001 Mb.
+ */
+const MIN_CS_FRACTION = 0.001 / MAX_CS_AL;
+
+/** Minimum usable cross-section (Mb) for the table that `source` uses. */
+export function getMinCrossSection(source: string = 'Al'): number {
+  return MIN_CS_FRACTION * (source === 'Ga' ? MAX_CS_GA : MAX_CS_AL);
+}
+
+/** Strongest line in the table that `source` uses (Mb), for displaying relative strengths. */
+export function getMaxCrossSection(source: string = 'Al'): number {
+  return source === 'Ga' ? MAX_CS_GA : MAX_CS_AL;
+}
+
 function matchOrbitalToCS(orbitalName: string, elementCS: Record<string, number> | undefined): number {
   if (!elementCS) return 0;
   const otype = parseOrbitalType(orbitalName);
