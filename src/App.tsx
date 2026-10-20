@@ -7,6 +7,7 @@ import { detectEnergyType } from './lib/parsers';
 import { t } from './i18n/translations';
 import FileUpload from './components/FileUpload';
 import EmptyState from './components/EmptyState';
+import MethodPage from './components/MethodPage';
 import { fetchSample } from './lib/samples';
 import type { SampleDef } from './lib/samples';
 import { regionToSpectrum } from './lib/parsers';
@@ -45,6 +46,9 @@ function App() {
   const [settings, setSettings] = useState<AnalysisSettings>(defaultSettings);
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
   const [selectedElement, setSelectedElement] = useState<string | null>(null);
+  const [methodOpen, setMethodOpen] = useState(false);
+  // Developer option: show the raw scoring string in the Why panel
+  const [showRaw, setShowRaw] = useState<boolean>(() => localStorage.getItem('xps-dev-raw') === '1');
 
   // Apply theme to document.
   // useLayoutEffect (not useEffect): SpectrumChart reads the theme's CSS variables via
@@ -62,6 +66,10 @@ function App() {
   useEffect(() => {
     localStorage.setItem('xps-lang', lang);
   }, [lang]);
+
+  useEffect(() => {
+    localStorage.setItem('xps-dev-raw', showRaw ? '1' : '0');
+  }, [showRaw]);
 
   // Keep Synchrotron energy in sync with XRAY_SOURCES registry (must run before useMemo)
   useMemo(() => {
@@ -188,6 +196,8 @@ function App() {
             onChange={handleSettingsChange}
             lang={lang}
             effectiveInputType={effectiveInputType}
+            showRaw={showRaw}
+            onShowRawChange={setShowRaw}
           />
         </aside>
 
@@ -212,6 +222,8 @@ function App() {
                 lang={lang}
                 selectedElement={selectedElement}
                 onElementClick={handlePeakClick}
+                showRaw={showRaw}
+                onOpenMethod={() => setMethodOpen(true)}
               />
             </>
           )}
@@ -219,9 +231,15 @@ function App() {
       </div>
 
       <footer className="app-footer">
-        <span>{t('poweredBy', lang)}</span>
+        <span>
+          {t('poweredBy', lang)}
+          {' \u00B7 '}
+          <button className="link-button" onClick={() => setMethodOpen(true)}>{t('howItWorks', lang)}</button>
+        </span>
         <span className="footer-right">Built with Claude Code</span>
       </footer>
+
+      {methodOpen && <MethodPage lang={lang} onClose={() => setMethodOpen(false)} />}
     </div>
   );
 }

@@ -31,6 +31,8 @@ xps-peak-assign/
 │   │   ├── SpectrumChart.tsx # uPlot chart + peak annotations
 │   │   ├── ElementTable.tsx # Identification results table
 │   │   ├── SettingsPanel.tsx # Parameter settings sidebar
+│   │   ├── EmptyState.tsx   # First-visit panel with sample buttons
+│   │   ├── MethodPage.tsx   # "How it works": pipeline, scoring rules, data provenance
 │   │   └── Slider.tsx       # Reusable slider component
 │   ├── lib/
 │   │   ├── energy.ts        # X-ray source registry, BE/KE conversion
@@ -43,6 +45,7 @@ xps-peak-assign/
 │   │   └── pxt-parser.ts    # PXT/IBW binary parser (Igor Pro)
 │   ├── __tests__/
 │   │   ├── golden.test.ts   # Golden tests pinning current pipeline output
+│   │   ├── explain-detail.test.ts # Scoring-string -> explanation rows, score summary
 │   │   ├── helpers/         # analyse() (mirrors App.tsx), synthetic spectrum generator
 │   │   └── fixtures/        # Synthetic fixtures (e.g. HfO2/Si @ 7940 eV)
 │   ├── data/
@@ -87,7 +90,10 @@ xps-peak-assign/
 - Only source `'Ga'` uses the Scofield table. Every other source, including
   `'Synchrotron'`, currently falls back to the Al Ka table (known bug F2,
   pinned in the golden tests).
-- The UI footer still says "NIST". Correcting it is planned for a later PR.
+- The UI footer names these sources, and the in-app "How it works" page
+  (`components/MethodPage.tsx`, EN/JA) documents the pipeline, the scoring
+  rules with their constants, score-to-confidence normalisation, provenance
+  and limitations. Keep it in sync when constants in `lib/` change.
 
 ## Python Source Correspondence
 
