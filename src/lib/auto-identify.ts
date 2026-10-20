@@ -16,8 +16,8 @@ import type {
 } from '../types';
 import { subtractBackground } from './background';
 import { detectPeaks } from './peak-detection';
-import { identifyCandidates, getCrossSection, getElement, setSource } from './element-db';
-import { scoreCandidates, resolveAndRank, MIN_CROSS_SECTION } from './scoring';
+import { identifyCandidates, getCrossSection, getElement, setSource, getMinCrossSection } from './element-db';
+import { scoreCandidates, resolveAndRank } from './scoring';
 
 // Charging constants
 const C1S_REFERENCE_BE = 284.8;
@@ -206,7 +206,9 @@ export function autoIdentify(
   const positions = detected.map(pk => pk.position);
   const allMatches = identifyCandidates(positions, toleranceEV, source, includeAuger);
 
-  // Group by element
+  // Group by element. Lines weaker than the table-relative threshold are skipped
+  // (relative, not absolute: see getMinCrossSection).
+  const minCS = getMinCrossSection(source);
   const candidates = new Map<string, ElementCandidate>();
   for (let peakIdx = 0; peakIdx < detected.length; peakIdx++) {
     const pk = detected[peakIdx];
@@ -217,7 +219,7 @@ export function autoIdentify(
       let cs = 0;
       if (!isAuger) {
         cs = getCrossSection(elemSym, lineName);
-        if (cs < MIN_CROSS_SECTION) continue;
+        if (cs < minCS) continue;
       }
 
       const ml: MatchedLine = {

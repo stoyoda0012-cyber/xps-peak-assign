@@ -98,6 +98,22 @@ const translations = {
   },
   charging: { en: 'Charging', ja: '帯電' },
   rejected: { en: 'Rejected', ja: '棄却' },
+  // Narrow-scan notice
+  narrowTitle: {
+    en: 'This is a narrow scan ({span} eV wide), not a survey',
+    ja: 'これは幅 {span} eV の狭域スキャンで、サーベイではありません',
+  },
+  narrowBody: {
+    en: 'Element identification is designed for survey spectra. In a window this narrow there are no spin-orbit partners, other shells or Auger lines to cross-check, so every candidate below is a single line and its ranking only reflects how close the peak is to the tabulated value. Treat the confidences as "which table lines are nearby", not as evidence. The table lines near each detected peak are listed here; a multi-region PXT is analysed one region at a time.',
+    ja: '元素同定はサーベイスペクトル向けです。この幅ではスピン軌道対・他の殻・Auger ラインによる相互確認ができないため、下の候補はすべて 1 本一致で、順位は「表の値にどれだけ近いか」しか表していません。信頼度は「近くにある表のライン」程度の意味で、根拠ではありません。参考として、検出した各ピーク付近にある表のラインを示します。複数領域の PXT は領域ごとに別々に解析されます。',
+  },
+  narrowPeak: { en: 'Detected peak', ja: '検出ピーク' },
+  narrowLines: { en: 'Table lines within tolerance (Δ to the table value · cross-section relative to the strongest line of the table)', ja: '許容幅内の表のライン（表の値からのずれ · 断面積は表の最強ラインに対する比）' },
+  narrowNoLine: { en: 'no table line within tolerance', ja: '許容幅内に表のラインなし' },
+  narrowFoot: {
+    en: 'For a full identification, load a survey (several hundred eV) of the same sample; it can be compared against the narrow scan afterwards.',
+    ja: '本格的な同定には、同じ試料のサーベイ（数百 eV 幅）を読み込んでください。その結果と狭域スキャンを突き合わせる使い方が確実です。',
+  },
   // Feedback
   feedback: { en: 'Feedback', ja: 'フィードバック' },
   feedbackTitle: { en: 'Send feedback', ja: '要望・不具合を送る' },

@@ -90,6 +90,11 @@ xps-peak-assign/
 - Only source `'Ga'` uses the Scofield table. Every other source, including
   `'Synchrotron'`, currently falls back to the Al Ka table (known bug F2,
   pinned in the golden tests).
+- The two tables differ in absolute scale by ~20x. The candidate filter's
+  minimum cross-section is therefore **relative** to each table's strongest
+  line (`getMinCrossSection()` in `element-db.ts`; the fraction is chosen so
+  the Al Ka threshold is the historical 0.001 Mb). An absolute threshold had
+  removed every H..Mg line (O 1s, C 1s, ...) for HAXPES.
 - The UI footer names these sources, and the in-app "How it works" page
   (`components/MethodPage.tsx`, EN/JA) documents the pipeline, the scoring
   rules with their constants, score-to-confidence normalisation, provenance
@@ -159,6 +164,10 @@ the diff. Do not loosen the assertions to make them pass.
 
 - Shirley background only (no Tougaard)
 - Single-line elements (C, O, F) have structurally low confidence
+- Narrow scans (< `NARROW_SCAN_EV` = 150 eV) cannot be cross-checked; the UI
+  shows `NarrowScanNotice` (table lines near each peak) above the results
+  instead of trusting the ranking. Multi-region PXT files are analysed one
+  region at a time.
 - No quantitative analysis (atomic %)
 - No result export (PDF/CSV)
 

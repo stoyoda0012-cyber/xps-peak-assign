@@ -81,6 +81,8 @@ export const MethodPage: React.FC<MethodPageProps> = ({ lang, onClose }) => {
               <ul>
                 <li>信頼度はまだ較正されていません。順位の目安として使い、最終判断はスペクトルを見て行ってください。</li>
                 <li>単線元素（C、O、F、N など）は構造的に低い信頼度になります。</li>
+                <li>幅 150 eV 未満の狭域スキャンでは相互確認ができないため、順位付けの代わりに「ピーク付近にある表のライン」を示します。同定にはサーベイを使ってください。</li>
+                <li>断面積の小さいラインは候補から除きます。しきい値は表ごとの相対値（最強ラインの約 0.07%）で、Ga Kα の Scofield 表でも O 1s や C 1s が残るようにしています。</li>
                 <li>バックグラウンドは Shirley 法のみで、Tougaard 法はありません。定量（原子 %）は行いません。</li>
                 <li>CSV は「エネルギー, 強度」の 2 列で、区切りはカンマかタブです。小数点にカンマを使った形式は読めません。</li>
                 <li>入力データの単位（BE/KE）の自動判定は、選択中の X 線源の光子エネルギーに依存します。放射光データでは光子エネルギーを手動で設定してください。</li>
@@ -138,6 +140,8 @@ export const MethodPage: React.FC<MethodPageProps> = ({ lang, onClose }) => {
               <ul>
                 <li>Confidences are not yet calibrated. Use them to rank candidates and confirm against the spectrum.</li>
                 <li>Single-line elements (C, O, F, N, …) are structurally low-confidence.</li>
+                <li>Narrow scans (under 150 eV wide) cannot be cross-checked, so instead of a ranking the app lists the table lines near each peak. Use a survey for identification.</li>
+                <li>Lines with very small cross-sections are not used as candidates. The threshold is relative to each table (about 0.07 % of its strongest line), so O 1s and C 1s survive in the Ga Kα Scofield table too.</li>
                 <li>Shirley background only (no Tougaard). No quantification (atomic %).</li>
                 <li>CSV must be two columns, energy and intensity, separated by comma or tab. Decimal commas are not supported.</li>
                 <li>Automatic BE/KE detection of the input depends on the selected X-ray source's photon energy; set it by hand for synchrotron data.</li>
