@@ -471,6 +471,79 @@ body {
   border-left-style: solid;
 }
 
+/* ---- Inline errors (replace alert()) ---- */
+.inline-error {
+  margin-top: 8px;
+  padding: 6px 10px;
+  border: 1px solid var(--accent-red);
+  border-radius: var(--radius);
+  background: rgba(231, 76, 60, 0.08);
+  color: var(--accent-red);
+  font-size: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  word-break: break-word;
+}
+.inline-error-close {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+/* ---- Chart hint ---- */
+.chart-hint {
+  margin-top: 4px;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  text-align: right;
+}
+
+/* ---- Empty state ---- */
+.empty-state {
+  background: var(--bg-card);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 48px 24px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+.empty-state-icon { font-size: 2.2rem; margin-bottom: 8px; }
+.empty-state h2 {
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+.empty-state p {
+  max-width: 520px;
+  margin: 0 auto 20px;
+  font-size: 0.85rem;
+}
+.empty-state-samples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+}
+.empty-state-samples button {
+  padding: 6px 14px;
+  border: 1px solid var(--accent-blue);
+  border-radius: var(--radius);
+  background: var(--accent-blue);
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.empty-state-samples button:hover { filter: brightness(1.1); }
+.empty-state-samples button:disabled { opacity: 0.6; cursor: wait; }
+.empty-state .inline-error { display: inline-flex; margin-top: 16px; }
+
 /* ---- Element Table ---- */
 
 .element-table-container {
@@ -548,6 +621,24 @@ body {
   text-align: center;
 }
 
+.th-help {
+  cursor: help;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+}
+
+.single-line-tag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  cursor: help;
+  vertical-align: middle;
+}
+
 .confidence-bar-container {
   position: relative;
   height: 18px;
@@ -581,14 +672,65 @@ body {
   font-size: 0.7rem;
 }
 
-.detail-cell {
+.why-header { width: 1%; white-space: nowrap; }
+.why-cell { white-space: nowrap; }
+
+.detail-toggle {
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+.detail-toggle:hover, .detail-toggle.open {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
+.detail-row td {
+  background: var(--bg-input);
+  padding: 10px 12px 12px 48px;
+  font-size: 0.78rem;
+}
+.explain-list {
+  margin: 0 0 10px;
+  padding-left: 18px;
+  color: var(--text-primary);
+}
+.explain-list li { margin: 2px 0; }
+
+.lines-table {
+  border-collapse: collapse;
+  font-size: 0.72rem;
   font-family: monospace;
+  margin-bottom: 8px;
+}
+.lines-table th, .lines-table td {
+  padding: 2px 10px 2px 0;
+  border-bottom: none;
+  text-align: right;
+}
+.lines-table th:first-child, .lines-table td:first-child { text-align: left; }
+.lines-table th {
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: none;
+  font-size: 0.68rem;
+}
+
+.raw-detail summary {
   font-size: 0.7rem;
   color: var(--text-secondary);
-  max-width: 300px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  cursor: pointer;
+}
+.raw-detail code {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+  word-break: break-all;
 }
 
 .rejected-section {
@@ -689,3 +831,54 @@ body {
 .u-wrap { background: transparent !important; }
 .u-legend { font-size: 0.75rem !important; }
 .u-legend .u-label { color: var(--text-secondary) !important; }
+
+/* ---- Narrow screens (phones, small tablets) ---- */
+/* The sidebar is a fixed 280px column on desktop; below 768px it stacks above the
+   content so the chart gets the full width instead of being squeezed to ~90px. */
+@media (max-width: 767px) {
+  .app-header {
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    padding: 10px 16px;
+  }
+  .header-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-left .subtitle {
+    margin-left: 0;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    max-height: none;
+    overflow-y: visible;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .content {
+    padding: 12px 16px;
+  }
+
+  /* Results table: let it scroll sideways instead of crushing the columns */
+  .element-table-container {
+    overflow-x: auto;
+    padding: 12px;
+  }
+  .element-table {
+    min-width: 560px;
+  }
+  .detail-row td {
+    padding-left: 16px;
+  }
+
+  .app-footer {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+}

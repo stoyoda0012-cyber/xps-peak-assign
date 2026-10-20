@@ -1,6 +1,7 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState, Fragment } from 'react';
 import type { IdentificationResult, Language } from '../types';
 import { t } from '../i18n/translations';
+import { explainDetail } from '../lib/explain-detail';
 
 interface ElementTableProps {
   result: IdentificationResult | null;
@@ -9,7 +10,13 @@ interface ElementTableProps {
   onElementClick?: (element: string | null) => void;
 }
 
-function confidenceColor(conf: number): string {
+const SINGLE_LINE_COLOR = '#7f8c8d';
+
+function confidenceColor(conf: number, singleLine: boolean): string {
+  // A single-line element (C 1s, O 1s, F 1s, ...) has nothing to cross-check against,
+  // so its confidence is structurally low. Showing it red reads as "suspicious element",
+  // which is misleading for e.g. O in TiO2; gray says "cannot be rated" instead.
+  if (singleLine) return SINGLE_LINE_COLOR;
   if (conf >= 0.8) return '#27ae60';
   if (conf >= 0.5) return '#f39c12';
   return '#e74c3c';
@@ -19,6 +26,16 @@ export const ElementTable: React.FC<ElementTableProps> = ({
   result, lang, selectedElement, onElementClick,
 }) => {
   const selectedRowRef = useRef<HTMLTableRowElement>(null);
+  // Elements whose "why" panel is open. The raw scoring string is developer-facing,
+  // so it stays hidden until asked for.
+  const [expanded, setExpanded] = useState<Set<string>>(() => new Set());
+  const toggleExpanded = (element: string) => {
+    setExpanded(prev => {
+      const next = new Set(prev);
+      if (next.has(element)) next.delete(element); else next.add(element);
+      return next;
+    });
+  };
 
   // Scroll selected row into view
   useEffect(() => {
@@ -28,7 +45,7 @@ export const ElementTable: React.FC<ElementTableProps> = ({
   }, [selectedElement]);
 
   if (!result || result.candidates.length === 0) {
-    return <div className="element-table-empty">{t('noResults', lang)}</div>;
+    return <div className="element-table-empty">{t('noCandidates', lang)}</div>;
   }
 
   return (
@@ -45,34 +62,47 @@ export const ElementTable: React.FC<ElementTableProps> = ({
         <thead>
           <tr>
             <th>{t('element', lang)}</th>
-            <th>{t('confidence', lang)}</th>
+            <th title={t('confidenceLegend', lang)} className="th-help">{t('confidence', lang)}</th>
             <th>{t('matchedLines', lang)}</th>
-            <th>{t('scoring', lang)}</th>
+            <th className="why-header">{t('why', lang)}</th>
           </tr>
         </thead>
         <tbody>
           {result.candidates.map((cand) => {
             const isSelected = selectedElement === cand.element;
+            const photoLines = cand.matchedLines.filter(ml => ml.lineType === 'photo');
+            const isSingleLine = photoLines.length <= 1;
+            const atFloor = cand.detail.includes('prom_floor');
+            const color = confidenceColor(cand.confidence, isSingleLine);
+            const isExpanded = expanded.has(cand.element);
             return (
+              <Fragment key={cand.element}>
               <tr
-                key={cand.element}
                 ref={isSelected ? selectedRowRef : undefined}
                 className={isSelected ? 'selected' : ''}
                 onClick={() => onElementClick?.(isSelected ? null : cand.element)}
                 style={{ cursor: 'pointer' }}
               >
                 <td>
-                  <span className="element-badge" style={{ background: confidenceColor(cand.confidence) }}>
+                  <span className="element-badge" style={{ background: color }}>
                     {cand.element}
                   </span>
+                  {isSingleLine && (
+                    <span className="single-line-tag" title={t('singleLineHint', lang)}>
+                      {t('singleLine', lang)}
+                    </span>
+                  )}
                 </td>
                 <td>
-                  <div className="confidence-bar-container">
+                  <div
+                    className="confidence-bar-container"
+                    title={atFloor ? t('promFloorHint', lang) : undefined}
+                  >
                     <div
                       className="confidence-bar"
                       style={{
                         width: `${cand.confidence * 100}%`,
-                        background: confidenceColor(cand.confidence),
+                        background: color,
                       }}
                     />
                     <span className="confidence-value">{(cand.confidence * 100).toFixed(0)}%</span>
@@ -87,8 +117,53 @@ export const ElementTable: React.FC<ElementTableProps> = ({
                     <span className="auger-tag"> +Auger</span>
                   )}
                 </td>
-                <td className="detail-cell">{cand.detail}</td>
+                <td className="why-cell">
+                  <button
+                    className={'detail-toggle' + (isExpanded ? ' open' : '')}
+                    onClick={(e) => { e.stopPropagation(); toggleExpanded(cand.element); }}
+                    aria-expanded={isExpanded}
+                    title={t('whyHint', lang)}
+                  >
+                    {isExpanded ? '\u25BE' : '\u25B8'} {t('why', lang)}
+                  </button>
+                </td>
               </tr>
+              {isExpanded && (
+                <tr className="detail-row">
+                  <td colSpan={4}>
+                    <ul className="explain-list">
+                      {explainDetail(cand.detail, lang).map((line, i) => (
+                        <li key={i}>{line}</li>
+                      ))}
+                    </ul>
+                    <table className="lines-table">
+                      <thead>
+                        <tr>
+                          <th>{t('lineCol', lang)}</th>
+                          <th>{t('dbBE', lang)}</th>
+                          <th>{t('detectedBE', lang)}</th>
+                          <th>{'\u0394'} (eV)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {cand.matchedLines.map(ml => (
+                          <tr key={ml.lineName}>
+                            <td>{ml.lineName}{ml.lineType === 'auger' && <span className="auger-tag"> Auger</span>}</td>
+                            <td>{ml.databaseBE.toFixed(1)}</td>
+                            <td>{ml.detectedBE.toFixed(1)}</td>
+                            <td>{ml.deltaEV >= 0 ? '+' : ''}{ml.deltaEV.toFixed(1)}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                    <details className="raw-detail">
+                      <summary>{t('rawScoring', lang)}</summary>
+                      <code>{cand.detail}</code>
+                    </details>
+                  </td>
+                </tr>
+              )}
+              </Fragment>
             );
           })}
         </tbody>
@@ -98,7 +173,7 @@ export const ElementTable: React.FC<ElementTableProps> = ({
         <details className="rejected-section">
           <summary>{t('rejected', lang)} ({result.rejected.length})</summary>
           <div className="rejected-list">
-            {result.rejected.slice(0, 10).map((cand) => (
+            {result.rejected.map((cand) => (
               <span key={cand.element} className="rejected-item">
                 {cand.element} ({(cand.confidence * 100).toFixed(0)}%)
               </span>

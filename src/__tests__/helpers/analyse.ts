@@ -18,7 +18,8 @@ export const DEFAULT_SETTINGS: AnalysisSettings = {
   bgMethod: 'shirley',
   includeAuger: true,
   chargingCorrection: true,
-  energyType: 'auto',
+  inputEnergyType: 'auto',
+  displayEnergy: 'BE',
 };
 
 export interface AnalyseOptions {
@@ -28,7 +29,7 @@ export interface AnalyseOptions {
 }
 
 /**
- * Mirrors App.tsx for a CSV-loaded spectrum with energyType 'auto':
+ * Mirrors App.tsx for a CSV-loaded spectrum with inputEnergyType 'auto':
  *  1. For 'Synchrotron', register the custom hv and drop the cached DB
  *     (App's useMemo calls setSynchrotronEnergy + clearDBCache).
  *  2. CSV regions are tagged 'BE', so App runs detectEnergyType() with

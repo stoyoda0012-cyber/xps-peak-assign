@@ -24,7 +24,7 @@ xps-peak-assign/
 │   └── au-si-haxpes.csv     # Au/Si HAXPES survey, Ga Ka (9251.7 eV)
 ├── src/
 │   ├── App.tsx              # Layout + state management
-│   ├── App.css              # Dark theme styles
+│   ├── App.css              # Light/dark theme styles (CSS variables)
 │   ├── types.ts             # All shared TypeScript interfaces
 │   ├── components/
 │   │   ├── FileUpload.tsx   # Drag & drop + sample buttons
@@ -108,9 +108,14 @@ scripts locate it via `XPS_SOURCE_ROOT` (see `scripts/`).
 - **X-axis**: Reversed (high BE left, low BE right) — XPS convention
   - uPlot: `scales: { x: { time: false, dir: -1 } }`
 - **Energy**: Always Binding Energy (eV) internally
+  - `settings.inputEnergyType` ('auto' | 'BE' | 'KE') decides how the file's energy column is
+    interpreted (auto = parser hint + heuristic) and is reset to 'auto' on every load.
+  - `settings.displayEnergy` ('BE' | 'KE') only picks the chart axis; it never changes the analysis.
 - **Multiple sources**: Al Ka (1486.6 eV), Mg Ka, Zr La, Ag La, Ti Ka, Cr Ka, Ga Ka, Synchrotron
 - **Lanthanides excluded** (La-Lu) to prevent false positives
-- **Dark theme** UI with CSS variables
+- **Light/dark theme** via CSS variables on `data-theme` (light is the default, choice persisted)
+  - The attribute is set in a `useLayoutEffect` so SpectrumChart's `getComputedStyle` reads the
+    new theme before it rebuilds the chart.
 
 ## Commands
 
