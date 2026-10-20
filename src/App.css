@@ -689,3 +689,54 @@ body {
 .u-wrap { background: transparent !important; }
 .u-legend { font-size: 0.75rem !important; }
 .u-legend .u-label { color: var(--text-secondary) !important; }
+
+/* ---- Narrow screens (phones, small tablets) ---- */
+/* The sidebar is a fixed 280px column on desktop; below 768px it stacks above the
+   content so the chart gets the full width instead of being squeezed to ~90px. */
+@media (max-width: 767px) {
+  .app-header {
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    padding: 10px 16px;
+  }
+  .header-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-left .subtitle {
+    margin-left: 0;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    max-height: none;
+    overflow-y: visible;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .content {
+    padding: 12px 16px;
+  }
+
+  /* Results table: let it scroll sideways instead of crushing the columns */
+  .element-table-container {
+    overflow-x: auto;
+    padding: 12px;
+  }
+  .element-table {
+    min-width: 560px;
+  }
+  .detail-cell {
+    max-width: 200px;
+  }
+
+  .app-footer {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+}
