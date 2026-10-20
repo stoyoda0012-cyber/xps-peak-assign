@@ -56,6 +56,15 @@ Open http://localhost:5173 in your browser. Drag & drop an XPS survey file or tr
 - uPlot (high-performance canvas charting)
 - Zero backend dependencies
 
+## Privacy and usage counting
+
+The spectrum never leaves the browser. Visits are counted with
+[GoatCounter](https://www.goatcounter.com) (no cookies, no personal data;
+dashboard: https://xps-peak-assign.goatcounter.com). `src/lib/analytics.ts`
+also counts four coarse events (sample loaded, file loaded by extension,
+feedback opened, how-it-works opened). `count.js` ignores localhost, so
+development runs are not counted.
+
 ## Feedback
 
 The **Feedback** button in the header opens a Google Form (no account

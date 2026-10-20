@@ -160,6 +160,13 @@ the diff. Do not loosen the assertions to make them pass.
 - PR checks: `ci.yml` (Node 20: `npm ci`, lint, test, build)
 - Pushing changes under `.github/workflows/` requires a token with the `workflow` scope
 
+## Analytics
+
+GoatCounter (`index.html` script tag -> https://xps-peak-assign.goatcounter.com)
+counts page views; `lib/analytics.ts` counts four coarse events. No cookies,
+no file names, no data. Keep the privacy section of `MethodPage.tsx` in sync
+if events are added. Localhost is ignored by count.js.
+
 ## Known Limitations
 
 - Shirley background only (no Tougaard)

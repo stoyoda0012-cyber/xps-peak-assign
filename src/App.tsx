@@ -13,6 +13,8 @@ import FeedbackMenu from './components/FeedbackMenu';
 import { fetchSample } from './lib/samples';
 import type { SampleDef } from './lib/samples';
 import { regionToSpectrum } from './lib/parsers';
+import { SAMPLES } from './lib/samples';
+import { trackEvent, fileLoadedEvent } from './lib/analytics';
 import SpectrumChart from './components/SpectrumChart';
 import ElementTable from './components/ElementTable';
 import SettingsPanel from './components/SettingsPanel';
@@ -138,6 +140,15 @@ function App() {
     setSpectrum(data);
     // The input-unit override belongs to one file; a new file starts from auto-detection.
     setSettings(prev => prev.inputEnergyType === 'auto' ? prev : { ...prev, inputEnergyType: 'auto' });
+    // Usage counting: bundled sample by name, user files by extension only
+    const baseName = data.name.split(' [')[0];
+    const sample = SAMPLES.find(s => s.file === baseName);
+    trackEvent(sample ? `sample-loaded/${sample.file}` : fileLoadedEvent(baseName));
+  }, []);
+
+  const openMethod = useCallback(() => {
+    setMethodOpen(true);
+    trackEvent('method-opened');
   }, []);
 
   // Used by the empty-state "try a sample" buttons; the sidebar has its own copy
@@ -241,7 +252,7 @@ function App() {
                 selectedElement={selectedElement}
                 onElementClick={handlePeakClick}
                 showRaw={showRaw}
-                onOpenMethod={() => setMethodOpen(true)}
+                onOpenMethod={openMethod}
               />
             </>
           )}
@@ -252,7 +263,7 @@ function App() {
         <span>
           {t('poweredBy', lang)}
           {' \u00B7 '}
-          <button className="link-button" onClick={() => setMethodOpen(true)}>{t('howItWorks', lang)}</button>
+          <button className="link-button" onClick={openMethod}>{t('howItWorks', lang)}</button>
         </span>
         <span className="footer-right">Built with Claude Code</span>
       </footer>

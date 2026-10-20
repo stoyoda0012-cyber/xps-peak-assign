@@ -14,8 +14,8 @@ const translations = {
   trySample: { en: 'Try a sample:', ja: 'サンプルで試す:' },
   emptyTitle: { en: 'Drop a survey spectrum to identify its elements', ja: 'サーベイスペクトルを読み込むと元素を同定します' },
   emptyBody: {
-    en: 'Use the drop zone on the left (CSV, NPL, VAMAS, SES TXT, PXT, IBW), or start with a built-in sample. Everything runs in your browser; nothing is uploaded.',
-    ja: '左のドロップ欄にファイル (CSV, NPL, VAMAS, SES TXT, PXT, IBW) を入れるか、内蔵サンプルから始められます。処理はすべてブラウザ内で行われ、データは送信されません。',
+    en: 'Use the drop zone on the left (CSV, NPL, VAMAS, SES TXT, PXT, IBW), or start with a built-in sample. The analysis runs in your browser; your spectrum is never uploaded.',
+    ja: '左のドロップ欄にファイル (CSV, NPL, VAMAS, SES TXT, PXT, IBW) を入れるか、内蔵サンプルから始められます。解析はブラウザ内で行われ、スペクトルのデータは送信されません。',
   },
   // Settings
   settings: { en: 'Settings', ja: '設定' },

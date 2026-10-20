@@ -88,6 +88,15 @@ export const MethodPage: React.FC<MethodPageProps> = ({ lang, onClose }) => {
                 <li>入力データの単位（BE/KE）の自動判定は、選択中の X 線源の光子エネルギーに依存します。放射光データでは光子エネルギーを手動で設定してください。</li>
               </ul>
             </section>
+
+            <section>
+              <h3>6. プライバシー</h3>
+              <ul>
+                <li>スペクトルのデータとファイルの中身は、ブラウザの外に送られません。解析はすべてこのページの中で行われます。</li>
+                <li>利用状況の把握のため、アクセス数を <a href="https://www.goatcounter.com" target="_blank" rel="noopener noreferrer">GoatCounter</a> で数えています。Cookie や個人を識別する情報は使いません。ページの表示回数のほかに、「サンプルを読み込んだ」「ファイルを読み込んだ（拡張子のみ）」「フィードバック／仕組みページを開いた」の回数だけを送ります。ファイル名やデータ、設定値は送りません。</li>
+                <li>フィードバックを送るときに本文へ入る情報は、送信前に画面で確認できます。</li>
+              </ul>
+            </section>
           </div>
         ) : (
           <div className="method-body">
@@ -145,6 +154,15 @@ export const MethodPage: React.FC<MethodPageProps> = ({ lang, onClose }) => {
                 <li>Shirley background only (no Tougaard). No quantification (atomic %).</li>
                 <li>CSV must be two columns, energy and intensity, separated by comma or tab. Decimal commas are not supported.</li>
                 <li>Automatic BE/KE detection of the input depends on the selected X-ray source's photon energy; set it by hand for synchrotron data.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h3>6. Privacy</h3>
+              <ul>
+                <li>Your spectrum and file contents never leave the browser; the whole analysis runs on this page.</li>
+                <li>Visits are counted with <a href="https://www.goatcounter.com" target="_blank" rel="noopener noreferrer">GoatCounter</a>, which uses no cookies and no personal identifiers. Besides page views, only a few coarse events are sent: "sample loaded", "file loaded" (extension only), "feedback opened", "how-it-works opened". No file names, data or settings.</li>
+                <li>What goes into a feedback message is shown on screen before you send it.</li>
               </ul>
             </section>
           </div>
