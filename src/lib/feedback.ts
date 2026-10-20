@@ -3,10 +3,24 @@ import type { AnalysisSettings, IdentificationResult, Language } from '../types'
 export const REPO_URL = 'https://github.com/stoyoda0012-cyber/xps-peak-assign';
 
 /**
- * Optional form for people without a GitHub account (e.g. a Google Form).
- * Leave empty to hide the "send via form" link.
+ * Google Form for people without a GitHub account. No sign-in is required
+ * (the form collects no e-mail and does not limit responses per account).
+ * `entries` are the form's question IDs, used to pre-fill the environment
+ * block; find them with "フォームに事前入力する" / "Get pre-filled link" in the
+ * form editor if the questions are ever recreated. Set `url` to '' to hide
+ * the form option.
  */
-export const FEEDBACK_FORM_URL = '';
+export const FEEDBACK_FORM = {
+  url: 'https://docs.google.com/forms/d/e/1FAIpQLSetw20Q9RGrW6vZA2d8uuG7zfYXDj-puH8JyiVTp-ofdv2PuA/viewform',
+  entries: {
+    /** 内容 (required; left for the person to write) */
+    content: 'entry.298926878',
+    /** お名前・連絡先（任意） */
+    contact: 'entry.1075615977',
+    /** 環境情報: pre-filled with the environment block */
+    environment: 'entry.859694258',
+  },
+} as const;
 
 /** Everything the feedback body is built from. No spectrum data is included. */
 export interface FeedbackContext {
@@ -40,6 +54,22 @@ function resultLines(r: IdentificationResult | null): string[] {
   ];
 }
 
+/** The auto-filled environment block alone (no template), for the form's environment field. */
+export function buildEnvironmentBlock(ctx: FeedbackContext): string {
+  const ja = ctx.lang === 'ja';
+  const ua = typeof navigator !== 'undefined' ? navigator.userAgent : 'unknown';
+  const href = typeof location !== 'undefined' ? location.href : '';
+  return [
+    ja ? '## 環境（自動入力）' : '## Environment (auto-filled)',
+    `- App: xps-peak-assign ${APP_VERSION} (${href})`,
+    `- Browser: ${ua}`,
+    `- UI: ${ctx.lang} / ${ctx.theme}`,
+    ...settingsLines(ctx.settings),
+    `- File: ${ctx.fileName ?? '(none)'}`,
+    ...resultLines(ctx.result),
+  ].join('\n');
+}
+
 /**
  * Body of the feedback message: a template for the person to fill in, followed
  * by the environment and the current analysis state so a bug can be reproduced.
@@ -47,8 +77,6 @@ function resultLines(r: IdentificationResult | null): string[] {
  */
 export function buildFeedbackBody(ctx: FeedbackContext): string {
   const ja = ctx.lang === 'ja';
-  const ua = typeof navigator !== 'undefined' ? navigator.userAgent : 'unknown';
-  const href = typeof location !== 'undefined' ? location.href : '';
   const template = ja
     ? [
         '## 内容',
@@ -66,16 +94,20 @@ export function buildFeedbackBody(ctx: FeedbackContext): string {
         '',
         '',
       ];
-  const env = [
-    ja ? '## 環境（自動入力）' : '## Environment (auto-filled)',
-    `- App: xps-peak-assign ${APP_VERSION} (${href})`,
-    `- Browser: ${ua}`,
-    `- UI: ${ctx.lang} / ${ctx.theme}`,
-    ...settingsLines(ctx.settings),
-    `- File: ${ctx.fileName ?? '(none)'}`,
-    ...resultLines(ctx.result),
-  ];
-  return [...template, ...env].join('\n');
+  return [...template, buildEnvironmentBlock(ctx)].join('\n');
+}
+
+/**
+ * The Google Form with the environment field pre-filled (usp=pp_url is what
+ * the form editor's "Get pre-filled link" produces). Empty when no form is
+ * configured.
+ */
+export function buildFormUrl(ctx: FeedbackContext): string {
+  if (!FEEDBACK_FORM.url) return '';
+  const params = new URLSearchParams();
+  params.set('usp', 'pp_url');
+  params.set(FEEDBACK_FORM.entries.environment, buildEnvironmentBlock(ctx));
+  return `${FEEDBACK_FORM.url}?${params.toString()}`;
 }
 
 /** Pre-filled "New issue" page on GitHub. Needs a GitHub account to submit. */
