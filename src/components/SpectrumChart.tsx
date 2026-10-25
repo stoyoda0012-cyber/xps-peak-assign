@@ -3,6 +3,7 @@ import uPlot from 'uplot';
 import 'uplot/dist/uPlot.min.css';
 import type { AnalysisSettings, IdentificationResult, Language, SpectrumData } from '../types';
 import { identifyCandidates } from '../lib/element-db';
+import { buildDisplaySeries } from '../lib/chart-data';
 import { t } from '../i18n/translations';
 
 interface SpectrumChartProps {
@@ -284,32 +285,11 @@ export const SpectrumChart: React.FC<SpectrumChartProps> = ({
     if (!containerRef.current || !spectrum) return;
     chartRef.current?.destroy();
 
-    const { energy, intensity } = spectrum;
-
-    // Build display arrays — for KE, convert and ensure ascending x for uPlot
-    let displayEnergy: number[];
-    let displayIntensity: number[];
-    let displayBg: number[] | null = null;
-    let displaySignal: number[] | null = null;
-
-    if (isKE) {
-      const keArr = energy.map(be => displayHv - be);
-      // Build index array for sorting by KE ascending
-      const idx = keArr.map((_, i) => i).sort((a, b) => keArr[a] - keArr[b]);
-      displayEnergy = idx.map(i => keArr[i]);
-      displayIntensity = idx.map(i => intensity[i]);
-      if (result) {
-        displayBg = idx.map(i => result.background[i]);
-        displaySignal = idx.map(i => result.signal[i]);
-      }
-    } else {
-      displayEnergy = energy;
-      displayIntensity = intensity;
-      if (result) {
-        displayBg = result.background;
-        displaySignal = result.signal;
-      }
-    }
+    // Display arrays, sorted ascending in x for every mode: uPlot binary-searches
+    // the x array, and descending-BE files (most instrument exports) otherwise
+    // break the cursor read-out and blank the chart on drag-zoom.
+    const { x: displayEnergy, raw: displayIntensity, background: displayBg, signal: displaySignal } =
+      buildDisplaySeries(spectrum.energy, spectrum.intensity, result, isKE, displayHv);
 
     const cs = getComputedStyle(document.documentElement);
     const rawColor = cs.getPropertyValue('--chart-raw').trim() || '#e74c3c';
