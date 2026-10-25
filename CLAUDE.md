@@ -195,6 +195,11 @@ if events are added. Localhost is ignored by count.js.
   region at a time.
 - No quantitative analysis (atomic %)
 - No result export (PDF/CSV)
+- Offline use is `npm run dev` (README "Using it offline"). `npm run preview`
+  renders blank: `vite.config.ts` sees `command === 'serve'` for preview too
+  and sets base `/`, while `dist/` was built for `/xps-peak-assign/` (fix:
+  use `isPreview` from Vite's ConfigEnv). `file://` cannot work in Chromium
+  (module script blocked from a `null` origin).
 
 ## Roadmap
 
