@@ -15,6 +15,7 @@ import type { SampleDef } from './lib/samples';
 import { regionToSpectrum } from './lib/parsers';
 import { SAMPLES } from './lib/samples';
 import { trackEvent, fileLoadedEvent } from './lib/analytics';
+import { APP_VERSION, REPO_URL } from './lib/feedback';
 import SpectrumChart from './components/SpectrumChart';
 import ElementTable from './components/ElementTable';
 import SettingsPanel from './components/SettingsPanel';
@@ -265,7 +266,13 @@ function App() {
           {' \u00B7 '}
           <button className="link-button" onClick={openMethod}>{t('howItWorks', lang)}</button>
         </span>
-        <span className="footer-right">Built with Claude Code</span>
+        <span className="footer-right">
+          <a href={`${REPO_URL}/releases`} target="_blank" rel="noopener noreferrer" title="Release notes">
+            v{APP_VERSION}
+          </a>
+          {' · '}
+          Built with Claude Code
+        </span>
       </footer>
 
       {methodOpen && <MethodPage lang={lang} onClose={() => setMethodOpen(false)} />}

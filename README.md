@@ -65,6 +65,13 @@ also counts four coarse events (sample loaded, file loaded by extension,
 feedback opened, how-it-works opened). `count.js` ignores localhost, so
 development runs are not counted.
 
+## Versions
+
+The footer shows the version you are running (for example `v0.1.1`); click
+it for the release notes on
+[GitHub Releases](https://github.com/stoyoda0012-cyber/xps-peak-assign/releases).
+The same version is included in feedback messages.
+
 ## Feedback
 
 The **Feedback** button in the header opens a Google Form (no account

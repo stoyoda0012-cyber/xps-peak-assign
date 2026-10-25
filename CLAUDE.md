@@ -160,6 +160,24 @@ the diff. Do not loosen the assertions to make them pass.
 - PR checks: `ci.yml` (Node 20: `npm ci`, lint, test, build)
 - Pushing changes under `.github/workflows/` requires a token with the `workflow` scope
 
+## Versioning and releases
+
+The version lives in `package.json` only. Vite injects it as `__APP_VERSION__`
+(`vite.config.ts` `define`); the footer shows it as `vX.Y.Z` linking to the
+GitHub Releases page, and the feedback message carries it. Git tags and
+GitHub Releases are the public history of what changed.
+
+For a PR that changes behaviour a user could notice (a fix, a feature):
+1. On the branch: `npm version patch --no-git-tag-version` (or `minor`)
+   and commit it with the change. One bump per PR; refactors and docs do not bump.
+2. After the merge, on the updated `main`:
+   `git tag -a vX.Y.Z -m "vX.Y.Z" && git push origin vX.Y.Z`
+3. `gh release create vX.Y.Z --title "vX.Y.Z" --notes "..."` with 2-5 lines
+   written for users (what they will see differently), not a commit list.
+
+Do not create the tag before the merge: it must point at the `main` commit
+that the live site is built from.
+
 ## Analytics
 
 GoatCounter (`index.html` script tag -> https://xps-peak-assign.goatcounter.com)
