@@ -30,6 +30,34 @@ npm run dev
 
 Open http://localhost:5173 in your browser. Drag & drop an XPS survey file or try the built-in sample data.
 
+## Using it offline
+
+The web version is the normal way to use the app. If the computer that
+holds the data has no internet access (a beamline or instrument PC), run the
+app locally: everything, including the element database and the sample
+spectra, is in the repository, and the analysis never talks to a server.
+
+1. **While online** (any computer): install Git and Node.js 20 or newer,
+   then run the Quick Start above through `npm install`.
+2. **Move the folder** to the offline computer (copy it including
+   `node_modules/`), or do step 1 on that computer while it is still online.
+3. **Offline**: in the folder run `npm run dev` and open
+   http://localhost:5173 in the browser.
+
+What to expect without a network connection:
+
+- Loading files, identification, the *Why* panel, *How it works*, the BE/KE
+  axis and the Synchrotron setting all work as online.
+- The browser console shows one failed request for `gc.zgo.at/count.js`
+  (the visit counter). It is harmless; nothing waits for it.
+- In the *Feedback* menu, the Google Form and GitHub options open a tab that
+  cannot load. Use **Copy the message** instead and send the text later.
+- Opening `dist/index.html` directly (`file://`) does not work in Chrome and
+  Edge: they refuse to load the app's module script from a file. Use the
+  development server above, or serve a build made with
+  `npm run build -- --base ./` from any static web server
+  (for example `python3 -m http.server` inside `dist/`).
+
 ## Algorithm
 
 1. **Shirley background** subtraction (iterative)
