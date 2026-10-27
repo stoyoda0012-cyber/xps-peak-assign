@@ -133,7 +133,7 @@ scripts locate it via `XPS_SOURCE_ROOT` (see `scripts/`).
 ```bash
 npm run dev      # Development server (port 5173)
 npm run build    # Production build -> dist/
-npm run preview  # Preview production build
+npm run preview  # Serve dist/ at http://localhost:4173/xps-peak-assign/ (same base as Pages)
 npm run lint     # ESLint (must exit 0; `_`-prefixed unused args are allowed)
 npm test         # Vitest (golden + generator tests), Node environment
 ```
@@ -195,11 +195,9 @@ if events are added. Localhost is ignored by count.js.
   region at a time.
 - No quantitative analysis (atomic %)
 - No result export (PDF/CSV)
-- Offline use is `npm run dev` (README "Using it offline"). `npm run preview`
-  renders blank: `vite.config.ts` sees `command === 'serve'` for preview too
-  and sets base `/`, while `dist/` was built for `/xps-peak-assign/` (fix:
-  use `isPreview` from Vite's ConfigEnv). `file://` cannot work in Chromium
-  (module script blocked from a `null` origin).
+- Offline use is `npm run dev` or `npm run preview` (README "Using it
+  offline"). `file://` cannot work in Chromium (module script blocked from a
+  `null` origin).
 
 ## Roadmap
 

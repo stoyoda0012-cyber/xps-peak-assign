@@ -42,7 +42,10 @@ spectra, is in the repository, and the analysis never talks to a server.
 2. **Move the folder** to the offline computer (copy it including
    `node_modules/`), or do step 1 on that computer while it is still online.
 3. **Offline**: in the folder run `npm run dev` and open
-   http://localhost:5173 in the browser.
+   http://localhost:5173 in the browser. (Alternatively `npm run build`
+   once while online, then `npm run preview` offline and open
+   http://localhost:4173/xps-peak-assign/ ; this serves the same files as the
+   web version.)
 
 What to expect without a network connection:
 
