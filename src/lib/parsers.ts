@@ -4,7 +4,7 @@
  * Supported formats:
  *   - CSV/TSV: 2-column (energy, intensity)
  *   - NPL: Ulvac PHI line-oriented text (VAMAS variant)
- *   - VAMAS (.vms): ISO 14976 line-oriented text (Omicron instruments)
+ *   - VAMAS (.vms): ISO 14976 line-oriented text (TEL DA20, BL23SU, Omicron, ...)
  *   - SES TXT: Scienta SES INI-like text export
  *
  * Ported from Python toyomacro-python readers:
@@ -198,66 +198,176 @@ export function parseNPL(text: string, _filename: string = 'uploaded'): ParsedFi
 // VAMAS parser (ISO 14976)
 // ============================================================================
 
-export function parseVAMAS(text: string, _filename: string = 'uploaded'): ParsedFile {
-  const allLines = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
-  let cursor = 0;
+/**
+ * Sequential reader for the VAMAS format. Every line is significant in ISO
+ * 14976, including empty ones (an empty comment line, an empty transition
+ * label): the previous parser skipped empty lines and then read fixed
+ * offsets, which shifted every field by one on files from TEL's DA20 and
+ * silently produced an empty spectrum.
+ */
+class VamasLines {
+  private i = 0;
+  private readonly lines: string[];
+  constructor(lines: string[]) { this.lines = lines; }
 
-  // File header: 12 non-empty lines
-  const [fileHeader, headerEnd] = readNonEmptyLines(allLines, cursor, 12);
-  cursor = headerEnd;
-  const nRegions = parseInt(fileHeader[5], 10);
-  if (isNaN(nRegions) || nRegions < 1) {
-    throw new Error('Invalid VAMAS file: cannot read number of regions');
+  next(what: string): string {
+    if (this.i >= this.lines.length) {
+      throw new Error(`Invalid VAMAS file: ended while reading ${what}`);
+    }
+    // Strip NUL padding seen in some instrument exports.
+    return this.lines[this.i++].replaceAll('\u0000', '').trim();
   }
+
+  int(what: string): number {
+    const v = parseInt(this.next(what), 10);
+    if (isNaN(v) || v < 0) throw new Error(`Invalid VAMAS file: ${what} is not a count`);
+    return v;
+  }
+
+  num(what: string): number {
+    const v = parseFloat(this.next(what));
+    if (isNaN(v)) throw new Error(`Invalid VAMAS file: ${what} is not a number`);
+    return v;
+  }
+
+  skip(n: number, what: string): void {
+    for (let k = 0; k < n; k++) this.next(what);
+  }
+}
+
+const VAMAS_SPUTTER_MODES = new Set(['MAPDP', 'MAPSVDP', 'SDP', 'SDPSV']);
+const VAMAS_SPUTTER_TECHNIQUES = new Set([
+  'FABMS', 'FABMS ENERGY SPEC', 'ISS', 'SIMS', 'SIMS ENERGY SPEC', 'SNMS', 'SNMS ENERGY SPEC',
+]);
+const VAMAS_SPECTROSCOPIES = new Set(['AES DIFF', 'AES DIR', 'EDX', 'ELS', 'UPS', 'XPS', 'XRF']);
+
+/**
+ * ISO 14976 (VAMAS) reader following the block layout of the standard, so
+ * variable-length sections (comments, experimental variables, additional
+ * parameters) are honoured instead of assuming one instrument's layout.
+ * Checked against exports from a TEL DA20 and from a BL23SU end station.
+ * Not supported: a non-empty parameter inclusion/exclusion list (blocks
+ * after the first would then omit fields).
+ */
+export function parseVAMAS(text: string, _filename: string = 'uploaded'): ParsedFile {
+  const r = new VamasLines(text.replace(/\r\n?/g, '\n').split('\n'));
+
+  if (!r.next('format identifier').startsWith('VAMAS')) {
+    throw new Error('Invalid VAMAS file: missing format identifier');
+  }
+  r.skip(4, 'experiment header'); // institution, instrument, operator, experiment identifier
+  r.skip(r.int('number of comment lines'), 'comment lines');
+  const expMode = r.next('experiment mode').toUpperCase();
+  const scanMode = r.next('scan mode').toUpperCase();
+  if (['MAP', 'MAPDP', 'NORM', 'SDP'].includes(expMode)) r.int('number of spectral regions');
+  if (['MAP', 'MAPDP'].includes(expMode)) r.skip(3, 'analysis positions');
+  const nExpVar = r.int('number of experimental variables');
+  r.skip(2 * nExpVar, 'experimental variable labels');
+  if (r.int('number of entries in the inclusion/exclusion list') !== 0) {
+    throw new Error('VAMAS files with a parameter inclusion/exclusion list are not supported');
+  }
+  r.skip(r.int('number of manually entered items'), 'manually entered items');
+  const nFutureExp = r.int('number of future upgrade experiment entries');
+  const nFutureBlock = r.int('number of future upgrade block entries');
+  r.skip(nFutureExp, 'future upgrade experiment entries');
+  const nBlocks = r.int('number of blocks');
+  if (nBlocks < 1) throw new Error('No valid regions found in VAMAS file');
 
   const regions: ParsedRegion[] = [];
 
-  for (let r = 0; r < nRegions; r++) {
-    // Region header: 9 non-empty lines
-    let regionHeader: string[];
-    [regionHeader, cursor] = readNonEmptyLines(allLines, cursor, 9);
+  for (let b = 0; b < nBlocks; b++) {
+    const blockId = r.next('block identifier');
+    r.next('sample identifier');
+    r.skip(7, 'date and time');
+    const comments: string[] = [];
+    const nComments = r.int('number of block comment lines');
+    for (let k = 0; k < nComments; k++) comments.push(r.next('block comment'));
+    const technique = r.next('technique').toUpperCase();
+    if (['MAP', 'MAPDP'].includes(expMode)) r.skip(2, 'x/y coordinate');
+    r.skip(nExpVar, 'experimental variable values');
+    r.next('analysis source label');
+    if (VAMAS_SPUTTER_MODES.has(expMode) || VAMAS_SPUTTER_TECHNIQUES.has(technique)) {
+      r.skip(3, 'sputtering ion');
+    }
+    const hv = r.num('analysis source characteristic energy');
+    r.next('analysis source strength');
+    r.skip(2, 'beam width');
+    if (['MAP', 'MAPDP', 'MAPSV', 'MAPSVDP', 'SEM'].includes(expMode)) r.skip(2, 'field of view');
+    if (['MAPSV', 'MAPSVDP', 'SEM'].includes(expMode)) r.skip(6, 'linescan');
+    r.skip(2, 'source angles');
+    r.next('analyser mode');
+    r.next('pass energy');
+    if (technique === 'AES DIFF') r.next('differential width');
+    r.next('magnification');
+    r.next('work function');
+    r.next('target bias');
+    r.skip(2, 'analysis width');
+    r.skip(2, 'take-off angles');
+    const species = r.next('species label');
+    const transition = r.next('transition label');
+    r.next('charge of detected particle');
 
-    const regionNameField = regionHeader.length > 8 ? regionHeader[8] : 'XPS';
+    let abscissaLabel = '';
+    let start = 0;
+    let step = 0;
+    if (scanMode === 'REGULAR') {
+      abscissaLabel = r.next('abscissa label');
+      r.next('abscissa units');
+      start = r.num('abscissa start');
+      step = r.num('abscissa increment');
+    }
+    const nCorr = r.int('number of corresponding variables');
+    const corrLabels: string[] = [];
+    for (let k = 0; k < nCorr; k++) {
+      corrLabels.push(r.next('corresponding variable label'));
+      r.next('corresponding variable units');
+    }
+    r.next('signal mode');
+    r.next('signal collection time');
+    r.next('number of scans');
+    r.next('signal time correction');
+    if (VAMAS_SPECTROSCOPIES.has(technique) && VAMAS_SPUTTER_MODES.has(expMode)) {
+      r.skip(7, 'sputtering source');
+    }
+    r.skip(2, 'sample tilt');
+    r.next('sample rotation');
+    r.skip(3 * r.int('number of additional numerical parameters'), 'additional parameters');
+    r.skip(nFutureBlock, 'future upgrade block entries');
+    const nOrd = r.int('number of ordinate values');
+    r.skip(2 * nCorr, 'ordinate minimum/maximum');
+    if (nCorr < 1 || nOrd % nCorr !== 0) {
+      throw new Error(`Invalid VAMAS file: ${nOrd} ordinate values for ${nCorr} variables`);
+    }
+    const values: number[] = new Array(nOrd);
+    for (let k = 0; k < nOrd; k++) values[k] = r.num('ordinate value');
 
-    let eIni: number, eStep: number, nEnergy: number;
-    let displayName: string;
-
-    if (regionNameField === 'XPS') {
-      // Extended: 34 non-empty lines
-      let ext: string[];
-      [ext, cursor] = readNonEmptyLines(allLines, cursor, 34);
-      eIni = parseFloat(ext[18]);
-      eStep = parseFloat(ext[19]);
-      nEnergy = parseInt(ext[31], 10);
-      displayName = `XPS${r + 1}`;
+    // REGULAR: abscissa from start/step, first corresponding variable is the
+    // signal. IRREGULAR: the abscissa is stored as the first corresponding
+    // variable, the signal as the second. Values are interleaved.
+    const column = (c: number) => values.filter((_, k) => k % nCorr === c);
+    let energy: number[];
+    let intensity: number[];
+    let axisLabel: string;
+    if (scanMode === 'REGULAR') {
+      energy = Array.from({ length: nOrd / nCorr }, (_, k) => start + k * step);
+      intensity = column(0);
+      axisLabel = abscissaLabel;
     } else {
-      // Extended: 35 non-empty lines
-      let ext: string[];
-      [ext, cursor] = readNonEmptyLines(allLines, cursor, 35);
-      eIni = parseFloat(ext[19]);
-      eStep = parseFloat(ext[20]);
-      nEnergy = parseInt(ext[32], 10);
-      displayName = regionNameField;
+      if (nCorr < 2) throw new Error('Invalid VAMAS file: irregular scan without a signal column');
+      energy = column(0);
+      intensity = column(1);
+      axisLabel = corrLabels[0];
     }
 
-    // Energy axis (always KE in VAMAS)
-    const energy = Array.from({ length: nEnergy }, (_, i) => eIni + i * eStep);
-
-    // Data: nEnergy intensity values
-    let dataLines: string[];
-    [dataLines, cursor] = readNonEmptyLines(allLines, cursor, nEnergy);
-    const intensity = dataLines.map(l => parseFloat(l));
-
+    const name = blockId || comments[0] || [species, transition].filter(Boolean).join(' ') || `Block ${b + 1}`;
     regions.push({
-      name: displayName,
+      name,
       energy,
       intensity,
-      energyType: 'KE', // VAMAS is always KE
+      energyType: axisLabel.toLowerCase().includes('binding') ? 'BE' : 'KE',
+      // 1E37 is the standard's "not specified"
+      excitationEnergy: hv > 0 && hv < 1e30 ? hv : undefined,
     });
-  }
-
-  if (regions.length === 0) {
-    throw new Error('No valid regions found in VAMAS file');
   }
 
   return { format: 'vamas', regions };
