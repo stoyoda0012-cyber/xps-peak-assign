@@ -4,11 +4,11 @@ import { parseVAMAS, parseFile } from '../lib/parsers';
 // Header layout seen in one lab instrument's export: two comment lines of
 // which the first is EMPTY, one experimental variable, and an EMPTY transition
 // label. Every empty line is a field in ISO 14976; skipping them shifts the
-// whole block.
+// whole block. All values are synthetic; only the layout matters.
 const sparseHeader = [
   'VAMAS Surface Chemical Analysis Standard Data Transfer Format 1988 May 4',
   'Unknown', 'Instrument', 'Operator', 'wide',
-  '2', '', 'Analyser serial number: 12302',
+  '2', '', 'Analyser serial number: 00000',
   'NORM', 'REGULAR',
   '1',          // number of spectral regions
   '1', 'Slice', 'd',   // one experimental variable
@@ -16,29 +16,29 @@ const sparseHeader = [
   '1',          // number of blocks
   // block
   'wide slice', 'Sample 1; Description = ; Compound = oxide',
-  '2024', '8', '29', '10', '50', '40', '0',
+  '2000', '1', '1', '0', '0', '0', '0',
   '0',          // block comment lines
   'XPS',
   '0',          // experimental variable value
   'Al k alpha', '1486.7', '1E+37', '1E+37', '1E+37', '1E+37', '1E+37',
-  'FAT', '100', '1E+37', '-0.136322065589018', '0', '22', '0.5', '1E+37', '1E+37',
+  'FAT', '100', '1E+37', '4.5', '0', '22', '0.5', '1E+37', '1E+37',
   'wide', '',   // species label, EMPTY transition label
   '-1',
-  'Kinetic Energy', 'eV', '287.1', '1',
+  'Kinetic Energy', 'eV', '100', '1',
   '1', 'Intensity', 'd',
-  'analogue', '0.7588', '1', '1E+37',
+  'analogue', '0.5', '1', '1E+37',
   '1E+37', '1E+37', '1E+37',
   '0',          // additional numerical parameters
   '5',          // ordinate values
   '0', '1',
-  '4820.15', '5468.587', '5790.6885', '4689.513', '5552.468',
+  '100', '200', '300', '150', '250',
 ].join('\r\n') + '\r\n';
 
 // Header layout of a second instrument's export (Mg Ka): empty identifiers,
 // block comment carrying the region name, several blocks, "end of experiment"
 // trailer.
 const block = (comment: string, start: string, data: number[]) => [
-  '', '', '2018', '6', '14', '11', '45', '15', '0',
+  '', '', '2000', '1', '2', '0', '0', '0', '0',
   '1', comment,
   'XPS', '',
   '1253.6', '300.0', '1E37', '1E37', '1E37', '1E37',
@@ -71,8 +71,8 @@ describe('parseVAMAS', () => {
     expect(r.name).toBe('wide slice');
     expect(r.energyType).toBe('KE');
     expect(r.excitationEnergy).toBeCloseTo(1486.7);
-    expect(r.energy).toEqual([287.1, 288.1, 289.1, 290.1, 291.1]);
-    expect(r.intensity).toEqual([4820.15, 5468.587, 5790.6885, 4689.513, 5552.468]);
+    expect(r.energy).toEqual([100, 101, 102, 103, 104]);
+    expect(r.intensity).toEqual([100, 200, 300, 150, 250]);
   });
 
   it('reads a multi-block file with empty identifiers and names blocks from the comment', () => {
