@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import type { Language } from '../types';
 import { t } from '../i18n/translations';
+import toyomacroSource from '../data/toyomacro-source.json';
 
 interface MethodPageProps {
   lang: Language;
@@ -13,6 +14,9 @@ interface MethodPageProps {
  * Kept in sync with src/lib/{background,peak-detection,auto-identify,scoring}.ts;
  * numbers quoted here are the constants in those files.
  */
+const TOYOMACRO = toyomacroSource as { repository: string; tag: string; commit: string; provenance: string };
+const toyomacroRelease = `${TOYOMACRO.repository}/releases/tag/${TOYOMACRO.tag}`;
+
 export const MethodPage: React.FC<MethodPageProps> = ({ lang, onClose }) => {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
@@ -70,8 +74,9 @@ export const MethodPage: React.FC<MethodPageProps> = ({ lang, onClose }) => {
             <section>
               <h3>4. 使っているデータ</h3>
               <ul>
-                <li><strong>結合エネルギー表</strong>（103 元素）: 標準的な内殻準位の表（Bearden &amp; Burr 1967 / Fuggle &amp; Mårtensson 1980 系統）。toyomacro の binding_energy.json と同一です。</li>
-                <li><strong>光イオン化断面積</strong>: Al Kα は Yeh &amp; Lindau, <em>At. Data Nucl. Data Tables</em> 32, 1 (1985)。Ga Kα（HAXPES）は Scofield, UCRL-51326 (1973)。</li>
+                <li>3 つの表はすべて <a href={TOYOMACRO.repository} target="_blank" rel="noopener noreferrer">toyomacro</a> <a href={toyomacroRelease} target="_blank" rel="noopener noreferrer">{TOYOMACRO.tag}</a>（コミット {TOYOMACRO.commit.slice(0, 12)}）の同梱データから抽出したものです。出典とデータ権利の検討は toyomacro の <a href={TOYOMACRO.provenance} target="_blank" rel="noopener noreferrer">DATA_SOURCES.md</a> にあります。</li>
+                <li><strong>結合エネルギー表</strong>（103 元素）: 標準的な内殻準位の表（Bearden &amp; Burr 1967 / Fuggle &amp; Mårtensson 1980 系統）。</li>
+                <li><strong>光イオン化断面積</strong>: Al Kα は Yeh &amp; Lindau, <em>At. Data Nucl. Data Tables</em> 32, 1 (1985) の 1486.6 eV 列。Ga Kα（HAXPES）は Scofield, UCRL-51326 (1973) の光子エネルギー格子から、toyomacro の補間（log-log 空間の単調 3 次）で 9251.7 eV に求めた値。</li>
                 <li>Mg Kα、Zr Lα、Ag Lα、Ti Kα、Cr Kα、および放射光は、現在 Al Kα の断面積表を代用しています。殻間の強度比の評価がその分不正確になります（既知の制限）。</li>
               </ul>
             </section>
@@ -138,8 +143,9 @@ export const MethodPage: React.FC<MethodPageProps> = ({ lang, onClose }) => {
             <section>
               <h3>4. Reference data</h3>
               <ul>
-                <li><strong>Binding energies</strong> (103 elements): the standard core-level table (Bearden &amp; Burr 1967 / Fuggle &amp; Mårtensson 1980 lineage), identical to toyomacro's binding_energy.json.</li>
-                <li><strong>Photoionization cross-sections</strong>: Yeh &amp; Lindau, <em>At. Data Nucl. Data Tables</em> 32, 1 (1985) for Al Kα; Scofield, UCRL-51326 (1973) for Ga Kα (HAXPES).</li>
+                <li>All three tables are extracted from the data bundled with <a href={TOYOMACRO.repository} target="_blank" rel="noopener noreferrer">toyomacro</a> <a href={toyomacroRelease} target="_blank" rel="noopener noreferrer">{TOYOMACRO.tag}</a> (commit {TOYOMACRO.commit.slice(0, 12)}). Sources and the data-rights review are in toyomacro's <a href={TOYOMACRO.provenance} target="_blank" rel="noopener noreferrer">DATA_SOURCES.md</a>.</li>
+                <li><strong>Binding energies</strong> (103 elements): the standard core-level table (Bearden &amp; Burr 1967 / Fuggle &amp; Mårtensson 1980 lineage).</li>
+                <li><strong>Photoionization cross-sections</strong>: the 1486.6 eV column of Yeh &amp; Lindau, <em>At. Data Nucl. Data Tables</em> 32, 1 (1985) for Al Kα; for Ga Kα (HAXPES), Scofield, UCRL-51326 (1973), interpolated to 9251.7 eV on its photon-energy grid by toyomacro (monotone cubic in log-log space).</li>
                 <li>Mg Kα, Zr Lα, Ag Lα, Ti Kα, Cr Kα and synchrotron sources currently reuse the Al Kα table, so the shell-ratio check is less accurate for them (known limitation).</li>
               </ul>
             </section>

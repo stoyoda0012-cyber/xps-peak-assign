@@ -1,4676 +1,4454 @@
 [
  {
   "symbol": "Ac",
-  "orbital": "3d",
-  "bindingEnergy": 3370.0,
-  "crossSection": 0.02648193
- },
- {
-  "symbol": "Ac",
-  "orbital": "3p",
-  "bindingEnergy": 4656.0,
-  "crossSection": 0.02370859
- },
- {
-  "symbol": "Ac",
-  "orbital": "3s",
-  "bindingEnergy": 5002.0,
-  "crossSection": 0.00565563
- },
- {
-  "symbol": "Ac",
-  "orbital": "4d",
-  "bindingEnergy": 675.0,
-  "crossSection": 0.00556074
- },
- {
-  "symbol": "Ac",
-  "orbital": "4f",
-  "bindingEnergy": 319.0,
-  "crossSection": 0.00092092
- },
- {
-  "symbol": "Ac",
-  "orbital": "4p",
-  "bindingEnergy": 1080.0,
-  "crossSection": 0.00604667
- },
- {
-  "symbol": "Ac",
-  "orbital": "4s",
-  "bindingEnergy": 1269.0,
-  "crossSection": 0.00172861
+  "orbital": "7s",
+  "bindingEnergy": 4.6,
+  "crossSection": 1.0381165e-05
  },
  {
   "symbol": "Ac",
   "orbital": "5d",
   "bindingEnergy": 80.0,
-  "crossSection": 0.00099106
+  "crossSection": 0.00099504639
  },
  {
   "symbol": "Ac",
   "orbital": "5p",
   "bindingEnergy": 215.0,
-  "crossSection": 0.00137722
+  "crossSection": 0.0013811285
  },
  {
   "symbol": "Ac",
   "orbital": "5s",
   "bindingEnergy": 272.0,
-  "crossSection": 0.00044221
+  "crossSection": 0.00044284088
  },
  {
   "symbol": "Ac",
-  "orbital": "7s",
-  "bindingEnergy": 4.6,
-  "crossSection": 1.037e-05
+  "orbital": "4f",
+  "bindingEnergy": 319.0,
+  "crossSection": 0.00092405161
  },
  {
-  "symbol": "Ag",
-  "orbital": "2p",
-  "bindingEnergy": 3524.0,
-  "crossSection": 0.01437699
+  "symbol": "Ac",
+  "orbital": "4d",
+  "bindingEnergy": 675.0,
+  "crossSection": 0.0055830681
  },
  {
-  "symbol": "Ag",
-  "orbital": "2s",
-  "bindingEnergy": 3806.0,
-  "crossSection": 0.00668925
+  "symbol": "Ac",
+  "orbital": "4p",
+  "bindingEnergy": 1080.0,
+  "crossSection": 0.0060655277
  },
  {
-  "symbol": "Ag",
+  "symbol": "Ac",
+  "orbital": "4s",
+  "bindingEnergy": 1269.0,
+  "crossSection": 0.001731724
+ },
+ {
+  "symbol": "Ac",
   "orbital": "3d",
-  "bindingEnergy": 374.0,
-  "crossSection": 0.00046471
+  "bindingEnergy": 3370.0,
+  "crossSection": 0.026568893
  },
  {
-  "symbol": "Ag",
+  "symbol": "Ac",
   "orbital": "3p",
-  "bindingEnergy": 604.0,
-  "crossSection": 0.0022451
+  "bindingEnergy": 4656.0,
+  "crossSection": 0.023812042
  },
  {
-  "symbol": "Ag",
+  "symbol": "Ac",
   "orbital": "3s",
-  "bindingEnergy": 719.0,
-  "crossSection": 0.00129855
+  "bindingEnergy": 5002.0,
+  "crossSection": 0.0056724451
  },
  {
   "symbol": "Ag",
   "orbital": "4p",
   "bindingEnergy": 64.0,
-  "crossSection": 0.00036847
+  "crossSection": 0.00036957269
  },
  {
   "symbol": "Ag",
   "orbital": "4s",
   "bindingEnergy": 97.0,
-  "crossSection": 0.00024907
+  "crossSection": 0.00024951561
  },
  {
-  "symbol": "Al",
-  "orbital": "1s",
-  "bindingEnergy": 1560.0,
-  "crossSection": 0.00134153
+  "symbol": "Ag",
+  "orbital": "3d",
+  "bindingEnergy": 374.0,
+  "crossSection": 0.00046598576
+ },
+ {
+  "symbol": "Ag",
+  "orbital": "3p",
+  "bindingEnergy": 604.0,
+  "crossSection": 0.0022518829
+ },
+ {
+  "symbol": "Ag",
+  "orbital": "3s",
+  "bindingEnergy": 719.0,
+  "crossSection": 0.0013011306
+ },
+ {
+  "symbol": "Ag",
+  "orbital": "2p",
+  "bindingEnergy": 3524.0,
+  "crossSection": 0.014412125
+ },
+ {
+  "symbol": "Ag",
+  "orbital": "2s",
+  "bindingEnergy": 3806.0,
+  "crossSection": 0.0067088962
  },
  {
   "symbol": "Al",
   "orbital": "2p",
   "bindingEnergy": 73.0,
-  "crossSection": 1.037e-05
+  "crossSection": 1.0386117e-05
  },
  {
   "symbol": "Al",
   "orbital": "2s",
   "bindingEnergy": 118.0,
-  "crossSection": 8.442e-05
+  "crossSection": 8.4558782e-05
+ },
+ {
+  "symbol": "Al",
+  "orbital": "1s",
+  "bindingEnergy": 1560.0,
+  "crossSection": 0.0013433492
  },
  {
   "symbol": "Am",
-  "orbital": "4d",
-  "bindingEnergy": 859.1,
-  "crossSection": 0.007875
- },
- {
-  "symbol": "Am",
-  "orbital": "4f",
-  "bindingEnergy": 505.9,
-  "crossSection": 0.00166706
- },
- {
-  "symbol": "Am",
-  "orbital": "4p",
-  "bindingEnergy": 1112.0,
-  "crossSection": 0.00740683
- },
- {
-  "symbol": "Am",
-  "orbital": "4s",
-  "bindingEnergy": 1246.6,
-  "crossSection": 0.00195188
- },
- {
-  "symbol": "Am",
-  "orbital": "5d",
-  "bindingEnergy": 125.5,
-  "crossSection": 0.0015744
+  "orbital": "7s",
+  "bindingEnergy": 4.6,
+  "crossSection": 9.9187788e-06
  },
  {
   "symbol": "Am",
   "orbital": "5f",
   "bindingEnergy": 15.9,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Am",
-  "orbital": "5p",
-  "bindingEnergy": 220.5,
-  "crossSection": 0.00184239
- },
- {
-  "symbol": "Am",
-  "orbital": "5s",
-  "bindingEnergy": 274.2,
-  "crossSection": 0.00054309
+  "crossSection": 8.7642897e-05
  },
  {
   "symbol": "Am",
   "orbital": "6p",
   "bindingEnergy": 25.4,
-  "crossSection": 0.00028963
+  "crossSection": 0.00029036503
  },
  {
   "symbol": "Am",
   "orbital": "6s",
   "bindingEnergy": 40.4,
-  "crossSection": 0.00011082
+  "crossSection": 0.00011096908
  },
  {
   "symbol": "Am",
-  "orbital": "7s",
-  "bindingEnergy": 4.6,
-  "crossSection": 9.91e-06
+  "orbital": "5d",
+  "bindingEnergy": 125.5,
+  "crossSection": 0.0015807413
+ },
+ {
+  "symbol": "Am",
+  "orbital": "5p",
+  "bindingEnergy": 220.5,
+  "crossSection": 0.0018475141
+ },
+ {
+  "symbol": "Am",
+  "orbital": "5s",
+  "bindingEnergy": 274.2,
+  "crossSection": 0.00054387133
+ },
+ {
+  "symbol": "Am",
+  "orbital": "4f",
+  "bindingEnergy": 505.9,
+  "crossSection": 0.0016729202
+ },
+ {
+  "symbol": "Am",
+  "orbital": "4d",
+  "bindingEnergy": 859.1,
+  "crossSection": 0.0079071488
+ },
+ {
+  "symbol": "Am",
+  "orbital": "4p",
+  "bindingEnergy": 1112.0,
+  "crossSection": 0.007430288
+ },
+ {
+  "symbol": "Am",
+  "orbital": "4s",
+  "bindingEnergy": 1246.6,
+  "crossSection": 0.0019556169
  },
  {
   "symbol": "Ar",
-  "orbital": "1s",
-  "bindingEnergy": 3206.0,
-  "crossSection": 0.00469232
+  "orbital": "3p",
+  "bindingEnergy": 16.0,
+  "crossSection": 7.6879822e-06
+ },
+ {
+  "symbol": "Ar",
+  "orbital": "3s",
+  "bindingEnergy": 29.0,
+  "crossSection": 3.6557214e-05
  },
  {
   "symbol": "Ar",
   "orbital": "2p",
   "bindingEnergy": 251.0,
-  "crossSection": 8.652e-05
+  "crossSection": 8.6667698e-05
  },
  {
   "symbol": "Ar",
   "orbital": "2s",
   "bindingEnergy": 326.0,
-  "crossSection": 0.00032554
+  "crossSection": 0.00032615662
  },
  {
   "symbol": "Ar",
-  "orbital": "3p",
-  "bindingEnergy": 16.0,
-  "crossSection": 7.67e-06
- },
- {
-  "symbol": "Ar",
-  "orbital": "3s",
-  "bindingEnergy": 29.0,
-  "crossSection": 3.649e-05
- },
- {
-  "symbol": "As",
-  "orbital": "2p",
-  "bindingEnergy": 1359.0,
-  "crossSection": 0.0026295
- },
- {
-  "symbol": "As",
-  "orbital": "2s",
-  "bindingEnergy": 1527.0,
-  "crossSection": 0.00261366
+  "orbital": "1s",
+  "bindingEnergy": 3206.0,
+  "crossSection": 0.0047006421
  },
  {
   "symbol": "As",
   "orbital": "3d",
   "bindingEnergy": 42.0,
-  "crossSection": 2.271e-05
+  "crossSection": 2.2752841e-05
  },
  {
   "symbol": "As",
   "orbital": "3p",
   "bindingEnergy": 146.0,
-  "crossSection": 0.00036024
+  "crossSection": 0.00036103958
  },
  {
   "symbol": "As",
   "orbital": "3s",
   "bindingEnergy": 205.0,
-  "crossSection": 0.00040389
+  "crossSection": 0.00040459619
  },
  {
-  "symbol": "At",
-  "orbital": "3d",
-  "bindingEnergy": 2909.0,
-  "crossSection": 0.02072982
+  "symbol": "As",
+  "orbital": "2p",
+  "bindingEnergy": 1359.0,
+  "crossSection": 0.0026341371
  },
  {
-  "symbol": "At",
-  "orbital": "3p",
-  "bindingEnergy": 4008.0,
-  "crossSection": 0.02099863
- },
- {
-  "symbol": "At",
-  "orbital": "3s",
-  "bindingEnergy": 4317.0,
-  "crossSection": 0.00534749
- },
- {
-  "symbol": "At",
-  "orbital": "4d",
-  "bindingEnergy": 533.0,
-  "crossSection": 0.00429469
- },
- {
-  "symbol": "At",
-  "orbital": "4f",
-  "bindingEnergy": 210.0,
-  "crossSection": 0.00058895
- },
- {
-  "symbol": "At",
-  "orbital": "4p",
-  "bindingEnergy": 886.0,
-  "crossSection": 0.00517731
- },
- {
-  "symbol": "At",
-  "orbital": "4s",
-  "bindingEnergy": 1042.0,
-  "crossSection": 0.0015623
+  "symbol": "As",
+  "orbital": "2s",
+  "bindingEnergy": 1527.0,
+  "crossSection": 0.0026190235
  },
  {
   "symbol": "At",
   "orbital": "5d",
   "bindingEnergy": 40.0,
-  "crossSection": 0.0006372
+  "crossSection": 0.00063962993
  },
  {
   "symbol": "At",
   "orbital": "5p",
   "bindingEnergy": 148.0,
-  "crossSection": 0.00107004
+  "crossSection": 0.0010729683
  },
  {
   "symbol": "At",
   "orbital": "5s",
   "bindingEnergy": 195.0,
-  "crossSection": 0.00037001
+  "crossSection": 0.00037050516
  },
  {
-  "symbol": "Au",
-  "orbital": "3d",
-  "bindingEnergy": 2291.0,
-  "crossSection": 0.01385079
+  "symbol": "At",
+  "orbital": "4f",
+  "bindingEnergy": 210.0,
+  "crossSection": 0.00059081772
  },
  {
-  "symbol": "Au",
-  "orbital": "3p",
-  "bindingEnergy": 3148.0,
-  "crossSection": 0.01698777
- },
- {
-  "symbol": "Au",
-  "orbital": "3s",
-  "bindingEnergy": 3425.0,
-  "crossSection": 0.00475854
- },
- {
-  "symbol": "Au",
+  "symbol": "At",
   "orbital": "4d",
-  "bindingEnergy": 353.0,
-  "crossSection": 0.00279157
+  "bindingEnergy": 533.0,
+  "crossSection": 0.0043109358
+ },
+ {
+  "symbol": "At",
+  "orbital": "4p",
+  "bindingEnergy": 886.0,
+  "crossSection": 0.0051926028
+ },
+ {
+  "symbol": "At",
+  "orbital": "4s",
+  "bindingEnergy": 1042.0,
+  "crossSection": 0.0015648462
+ },
+ {
+  "symbol": "At",
+  "orbital": "3d",
+  "bindingEnergy": 2909.0,
+  "crossSection": 0.020792207
+ },
+ {
+  "symbol": "At",
+  "orbital": "3p",
+  "bindingEnergy": 4008.0,
+  "crossSection": 0.021081559
+ },
+ {
+  "symbol": "At",
+  "orbital": "3s",
+  "bindingEnergy": 4317.0,
+  "crossSection": 0.0053643348
+ },
+ {
+  "symbol": "Au",
+  "orbital": "5p",
+  "bindingEnergy": 74.0,
+  "crossSection": 0.00068581401
  },
  {
   "symbol": "Au",
   "orbital": "4f",
   "bindingEnergy": 88.0,
-  "crossSection": 0.00027441
- },
- {
-  "symbol": "Au",
-  "orbital": "4p",
-  "bindingEnergy": 643.0,
-  "crossSection": 0.00398173
- },
- {
-  "symbol": "Au",
-  "orbital": "4s",
-  "bindingEnergy": 762.0,
-  "crossSection": 0.00130641
- },
- {
-  "symbol": "Au",
-  "orbital": "5p",
-  "bindingEnergy": 74.0,
-  "crossSection": 0.00068418
+  "crossSection": 0.00027515857
  },
  {
   "symbol": "Au",
   "orbital": "5s",
   "bindingEnergy": 107.0,
-  "crossSection": 0.00026974
+  "crossSection": 0.0002700463
+ },
+ {
+  "symbol": "Au",
+  "orbital": "4d",
+  "bindingEnergy": 353.0,
+  "crossSection": 0.0028005041
+ },
+ {
+  "symbol": "Au",
+  "orbital": "4p",
+  "bindingEnergy": 643.0,
+  "crossSection": 0.0039917465
+ },
+ {
+  "symbol": "Au",
+  "orbital": "4s",
+  "bindingEnergy": 762.0,
+  "crossSection": 0.0013080826
+ },
+ {
+  "symbol": "Au",
+  "orbital": "3d",
+  "bindingEnergy": 2291.0,
+  "crossSection": 0.013886766
+ },
+ {
+  "symbol": "Au",
+  "orbital": "3p",
+  "bindingEnergy": 3148.0,
+  "crossSection": 0.017042104
+ },
+ {
+  "symbol": "Au",
+  "orbital": "3s",
+  "bindingEnergy": 3425.0,
+  "crossSection": 0.0047689083
  },
  {
   "symbol": "B",
   "orbital": "1s",
   "bindingEnergy": 188.0,
-  "crossSection": 2.212e-05
- },
- {
-  "symbol": "Ba",
-  "orbital": "2p",
-  "bindingEnergy": 5624.0,
-  "crossSection": 0.03080389
- },
- {
-  "symbol": "Ba",
-  "orbital": "2s",
-  "bindingEnergy": 5989.0,
-  "crossSection": 0.0097499
- },
- {
-  "symbol": "Ba",
-  "orbital": "3d",
-  "bindingEnergy": 796.0,
-  "crossSection": 0.00162383
- },
- {
-  "symbol": "Ba",
-  "orbital": "3p",
-  "bindingEnergy": 1137.0,
-  "crossSection": 0.0048505
- },
- {
-  "symbol": "Ba",
-  "orbital": "3s",
-  "bindingEnergy": 1293.0,
-  "crossSection": 0.00213722
- },
- {
-  "symbol": "Ba",
-  "orbital": "4d",
-  "bindingEnergy": 93.0,
-  "crossSection": 0.00029848
- },
- {
-  "symbol": "Ba",
-  "orbital": "4p",
-  "bindingEnergy": 192.0,
-  "crossSection": 0.00099881
- },
- {
-  "symbol": "Ba",
-  "orbital": "4s",
-  "bindingEnergy": 254.0,
-  "crossSection": 0.0004946
+  "crossSection": 2.2138799e-05
  },
  {
   "symbol": "Ba",
   "orbital": "5p",
   "bindingEnergy": 17.0,
-  "crossSection": 0.00014373
+  "crossSection": 0.00014415079
  },
  {
   "symbol": "Ba",
   "orbital": "5s",
   "bindingEnergy": 30.0,
-  "crossSection": 8.68e-05
+  "crossSection": 8.6930474e-05
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "4d",
+  "bindingEnergy": 93.0,
+  "crossSection": 0.00029946435
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "4p",
+  "bindingEnergy": 192.0,
+  "crossSection": 0.0010018416
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "4s",
+  "bindingEnergy": 254.0,
+  "crossSection": 0.00049539384
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "3d",
+  "bindingEnergy": 796.0,
+  "crossSection": 0.0016286215
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "3p",
+  "bindingEnergy": 1137.0,
+  "crossSection": 0.0048659243
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "3s",
+  "bindingEnergy": 1293.0,
+  "crossSection": 0.0021412555
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "2p",
+  "bindingEnergy": 5624.0,
+  "crossSection": 0.030892121
+ },
+ {
+  "symbol": "Ba",
+  "orbital": "2s",
+  "bindingEnergy": 5989.0,
+  "crossSection": 0.0097841163
  },
  {
   "symbol": "Be",
   "orbital": "1s",
   "bindingEnergy": 112.0,
-  "crossSection": 7.87e-06
- },
- {
-  "symbol": "Bi",
-  "orbital": "3d",
-  "bindingEnergy": 2688.0,
-  "crossSection": 0.01821317
- },
- {
-  "symbol": "Bi",
-  "orbital": "3p",
-  "bindingEnergy": 3696.0,
-  "crossSection": 0.01965053
- },
- {
-  "symbol": "Bi",
-  "orbital": "3s",
-  "bindingEnergy": 3999.0,
-  "crossSection": 0.00515834
- },
- {
-  "symbol": "Bi",
-  "orbital": "4d",
-  "bindingEnergy": 464.0,
-  "crossSection": 0.00374274
- },
- {
-  "symbol": "Bi",
-  "orbital": "4f",
-  "bindingEnergy": 162.0,
-  "crossSection": 0.00046289
- },
- {
-  "symbol": "Bi",
-  "orbital": "4p",
-  "bindingEnergy": 805.0,
-  "crossSection": 0.00476253
- },
- {
-  "symbol": "Bi",
-  "orbital": "4s",
-  "bindingEnergy": 939.0,
-  "crossSection": 0.00147711
+  "crossSection": 7.8759534e-06
  },
  {
   "symbol": "Bi",
   "orbital": "5d",
   "bindingEnergy": 27.0,
-  "crossSection": 0.00049227
+  "crossSection": 0.00049404871
  },
  {
   "symbol": "Bi",
   "orbital": "5p",
   "bindingEnergy": 119.0,
-  "crossSection": 0.00093055
+  "crossSection": 0.00093299816
  },
  {
   "symbol": "Bi",
   "orbital": "5s",
   "bindingEnergy": 159.0,
-  "crossSection": 0.00033514
+  "crossSection": 0.00033557331
  },
  {
-  "symbol": "Bk",
-  "orbital": "4d",
-  "bindingEnergy": 933.9,
-  "crossSection": 0.00875933
- },
- {
-  "symbol": "Bk",
+  "symbol": "Bi",
   "orbital": "4f",
-  "bindingEnergy": 566.2,
-  "crossSection": 0.00199698
+  "bindingEnergy": 162.0,
+  "crossSection": 0.00046428354
  },
  {
-  "symbol": "Bk",
+  "symbol": "Bi",
+  "orbital": "4d",
+  "bindingEnergy": 464.0,
+  "crossSection": 0.0037561758
+ },
+ {
+  "symbol": "Bi",
   "orbital": "4p",
-  "bindingEnergy": 1196.7,
-  "crossSection": 0.00786342
+  "bindingEnergy": 805.0,
+  "crossSection": 0.0047759204
  },
  {
-  "symbol": "Bk",
+  "symbol": "Bi",
   "orbital": "4s",
-  "bindingEnergy": 1336.5,
-  "crossSection": 0.00201605
+  "bindingEnergy": 939.0,
+  "crossSection": 0.0014793628
+ },
+ {
+  "symbol": "Bi",
+  "orbital": "3d",
+  "bindingEnergy": 2688.0,
+  "crossSection": 0.018266238
+ },
+ {
+  "symbol": "Bi",
+  "orbital": "3p",
+  "bindingEnergy": 3696.0,
+  "crossSection": 0.019723338
+ },
+ {
+  "symbol": "Bi",
+  "orbital": "3s",
+  "bindingEnergy": 3999.0,
+  "crossSection": 0.0051722477
  },
  {
   "symbol": "Bk",
-  "orbital": "5d",
-  "bindingEnergy": 142.1,
-  "crossSection": 0.00180897
+  "orbital": "7s",
+  "bindingEnergy": 5.0,
+  "crossSection": 1.1913744e-05
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "6d",
+  "bindingEnergy": 6.2,
+  "crossSection": 1.1107241e-05
  },
  {
   "symbol": "Bk",
   "orbital": "5f",
   "bindingEnergy": 23.4,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Bk",
-  "orbital": "5p",
-  "bindingEnergy": 242.7,
-  "crossSection": 0.00200542
- },
- {
-  "symbol": "Bk",
-  "orbital": "5s",
-  "bindingEnergy": 299.3,
-  "crossSection": 0.00057474
- },
- {
-  "symbol": "Bk",
-  "orbital": "6d",
-  "bindingEnergy": 6.2,
-  "crossSection": 0.0
+  "crossSection": 0.00013800346
  },
  {
   "symbol": "Bk",
   "orbital": "6p",
   "bindingEnergy": 28.9,
-  "crossSection": 0.00032782
+  "crossSection": 0.00032862688
  },
  {
   "symbol": "Bk",
   "orbital": "6s",
   "bindingEnergy": 45.1,
-  "crossSection": 0.00012233
+  "crossSection": 0.00012261749
  },
  {
   "symbol": "Bk",
-  "orbital": "7s",
-  "bindingEnergy": 5.0,
-  "crossSection": 1.19e-05
+  "orbital": "5d",
+  "bindingEnergy": 142.1,
+  "crossSection": 0.0018160305
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "5p",
+  "bindingEnergy": 242.7,
+  "crossSection": 0.0020108079
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "5s",
+  "bindingEnergy": 299.3,
+  "crossSection": 0.00057554762
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "4f",
+  "bindingEnergy": 566.2,
+  "crossSection": 0.0020038263
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "4d",
+  "bindingEnergy": 933.9,
+  "crossSection": 0.0087940807
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "4p",
+  "bindingEnergy": 1196.7,
+  "crossSection": 0.0078876669
+ },
+ {
+  "symbol": "Bk",
+  "orbital": "4s",
+  "bindingEnergy": 1336.5,
+  "crossSection": 0.0020199047
+ },
+ {
+  "symbol": "Br",
+  "orbital": "3d",
+  "bindingEnergy": 70.0,
+  "crossSection": 3.9947901e-05
+ },
+ {
+  "symbol": "Br",
+  "orbital": "3p",
+  "bindingEnergy": 189.0,
+  "crossSection": 0.00050149233
+ },
+ {
+  "symbol": "Br",
+  "orbital": "3s",
+  "bindingEnergy": 257.0,
+  "crossSection": 0.00049796797
  },
  {
   "symbol": "Br",
   "orbital": "2p",
   "bindingEnergy": 1596.0,
-  "crossSection": 0.00353883
+  "crossSection": 0.0035459094
  },
  {
   "symbol": "Br",
   "orbital": "2s",
   "bindingEnergy": 1782.0,
-  "crossSection": 0.00310119
- },
- {
-  "symbol": "Br",
-  "orbital": "3d",
-  "bindingEnergy": 70.0,
-  "crossSection": 3.986e-05
- },
- {
-  "symbol": "Br",
-  "orbital": "3p",
-  "bindingEnergy": 189.0,
-  "crossSection": 0.00050024
- },
- {
-  "symbol": "Br",
-  "orbital": "3s",
-  "bindingEnergy": 257.0,
-  "crossSection": 0.00049702
+  "crossSection": 0.0031083822
  },
  {
   "symbol": "C",
   "orbital": "1s",
   "bindingEnergy": 284.0,
-  "crossSection": 5.048e-05
+  "crossSection": 5.0521142e-05
  },
  {
   "symbol": "Ca",
-  "orbital": "1s",
-  "bindingEnergy": 4039.0,
-  "crossSection": 0.00688912
+  "orbital": "3p",
+  "bindingEnergy": 25.0,
+  "crossSection": 1.9017308e-05
+ },
+ {
+  "symbol": "Ca",
+  "orbital": "3s",
+  "bindingEnergy": 44.0,
+  "crossSection": 6.3578448e-05
  },
  {
   "symbol": "Ca",
   "orbital": "2p",
   "bindingEnergy": 350.0,
-  "crossSection": 0.00016405
+  "crossSection": 0.00016434755
  },
  {
   "symbol": "Ca",
   "orbital": "2s",
   "bindingEnergy": 438.0,
-  "crossSection": 0.00048701
+  "crossSection": 0.00048799433
  },
  {
   "symbol": "Ca",
-  "orbital": "3p",
-  "bindingEnergy": 25.0,
-  "crossSection": 1.898e-05
- },
- {
-  "symbol": "Ca",
-  "orbital": "3s",
-  "bindingEnergy": 44.0,
-  "crossSection": 6.345e-05
- },
- {
-  "symbol": "Cd",
-  "orbital": "2p",
-  "bindingEnergy": 3727.0,
-  "crossSection": 0.01580429
- },
- {
-  "symbol": "Cd",
-  "orbital": "2s",
-  "bindingEnergy": 4018.0,
-  "crossSection": 0.00701644
- },
- {
-  "symbol": "Cd",
-  "orbital": "3d",
-  "bindingEnergy": 412.0,
-  "crossSection": 0.00054389
- },
- {
-  "symbol": "Cd",
-  "orbital": "3p",
-  "bindingEnergy": 653.0,
-  "crossSection": 0.00247442
- },
- {
-  "symbol": "Cd",
-  "orbital": "3s",
-  "bindingEnergy": 772.0,
-  "crossSection": 0.00138254
+  "orbital": "1s",
+  "bindingEnergy": 4039.0,
+  "crossSection": 0.0069027484
  },
  {
   "symbol": "Cd",
   "orbital": "4d",
   "bindingEnergy": 12.0,
-  "crossSection": 6.352e-05
+  "crossSection": 6.3707726e-05
  },
  {
   "symbol": "Cd",
   "orbital": "4p",
   "bindingEnergy": 64.0,
-  "crossSection": 0.00041832
+  "crossSection": 0.00041958297
  },
  {
   "symbol": "Cd",
   "orbital": "4s",
   "bindingEnergy": 110.0,
-  "crossSection": 0.00027139
+  "crossSection": 0.00027187158
  },
  {
-  "symbol": "Ce",
-  "orbital": "2p",
-  "bindingEnergy": 6164.0,
-  "crossSection": 0.0356718
- },
- {
-  "symbol": "Ce",
-  "orbital": "2s",
-  "bindingEnergy": 6549.0,
-  "crossSection": 0.0104324
- },
- {
-  "symbol": "Ce",
+  "symbol": "Cd",
   "orbital": "3d",
-  "bindingEnergy": 902.0,
-  "crossSection": 0.00206025
+  "bindingEnergy": 412.0,
+  "crossSection": 0.00054540862
  },
  {
-  "symbol": "Ce",
+  "symbol": "Cd",
   "orbital": "3p",
-  "bindingEnergy": 1274.0,
-  "crossSection": 0.00560634
+  "bindingEnergy": 653.0,
+  "crossSection": 0.0024819828
  },
  {
-  "symbol": "Ce",
+  "symbol": "Cd",
   "orbital": "3s",
-  "bindingEnergy": 1436.0,
-  "crossSection": 0.00234872
+  "bindingEnergy": 772.0,
+  "crossSection": 0.001385291
  },
  {
-  "symbol": "Ce",
-  "orbital": "4d",
-  "bindingEnergy": 109.0,
-  "crossSection": 0.00016487
+  "symbol": "Cd",
+  "orbital": "2p",
+  "bindingEnergy": 3727.0,
+  "crossSection": 0.015842707
  },
  {
-  "symbol": "Ce",
-  "orbital": "4p",
-  "bindingEnergy": 223.0,
-  "crossSection": 0.00117466
- },
- {
-  "symbol": "Ce",
-  "orbital": "4s",
-  "bindingEnergy": 291.0,
-  "crossSection": 0.00055422
+  "symbol": "Cd",
+  "orbital": "2s",
+  "bindingEnergy": 4018.0,
+  "crossSection": 0.0070376901
  },
  {
   "symbol": "Ce",
   "orbital": "5p",
   "bindingEnergy": 20.0,
-  "crossSection": 0.00016715
+  "crossSection": 0.00016761576
  },
  {
   "symbol": "Ce",
   "orbital": "5s",
   "bindingEnergy": 38.0,
-  "crossSection": 9.692e-05
+  "crossSection": 9.7062957e-05
  },
  {
-  "symbol": "Cf",
+  "symbol": "Ce",
   "orbital": "4d",
-  "bindingEnergy": 968.6,
-  "crossSection": 0.00922203
+  "bindingEnergy": 109.0,
+  "crossSection": 0.00038878877
  },
  {
-  "symbol": "Cf",
-  "orbital": "4f",
-  "bindingEnergy": 593.5,
-  "crossSection": 0.00217885
- },
- {
-  "symbol": "Cf",
+  "symbol": "Ce",
   "orbital": "4p",
-  "bindingEnergy": 1236.3,
-  "crossSection": 0.00808967
+  "bindingEnergy": 223.0,
+  "crossSection": 0.0011780884
  },
  {
-  "symbol": "Cf",
+  "symbol": "Ce",
   "orbital": "4s",
-  "bindingEnergy": 1378.6,
-  "crossSection": 0.00204493
+  "bindingEnergy": 291.0,
+  "crossSection": 0.00055507665
+ },
+ {
+  "symbol": "Ce",
+  "orbital": "3d",
+  "bindingEnergy": 902.0,
+  "crossSection": 0.0020660343
+ },
+ {
+  "symbol": "Ce",
+  "orbital": "3p",
+  "bindingEnergy": 1274.0,
+  "crossSection": 0.0056234867
+ },
+ {
+  "symbol": "Ce",
+  "orbital": "3s",
+  "bindingEnergy": 1436.0,
+  "crossSection": 0.002352942
+ },
+ {
+  "symbol": "Ce",
+  "orbital": "2p",
+  "bindingEnergy": 6164.0,
+  "crossSection": 0.035778188
+ },
+ {
+  "symbol": "Ce",
+  "orbital": "2s",
+  "bindingEnergy": 6549.0,
+  "crossSection": 0.010470546
  },
  {
   "symbol": "Cf",
-  "orbital": "5d",
-  "bindingEnergy": 147.4,
-  "crossSection": 0.00191508
+  "orbital": "7s",
+  "bindingEnergy": 5.1,
+  "crossSection": 1.0074739e-05
  },
  {
   "symbol": "Cf",
   "orbital": "5f",
   "bindingEnergy": 24.7,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Cf",
-  "orbital": "5p",
-  "bindingEnergy": 250.8,
-  "crossSection": 0.00208058
- },
- {
-  "symbol": "Cf",
-  "orbital": "5s",
-  "bindingEnergy": 308.8,
-  "crossSection": 0.00058909
- },
- {
-  "symbol": "Cf",
-  "orbital": "6d",
-  "bindingEnergy": 6.1,
-  "crossSection": 0.0
+  "crossSection": 0.00018374444
  },
  {
   "symbol": "Cf",
   "orbital": "6p",
   "bindingEnergy": 29.4,
-  "crossSection": 0.00032067
+  "crossSection": 0.00032143471
  },
  {
   "symbol": "Cf",
   "orbital": "6s",
   "bindingEnergy": 46.0,
-  "crossSection": 0.00012057
+  "crossSection": 0.00012072239
  },
  {
   "symbol": "Cf",
-  "orbital": "7s",
-  "bindingEnergy": 5.1,
-  "crossSection": 1.006e-05
+  "orbital": "5d",
+  "bindingEnergy": 147.4,
+  "crossSection": 0.0019224573
  },
  {
-  "symbol": "Cl",
-  "orbital": "1s",
-  "bindingEnergy": 2822.0,
-  "crossSection": 0.00379098
+  "symbol": "Cf",
+  "orbital": "5p",
+  "bindingEnergy": 250.8,
+  "crossSection": 0.0020860933
+ },
+ {
+  "symbol": "Cf",
+  "orbital": "5s",
+  "bindingEnergy": 308.8,
+  "crossSection": 0.00058991844
+ },
+ {
+  "symbol": "Cf",
+  "orbital": "4f",
+  "bindingEnergy": 593.5,
+  "crossSection": 0.0021862407
+ },
+ {
+  "symbol": "Cf",
+  "orbital": "4d",
+  "bindingEnergy": 968.6,
+  "crossSection": 0.009258141
+ },
+ {
+  "symbol": "Cf",
+  "orbital": "4p",
+  "bindingEnergy": 1236.3,
+  "crossSection": 0.0081143168
+ },
+ {
+  "symbol": "Cf",
+  "orbital": "4s",
+  "bindingEnergy": 1378.6,
+  "crossSection": 0.0020487828
  },
  {
   "symbol": "Cl",
   "orbital": "2p",
   "bindingEnergy": 202.0,
-  "crossSection": 6.066e-05
+  "crossSection": 6.0765814e-05
  },
  {
   "symbol": "Cl",
   "orbital": "2s",
   "bindingEnergy": 270.0,
-  "crossSection": 0.00025997
+  "crossSection": 0.00026045395
+ },
+ {
+  "symbol": "Cl",
+  "orbital": "1s",
+  "bindingEnergy": 2822.0,
+  "crossSection": 0.0037972448
  },
  {
   "symbol": "Cm",
-  "orbital": "4d",
-  "bindingEnergy": 899.6,
-  "crossSection": 0.00831025
- },
- {
-  "symbol": "Cm",
-  "orbital": "4f",
-  "bindingEnergy": 539.2,
-  "crossSection": 0.0018265
- },
- {
-  "symbol": "Cm",
-  "orbital": "4p",
-  "bindingEnergy": 1157.5,
-  "crossSection": 0.00763578
- },
- {
-  "symbol": "Cm",
-  "orbital": "4s",
-  "bindingEnergy": 1294.7,
-  "crossSection": 0.00198498
- },
- {
-  "symbol": "Cm",
-  "orbital": "5d",
-  "bindingEnergy": 136.7,
-  "crossSection": 0.00169508
- },
- {
-  "symbol": "Cm",
-  "orbital": "5f",
-  "bindingEnergy": 22.0,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Cm",
-  "orbital": "5p",
-  "bindingEnergy": 234.7,
-  "crossSection": 0.00192598
- },
- {
-  "symbol": "Cm",
-  "orbital": "5s",
-  "bindingEnergy": 289.9,
-  "crossSection": 0.00055938
+  "orbital": "7s",
+  "bindingEnergy": 5.0,
+  "crossSection": 1.1796388e-05
  },
  {
   "symbol": "Cm",
   "orbital": "6d",
   "bindingEnergy": 6.2,
-  "crossSection": 0.0
+  "crossSection": 1.0826079e-05
+ },
+ {
+  "symbol": "Cm",
+  "orbital": "5f",
+  "bindingEnergy": 22.0,
+  "crossSection": 0.00010674823
  },
  {
   "symbol": "Cm",
   "orbital": "6p",
   "bindingEnergy": 28.4,
-  "crossSection": 0.00031681
+  "crossSection": 0.00031760742
  },
  {
   "symbol": "Cm",
   "orbital": "6s",
   "bindingEnergy": 44.2,
-  "crossSection": 0.00011754
+  "crossSection": 0.000117691
  },
  {
   "symbol": "Cm",
-  "orbital": "7s",
-  "bindingEnergy": 5.0,
-  "crossSection": 1.178e-05
+  "orbital": "5d",
+  "bindingEnergy": 136.7,
+  "crossSection": 0.0017018024
  },
  {
-  "symbol": "Co",
-  "orbital": "1s",
-  "bindingEnergy": 7709.0,
-  "crossSection": 0.0191651
+  "symbol": "Cm",
+  "orbital": "5p",
+  "bindingEnergy": 234.7,
+  "crossSection": 0.0019312541
  },
  {
-  "symbol": "Co",
-  "orbital": "2p",
-  "bindingEnergy": 793.0,
-  "crossSection": 0.00091279
+  "symbol": "Cm",
+  "orbital": "5s",
+  "bindingEnergy": 289.9,
+  "crossSection": 0.00056018057
  },
  {
-  "symbol": "Co",
-  "orbital": "2s",
-  "bindingEnergy": 925.0,
-  "crossSection": 0.00139782
+  "symbol": "Cm",
+  "orbital": "4f",
+  "bindingEnergy": 539.2,
+  "crossSection": 0.0018328451
+ },
+ {
+  "symbol": "Cm",
+  "orbital": "4d",
+  "bindingEnergy": 899.6,
+  "crossSection": 0.0083436918
+ },
+ {
+  "symbol": "Cm",
+  "orbital": "4p",
+  "bindingEnergy": 1157.5,
+  "crossSection": 0.0076596642
+ },
+ {
+  "symbol": "Cm",
+  "orbital": "4s",
+  "bindingEnergy": 1294.7,
+  "crossSection": 0.0019887782
  },
  {
   "symbol": "Co",
   "orbital": "3p",
-  "bindingEnergy": 60.0,
-  "crossSection": 0.00011826
+  "bindingEnergy": 59.0,
+  "crossSection": 0.0001184996
  },
  {
   "symbol": "Co",
   "orbital": "3s",
   "bindingEnergy": 101.0,
-  "crossSection": 0.00020168
+  "crossSection": 0.00020204956
+ },
+ {
+  "symbol": "Co",
+  "orbital": "2p",
+  "bindingEnergy": 793.0,
+  "crossSection": 0.00091438945
+ },
+ {
+  "symbol": "Co",
+  "orbital": "2s",
+  "bindingEnergy": 925.0,
+  "crossSection": 0.0014005856
+ },
+ {
+  "symbol": "Co",
+  "orbital": "1s",
+  "bindingEnergy": 7709.0,
+  "crossSection": 0.019236553
  },
  {
   "symbol": "Cr",
-  "orbital": "1s",
-  "bindingEnergy": 5989.0,
-  "crossSection": 0.01300975
+  "orbital": "3p",
+  "bindingEnergy": 42.0,
+  "crossSection": 5.9045539e-05
+ },
+ {
+  "symbol": "Cr",
+  "orbital": "3s",
+  "bindingEnergy": 74.0,
+  "crossSection": 0.00013054478
  },
  {
   "symbol": "Cr",
   "orbital": "2p",
   "bindingEnergy": 584.0,
-  "crossSection": 0.00047516
+  "crossSection": 0.00047610898
  },
  {
   "symbol": "Cr",
   "orbital": "2s",
   "bindingEnergy": 696.0,
-  "crossSection": 0.00094023
+  "crossSection": 0.00094228814
  },
  {
   "symbol": "Cr",
-  "orbital": "3p",
-  "bindingEnergy": 42.0,
-  "crossSection": 5.891e-05
- },
- {
-  "symbol": "Cr",
-  "orbital": "3s",
-  "bindingEnergy": 74.0,
-  "crossSection": 0.00013028
+  "orbital": "1s",
+  "bindingEnergy": 5989.0,
+  "crossSection": 0.013047966
  },
  {
   "symbol": "Cs",
-  "orbital": "2p",
-  "bindingEnergy": 5359.0,
-  "crossSection": 0.0285624
+  "orbital": "5p",
+  "bindingEnergy": 14.0,
+  "crossSection": 0.00011688774
  },
  {
   "symbol": "Cs",
-  "orbital": "2s",
-  "bindingEnergy": 5714.0,
-  "crossSection": 0.00938837
- },
- {
-  "symbol": "Cs",
-  "orbital": "3d",
-  "bindingEnergy": 741.0,
-  "crossSection": 0.00143609
- },
- {
-  "symbol": "Cs",
-  "orbital": "3p",
-  "bindingEnergy": 1071.0,
-  "crossSection": 0.0044988
- },
- {
-  "symbol": "Cs",
-  "orbital": "3s",
-  "bindingEnergy": 1211.0,
-  "crossSection": 0.00203509
+  "orbital": "5s",
+  "bindingEnergy": 23.0,
+  "crossSection": 7.5415932e-05
  },
  {
   "symbol": "Cs",
   "orbital": "4d",
   "bindingEnergy": 80.0,
-  "crossSection": 0.00025454
+  "crossSection": 0.00025537183
  },
  {
   "symbol": "Cs",
   "orbital": "4p",
   "bindingEnergy": 172.0,
-  "crossSection": 0.0009077
+  "crossSection": 0.00091043811
  },
  {
   "symbol": "Cs",
   "orbital": "4s",
   "bindingEnergy": 232.0,
-  "crossSection": 0.00046252
+  "crossSection": 0.00046327154
  },
  {
   "symbol": "Cs",
-  "orbital": "5p",
-  "bindingEnergy": 14.0,
-  "crossSection": 0.00011653
+  "orbital": "3d",
+  "bindingEnergy": 741.0,
+  "crossSection": 0.0014403365
  },
  {
   "symbol": "Cs",
-  "orbital": "5s",
-  "bindingEnergy": 23.0,
-  "crossSection": 7.532e-05
+  "orbital": "3p",
+  "bindingEnergy": 1071.0,
+  "crossSection": 0.0045130601
  },
  {
-  "symbol": "Cu",
-  "orbital": "1s",
-  "bindingEnergy": 8979.0,
-  "crossSection": 0.02365328
+  "symbol": "Cs",
+  "orbital": "3s",
+  "bindingEnergy": 1211.0,
+  "crossSection": 0.0020389547
  },
  {
-  "symbol": "Cu",
+  "symbol": "Cs",
   "orbital": "2p",
-  "bindingEnergy": 952.0,
-  "crossSection": 0.00134377
+  "bindingEnergy": 5359.0,
+  "crossSection": 0.028638377
  },
  {
-  "symbol": "Cu",
+  "symbol": "Cs",
   "orbital": "2s",
-  "bindingEnergy": 1097.0,
-  "crossSection": 0.0017629
+  "bindingEnergy": 5714.0,
+  "crossSection": 0.0094190743
  },
  {
   "symbol": "Cu",
   "orbital": "3p",
   "bindingEnergy": 77.0,
-  "crossSection": 0.00017217
+  "crossSection": 0.00017223648
  },
  {
   "symbol": "Cu",
   "orbital": "3s",
   "bindingEnergy": 123.0,
-  "crossSection": 0.00025471
+  "crossSection": 0.00025480222
  },
  {
-  "symbol": "Dy",
+  "symbol": "Cu",
   "orbital": "2p",
-  "bindingEnergy": 8581.0,
-  "crossSection": 0.05952864
+  "bindingEnergy": 952.0,
+  "crossSection": 0.0013441623
  },
  {
-  "symbol": "Dy",
+  "symbol": "Cu",
   "orbital": "2s",
-  "bindingEnergy": 9046.0,
-  "crossSection": 0.01288787
+  "bindingEnergy": 1097.0,
+  "crossSection": 0.0017634644
+ },
+ {
+  "symbol": "Cu",
+  "orbital": "1s",
+  "bindingEnergy": 8979.0,
+  "crossSection": 0.023691762
  },
  {
   "symbol": "Dy",
-  "orbital": "3d",
-  "bindingEnergy": 1333.0,
-  "crossSection": 0.00477617
+  "orbital": "4f",
+  "bindingEnergy": 8.0,
+  "crossSection": 2.3724207e-05
  },
  {
   "symbol": "Dy",
-  "orbital": "3p",
-  "bindingEnergy": 1842.0,
-  "crossSection": 0.00928336
+  "orbital": "5p",
+  "bindingEnergy": 26.0,
+  "crossSection": 0.00026162316
  },
  {
   "symbol": "Dy",
-  "orbital": "3s",
-  "bindingEnergy": 2047.0,
-  "crossSection": 0.00326057
+  "orbital": "5s",
+  "bindingEnergy": 50.0,
+  "crossSection": 0.00013453482
  },
  {
   "symbol": "Dy",
   "orbital": "4d",
   "bindingEnergy": 154.0,
-  "crossSection": 0.00092088
- },
- {
-  "symbol": "Dy",
-  "orbital": "4f",
-  "bindingEnergy": 8.0,
-  "crossSection": 2.372e-05
+  "crossSection": 0.00092121374
  },
  {
   "symbol": "Dy",
   "orbital": "4p",
   "bindingEnergy": 334.0,
-  "crossSection": 0.00201431
+  "crossSection": 0.0020149641
  },
  {
   "symbol": "Dy",
   "orbital": "4s",
   "bindingEnergy": 414.0,
-  "crossSection": 0.0008095
+  "crossSection": 0.00080962443
  },
  {
   "symbol": "Dy",
-  "orbital": "5p",
-  "bindingEnergy": 26.0,
-  "crossSection": 0.00026154
- },
- {
-  "symbol": "Dy",
-  "orbital": "5s",
-  "bindingEnergy": 50.0,
-  "crossSection": 0.00013451
- },
- {
-  "symbol": "Er",
-  "orbital": "2p",
-  "bindingEnergy": 8358.0,
-  "crossSection": 0.04130134
- },
- {
-  "symbol": "Er",
   "orbital": "3d",
-  "bindingEnergy": 1453.0,
-  "crossSection": 0.0057515
+  "bindingEnergy": 1333.0,
+  "crossSection": 0.0047777895
  },
  {
-  "symbol": "Er",
+  "symbol": "Dy",
   "orbital": "3p",
-  "bindingEnergy": 2006.0,
-  "crossSection": 0.01035275
+  "bindingEnergy": 1842.0,
+  "crossSection": 0.0092864945
+ },
+ {
+  "symbol": "Dy",
+  "orbital": "3s",
+  "bindingEnergy": 2047.0,
+  "crossSection": 0.00326128
+ },
+ {
+  "symbol": "Dy",
+  "orbital": "2p",
+  "bindingEnergy": 8581.0,
+  "crossSection": 0.059507657
+ },
+ {
+  "symbol": "Dy",
+  "orbital": "2s",
+  "bindingEnergy": 9046.0,
+  "crossSection": 0.012890553
  },
  {
   "symbol": "Er",
-  "orbital": "3s",
-  "bindingEnergy": 2207.0,
-  "crossSection": 0.00349691
+  "orbital": "4f",
+  "bindingEnergy": 5.0,
+  "crossSection": 3.9323941e-05
+ },
+ {
+  "symbol": "Er",
+  "orbital": "5p",
+  "bindingEnergy": 31.0,
+  "crossSection": 0.00028649444
+ },
+ {
+  "symbol": "Er",
+  "orbital": "5s",
+  "bindingEnergy": 51.0,
+  "crossSection": 0.00014392338
  },
  {
   "symbol": "Er",
   "orbital": "4d",
   "bindingEnergy": 168.0,
-  "crossSection": 0.00110683
- },
- {
-  "symbol": "Er",
-  "orbital": "4f",
-  "bindingEnergy": 5.0,
-  "crossSection": 2.154e-05
+  "crossSection": 0.0011068652
  },
  {
   "symbol": "Er",
   "orbital": "4p",
   "bindingEnergy": 366.0,
-  "crossSection": 0.00225827
+  "crossSection": 0.0022583109
  },
  {
   "symbol": "Er",
   "orbital": "4s",
   "bindingEnergy": 450.0,
-  "crossSection": 0.00087742
+  "crossSection": 0.00087743423
  },
  {
   "symbol": "Er",
-  "orbital": "5p",
-  "bindingEnergy": 31.0,
-  "crossSection": 0.00028649
+  "orbital": "3d",
+  "bindingEnergy": 1453.0,
+  "crossSection": 0.0057516334
  },
  {
   "symbol": "Er",
-  "orbital": "5s",
-  "bindingEnergy": 51.0,
-  "crossSection": 0.00014392
+  "orbital": "3p",
+  "bindingEnergy": 2006.0,
+  "crossSection": 0.010353038
+ },
+ {
+  "symbol": "Er",
+  "orbital": "3s",
+  "bindingEnergy": 2207.0,
+  "crossSection": 0.0034969387
+ },
+ {
+  "symbol": "Er",
+  "orbital": "2p",
+  "bindingEnergy": 9264.0,
+  "crossSection": 0.041302553
  },
  {
   "symbol": "Es",
-  "orbital": "4d",
-  "bindingEnergy": 1003.6,
-  "crossSection": 0.00969928
- },
- {
-  "symbol": "Es",
-  "orbital": "4f",
-  "bindingEnergy": 621.2,
-  "crossSection": 0.00237338
- },
- {
-  "symbol": "Es",
-  "orbital": "4p",
-  "bindingEnergy": 1276.4,
-  "crossSection": 0.008315
- },
- {
-  "symbol": "Es",
-  "orbital": "4s",
-  "bindingEnergy": 1421.2,
-  "crossSection": 0.00207201
- },
- {
-  "symbol": "Es",
-  "orbital": "5d",
-  "bindingEnergy": 152.7,
-  "crossSection": 0.00203575
+  "orbital": "7s",
+  "bindingEnergy": 5.1,
+  "crossSection": 1.0108103e-05
  },
  {
   "symbol": "Es",
   "orbital": "5f",
   "bindingEnergy": 26.1,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Es",
-  "orbital": "5p",
-  "bindingEnergy": 258.7,
-  "crossSection": 0.00216006
- },
- {
-  "symbol": "Es",
-  "orbital": "5s",
-  "bindingEnergy": 318.1,
-  "crossSection": 0.00060352
- },
- {
-  "symbol": "Es",
-  "orbital": "6d",
-  "bindingEnergy": 6.1,
-  "crossSection": 0.0
+  "crossSection": 0.00022688722
  },
  {
   "symbol": "Es",
   "orbital": "6p",
   "bindingEnergy": 29.8,
-  "crossSection": 0.00033032
+  "crossSection": 0.00033109531
  },
  {
   "symbol": "Es",
   "orbital": "6s",
   "bindingEnergy": 46.8,
-  "crossSection": 0.00012355
+  "crossSection": 0.00012370449
  },
  {
   "symbol": "Es",
-  "orbital": "7s",
-  "bindingEnergy": 5.1,
-  "crossSection": 1.01e-05
+  "orbital": "5d",
+  "bindingEnergy": 152.7,
+  "crossSection": 0.0020434612
+ },
+ {
+  "symbol": "Es",
+  "orbital": "5p",
+  "bindingEnergy": 258.7,
+  "crossSection": 0.0021656955
+ },
+ {
+  "symbol": "Es",
+  "orbital": "5s",
+  "bindingEnergy": 318.1,
+  "crossSection": 0.00060435649
+ },
+ {
+  "symbol": "Es",
+  "orbital": "4f",
+  "bindingEnergy": 621.2,
+  "crossSection": 0.0023813316
+ },
+ {
+  "symbol": "Es",
+  "orbital": "4d",
+  "bindingEnergy": 1003.6,
+  "crossSection": 0.0097366992
+ },
+ {
+  "symbol": "Es",
+  "orbital": "4p",
+  "bindingEnergy": 1276.4,
+  "crossSection": 0.0083400693
+ },
+ {
+  "symbol": "Es",
+  "orbital": "4s",
+  "bindingEnergy": 1421.2,
+  "crossSection": 0.0020758475
  },
  {
   "symbol": "Eu",
-  "orbital": "2p",
-  "bindingEnergy": 7617.0,
-  "crossSection": 0.04983352
+  "orbital": "5p",
+  "bindingEnergy": 22.0,
+  "crossSection": 0.00022554329
  },
  {
   "symbol": "Eu",
-  "orbital": "2s",
-  "bindingEnergy": 8052.0,
-  "crossSection": 0.01206288
- },
- {
-  "symbol": "Eu",
-  "orbital": "3d",
-  "bindingEnergy": 1159.0,
-  "crossSection": 0.00354795
- },
- {
-  "symbol": "Eu",
-  "orbital": "3p",
-  "bindingEnergy": 1614.0,
-  "crossSection": 0.0077761
- },
- {
-  "symbol": "Eu",
-  "orbital": "3s",
-  "bindingEnergy": 1800.0,
-  "crossSection": 0.00290729
+  "orbital": "5s",
+  "bindingEnergy": 32.0,
+  "crossSection": 0.0001205937
  },
  {
   "symbol": "Eu",
   "orbital": "4d",
   "bindingEnergy": 133.0,
-  "crossSection": 0.00068283
+  "crossSection": 0.00068480401
  },
  {
   "symbol": "Eu",
   "orbital": "4p",
   "bindingEnergy": 284.0,
-  "crossSection": 0.0016714
+  "crossSection": 0.0016757167
  },
  {
   "symbol": "Eu",
   "orbital": "4s",
   "bindingEnergy": 360.0,
-  "crossSection": 0.00071011
+  "crossSection": 0.00071105787
  },
  {
   "symbol": "Eu",
-  "orbital": "5p",
-  "bindingEnergy": 22.0,
-  "crossSection": 0.000225
+  "orbital": "3d",
+  "bindingEnergy": 1159.0,
+  "crossSection": 0.003556488
  },
  {
   "symbol": "Eu",
-  "orbital": "5s",
-  "bindingEnergy": 32.0,
-  "crossSection": 0.00012044
+  "orbital": "3p",
+  "bindingEnergy": 1614.0,
+  "crossSection": 0.0077970831
+ },
+ {
+  "symbol": "Eu",
+  "orbital": "3s",
+  "bindingEnergy": 1800.0,
+  "crossSection": 0.0029119937
+ },
+ {
+  "symbol": "Eu",
+  "orbital": "2p",
+  "bindingEnergy": 7617.0,
+  "crossSection": 0.049968673
+ },
+ {
+  "symbol": "Eu",
+  "orbital": "2s",
+  "bindingEnergy": 8052.0,
+  "crossSection": 0.012117123
  },
  {
   "symbol": "F",
   "orbital": "1s",
   "bindingEnergy": 685.0,
-  "crossSection": 0.00029525
+  "crossSection": 0.00029556364
  },
  {
   "symbol": "Fe",
-  "orbital": "1s",
-  "bindingEnergy": 7112.0,
-  "crossSection": 0.01699186
+  "orbital": "3p",
+  "bindingEnergy": 53.0,
+  "crossSection": 9.5930574e-05
+ },
+ {
+  "symbol": "Fe",
+  "orbital": "3s",
+  "bindingEnergy": 91.0,
+  "crossSection": 0.00017707465
  },
  {
   "symbol": "Fe",
   "orbital": "2p",
   "bindingEnergy": 720.0,
-  "crossSection": 0.00074232
+  "crossSection": 0.00074368311
  },
  {
   "symbol": "Fe",
   "orbital": "2s",
   "bindingEnergy": 845.0,
-  "crossSection": 0.00123378
+  "crossSection": 0.0012362947
  },
  {
   "symbol": "Fe",
-  "orbital": "3p",
-  "bindingEnergy": 53.0,
-  "crossSection": 9.573e-05
- },
- {
-  "symbol": "Fe",
-  "orbital": "3s",
-  "bindingEnergy": 91.0,
-  "crossSection": 0.00017674
- },
- {
-  "symbol": "Fm",
-  "orbital": "4d",
-  "bindingEnergy": 1039.1,
-  "crossSection": 0.01019085
- },
- {
-  "symbol": "Fm",
-  "orbital": "4f",
-  "bindingEnergy": 649.2,
-  "crossSection": 0.00258057
- },
- {
-  "symbol": "Fm",
-  "orbital": "4p",
-  "bindingEnergy": 1316.8,
-  "crossSection": 0.00853844
- },
- {
-  "symbol": "Fm",
-  "orbital": "4s",
-  "bindingEnergy": 1464.3,
-  "crossSection": 0.00209742
- },
- {
-  "symbol": "Fm",
-  "orbital": "5d",
-  "bindingEnergy": 157.9,
-  "crossSection": 0.00216006
- },
- {
-  "symbol": "Fm",
-  "orbital": "5f",
-  "bindingEnergy": 27.4,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Fm",
-  "orbital": "5p",
-  "bindingEnergy": 266.7,
-  "crossSection": 0.00223926
- },
- {
-  "symbol": "Fm",
-  "orbital": "5s",
-  "bindingEnergy": 327.5,
-  "crossSection": 0.00061745
- },
- {
-  "symbol": "Fm",
-  "orbital": "6d",
-  "bindingEnergy": 6.1,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Fm",
-  "orbital": "6p",
-  "bindingEnergy": 30.3,
-  "crossSection": 0.00033969
- },
- {
-  "symbol": "Fm",
-  "orbital": "6s",
-  "bindingEnergy": 47.6,
-  "crossSection": 0.00012641
+  "orbital": "1s",
+  "bindingEnergy": 7112.0,
+  "crossSection": 0.017050361
  },
  {
   "symbol": "Fm",
   "orbital": "7s",
   "bindingEnergy": 5.1,
-  "crossSection": 1.012e-05
+  "crossSection": 1.0133547e-05
  },
  {
-  "symbol": "Fr",
-  "orbital": "3d",
-  "bindingEnergy": 3136.0,
-  "crossSection": 0.0234966
+  "symbol": "Fm",
+  "orbital": "5f",
+  "bindingEnergy": 27.4,
+  "crossSection": 0.00027648963
  },
  {
-  "symbol": "Fr",
-  "orbital": "3p",
-  "bindingEnergy": 4327.0,
-  "crossSection": 0.02236609
+  "symbol": "Fm",
+  "orbital": "6p",
+  "bindingEnergy": 30.3,
+  "crossSection": 0.00034047055
  },
  {
-  "symbol": "Fr",
-  "orbital": "3s",
-  "bindingEnergy": 4652.0,
-  "crossSection": 0.0055186
+  "symbol": "Fm",
+  "orbital": "6s",
+  "bindingEnergy": 47.6,
+  "crossSection": 0.00012656377
  },
  {
-  "symbol": "Fr",
-  "orbital": "4d",
-  "bindingEnergy": 603.0,
-  "crossSection": 0.00490018
+  "symbol": "Fm",
+  "orbital": "5d",
+  "bindingEnergy": 157.9,
+  "crossSection": 0.002168126
  },
  {
-  "symbol": "Fr",
+  "symbol": "Fm",
+  "orbital": "5p",
+  "bindingEnergy": 266.7,
+  "crossSection": 0.0022450084
+ },
+ {
+  "symbol": "Fm",
+  "orbital": "5s",
+  "bindingEnergy": 327.5,
+  "crossSection": 0.00061828679
+ },
+ {
+  "symbol": "Fm",
   "orbital": "4f",
-  "bindingEnergy": 268.0,
-  "crossSection": 0.00074044
+  "bindingEnergy": 649.2,
+  "crossSection": 0.0025890927
  },
  {
-  "symbol": "Fr",
+  "symbol": "Fm",
+  "orbital": "4d",
+  "bindingEnergy": 1039.1,
+  "crossSection": 0.010229644
+ },
+ {
+  "symbol": "Fm",
   "orbital": "4p",
-  "bindingEnergy": 980.0,
-  "crossSection": 0.00560603
+  "bindingEnergy": 1316.8,
+  "crossSection": 0.0085639338
+ },
+ {
+  "symbol": "Fm",
+  "orbital": "4s",
+  "bindingEnergy": 1464.3,
+  "crossSection": 0.0021013039
  },
  {
   "symbol": "Fr",
-  "orbital": "4s",
-  "bindingEnergy": 1153.0,
-  "crossSection": 0.00164639
+  "orbital": "6p",
+  "bindingEnergy": 15.0,
+  "crossSection": 0.00016718636
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "6s",
+  "bindingEnergy": 34.0,
+  "crossSection": 7.2573267e-05
  },
  {
   "symbol": "Fr",
   "orbital": "5d",
   "bindingEnergy": 58.0,
-  "crossSection": 0.00080241
+  "crossSection": 0.00080561033
  },
  {
   "symbol": "Fr",
   "orbital": "5p",
   "bindingEnergy": 182.0,
-  "crossSection": 0.00121885
+  "crossSection": 0.00122232
  },
  {
   "symbol": "Fr",
   "orbital": "5s",
   "bindingEnergy": 234.0,
-  "crossSection": 0.00040576
+  "crossSection": 0.00040633486
  },
  {
   "symbol": "Fr",
-  "orbital": "6p",
-  "bindingEnergy": 15.0,
-  "crossSection": 0.00016667
+  "orbital": "4f",
+  "bindingEnergy": 268.0,
+  "crossSection": 0.00074291496
  },
  {
   "symbol": "Fr",
-  "orbital": "6s",
-  "bindingEnergy": 34.0,
-  "crossSection": 7.248e-05
+  "orbital": "4d",
+  "bindingEnergy": 603.0,
+  "crossSection": 0.0049196605
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "4p",
+  "bindingEnergy": 980.0,
+  "crossSection": 0.005623412
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "4s",
+  "bindingEnergy": 1153.0,
+  "crossSection": 0.0016492844
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "3d",
+  "bindingEnergy": 3136.0,
+  "crossSection": 0.023572364
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "3p",
+  "bindingEnergy": 4327.0,
+  "crossSection": 0.02246121
+ },
+ {
+  "symbol": "Fr",
+  "orbital": "3s",
+  "bindingEnergy": 4652.0,
+  "crossSection": 0.0055361531
+ },
+ {
+  "symbol": "Ga",
+  "orbital": "3d",
+  "bindingEnergy": 19.0,
+  "crossSection": 1.203058e-05
+ },
+ {
+  "symbol": "Ga",
+  "orbital": "3p",
+  "bindingEnergy": 104.0,
+  "crossSection": 0.0002526163
+ },
+ {
+  "symbol": "Ga",
+  "orbital": "3s",
+  "bindingEnergy": 160.0,
+  "crossSection": 0.00032338692
  },
  {
   "symbol": "Ga",
   "orbital": "2p",
   "bindingEnergy": 1143.0,
-  "crossSection": 0.00190562
+  "crossSection": 0.0019084006
  },
  {
   "symbol": "Ga",
   "orbital": "2s",
   "bindingEnergy": 1299.0,
-  "crossSection": 0.00216574
- },
- {
-  "symbol": "Ga",
-  "orbital": "3d",
-  "bindingEnergy": 19.0,
-  "crossSection": 1.201e-05
- },
- {
-  "symbol": "Ga",
-  "orbital": "3p",
-  "bindingEnergy": 104.0,
-  "crossSection": 0.00025215
- },
- {
-  "symbol": "Ga",
-  "orbital": "3s",
-  "bindingEnergy": 160.0,
-  "crossSection": 0.0003229
- },
- {
-  "symbol": "Gd",
-  "orbital": "2p",
-  "bindingEnergy": 7930.0,
-  "crossSection": 0.05300618
- },
- {
-  "symbol": "Gd",
-  "orbital": "2s",
-  "bindingEnergy": 8376.0,
-  "crossSection": 0.01235325
- },
- {
-  "symbol": "Gd",
-  "orbital": "3d",
-  "bindingEnergy": 1222.0,
-  "crossSection": 0.00392419
- },
- {
-  "symbol": "Gd",
-  "orbital": "3p",
-  "bindingEnergy": 1688.0,
-  "crossSection": 0.00826109
- },
- {
-  "symbol": "Gd",
-  "orbital": "3s",
-  "bindingEnergy": 1881.0,
-  "crossSection": 0.00302333
- },
- {
-  "symbol": "Gd",
-  "orbital": "4d",
-  "bindingEnergy": 143.0,
-  "crossSection": 0.00043699
+  "crossSection": 0.0021695025
  },
  {
   "symbol": "Gd",
   "orbital": "4f",
   "bindingEnergy": 9.0,
-  "crossSection": 1.263e-05
- },
- {
-  "symbol": "Gd",
-  "orbital": "4p",
-  "bindingEnergy": 286.0,
-  "crossSection": 0.00179172
- },
- {
-  "symbol": "Gd",
-  "orbital": "4s",
-  "bindingEnergy": 379.0,
-  "crossSection": 0.00074559
+  "crossSection": 1.2647124e-05
  },
  {
   "symbol": "Gd",
   "orbital": "5p",
   "bindingEnergy": 28.0,
-  "crossSection": 0.00025416
+  "crossSection": 0.00025461677
  },
  {
   "symbol": "Gd",
   "orbital": "5s",
   "bindingEnergy": 36.0,
-  "crossSection": 0.00013112
+  "crossSection": 0.00013123494
  },
  {
-  "symbol": "Ge",
+  "symbol": "Gd",
+  "orbital": "4d",
+  "bindingEnergy": 143.0,
+  "crossSection": 0.00076618086
+ },
+ {
+  "symbol": "Gd",
+  "orbital": "4p",
+  "bindingEnergy": 286.0,
+  "crossSection": 0.0017951328
+ },
+ {
+  "symbol": "Gd",
+  "orbital": "4s",
+  "bindingEnergy": 379.0,
+  "crossSection": 0.00074628256
+ },
+ {
+  "symbol": "Gd",
+  "orbital": "3d",
+  "bindingEnergy": 1222.0,
+  "crossSection": 0.0039310003
+ },
+ {
+  "symbol": "Gd",
+  "orbital": "3p",
+  "bindingEnergy": 1688.0,
+  "crossSection": 0.0082771288
+ },
+ {
+  "symbol": "Gd",
+  "orbital": "3s",
+  "bindingEnergy": 1881.0,
+  "crossSection": 0.0030269592
+ },
+ {
+  "symbol": "Gd",
   "orbital": "2p",
-  "bindingEnergy": 1248.0,
-  "crossSection": 0.00224603
+  "bindingEnergy": 7930.0,
+  "crossSection": 0.053085749
  },
  {
-  "symbol": "Ge",
+  "symbol": "Gd",
   "orbital": "2s",
-  "bindingEnergy": 1415.0,
-  "crossSection": 0.00238449
+  "bindingEnergy": 8376.0,
+  "crossSection": 0.012394489
  },
  {
   "symbol": "Ge",
   "orbital": "3d",
   "bindingEnergy": 30.0,
-  "crossSection": 1.669e-05
+  "crossSection": 1.6719658e-05
  },
  {
   "symbol": "Ge",
   "orbital": "3p",
   "bindingEnergy": 125.0,
-  "crossSection": 0.00030246
+  "crossSection": 0.00030306944
  },
  {
   "symbol": "Ge",
   "orbital": "3s",
   "bindingEnergy": 180.0,
-  "crossSection": 0.00036186
+  "crossSection": 0.00036244446
+ },
+ {
+  "symbol": "Ge",
+  "orbital": "2p",
+  "bindingEnergy": 1248.0,
+  "crossSection": 0.0022496626
+ },
+ {
+  "symbol": "Ge",
+  "orbital": "2s",
+  "bindingEnergy": 1415.0,
+  "crossSection": 0.0023889669
  },
  {
   "symbol": "H",
   "orbital": "1s",
   "bindingEnergy": 14.0,
-  "crossSection": 1e-08
+  "crossSection": 5.9568159e-09
  },
  {
   "symbol": "He",
   "orbital": "1s",
   "bindingEnergy": 25.0,
-  "crossSection": 2.5e-07
+  "crossSection": 2.5216609e-07
  },
  {
   "symbol": "Hf",
-  "orbital": "3d",
-  "bindingEnergy": 1716.0,
-  "crossSection": 0.00811985
+  "orbital": "4f",
+  "bindingEnergy": 16.0,
+  "crossSection": 9.1674408e-05
  },
  {
   "symbol": "Hf",
-  "orbital": "3p",
-  "bindingEnergy": 2365.0,
-  "crossSection": 0.01262253
+  "orbital": "5p",
+  "bindingEnergy": 38.0,
+  "crossSection": 0.00038363301
  },
  {
   "symbol": "Hf",
-  "orbital": "3s",
-  "bindingEnergy": 2601.0,
-  "crossSection": 0.003969
+  "orbital": "5s",
+  "bindingEnergy": 64.0,
+  "crossSection": 0.00017666831
  },
  {
   "symbol": "Hf",
   "orbital": "4d",
   "bindingEnergy": 220.0,
-  "crossSection": 0.00157195
- },
- {
-  "symbol": "Hf",
-  "orbital": "4f",
-  "bindingEnergy": 16.0,
-  "crossSection": 9.159e-05
+  "crossSection": 0.0015734745
  },
  {
   "symbol": "Hf",
   "orbital": "4p",
   "bindingEnergy": 438.0,
-  "crossSection": 0.00280241
+  "crossSection": 0.0028046412
  },
  {
   "symbol": "Hf",
   "orbital": "4s",
   "bindingEnergy": 538.0,
-  "crossSection": 0.0010217
+  "crossSection": 0.001022078
  },
  {
   "symbol": "Hf",
-  "orbital": "5p",
-  "bindingEnergy": 38.0,
-  "crossSection": 0.00038335
- },
- {
-  "symbol": "Hf",
-  "orbital": "5s",
-  "bindingEnergy": 64.0,
-  "crossSection": 0.00017661
- },
- {
-  "symbol": "Hg",
   "orbital": "3d",
-  "bindingEnergy": 2385.0,
-  "crossSection": 0.01486528
+  "bindingEnergy": 1716.0,
+  "crossSection": 0.0081262398
  },
  {
-  "symbol": "Hg",
+  "symbol": "Hf",
   "orbital": "3p",
-  "bindingEnergy": 3279.0,
-  "crossSection": 0.01765116
+  "bindingEnergy": 2365.0,
+  "crossSection": 0.012635037
  },
  {
-  "symbol": "Hg",
+  "symbol": "Hf",
   "orbital": "3s",
-  "bindingEnergy": 3562.0,
-  "crossSection": 0.00486444
+  "bindingEnergy": 2601.0,
+  "crossSection": 0.0039713376
  },
  {
   "symbol": "Hg",
-  "orbital": "4d",
-  "bindingEnergy": 378.0,
-  "crossSection": 0.00301087
+  "orbital": "5d",
+  "bindingEnergy": 10.0,
+  "crossSection": 0.00030718369
+ },
+ {
+  "symbol": "Hg",
+  "orbital": "5p",
+  "bindingEnergy": 83.0,
+  "crossSection": 0.00074292198
  },
  {
   "symbol": "Hg",
   "orbital": "4f",
   "bindingEnergy": 104.0,
-  "crossSection": 0.00031453
- },
- {
-  "symbol": "Hg",
-  "orbital": "4p",
-  "bindingEnergy": 680.0,
-  "crossSection": 0.00417032
- },
- {
-  "symbol": "Hg",
-  "orbital": "4s",
-  "bindingEnergy": 802.0,
-  "crossSection": 0.00134885
- },
- {
-  "symbol": "Hg",
-  "orbital": "5d",
-  "bindingEnergy": 10.0,
-  "crossSection": 0.00030618
- },
- {
-  "symbol": "Hg",
-  "orbital": "5p",
-  "bindingEnergy": 83.0,
-  "crossSection": 0.00074112
+  "crossSection": 0.00031540152
  },
  {
   "symbol": "Hg",
   "orbital": "5s",
   "bindingEnergy": 127.0,
-  "crossSection": 0.00028544
+  "crossSection": 0.00028576613
  },
  {
-  "symbol": "Ho",
-  "orbital": "2p",
-  "bindingEnergy": 8918.0,
-  "crossSection": 0.06280184
+  "symbol": "Hg",
+  "orbital": "4d",
+  "bindingEnergy": 378.0,
+  "crossSection": 0.0030207531
  },
  {
-  "symbol": "Ho",
+  "symbol": "Hg",
+  "orbital": "4p",
+  "bindingEnergy": 680.0,
+  "crossSection": 0.0041810658
+ },
+ {
+  "symbol": "Hg",
+  "orbital": "4s",
+  "bindingEnergy": 802.0,
+  "crossSection": 0.0013506563
+ },
+ {
+  "symbol": "Hg",
   "orbital": "3d",
-  "bindingEnergy": 1392.0,
-  "crossSection": 0.0052474
+  "bindingEnergy": 2385.0,
+  "crossSection": 0.014905243
  },
  {
-  "symbol": "Ho",
+  "symbol": "Hg",
   "orbital": "3p",
-  "bindingEnergy": 1923.0,
-  "crossSection": 0.00981202
+  "bindingEnergy": 3279.0,
+  "crossSection": 0.0177099
+ },
+ {
+  "symbol": "Hg",
+  "orbital": "3s",
+  "bindingEnergy": 3562.0,
+  "crossSection": 0.0048754557
  },
  {
   "symbol": "Ho",
-  "orbital": "3s",
-  "bindingEnergy": 2128.0,
-  "crossSection": 0.00337918
+  "orbital": "4f",
+  "bindingEnergy": 9.0,
+  "crossSection": 3.075859e-05
+ },
+ {
+  "symbol": "Ho",
+  "orbital": "5p",
+  "bindingEnergy": 31.0,
+  "crossSection": 0.00027397396
+ },
+ {
+  "symbol": "Ho",
+  "orbital": "5s",
+  "bindingEnergy": 49.0,
+  "crossSection": 0.00013922715
  },
  {
   "symbol": "Ho",
   "orbital": "4d",
   "bindingEnergy": 160.0,
-  "crossSection": 0.00101104
- },
- {
-  "symbol": "Ho",
-  "orbital": "4f",
-  "bindingEnergy": 9.0,
-  "crossSection": 3.076e-05
+  "crossSection": 0.0010111039
  },
  {
   "symbol": "Ho",
   "orbital": "4p",
   "bindingEnergy": 344.0,
-  "crossSection": 0.0021348
+  "crossSection": 0.0021348789
  },
  {
   "symbol": "Ho",
   "orbital": "4s",
   "bindingEnergy": 432.0,
-  "crossSection": 0.00084332
+  "crossSection": 0.00084334568
  },
  {
   "symbol": "Ho",
-  "orbital": "5p",
-  "bindingEnergy": 31.0,
-  "crossSection": 0.00027396
- },
- {
-  "symbol": "Ho",
-  "orbital": "5s",
-  "bindingEnergy": 49.0,
-  "crossSection": 0.00013922
- },
- {
-  "symbol": "I",
-  "orbital": "2p",
-  "bindingEnergy": 4852.0,
-  "crossSection": 0.02437692
- },
- {
-  "symbol": "I",
-  "orbital": "2s",
-  "bindingEnergy": 5188.0,
-  "crossSection": 0.00870848
- },
- {
-  "symbol": "I",
   "orbital": "3d",
-  "bindingEnergy": 631.0,
-  "crossSection": 0.00111117
+  "bindingEnergy": 1392.0,
+  "crossSection": 0.0052476351
  },
  {
-  "symbol": "I",
+  "symbol": "Ho",
   "orbital": "3p",
-  "bindingEnergy": 931.0,
-  "crossSection": 0.00384337
+  "bindingEnergy": 1923.0,
+  "crossSection": 0.0098126247
  },
  {
-  "symbol": "I",
+  "symbol": "Ho",
   "orbital": "3s",
-  "bindingEnergy": 1072.0,
-  "crossSection": 0.00183748
+  "bindingEnergy": 2128.0,
+  "crossSection": 0.0033793377
+ },
+ {
+  "symbol": "Ho",
+  "orbital": "2p",
+  "bindingEnergy": 8918.0,
+  "crossSection": 0.062890065
  },
  {
   "symbol": "I",
   "orbital": "4d",
   "bindingEnergy": 51.0,
-  "crossSection": 0.00018126
+  "crossSection": 0.0001818506
  },
  {
   "symbol": "I",
   "orbital": "4p",
   "bindingEnergy": 123.0,
-  "crossSection": 0.00074227
+  "crossSection": 0.00074449877
  },
  {
   "symbol": "I",
   "orbital": "4s",
   "bindingEnergy": 186.0,
-  "crossSection": 0.000402
+  "crossSection": 0.0004026593
  },
  {
-  "symbol": "In",
-  "orbital": "2p",
-  "bindingEnergy": 3938.0,
-  "crossSection": 0.017333
- },
- {
-  "symbol": "In",
-  "orbital": "2s",
-  "bindingEnergy": 4238.0,
-  "crossSection": 0.00734784
- },
- {
-  "symbol": "In",
+  "symbol": "I",
   "orbital": "3d",
-  "bindingEnergy": 451.0,
-  "crossSection": 0.00063326
+  "bindingEnergy": 631.0,
+  "crossSection": 0.0011144478
  },
  {
-  "symbol": "In",
+  "symbol": "I",
   "orbital": "3p",
-  "bindingEnergy": 703.0,
-  "crossSection": 0.00271815
+  "bindingEnergy": 931.0,
+  "crossSection": 0.0038554791
  },
  {
-  "symbol": "In",
+  "symbol": "I",
   "orbital": "3s",
-  "bindingEnergy": 827.0,
-  "crossSection": 0.00146884
+  "bindingEnergy": 1072.0,
+  "crossSection": 0.0018410003
+ },
+ {
+  "symbol": "I",
+  "orbital": "2p",
+  "bindingEnergy": 4852.0,
+  "crossSection": 0.024434004
+ },
+ {
+  "symbol": "I",
+  "orbital": "2s",
+  "bindingEnergy": 5188.0,
+  "crossSection": 0.0087342037
  },
  {
   "symbol": "In",
   "orbital": "4d",
   "bindingEnergy": 18.0,
-  "crossSection": 8.109e-05
+  "crossSection": 8.1364243e-05
  },
  {
   "symbol": "In",
   "orbital": "4p",
   "bindingEnergy": 74.0,
-  "crossSection": 0.0004731
+  "crossSection": 0.00047452201
  },
  {
   "symbol": "In",
   "orbital": "4s",
   "bindingEnergy": 123.0,
-  "crossSection": 0.00029499
+  "crossSection": 0.00029550533
  },
  {
-  "symbol": "Ir",
+  "symbol": "In",
   "orbital": "3d",
-  "bindingEnergy": 2116.0,
-  "crossSection": 0.01197982
+  "bindingEnergy": 451.0,
+  "crossSection": 0.00063505283
  },
  {
-  "symbol": "Ir",
+  "symbol": "In",
   "orbital": "3p",
-  "bindingEnergy": 2909.0,
-  "crossSection": 0.01568935
+  "bindingEnergy": 703.0,
+  "crossSection": 0.002726529
  },
  {
-  "symbol": "Ir",
+  "symbol": "In",
   "orbital": "3s",
-  "bindingEnergy": 3174.0,
-  "crossSection": 0.00453579
+  "bindingEnergy": 827.0,
+  "crossSection": 0.0014717521
+ },
+ {
+  "symbol": "In",
+  "orbital": "2p",
+  "bindingEnergy": 3938.0,
+  "crossSection": 0.017375813
+ },
+ {
+  "symbol": "In",
+  "orbital": "2s",
+  "bindingEnergy": 4238.0,
+  "crossSection": 0.0073701494
  },
  {
   "symbol": "Ir",
-  "orbital": "4d",
-  "bindingEnergy": 312.0,
-  "crossSection": 0.00238801
+  "orbital": "5p",
+  "bindingEnergy": 63.0,
+  "crossSection": 0.00058505783
  },
  {
   "symbol": "Ir",
   "orbital": "4f",
   "bindingEnergy": 64.0,
-  "crossSection": 0.00020619
+  "crossSection": 0.00020671879
+ },
+ {
+  "symbol": "Ir",
+  "orbital": "5s",
+  "bindingEnergy": 95.0,
+  "crossSection": 0.00024079097
+ },
+ {
+  "symbol": "Ir",
+  "orbital": "4d",
+  "bindingEnergy": 312.0,
+  "crossSection": 0.0023951347
  },
  {
   "symbol": "Ir",
   "orbital": "4p",
   "bindingEnergy": 578.0,
-  "crossSection": 0.00361851
+  "crossSection": 0.0036269926
  },
  {
   "symbol": "Ir",
   "orbital": "4s",
   "bindingEnergy": 691.0,
-  "crossSection": 0.00122243
+  "crossSection": 0.0012238599
  },
  {
   "symbol": "Ir",
-  "orbital": "5p",
-  "bindingEnergy": 63.0,
-  "crossSection": 0.00058376
+  "orbital": "3d",
+  "bindingEnergy": 2116.0,
+  "crossSection": 0.01200945
  },
  {
   "symbol": "Ir",
-  "orbital": "5s",
-  "bindingEnergy": 95.0,
-  "crossSection": 0.00024054
+  "orbital": "3p",
+  "bindingEnergy": 2909.0,
+  "crossSection": 0.015735737
  },
  {
-  "symbol": "K",
-  "orbital": "1s",
-  "bindingEnergy": 3608.0,
-  "crossSection": 0.00571992
- },
- {
-  "symbol": "K",
-  "orbital": "2p",
-  "bindingEnergy": 297.0,
-  "crossSection": 0.00012042
- },
- {
-  "symbol": "K",
-  "orbital": "2s",
-  "bindingEnergy": 379.0,
-  "crossSection": 0.00040105
+  "symbol": "Ir",
+  "orbital": "3s",
+  "bindingEnergy": 3174.0,
+  "crossSection": 0.0045444822
  },
  {
   "symbol": "K",
   "orbital": "3p",
   "bindingEnergy": 18.0,
-  "crossSection": 1.251e-05
+  "crossSection": 1.2531556e-05
  },
  {
   "symbol": "K",
   "orbital": "3s",
   "bindingEnergy": 35.0,
-  "crossSection": 4.876e-05
+  "crossSection": 4.8853051e-05
  },
  {
-  "symbol": "Kr",
+  "symbol": "K",
   "orbital": "2p",
-  "bindingEnergy": 1731.0,
-  "crossSection": 0.00407138
+  "bindingEnergy": 297.0,
+  "crossSection": 0.0001206354
  },
  {
-  "symbol": "Kr",
+  "symbol": "K",
   "orbital": "2s",
-  "bindingEnergy": 1921.0,
-  "crossSection": 0.00335966
+  "bindingEnergy": 379.0,
+  "crossSection": 0.00040184188
  },
  {
-  "symbol": "Kr",
-  "orbital": "3d",
-  "bindingEnergy": 95.0,
-  "crossSection": 5.161e-05
- },
- {
-  "symbol": "Kr",
-  "orbital": "3p",
-  "bindingEnergy": 222.0,
-  "crossSection": 0.00058352
- },
- {
-  "symbol": "Kr",
-  "orbital": "3s",
-  "bindingEnergy": 293.0,
-  "crossSection": 0.00054803
+  "symbol": "K",
+  "orbital": "1s",
+  "bindingEnergy": 3608.0,
+  "crossSection": 0.0057304353
  },
  {
   "symbol": "Kr",
   "orbital": "4p",
   "bindingEnergy": 14.0,
-  "crossSection": 5.09e-05
+  "crossSection": 5.1042832e-05
  },
  {
   "symbol": "Kr",
   "orbital": "4s",
   "bindingEnergy": 28.0,
-  "crossSection": 6.752e-05
+  "crossSection": 6.7647674e-05
  },
  {
-  "symbol": "La",
-  "orbital": "2p",
-  "bindingEnergy": 5891.0,
-  "crossSection": 0.03316197
- },
- {
-  "symbol": "La",
-  "orbital": "2s",
-  "bindingEnergy": 6266.0,
-  "crossSection": 0.01010256
- },
- {
-  "symbol": "La",
+  "symbol": "Kr",
   "orbital": "3d",
-  "bindingEnergy": 853.0,
-  "crossSection": 0.00182992
+  "bindingEnergy": 95.0,
+  "crossSection": 5.174174e-05
  },
  {
-  "symbol": "La",
+  "symbol": "Kr",
   "orbital": "3p",
-  "bindingEnergy": 1209.0,
-  "crossSection": 0.00521812
+  "bindingEnergy": 222.0,
+  "crossSection": 0.00058505843
+ },
+ {
+  "symbol": "Kr",
+  "orbital": "3s",
+  "bindingEnergy": 293.0,
+  "crossSection": 0.00054911918
+ },
+ {
+  "symbol": "Kr",
+  "orbital": "2p",
+  "bindingEnergy": 1731.0,
+  "crossSection": 0.0040800037
+ },
+ {
+  "symbol": "Kr",
+  "orbital": "2s",
+  "bindingEnergy": 1921.0,
+  "crossSection": 0.0033680041
  },
  {
   "symbol": "La",
-  "orbital": "3s",
-  "bindingEnergy": 1362.0,
-  "crossSection": 0.00224117
+  "orbital": "5p",
+  "bindingEnergy": 19.0,
+  "crossSection": 0.0001695391
+ },
+ {
+  "symbol": "La",
+  "orbital": "5s",
+  "bindingEnergy": 34.0,
+  "crossSection": 9.7734779e-05
  },
  {
   "symbol": "La",
   "orbital": "4d",
   "bindingEnergy": 105.0,
-  "crossSection": 0.00034756
+  "crossSection": 0.00034868019
  },
  {
   "symbol": "La",
   "orbital": "4p",
   "bindingEnergy": 206.0,
-  "crossSection": 0.00109537
+  "crossSection": 0.0010986262
  },
  {
   "symbol": "La",
   "orbital": "4s",
   "bindingEnergy": 275.0,
-  "crossSection": 0.00052772
+  "crossSection": 0.00052855196
  },
  {
   "symbol": "La",
-  "orbital": "5p",
-  "bindingEnergy": 19.0,
-  "crossSection": 0.00016906
+  "orbital": "3d",
+  "bindingEnergy": 853.0,
+  "crossSection": 0.0018351824
  },
  {
   "symbol": "La",
-  "orbital": "5s",
-  "bindingEnergy": 34.0,
-  "crossSection": 9.759e-05
+  "orbital": "3p",
+  "bindingEnergy": 1209.0,
+  "crossSection": 0.0052343728
+ },
+ {
+  "symbol": "La",
+  "orbital": "3s",
+  "bindingEnergy": 1362.0,
+  "crossSection": 0.0022452947
+ },
+ {
+  "symbol": "La",
+  "orbital": "2p",
+  "bindingEnergy": 5891.0,
+  "crossSection": 0.033256121
+ },
+ {
+  "symbol": "La",
+  "orbital": "2s",
+  "bindingEnergy": 6266.0,
+  "crossSection": 0.010139034
  },
  {
   "symbol": "Li",
   "orbital": "1s",
   "bindingEnergy": 55.0,
-  "crossSection": 2e-06
- },
- {
-  "symbol": "Lr",
-  "orbital": "4d",
-  "bindingEnergy": 1147.9,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Lr",
-  "orbital": "4f",
-  "bindingEnergy": 735.7,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Lr",
-  "orbital": "4p",
-  "bindingEnergy": 1440.7,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Lr",
-  "orbital": "5d",
-  "bindingEnergy": 173.6,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Lr",
-  "orbital": "5f",
-  "bindingEnergy": 31.3,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Lr",
-  "orbital": "5p",
-  "bindingEnergy": 290.6,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Lr",
-  "orbital": "5s",
-  "bindingEnergy": 355.6,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Lr",
-  "orbital": "6d",
-  "bindingEnergy": 5.9,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Lr",
-  "orbital": "6p",
-  "bindingEnergy": 31.5,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Lr",
-  "orbital": "6s",
-  "bindingEnergy": 50.0,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Lr",
-  "orbital": "7s",
-  "bindingEnergy": 5.2,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Lu",
-  "orbital": "2p",
-  "bindingEnergy": 9244.0,
-  "crossSection": 0.04726
- },
- {
-  "symbol": "Lu",
-  "orbital": "3d",
-  "bindingEnergy": 1639.0,
-  "crossSection": 0.00747902
- },
- {
-  "symbol": "Lu",
-  "orbital": "3p",
-  "bindingEnergy": 2264.0,
-  "crossSection": 0.01204929
- },
- {
-  "symbol": "Lu",
-  "orbital": "3s",
-  "bindingEnergy": 2491.0,
-  "crossSection": 0.00385415
- },
- {
-  "symbol": "Lu",
-  "orbital": "4d",
-  "bindingEnergy": 206.0,
-  "crossSection": 0.00144043
+  "crossSection": 2.0045551e-06
  },
  {
   "symbol": "Lu",
   "orbital": "4f",
   "bindingEnergy": 9.0,
-  "crossSection": 7.543e-05
- },
- {
-  "symbol": "Lu",
-  "orbital": "4p",
-  "bindingEnergy": 412.0,
-  "crossSection": 0.00265719
- },
- {
-  "symbol": "Lu",
-  "orbital": "4s",
-  "bindingEnergy": 507.0,
-  "crossSection": 0.00098398
+  "crossSection": 7.5429021e-05
  },
  {
   "symbol": "Lu",
   "orbital": "5p",
   "bindingEnergy": 34.0,
-  "crossSection": 0.00034688
+  "crossSection": 0.00034688837
  },
  {
   "symbol": "Lu",
   "orbital": "5s",
   "bindingEnergy": 57.0,
-  "crossSection": 0.00016475
+  "crossSection": 0.00016475436
  },
  {
-  "symbol": "Md",
+  "symbol": "Lu",
   "orbital": "4d",
-  "bindingEnergy": 1074.9,
-  "crossSection": 0.0
+  "bindingEnergy": 206.0,
+  "crossSection": 0.0014404585
  },
  {
-  "symbol": "Md",
-  "orbital": "4f",
-  "bindingEnergy": 677.7,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Md",
+  "symbol": "Lu",
   "orbital": "4p",
-  "bindingEnergy": 1357.7,
-  "crossSection": 0.0
+  "bindingEnergy": 412.0,
+  "crossSection": 0.0026572319
  },
  {
-  "symbol": "Md",
-  "orbital": "5d",
-  "bindingEnergy": 163.2,
-  "crossSection": 0.0
+  "symbol": "Lu",
+  "orbital": "4s",
+  "bindingEnergy": 507.0,
+  "crossSection": 0.0009839905
  },
  {
-  "symbol": "Md",
-  "orbital": "5f",
-  "bindingEnergy": 28.7,
-  "crossSection": 0.0
+  "symbol": "Lu",
+  "orbital": "3d",
+  "bindingEnergy": 1639.0,
+  "crossSection": 0.0074791347
  },
  {
-  "symbol": "Md",
-  "orbital": "5p",
-  "bindingEnergy": 274.7,
-  "crossSection": 0.0
+  "symbol": "Lu",
+  "orbital": "3p",
+  "bindingEnergy": 2264.0,
+  "crossSection": 0.012049528
  },
  {
-  "symbol": "Md",
-  "orbital": "5s",
-  "bindingEnergy": 336.9,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Md",
-  "orbital": "6d",
-  "bindingEnergy": 6.0,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Md",
-  "orbital": "6p",
-  "bindingEnergy": 30.7,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Md",
-  "orbital": "6s",
-  "bindingEnergy": 48.4,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Md",
-  "orbital": "7s",
-  "bindingEnergy": 5.2,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Mg",
-  "orbital": "1s",
-  "bindingEnergy": 1303.0,
-  "crossSection": 0.00097281
+  "symbol": "Lu",
+  "orbital": "3s",
+  "bindingEnergy": 2491.0,
+  "crossSection": 0.003854206
  },
  {
   "symbol": "Mg",
   "orbital": "2p",
   "bindingEnergy": 50.0,
-  "crossSection": 5.89e-06
+  "crossSection": 5.90103e-06
  },
  {
   "symbol": "Mg",
   "orbital": "2s",
   "bindingEnergy": 89.0,
-  "crossSection": 5.901e-05
+  "crossSection": 5.9099931e-05
  },
  {
-  "symbol": "Mn",
+  "symbol": "Mg",
   "orbital": "1s",
-  "bindingEnergy": 6539.0,
-  "crossSection": 0.01493306
- },
- {
-  "symbol": "Mn",
-  "orbital": "2p",
-  "bindingEnergy": 650.0,
-  "crossSection": 0.00059724
- },
- {
-  "symbol": "Mn",
-  "orbital": "2s",
-  "bindingEnergy": 769.0,
-  "crossSection": 0.00108116
+  "bindingEnergy": 1303.0,
+  "crossSection": 0.00097406153
  },
  {
   "symbol": "Mn",
   "orbital": "3p",
   "bindingEnergy": 47.0,
-  "crossSection": 7.651e-05
+  "crossSection": 7.6675606e-05
  },
  {
   "symbol": "Mn",
   "orbital": "3s",
   "bindingEnergy": 82.0,
-  "crossSection": 0.00015359
+  "crossSection": 0.00015388986
  },
  {
-  "symbol": "Mo",
+  "symbol": "Mn",
   "orbital": "2p",
-  "bindingEnergy": 2625.0,
-  "crossSection": 0.00856927
+  "bindingEnergy": 650.0,
+  "crossSection": 0.00059838414
  },
  {
-  "symbol": "Mo",
+  "symbol": "Mn",
   "orbital": "2s",
-  "bindingEnergy": 2866.0,
-  "crossSection": 0.00508158
+  "bindingEnergy": 769.0,
+  "crossSection": 0.0010834437
  },
  {
-  "symbol": "Mo",
-  "orbital": "3d",
-  "bindingEnergy": 231.0,
-  "crossSection": 0.00019349
- },
- {
-  "symbol": "Mo",
-  "orbital": "3p",
-  "bindingEnergy": 412.0,
-  "crossSection": 0.00130538
- },
- {
-  "symbol": "Mo",
-  "orbital": "3s",
-  "bindingEnergy": 506.0,
-  "crossSection": 0.0009166
+  "symbol": "Mn",
+  "orbital": "1s",
+  "bindingEnergy": 6539.0,
+  "crossSection": 0.014976846
  },
  {
   "symbol": "Mo",
   "orbital": "4p",
   "bindingEnergy": 38.0,
-  "crossSection": 0.0001884
+  "crossSection": 0.00018893834
  },
  {
   "symbol": "Mo",
   "orbital": "4s",
   "bindingEnergy": 63.0,
-  "crossSection": 0.00015737
+  "crossSection": 0.00015766512
+ },
+ {
+  "symbol": "Mo",
+  "orbital": "3d",
+  "bindingEnergy": 231.0,
+  "crossSection": 0.0001939981
+ },
+ {
+  "symbol": "Mo",
+  "orbital": "3p",
+  "bindingEnergy": 412.0,
+  "crossSection": 0.001309106
+ },
+ {
+  "symbol": "Mo",
+  "orbital": "3s",
+  "bindingEnergy": 506.0,
+  "crossSection": 0.00091842913
+ },
+ {
+  "symbol": "Mo",
+  "orbital": "2p",
+  "bindingEnergy": 2625.0,
+  "crossSection": 0.0085892364
+ },
+ {
+  "symbol": "Mo",
+  "orbital": "2s",
+  "bindingEnergy": 2866.0,
+  "crossSection": 0.0050955315
+ },
+ {
+  "symbol": "N",
+  "orbital": "2s",
+  "bindingEnergy": 37.0,
+  "crossSection": 5.3752567e-06
  },
  {
   "symbol": "N",
   "orbital": "1s",
   "bindingEnergy": 398.0,
-  "crossSection": 9.993e-05
- },
- {
-  "symbol": "N",
-  "orbital": "2s",
-  "bindingEnergy": 37.0,
-  "crossSection": 5.37e-06
- },
- {
-  "symbol": "Na",
-  "orbital": "1s",
-  "bindingEnergy": 1071.0,
-  "crossSection": 0.00068229
+  "crossSection": 0.00010002774
  },
  {
   "symbol": "Na",
   "orbital": "2p",
   "bindingEnergy": 31.0,
-  "crossSection": 3.11e-06
+  "crossSection": 3.1189191e-06
  },
  {
   "symbol": "Na",
   "orbital": "2s",
   "bindingEnergy": 64.0,
-  "crossSection": 3.955e-05
+  "crossSection": 3.9610694e-05
+ },
+ {
+  "symbol": "Na",
+  "orbital": "1s",
+  "bindingEnergy": 1071.0,
+  "crossSection": 0.00068310787
  },
  {
   "symbol": "Nb",
-  "orbital": "2p",
-  "bindingEnergy": 2465.0,
-  "crossSection": 0.00764787
+  "orbital": "4p",
+  "bindingEnergy": 33.0,
+  "crossSection": 0.00016083719
  },
  {
   "symbol": "Nb",
-  "orbital": "2s",
-  "bindingEnergy": 2698.0,
-  "crossSection": 0.00477456
+  "orbital": "4s",
+  "bindingEnergy": 56.0,
+  "crossSection": 0.00014126751
  },
  {
   "symbol": "Nb",
   "orbital": "3d",
   "bindingEnergy": 205.0,
-  "crossSection": 0.00015897
+  "crossSection": 0.00015938893
  },
  {
   "symbol": "Nb",
   "orbital": "3p",
   "bindingEnergy": 376.0,
-  "crossSection": 0.00115635
+  "crossSection": 0.0011596204
  },
  {
   "symbol": "Nb",
   "orbital": "3s",
   "bindingEnergy": 467.0,
-  "crossSection": 0.00084805
+  "crossSection": 0.00084974393
  },
  {
   "symbol": "Nb",
-  "orbital": "4p",
-  "bindingEnergy": 33.0,
-  "crossSection": 0.00016038
- },
- {
-  "symbol": "Nb",
-  "orbital": "4s",
-  "bindingEnergy": 56.0,
-  "crossSection": 0.000141
- },
- {
-  "symbol": "Nd",
   "orbital": "2p",
-  "bindingEnergy": 6722.0,
-  "crossSection": 0.04100098
+  "bindingEnergy": 2465.0,
+  "crossSection": 0.0076653935
  },
  {
-  "symbol": "Nd",
+  "symbol": "Nb",
   "orbital": "2s",
-  "bindingEnergy": 7126.0,
-  "crossSection": 0.01104786
- },
- {
-  "symbol": "Nd",
-  "orbital": "3d",
-  "bindingEnergy": 1003.0,
-  "crossSection": 0.0025819
- },
- {
-  "symbol": "Nd",
-  "orbital": "3p",
-  "bindingEnergy": 1403.0,
-  "crossSection": 0.00642638
- },
- {
-  "symbol": "Nd",
-  "orbital": "3s",
-  "bindingEnergy": 1575.0,
-  "crossSection": 0.00256764
- },
- {
-  "symbol": "Nd",
-  "orbital": "4d",
-  "bindingEnergy": 121.0,
-  "crossSection": 0.00049223
+  "bindingEnergy": 2698.0,
+  "crossSection": 0.0047874465
  },
  {
   "symbol": "Nd",
   "orbital": "4f",
   "bindingEnergy": 2.0,
-  "crossSection": 3.02e-06
- },
- {
-  "symbol": "Nd",
-  "orbital": "4p",
-  "bindingEnergy": 243.0,
-  "crossSection": 0.00136316
- },
- {
-  "symbol": "Nd",
-  "orbital": "4s",
-  "bindingEnergy": 319.0,
-  "crossSection": 0.00061529
+  "crossSection": 3.029464e-06
  },
  {
   "symbol": "Nd",
   "orbital": "5p",
   "bindingEnergy": 21.0,
-  "crossSection": 0.00019007
+  "crossSection": 0.00019057801
  },
  {
   "symbol": "Nd",
   "orbital": "5s",
   "bindingEnergy": 38.0,
-  "crossSection": 0.00010646
+  "crossSection": 0.00010660706
  },
  {
-  "symbol": "Ne",
-  "orbital": "1s",
-  "bindingEnergy": 870.0,
-  "crossSection": 0.00045984
+  "symbol": "Nd",
+  "orbital": "4d",
+  "bindingEnergy": 121.0,
+  "crossSection": 0.00049375782
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "4p",
+  "bindingEnergy": 243.0,
+  "crossSection": 0.0013670035
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "4s",
+  "bindingEnergy": 319.0,
+  "crossSection": 0.00061619537
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "3d",
+  "bindingEnergy": 1003.0,
+  "crossSection": 0.0025888
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "3p",
+  "bindingEnergy": 1403.0,
+  "crossSection": 0.0064453952
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "3s",
+  "bindingEnergy": 1575.0,
+  "crossSection": 0.0025720875
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "2p",
+  "bindingEnergy": 6722.0,
+  "crossSection": 0.041146213
+ },
+ {
+  "symbol": "Nd",
+  "orbital": "2s",
+  "bindingEnergy": 7126.0,
+  "crossSection": 0.011082457
  },
  {
   "symbol": "Ne",
   "orbital": "2p",
   "bindingEnergy": 22.0,
-  "crossSection": 1.49e-06
+  "crossSection": 1.4899573e-06
  },
  {
   "symbol": "Ne",
   "orbital": "2s",
   "bindingEnergy": 49.0,
-  "crossSection": 2.526e-05
+  "crossSection": 2.5292432e-05
  },
  {
-  "symbol": "Ni",
+  "symbol": "Ne",
   "orbital": "1s",
-  "bindingEnergy": 8333.0,
-  "crossSection": 0.02149272
- },
- {
-  "symbol": "Ni",
-  "orbital": "2p",
   "bindingEnergy": 870.0,
-  "crossSection": 0.00111205
- },
- {
-  "symbol": "Ni",
-  "orbital": "2s",
-  "bindingEnergy": 1009.0,
-  "crossSection": 0.00157412
+  "crossSection": 0.00046035065
  },
  {
   "symbol": "Ni",
   "orbital": "3p",
   "bindingEnergy": 68.0,
-  "crossSection": 0.00014449
+  "crossSection": 0.00014469718
  },
  {
   "symbol": "Ni",
   "orbital": "3s",
   "bindingEnergy": 111.0,
-  "crossSection": 0.00022851
+  "crossSection": 0.0002288084
  },
  {
-  "symbol": "No",
-  "orbital": "4d",
-  "bindingEnergy": 1111.2,
-  "crossSection": 0.0
+  "symbol": "Ni",
+  "orbital": "2p",
+  "bindingEnergy": 870.0,
+  "crossSection": 0.0011134238
  },
  {
-  "symbol": "No",
-  "orbital": "4f",
-  "bindingEnergy": 706.5,
-  "crossSection": 0.0
+  "symbol": "Ni",
+  "orbital": "2s",
+  "bindingEnergy": 1009.0,
+  "crossSection": 0.0015763678
  },
  {
-  "symbol": "No",
-  "orbital": "4p",
-  "bindingEnergy": 1399.0,
-  "crossSection": 0.0
- },
- {
-  "symbol": "No",
-  "orbital": "5d",
-  "bindingEnergy": 168.4,
-  "crossSection": 0.0
- },
- {
-  "symbol": "No",
-  "orbital": "5f",
-  "bindingEnergy": 30.0,
-  "crossSection": 0.0
- },
- {
-  "symbol": "No",
-  "orbital": "5p",
-  "bindingEnergy": 282.6,
-  "crossSection": 0.0
- },
- {
-  "symbol": "No",
-  "orbital": "5s",
-  "bindingEnergy": 346.3,
-  "crossSection": 0.0
- },
- {
-  "symbol": "No",
-  "orbital": "6d",
-  "bindingEnergy": 6.0,
-  "crossSection": 0.0
- },
- {
-  "symbol": "No",
-  "orbital": "6p",
-  "bindingEnergy": 31.1,
-  "crossSection": 0.0
- },
- {
-  "symbol": "No",
-  "orbital": "6s",
-  "bindingEnergy": 49.2,
-  "crossSection": 0.0
- },
- {
-  "symbol": "No",
-  "orbital": "7s",
-  "bindingEnergy": 5.2,
-  "crossSection": 0.0
- },
- {
-  "symbol": "Np",
-  "orbital": "4d",
-  "bindingEnergy": 799.0,
-  "crossSection": 0.00704796
- },
- {
-  "symbol": "Np",
-  "orbital": "4f",
-  "bindingEnergy": 460.4,
-  "crossSection": 0.00138066
- },
- {
-  "symbol": "Np",
-  "orbital": "4p",
-  "bindingEnergy": 1042.1,
-  "crossSection": 0.00695008
- },
- {
-  "symbol": "Np",
-  "orbital": "4s",
-  "bindingEnergy": 1171.7,
-  "crossSection": 0.00188239
- },
- {
-  "symbol": "Np",
-  "orbital": "5d",
-  "bindingEnergy": 120.4,
-  "crossSection": 0.00137417
- },
- {
-  "symbol": "Np",
-  "orbital": "5p",
-  "bindingEnergy": 210.3,
-  "crossSection": 0.00168872
- },
- {
-  "symbol": "Np",
-  "orbital": "5s",
-  "bindingEnergy": 261.3,
-  "crossSection": 0.00051102
- },
- {
-  "symbol": "Np",
-  "orbital": "6p",
-  "bindingEnergy": 26.7,
-  "crossSection": 0.00028142
- },
- {
-  "symbol": "Np",
-  "orbital": "6s",
-  "bindingEnergy": 41.4,
-  "crossSection": 0.0001067
+  "symbol": "Ni",
+  "orbital": "1s",
+  "bindingEnergy": 8333.0,
+  "crossSection": 0.0215646
  },
  {
   "symbol": "Np",
   "orbital": "7s",
   "bindingEnergy": 4.9,
-  "crossSection": 1.136e-05
+  "crossSection": 1.1374262e-05
+ },
+ {
+  "symbol": "Np",
+  "orbital": "6p",
+  "bindingEnergy": 26.7,
+  "crossSection": 0.00028215386
+ },
+ {
+  "symbol": "Np",
+  "orbital": "6s",
+  "bindingEnergy": 41.4,
+  "crossSection": 0.00010684388
+ },
+ {
+  "symbol": "Np",
+  "orbital": "5d",
+  "bindingEnergy": 120.4,
+  "crossSection": 0.001379753
+ },
+ {
+  "symbol": "Np",
+  "orbital": "5p",
+  "bindingEnergy": 210.3,
+  "crossSection": 0.0016934814
+ },
+ {
+  "symbol": "Np",
+  "orbital": "5s",
+  "bindingEnergy": 261.3,
+  "crossSection": 0.00051176609
+ },
+ {
+  "symbol": "Np",
+  "orbital": "4f",
+  "bindingEnergy": 460.4,
+  "crossSection": 0.0013855077
+ },
+ {
+  "symbol": "Np",
+  "orbital": "4d",
+  "bindingEnergy": 799.0,
+  "crossSection": 0.0070768582
+ },
+ {
+  "symbol": "Np",
+  "orbital": "4p",
+  "bindingEnergy": 1042.1,
+  "crossSection": 0.0069721264
+ },
+ {
+  "symbol": "Np",
+  "orbital": "4s",
+  "bindingEnergy": 1171.7,
+  "crossSection": 0.0018859875
+ },
+ {
+  "symbol": "O",
+  "orbital": "2s",
+  "bindingEnergy": 42.0,
+  "crossSection": 9.7557133e-06
  },
  {
   "symbol": "O",
   "orbital": "1s",
   "bindingEnergy": 531.0,
-  "crossSection": 0.00017852
- },
- {
-  "symbol": "O",
-  "orbital": "2s",
-  "bindingEnergy": 42.0,
-  "crossSection": 9.74e-06
- },
- {
-  "symbol": "Os",
-  "orbital": "3d",
-  "bindingEnergy": 2031.0,
-  "crossSection": 0.01111785
- },
- {
-  "symbol": "Os",
-  "orbital": "3p",
-  "bindingEnergy": 2792.0,
-  "crossSection": 0.01505457
- },
- {
-  "symbol": "Os",
-  "orbital": "3s",
-  "bindingEnergy": 3049.0,
-  "crossSection": 0.0044231
- },
- {
-  "symbol": "Os",
-  "orbital": "4d",
-  "bindingEnergy": 293.0,
-  "crossSection": 0.00220283
+  "crossSection": 0.00017870298
  },
  {
   "symbol": "Os",
   "orbital": "4f",
   "bindingEnergy": 53.0,
-  "crossSection": 0.00017753
- },
- {
-  "symbol": "Os",
-  "orbital": "4p",
-  "bindingEnergy": 549.0,
-  "crossSection": 0.00344397
- },
- {
-  "symbol": "Os",
-  "orbital": "4s",
-  "bindingEnergy": 658.0,
-  "crossSection": 0.001181
+  "crossSection": 0.00017798491
  },
  {
   "symbol": "Os",
   "orbital": "5p",
   "bindingEnergy": 58.0,
-  "crossSection": 0.00054856
+  "crossSection": 0.00054975575
  },
  {
   "symbol": "Os",
   "orbital": "5s",
   "bindingEnergy": 84.0,
-  "crossSection": 0.00022856
+  "crossSection": 0.00022878711
  },
  {
-  "symbol": "P",
-  "orbital": "1s",
-  "bindingEnergy": 2146.0,
-  "crossSection": 0.00235328
+  "symbol": "Os",
+  "orbital": "4d",
+  "bindingEnergy": 293.0,
+  "crossSection": 0.0022092326
+ },
+ {
+  "symbol": "Os",
+  "orbital": "4p",
+  "bindingEnergy": 549.0,
+  "crossSection": 0.0034518531
+ },
+ {
+  "symbol": "Os",
+  "orbital": "4s",
+  "bindingEnergy": 658.0,
+  "crossSection": 0.0011823446
+ },
+ {
+  "symbol": "Os",
+  "orbital": "3d",
+  "bindingEnergy": 2031.0,
+  "crossSection": 0.011145254
+ },
+ {
+  "symbol": "Os",
+  "orbital": "3p",
+  "bindingEnergy": 2792.0,
+  "crossSection": 0.01509814
+ },
+ {
+  "symbol": "Os",
+  "orbital": "3s",
+  "bindingEnergy": 3049.0,
+  "crossSection": 0.0044308921
  },
  {
   "symbol": "P",
   "orbital": "2p",
   "bindingEnergy": 136.0,
-  "crossSection": 2.72e-05
+  "crossSection": 2.7247005e-05
  },
  {
   "symbol": "P",
   "orbital": "2s",
   "bindingEnergy": 189.0,
-  "crossSection": 0.00015604
+  "crossSection": 0.00015631643
+ },
+ {
+  "symbol": "P",
+  "orbital": "1s",
+  "bindingEnergy": 2146.0,
+  "crossSection": 0.0023568422
  },
  {
   "symbol": "Pa",
-  "orbital": "3d",
-  "bindingEnergy": 3611.0,
-  "crossSection": 0.02974255
- },
- {
-  "symbol": "Pa",
-  "orbital": "3p",
-  "bindingEnergy": 5001.0,
-  "crossSection": 0.02499909
- },
- {
-  "symbol": "Pa",
-  "orbital": "3s",
-  "bindingEnergy": 5367.0,
-  "crossSection": 0.00577234
- },
- {
-  "symbol": "Pa",
-  "orbital": "4d",
-  "bindingEnergy": 743.0,
-  "crossSection": 0.00627651
- },
- {
-  "symbol": "Pa",
-  "orbital": "4f",
-  "bindingEnergy": 371.0,
-  "crossSection": 0.0011331
- },
- {
-  "symbol": "Pa",
-  "orbital": "4p",
-  "bindingEnergy": 1224.0,
-  "crossSection": 0.00649571
- },
- {
-  "symbol": "Pa",
-  "orbital": "4s",
-  "bindingEnergy": 1387.0,
-  "crossSection": 0.00180752
+  "orbital": "7s",
+  "bindingEnergy": 4.8,
+  "crossSection": 1.0986278e-05
  },
  {
   "symbol": "Pa",
   "orbital": "5d",
   "bindingEnergy": 94.0,
-  "crossSection": 0.00117674
+  "crossSection": 0.0011814925
  },
  {
   "symbol": "Pa",
   "orbital": "5p",
   "bindingEnergy": 232.0,
-  "crossSection": 0.00153222
+  "crossSection": 0.001536553
  },
  {
   "symbol": "Pa",
   "orbital": "5s",
   "bindingEnergy": 310.0,
-  "crossSection": 0.00047715
+  "crossSection": 0.00047784025
  },
  {
   "symbol": "Pa",
-  "orbital": "7s",
-  "bindingEnergy": 4.8,
-  "crossSection": 1.097e-05
- },
- {
-  "symbol": "Pb",
-  "orbital": "3d",
-  "bindingEnergy": 2586.0,
-  "crossSection": 0.01704604
- },
- {
-  "symbol": "Pb",
-  "orbital": "3p",
-  "bindingEnergy": 3554.0,
-  "crossSection": 0.01898335
- },
- {
-  "symbol": "Pb",
-  "orbital": "3s",
-  "bindingEnergy": 3851.0,
-  "crossSection": 0.00506262
- },
- {
-  "symbol": "Pb",
-  "orbital": "4d",
-  "bindingEnergy": 434.0,
-  "crossSection": 0.00348616
- },
- {
-  "symbol": "Pb",
   "orbital": "4f",
-  "bindingEnergy": 142.0,
-  "crossSection": 0.00040838
+  "bindingEnergy": 371.0,
+  "crossSection": 0.0011370132
  },
  {
-  "symbol": "Pb",
+  "symbol": "Pa",
+  "orbital": "4d",
+  "bindingEnergy": 743.0,
+  "crossSection": 0.0063019951
+ },
+ {
+  "symbol": "Pa",
   "orbital": "4p",
-  "bindingEnergy": 762.0,
-  "crossSection": 0.00456088
+  "bindingEnergy": 1224.0,
+  "crossSection": 0.0065161642
  },
  {
-  "symbol": "Pb",
+  "symbol": "Pa",
   "orbital": "4s",
-  "bindingEnergy": 892.0,
-  "crossSection": 0.00143429
+  "bindingEnergy": 1387.0,
+  "crossSection": 0.0018108808
+ },
+ {
+  "symbol": "Pa",
+  "orbital": "3d",
+  "bindingEnergy": 3611.0,
+  "crossSection": 0.029839179
+ },
+ {
+  "symbol": "Pa",
+  "orbital": "3p",
+  "bindingEnergy": 5001.0,
+  "crossSection": 0.025109002
+ },
+ {
+  "symbol": "Pa",
+  "orbital": "3s",
+  "bindingEnergy": 5367.0,
+  "crossSection": 0.005792427
  },
  {
   "symbol": "Pb",
   "orbital": "5d",
   "bindingEnergy": 21.0,
-  "crossSection": 0.00042647
+  "crossSection": 0.00042806931
  },
  {
   "symbol": "Pb",
   "orbital": "5p",
   "bindingEnergy": 106.0,
-  "crossSection": 0.00086449
+  "crossSection": 0.00086671111
+ },
+ {
+  "symbol": "Pb",
+  "orbital": "4f",
+  "bindingEnergy": 142.0,
+  "crossSection": 0.00040957722
  },
  {
   "symbol": "Pb",
   "orbital": "5s",
   "bindingEnergy": 147.0,
-  "crossSection": 0.00031816
+  "crossSection": 0.00031855058
  },
  {
-  "symbol": "Pd",
-  "orbital": "2p",
-  "bindingEnergy": 3330.0,
-  "crossSection": 0.01304952
+  "symbol": "Pb",
+  "orbital": "4d",
+  "bindingEnergy": 434.0,
+  "crossSection": 0.0034983144
  },
  {
-  "symbol": "Pd",
-  "orbital": "2s",
-  "bindingEnergy": 3604.0,
-  "crossSection": 0.00635865
+  "symbol": "Pb",
+  "orbital": "4p",
+  "bindingEnergy": 762.0,
+  "crossSection": 0.0045733309
  },
  {
-  "symbol": "Pd",
+  "symbol": "Pb",
+  "orbital": "4s",
+  "bindingEnergy": 892.0,
+  "crossSection": 0.0014363855
+ },
+ {
+  "symbol": "Pb",
   "orbital": "3d",
-  "bindingEnergy": 341.0,
-  "crossSection": 0.00039493
+  "bindingEnergy": 2586.0,
+  "crossSection": 0.017094982
  },
  {
-  "symbol": "Pd",
+  "symbol": "Pb",
   "orbital": "3p",
-  "bindingEnergy": 560.0,
-  "crossSection": 0.00203011
+  "bindingEnergy": 3554.0,
+  "crossSection": 0.019051325
  },
  {
-  "symbol": "Pd",
+  "symbol": "Pb",
   "orbital": "3s",
-  "bindingEnergy": 672.0,
-  "crossSection": 0.00121723
+  "bindingEnergy": 3851.0,
+  "crossSection": 0.0050754136
  },
  {
   "symbol": "Pd",
   "orbital": "4p",
   "bindingEnergy": 56.0,
-  "crossSection": 0.00032362
+  "crossSection": 0.00032458386
  },
  {
   "symbol": "Pd",
   "orbital": "4s",
   "bindingEnergy": 87.0,
-  "crossSection": 0.00022819
+  "crossSection": 0.00022860391
  },
  {
-  "symbol": "Pm",
-  "orbital": "2p",
-  "bindingEnergy": 7013.0,
-  "crossSection": 0.04385424
- },
- {
-  "symbol": "Pm",
-  "orbital": "2s",
-  "bindingEnergy": 7428.0,
-  "crossSection": 0.01137772
- },
- {
-  "symbol": "Pm",
+  "symbol": "Pd",
   "orbital": "3d",
-  "bindingEnergy": 1052.0,
-  "crossSection": 0.00287805
+  "bindingEnergy": 341.0,
+  "crossSection": 0.0003959978
  },
  {
-  "symbol": "Pm",
+  "symbol": "Pd",
   "orbital": "3p",
-  "bindingEnergy": 1471.0,
-  "crossSection": 0.00686025
+  "bindingEnergy": 560.0,
+  "crossSection": 0.0020361758
+ },
+ {
+  "symbol": "Pd",
+  "orbital": "3s",
+  "bindingEnergy": 672.0,
+  "crossSection": 0.0012196647
+ },
+ {
+  "symbol": "Pd",
+  "orbital": "2p",
+  "bindingEnergy": 3330.0,
+  "crossSection": 0.013081316
+ },
+ {
+  "symbol": "Pd",
+  "orbital": "2s",
+  "bindingEnergy": 3604.0,
+  "crossSection": 0.0063768428
  },
  {
   "symbol": "Pm",
   "orbital": "4d",
   "bindingEnergy": 120.0,
-  "crossSection": 0.00055103
+  "crossSection": 0.00055271994
  },
  {
   "symbol": "Pm",
   "orbital": "4p",
   "bindingEnergy": 242.0,
-  "crossSection": 0.00146242
+  "crossSection": 0.0014664704
  },
  {
-  "symbol": "Po",
+  "symbol": "Pm",
   "orbital": "3d",
-  "bindingEnergy": 2798.0,
-  "crossSection": 0.01943913
+  "bindingEnergy": 1052.0,
+  "crossSection": 0.0028855434
  },
  {
-  "symbol": "Po",
+  "symbol": "Pm",
   "orbital": "3p",
-  "bindingEnergy": 3854.0,
-  "crossSection": 0.02032088
+  "bindingEnergy": 1471.0,
+  "crossSection": 0.0068801674
  },
  {
-  "symbol": "Po",
-  "orbital": "3s",
-  "bindingEnergy": 4149.0,
-  "crossSection": 0.00525369
+  "symbol": "Pm",
+  "orbital": "2p",
+  "bindingEnergy": 7013.0,
+  "crossSection": 0.044020083
  },
  {
-  "symbol": "Po",
-  "orbital": "4d",
-  "bindingEnergy": 500.0,
-  "crossSection": 0.00401215
- },
- {
-  "symbol": "Po",
-  "orbital": "4f",
-  "bindingEnergy": 184.0,
-  "crossSection": 0.00052296
- },
- {
-  "symbol": "Po",
-  "orbital": "4p",
-  "bindingEnergy": 851.0,
-  "crossSection": 0.00496802
- },
- {
-  "symbol": "Po",
-  "orbital": "4s",
-  "bindingEnergy": 995.0,
-  "crossSection": 0.00151972
+  "symbol": "Pm",
+  "orbital": "2s",
+  "bindingEnergy": 7428.0,
+  "crossSection": 0.011407009
  },
  {
   "symbol": "Po",
   "orbital": "5d",
   "bindingEnergy": 31.0,
-  "crossSection": 0.00056251
+  "crossSection": 0.00056460379
  },
  {
   "symbol": "Po",
   "orbital": "5p",
   "bindingEnergy": 132.0,
-  "crossSection": 0.00099916
+  "crossSection": 0.0010018422
  },
  {
   "symbol": "Po",
   "orbital": "5s",
   "bindingEnergy": 177.0,
-  "crossSection": 0.00035245
+  "crossSection": 0.00035291291
  },
  {
-  "symbol": "Pr",
-  "orbital": "2p",
-  "bindingEnergy": 6440.0,
-  "crossSection": 0.03829351
+  "symbol": "Po",
+  "orbital": "4f",
+  "bindingEnergy": 184.0,
+  "crossSection": 0.00052457297
  },
  {
-  "symbol": "Pr",
-  "orbital": "2s",
-  "bindingEnergy": 6835.0,
-  "crossSection": 0.01073481
- },
- {
-  "symbol": "Pr",
-  "orbital": "3d",
-  "bindingEnergy": 948.0,
-  "crossSection": 0.00230982
- },
- {
-  "symbol": "Pr",
-  "orbital": "3p",
-  "bindingEnergy": 1337.0,
-  "crossSection": 0.00600844
- },
- {
-  "symbol": "Pr",
-  "orbital": "3s",
-  "bindingEnergy": 1511.0,
-  "crossSection": 0.00245749
- },
- {
-  "symbol": "Pr",
+  "symbol": "Po",
   "orbital": "4d",
-  "bindingEnergy": 115.0,
-  "crossSection": 0.00043781
+  "bindingEnergy": 500.0,
+  "crossSection": 0.0040269628
+ },
+ {
+  "symbol": "Po",
+  "orbital": "4p",
+  "bindingEnergy": 851.0,
+  "crossSection": 0.0049823616
+ },
+ {
+  "symbol": "Po",
+  "orbital": "4s",
+  "bindingEnergy": 995.0,
+  "crossSection": 0.0015221135
+ },
+ {
+  "symbol": "Po",
+  "orbital": "3d",
+  "bindingEnergy": 2798.0,
+  "crossSection": 0.019496518
+ },
+ {
+  "symbol": "Po",
+  "orbital": "3p",
+  "bindingEnergy": 3854.0,
+  "crossSection": 0.020398678
+ },
+ {
+  "symbol": "Po",
+  "orbital": "3s",
+  "bindingEnergy": 4149.0,
+  "crossSection": 0.0052695281
  },
  {
   "symbol": "Pr",
   "orbital": "4f",
   "bindingEnergy": 2.0,
-  "crossSection": 1.81e-06
- },
- {
-  "symbol": "Pr",
-  "orbital": "4p",
-  "bindingEnergy": 236.0,
-  "crossSection": 0.00126727
- },
- {
-  "symbol": "Pr",
-  "orbital": "4s",
-  "bindingEnergy": 305.0,
-  "crossSection": 0.00058455
+  "crossSection": 1.8122452e-06
  },
  {
   "symbol": "Pr",
   "orbital": "5p",
   "bindingEnergy": 22.0,
-  "crossSection": 0.00017861
+  "crossSection": 0.00017909802
  },
  {
   "symbol": "Pr",
   "orbital": "5s",
   "bindingEnergy": 37.0,
-  "crossSection": 0.00010173
+  "crossSection": 0.00010187697
  },
  {
-  "symbol": "Pt",
-  "orbital": "3d",
-  "bindingEnergy": 2202.0,
-  "crossSection": 0.01288949
- },
- {
-  "symbol": "Pt",
-  "orbital": "3p",
-  "bindingEnergy": 3027.0,
-  "crossSection": 0.01633363
- },
- {
-  "symbol": "Pt",
-  "orbital": "3s",
-  "bindingEnergy": 3296.0,
-  "crossSection": 0.00464834
- },
- {
-  "symbol": "Pt",
+  "symbol": "Pr",
   "orbital": "4d",
-  "bindingEnergy": 332.0,
-  "crossSection": 0.00258405
+  "bindingEnergy": 115.0,
+  "crossSection": 0.0004391875
  },
  {
-  "symbol": "Pt",
-  "orbital": "4f",
-  "bindingEnergy": 75.0,
-  "crossSection": 0.00023846
- },
- {
-  "symbol": "Pt",
+  "symbol": "Pr",
   "orbital": "4p",
-  "bindingEnergy": 609.0,
-  "crossSection": 0.00379774
+  "bindingEnergy": 236.0,
+  "crossSection": 0.0012709021
  },
  {
-  "symbol": "Pt",
+  "symbol": "Pr",
   "orbital": "4s",
-  "bindingEnergy": 725.0,
-  "crossSection": 0.00126426
+  "bindingEnergy": 305.0,
+  "crossSection": 0.00058543193
+ },
+ {
+  "symbol": "Pr",
+  "orbital": "3d",
+  "bindingEnergy": 948.0,
+  "crossSection": 0.002316152
+ },
+ {
+  "symbol": "Pr",
+  "orbital": "3p",
+  "bindingEnergy": 1337.0,
+  "crossSection": 0.0060264969
+ },
+ {
+  "symbol": "Pr",
+  "orbital": "3s",
+  "bindingEnergy": 1511.0,
+  "crossSection": 0.0024618397
+ },
+ {
+  "symbol": "Pr",
+  "orbital": "2p",
+  "bindingEnergy": 6440.0,
+  "crossSection": 0.038417103
+ },
+ {
+  "symbol": "Pr",
+  "orbital": "2s",
+  "bindingEnergy": 6835.0,
+  "crossSection": 0.010771894
  },
  {
   "symbol": "Pt",
   "orbital": "5p",
   "bindingEnergy": 65.0,
-  "crossSection": 0.00063553
+  "crossSection": 0.00063698838
+ },
+ {
+  "symbol": "Pt",
+  "orbital": "4f",
+  "bindingEnergy": 75.0,
+  "crossSection": 0.00023909101
  },
  {
   "symbol": "Pt",
   "orbital": "5s",
   "bindingEnergy": 102.0,
-  "crossSection": 0.00025543
+  "crossSection": 0.00025570417
  },
  {
-  "symbol": "Pu",
+  "symbol": "Pt",
   "orbital": "4d",
-  "bindingEnergy": 825.7,
-  "crossSection": 0.00745424
+  "bindingEnergy": 332.0,
+  "crossSection": 0.0025920083
  },
  {
-  "symbol": "Pu",
-  "orbital": "4f",
-  "bindingEnergy": 479.8,
-  "crossSection": 0.00151858
- },
- {
-  "symbol": "Pu",
+  "symbol": "Pt",
   "orbital": "4p",
-  "bindingEnergy": 1073.7,
-  "crossSection": 0.00717798
+  "bindingEnergy": 609.0,
+  "crossSection": 0.0038069415
  },
  {
-  "symbol": "Pu",
+  "symbol": "Pt",
   "orbital": "4s",
-  "bindingEnergy": 1205.8,
-  "crossSection": 0.0019177
+  "bindingEnergy": 725.0,
+  "crossSection": 0.0012658041
  },
  {
-  "symbol": "Pu",
-  "orbital": "5d",
-  "bindingEnergy": 120.2,
-  "crossSection": 0.00146778
+  "symbol": "Pt",
+  "orbital": "3d",
+  "bindingEnergy": 2202.0,
+  "crossSection": 0.012921797
  },
  {
-  "symbol": "Pu",
-  "orbital": "5p",
-  "bindingEnergy": 212.5,
-  "crossSection": 0.00176336
+  "symbol": "Pt",
+  "orbital": "3p",
+  "bindingEnergy": 3027.0,
+  "crossSection": 0.016383662
  },
  {
-  "symbol": "Pu",
-  "orbital": "5s",
-  "bindingEnergy": 264.9,
-  "crossSection": 0.00052695
- },
- {
-  "symbol": "Pu",
-  "orbital": "6p",
-  "bindingEnergy": 24.9,
-  "crossSection": 0.00027852
- },
- {
-  "symbol": "Pu",
-  "orbital": "6s",
-  "bindingEnergy": 39.5,
-  "crossSection": 0.00010728
+  "symbol": "Pt",
+  "orbital": "3s",
+  "bindingEnergy": 3296.0,
+  "crossSection": 0.0046579043
  },
  {
   "symbol": "Pu",
   "orbital": "7s",
   "bindingEnergy": 4.6,
-  "crossSection": 9.83e-06
+  "crossSection": 9.841516e-06
  },
  {
-  "symbol": "Ra",
-  "orbital": "3d",
-  "bindingEnergy": 3248.0,
-  "crossSection": 0.02496187
- },
- {
-  "symbol": "Ra",
-  "orbital": "3p",
-  "bindingEnergy": 4490.0,
-  "crossSection": 0.02304486
- },
- {
-  "symbol": "Ra",
-  "orbital": "3s",
-  "bindingEnergy": 4822.0,
-  "crossSection": 0.00559119
- },
- {
-  "symbol": "Ra",
-  "orbital": "4d",
-  "bindingEnergy": 636.0,
-  "crossSection": 0.00522358
- },
- {
-  "symbol": "Ra",
-  "orbital": "4f",
-  "bindingEnergy": 299.0,
-  "crossSection": 0.00082685
- },
- {
-  "symbol": "Ra",
-  "orbital": "4p",
-  "bindingEnergy": 1058.0,
-  "crossSection": 0.00582505
- },
- {
-  "symbol": "Ra",
-  "orbital": "4s",
-  "bindingEnergy": 1208.0,
-  "crossSection": 0.00168778
- },
- {
-  "symbol": "Ra",
-  "orbital": "5d",
-  "bindingEnergy": 68.0,
-  "crossSection": 0.00089403
- },
- {
-  "symbol": "Ra",
-  "orbital": "5p",
-  "bindingEnergy": 200.0,
-  "crossSection": 0.00129693
- },
- {
-  "symbol": "Ra",
-  "orbital": "5s",
-  "bindingEnergy": 254.0,
-  "crossSection": 0.00042393
- },
- {
-  "symbol": "Ra",
+  "symbol": "Pu",
   "orbital": "6p",
-  "bindingEnergy": 19.0,
-  "crossSection": 0.00019721
+  "bindingEnergy": 24.9,
+  "crossSection": 0.00027924303
  },
  {
-  "symbol": "Ra",
+  "symbol": "Pu",
   "orbital": "6s",
-  "bindingEnergy": 44.0,
-  "crossSection": 8.11e-05
+  "bindingEnergy": 39.5,
+  "crossSection": 0.00010742641
+ },
+ {
+  "symbol": "Pu",
+  "orbital": "5d",
+  "bindingEnergy": 120.2,
+  "crossSection": 0.0014737563
+ },
+ {
+  "symbol": "Pu",
+  "orbital": "5p",
+  "bindingEnergy": 212.5,
+  "crossSection": 0.0017683348
+ },
+ {
+  "symbol": "Pu",
+  "orbital": "5s",
+  "bindingEnergy": 264.9,
+  "crossSection": 0.00052771869
+ },
+ {
+  "symbol": "Pu",
+  "orbital": "4f",
+  "bindingEnergy": 479.8,
+  "crossSection": 0.0015239548
+ },
+ {
+  "symbol": "Pu",
+  "orbital": "4d",
+  "bindingEnergy": 825.7,
+  "crossSection": 0.0074849673
+ },
+ {
+  "symbol": "Pu",
+  "orbital": "4p",
+  "bindingEnergy": 1073.7,
+  "crossSection": 0.0072008979
+ },
+ {
+  "symbol": "Pu",
+  "orbital": "4s",
+  "bindingEnergy": 1205.8,
+  "crossSection": 0.0019213881
  },
  {
   "symbol": "Ra",
   "orbital": "7s",
   "bindingEnergy": 4.2,
-  "crossSection": 8.33e-06
+  "crossSection": 8.3398054e-06
  },
  {
-  "symbol": "Rb",
-  "orbital": "2p",
-  "bindingEnergy": 1864.0,
-  "crossSection": 0.00465954
+  "symbol": "Ra",
+  "orbital": "6p",
+  "bindingEnergy": 19.0,
+  "crossSection": 0.00019769702
  },
  {
-  "symbol": "Rb",
-  "orbital": "2s",
-  "bindingEnergy": 2065.0,
-  "crossSection": 0.003626
+  "symbol": "Ra",
+  "orbital": "6s",
+  "bindingEnergy": 44.0,
+  "crossSection": 8.1202763e-05
  },
  {
-  "symbol": "Rb",
+  "symbol": "Ra",
+  "orbital": "5d",
+  "bindingEnergy": 68.0,
+  "crossSection": 0.00089760697
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "5p",
+  "bindingEnergy": 200.0,
+  "crossSection": 0.0013006135
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "5s",
+  "bindingEnergy": 254.0,
+  "crossSection": 0.00042453158
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "4f",
+  "bindingEnergy": 299.0,
+  "crossSection": 0.00082963278
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "4d",
+  "bindingEnergy": 636.0,
+  "crossSection": 0.0052444663
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "4p",
+  "bindingEnergy": 1058.0,
+  "crossSection": 0.0058431432
+ },
+ {
+  "symbol": "Ra",
+  "orbital": "4s",
+  "bindingEnergy": 1208.0,
+  "crossSection": 0.001690778
+ },
+ {
+  "symbol": "Ra",
   "orbital": "3d",
-  "bindingEnergy": 113.0,
-  "crossSection": 6.604e-05
+  "bindingEnergy": 3248.0,
+  "crossSection": 0.025043491
  },
  {
-  "symbol": "Rb",
+  "symbol": "Ra",
   "orbital": "3p",
-  "bindingEnergy": 249.0,
-  "crossSection": 0.00067656
+  "bindingEnergy": 4490.0,
+  "crossSection": 0.023144341
  },
  {
-  "symbol": "Rb",
+  "symbol": "Ra",
   "orbital": "3s",
-  "bindingEnergy": 327.0,
-  "crossSection": 0.00060211
+  "bindingEnergy": 4822.0,
+  "crossSection": 0.0056082507
  },
  {
   "symbol": "Rb",
   "orbital": "4p",
   "bindingEnergy": 16.0,
-  "crossSection": 7.038e-05
+  "crossSection": 7.0573811e-05
  },
  {
   "symbol": "Rb",
   "orbital": "4s",
   "bindingEnergy": 31.0,
-  "crossSection": 8.13e-05
+  "crossSection": 8.1463038e-05
  },
  {
-  "symbol": "Re",
+  "symbol": "Rb",
   "orbital": "3d",
-  "bindingEnergy": 1949.0,
-  "crossSection": 0.01029991
+  "bindingEnergy": 113.0,
+  "crossSection": 6.6209372e-05
  },
  {
-  "symbol": "Re",
+  "symbol": "Rb",
   "orbital": "3p",
-  "bindingEnergy": 2682.0,
-  "crossSection": 0.01442757
+  "bindingEnergy": 249.0,
+  "crossSection": 0.00067842117
  },
  {
-  "symbol": "Re",
+  "symbol": "Rb",
   "orbital": "3s",
-  "bindingEnergy": 2932.0,
-  "crossSection": 0.00431096
+  "bindingEnergy": 327.0,
+  "crossSection": 0.00060334846
  },
  {
-  "symbol": "Re",
-  "orbital": "4d",
-  "bindingEnergy": 274.0,
-  "crossSection": 0.00202868
+  "symbol": "Rb",
+  "orbital": "2p",
+  "bindingEnergy": 1864.0,
+  "crossSection": 0.0046697857
+ },
+ {
+  "symbol": "Rb",
+  "orbital": "2s",
+  "bindingEnergy": 2065.0,
+  "crossSection": 0.0036353671
  },
  {
   "symbol": "Re",
   "orbital": "4f",
   "bindingEnergy": 43.0,
-  "crossSection": 0.0001519
- },
- {
-  "symbol": "Re",
-  "orbital": "4p",
-  "bindingEnergy": 519.0,
-  "crossSection": 0.00327454
- },
- {
-  "symbol": "Re",
-  "orbital": "4s",
-  "bindingEnergy": 625.0,
-  "crossSection": 0.00114003
+  "crossSection": 0.00015228847
  },
  {
   "symbol": "Re",
   "orbital": "5p",
   "bindingEnergy": 46.0,
-  "crossSection": 0.00050447
+  "crossSection": 0.00050555312
  },
  {
   "symbol": "Re",
   "orbital": "5s",
   "bindingEnergy": 83.0,
-  "crossSection": 0.000215
+  "crossSection": 0.00021520628
  },
  {
-  "symbol": "Rh",
-  "orbital": "2p",
-  "bindingEnergy": 3146.0,
-  "crossSection": 0.0118066
+  "symbol": "Re",
+  "orbital": "4d",
+  "bindingEnergy": 274.0,
+  "crossSection": 0.0020344415
  },
  {
-  "symbol": "Rh",
-  "orbital": "2s",
-  "bindingEnergy": 3412.0,
-  "crossSection": 0.00602815
+  "symbol": "Re",
+  "orbital": "4p",
+  "bindingEnergy": 519.0,
+  "crossSection": 0.0032818684
  },
  {
-  "symbol": "Rh",
+  "symbol": "Re",
+  "orbital": "4s",
+  "bindingEnergy": 625.0,
+  "crossSection": 0.001141294
+ },
+ {
+  "symbol": "Re",
   "orbital": "3d",
-  "bindingEnergy": 312.0,
-  "crossSection": 0.00033371
+  "bindingEnergy": 1949.0,
+  "crossSection": 0.010324715
  },
  {
-  "symbol": "Rh",
+  "symbol": "Re",
   "orbital": "3p",
-  "bindingEnergy": 521.0,
-  "crossSection": 0.00182893
+  "bindingEnergy": 2682.0,
+  "crossSection": 0.014468558
  },
  {
-  "symbol": "Rh",
+  "symbol": "Re",
   "orbital": "3s",
-  "bindingEnergy": 628.0,
-  "crossSection": 0.0011382
+  "bindingEnergy": 2932.0,
+  "crossSection": 0.0043181807
  },
  {
   "symbol": "Rh",
   "orbital": "4p",
   "bindingEnergy": 51.0,
-  "crossSection": 0.00028811
+  "crossSection": 0.00028896094
  },
  {
   "symbol": "Rh",
   "orbital": "4s",
   "bindingEnergy": 81.0,
-  "crossSection": 0.00021041
+  "crossSection": 0.00021080227
  },
  {
-  "symbol": "Rn",
+  "symbol": "Rh",
   "orbital": "3d",
-  "bindingEnergy": 3022.0,
-  "crossSection": 0.02208438
+  "bindingEnergy": 312.0,
+  "crossSection": 0.00033459597
  },
  {
-  "symbol": "Rn",
+  "symbol": "Rh",
   "orbital": "3p",
-  "bindingEnergy": 4159.0,
-  "crossSection": 0.02168046
+  "bindingEnergy": 521.0,
+  "crossSection": 0.0018343255
  },
  {
-  "symbol": "Rn",
+  "symbol": "Rh",
   "orbital": "3s",
-  "bindingEnergy": 4482.0,
-  "crossSection": 0.00543694
+  "bindingEnergy": 628.0,
+  "crossSection": 0.0011404662
  },
  {
-  "symbol": "Rn",
-  "orbital": "4d",
-  "bindingEnergy": 567.0,
-  "crossSection": 0.00459064
+  "symbol": "Rh",
+  "orbital": "2p",
+  "bindingEnergy": 3146.0,
+  "crossSection": 0.011834673
  },
  {
-  "symbol": "Rn",
-  "orbital": "4f",
-  "bindingEnergy": 238.0,
-  "crossSection": 0.00066129
- },
- {
-  "symbol": "Rn",
-  "orbital": "4p",
-  "bindingEnergy": 929.0,
-  "crossSection": 0.00538989
- },
- {
-  "symbol": "Rn",
-  "orbital": "4s",
-  "bindingEnergy": 1097.0,
-  "crossSection": 0.00160449
- },
- {
-  "symbol": "Rn",
-  "orbital": "5d",
-  "bindingEnergy": 48.0,
-  "crossSection": 0.00071658
- },
- {
-  "symbol": "Rn",
-  "orbital": "5p",
-  "bindingEnergy": 164.0,
-  "crossSection": 0.00114312
- },
- {
-  "symbol": "Rn",
-  "orbital": "5s",
-  "bindingEnergy": 214.0,
-  "crossSection": 0.00038777
+  "symbol": "Rh",
+  "orbital": "2s",
+  "bindingEnergy": 3412.0,
+  "crossSection": 0.0060452884
  },
  {
   "symbol": "Rn",
   "orbital": "6s",
   "bindingEnergy": 26.0,
-  "crossSection": 6.412e-05
+  "crossSection": 6.4155043e-05
  },
  {
-  "symbol": "Ru",
-  "orbital": "2p",
-  "bindingEnergy": 2967.0,
-  "crossSection": 0.01064264
+  "symbol": "Rn",
+  "orbital": "5d",
+  "bindingEnergy": 48.0,
+  "crossSection": 0.00071938058
  },
  {
-  "symbol": "Ru",
-  "orbital": "2s",
-  "bindingEnergy": 3224.0,
-  "crossSection": 0.00570595
+  "symbol": "Rn",
+  "orbital": "5p",
+  "bindingEnergy": 164.0,
+  "crossSection": 0.0011463169
  },
  {
-  "symbol": "Ru",
+  "symbol": "Rn",
+  "orbital": "5s",
+  "bindingEnergy": 214.0,
+  "crossSection": 0.0003883068
+ },
+ {
+  "symbol": "Rn",
+  "orbital": "4f",
+  "bindingEnergy": 238.0,
+  "crossSection": 0.00066344658
+ },
+ {
+  "symbol": "Rn",
+  "orbital": "4d",
+  "bindingEnergy": 567.0,
+  "crossSection": 0.0046084455
+ },
+ {
+  "symbol": "Rn",
+  "orbital": "4p",
+  "bindingEnergy": 929.0,
+  "crossSection": 0.0054061992
+ },
+ {
+  "symbol": "Rn",
+  "orbital": "4s",
+  "bindingEnergy": 1097.0,
+  "crossSection": 0.0016072001
+ },
+ {
+  "symbol": "Rn",
   "orbital": "3d",
-  "bindingEnergy": 284.0,
-  "crossSection": 0.00028018
+  "bindingEnergy": 3022.0,
+  "crossSection": 0.022152995
  },
  {
-  "symbol": "Ru",
+  "symbol": "Rn",
   "orbital": "3p",
-  "bindingEnergy": 484.0,
-  "crossSection": 0.00164129
+  "bindingEnergy": 4159.0,
+  "crossSection": 0.021770012
  },
  {
-  "symbol": "Ru",
+  "symbol": "Rn",
   "orbital": "3s",
-  "bindingEnergy": 586.0,
-  "crossSection": 0.00106173
+  "bindingEnergy": 4482.0,
+  "crossSection": 0.0054544245
  },
  {
   "symbol": "Ru",
   "orbital": "4p",
   "bindingEnergy": 46.0,
-  "crossSection": 0.00025216
+  "crossSection": 0.00025290208
  },
  {
   "symbol": "Ru",
   "orbital": "4s",
   "bindingEnergy": 75.0,
-  "crossSection": 0.00019207
+  "crossSection": 0.00019242898
  },
  {
-  "symbol": "S",
-  "orbital": "1s",
-  "bindingEnergy": 2472.0,
-  "crossSection": 0.0030149
+  "symbol": "Ru",
+  "orbital": "3d",
+  "bindingEnergy": 284.0,
+  "crossSection": 0.00028092016
+ },
+ {
+  "symbol": "Ru",
+  "orbital": "3p",
+  "bindingEnergy": 484.0,
+  "crossSection": 0.0016460755
+ },
+ {
+  "symbol": "Ru",
+  "orbital": "3s",
+  "bindingEnergy": 586.0,
+  "crossSection": 0.0010638412
+ },
+ {
+  "symbol": "Ru",
+  "orbital": "2p",
+  "bindingEnergy": 2967.0,
+  "crossSection": 0.010667361
+ },
+ {
+  "symbol": "Ru",
+  "orbital": "2s",
+  "bindingEnergy": 3224.0,
+  "crossSection": 0.0057221834
  },
  {
   "symbol": "S",
   "orbital": "2p",
   "bindingEnergy": 164.0,
-  "crossSection": 4.131e-05
+  "crossSection": 4.1385109e-05
  },
  {
   "symbol": "S",
   "orbital": "2s",
   "bindingEnergy": 231.0,
-  "crossSection": 0.00020365
+  "crossSection": 0.0002040197
  },
  {
-  "symbol": "Sb",
-  "orbital": "2p",
-  "bindingEnergy": 4380.0,
-  "crossSection": 0.02064948
- },
- {
-  "symbol": "Sb",
-  "orbital": "2s",
-  "bindingEnergy": 4698.0,
-  "crossSection": 0.00803936
- },
- {
-  "symbol": "Sb",
-  "orbital": "3d",
-  "bindingEnergy": 538.0,
-  "crossSection": 0.00084625
- },
- {
-  "symbol": "Sb",
-  "orbital": "3p",
-  "bindingEnergy": 813.0,
-  "crossSection": 0.0032504
- },
- {
-  "symbol": "Sb",
-  "orbital": "3s",
-  "bindingEnergy": 946.0,
-  "crossSection": 0.00164861
+  "symbol": "S",
+  "orbital": "1s",
+  "bindingEnergy": 2472.0,
+  "crossSection": 0.003019682
  },
  {
   "symbol": "Sb",
   "orbital": "4d",
   "bindingEnergy": 33.0,
-  "crossSection": 0.00012438
+  "crossSection": 0.00012478435
  },
  {
   "symbol": "Sb",
   "orbital": "4p",
   "bindingEnergy": 96.0,
-  "crossSection": 0.00059767
+  "crossSection": 0.00059946628
  },
  {
   "symbol": "Sb",
   "orbital": "4s",
   "bindingEnergy": 153.0,
-  "crossSection": 0.00034611
+  "crossSection": 0.00034668713
  },
  {
-  "symbol": "Sc",
-  "orbital": "1s",
-  "bindingEnergy": 4492.0,
-  "crossSection": 0.00818943
+  "symbol": "Sb",
+  "orbital": "3d",
+  "bindingEnergy": 538.0,
+  "crossSection": 0.00084871458
  },
  {
-  "symbol": "Sc",
+  "symbol": "Sb",
+  "orbital": "3p",
+  "bindingEnergy": 813.0,
+  "crossSection": 0.0032605586
+ },
+ {
+  "symbol": "Sb",
+  "orbital": "3s",
+  "bindingEnergy": 946.0,
+  "crossSection": 0.0016518276
+ },
+ {
+  "symbol": "Sb",
   "orbital": "2p",
-  "bindingEnergy": 404.0,
-  "crossSection": 0.0002194
+  "bindingEnergy": 4380.0,
+  "crossSection": 0.020699484
  },
  {
-  "symbol": "Sc",
+  "symbol": "Sb",
   "orbital": "2s",
-  "bindingEnergy": 498.0,
-  "crossSection": 0.00058381
+  "bindingEnergy": 4698.0,
+  "crossSection": 0.0080631287
  },
  {
   "symbol": "Sc",
   "orbital": "3p",
   "bindingEnergy": 28.0,
-  "crossSection": 2.633e-05
+  "crossSection": 2.6389891e-05
  },
  {
   "symbol": "Sc",
   "orbital": "3s",
   "bindingEnergy": 51.0,
-  "crossSection": 7.821e-05
+  "crossSection": 7.837022e-05
  },
  {
-  "symbol": "Se",
+  "symbol": "Sc",
   "orbital": "2p",
-  "bindingEnergy": 1474.0,
-  "crossSection": 0.00305942
+  "bindingEnergy": 404.0,
+  "crossSection": 0.00021981401
  },
  {
-  "symbol": "Se",
+  "symbol": "Sc",
   "orbital": "2s",
-  "bindingEnergy": 1652.0,
-  "crossSection": 0.00285265
+  "bindingEnergy": 498.0,
+  "crossSection": 0.0005850305
+ },
+ {
+  "symbol": "Sc",
+  "orbital": "1s",
+  "bindingEnergy": 4492.0,
+  "crossSection": 0.0082053742
  },
  {
   "symbol": "Se",
   "orbital": "3d",
   "bindingEnergy": 56.0,
-  "crossSection": 3.033e-05
+  "crossSection": 3.039645e-05
  },
  {
   "symbol": "Se",
   "orbital": "3p",
   "bindingEnergy": 167.0,
-  "crossSection": 0.000426
+  "crossSection": 0.00042700507
  },
  {
   "symbol": "Se",
   "orbital": "3s",
   "bindingEnergy": 230.0,
-  "crossSection": 0.00044897
+  "crossSection": 0.00044978802
  },
  {
-  "symbol": "Si",
-  "orbital": "1s",
-  "bindingEnergy": 1839.0,
-  "crossSection": 0.00179848
+  "symbol": "Se",
+  "orbital": "2p",
+  "bindingEnergy": 1474.0,
+  "crossSection": 0.0030651781
+ },
+ {
+  "symbol": "Se",
+  "orbital": "2s",
+  "bindingEnergy": 1652.0,
+  "crossSection": 0.0028588996
  },
  {
   "symbol": "Si",
   "orbital": "2p",
   "bindingEnergy": 100.0,
-  "crossSection": 1.72e-05
+  "crossSection": 1.7233092e-05
  },
  {
   "symbol": "Si",
   "orbital": "2s",
   "bindingEnergy": 150.0,
-  "crossSection": 0.00011652
+  "crossSection": 0.00011672284
+ },
+ {
+  "symbol": "Si",
+  "orbital": "1s",
+  "bindingEnergy": 1839.0,
+  "crossSection": 0.001801045
  },
  {
   "symbol": "Sm",
-  "orbital": "2p",
-  "bindingEnergy": 7312.0,
-  "crossSection": 0.04671214
+  "orbital": "4f",
+  "bindingEnergy": 5.0,
+  "crossSection": 6.8871664e-06
  },
  {
   "symbol": "Sm",
-  "orbital": "2s",
-  "bindingEnergy": 7737.0,
-  "crossSection": 0.01177143
+  "orbital": "5p",
+  "bindingEnergy": 21.0,
+  "crossSection": 0.0002137682
  },
  {
   "symbol": "Sm",
-  "orbital": "3d",
-  "bindingEnergy": 1111.0,
-  "crossSection": 0.00319938
- },
- {
-  "symbol": "Sm",
-  "orbital": "3p",
-  "bindingEnergy": 1541.0,
-  "crossSection": 0.00730974
- },
- {
-  "symbol": "Sm",
-  "orbital": "3s",
-  "bindingEnergy": 1723.0,
-  "crossSection": 0.00279229
+  "orbital": "5s",
+  "bindingEnergy": 37.0,
+  "crossSection": 0.00011594697
  },
  {
   "symbol": "Sm",
   "orbital": "4d",
   "bindingEnergy": 129.0,
-  "crossSection": 0.00061445
- },
- {
-  "symbol": "Sm",
-  "orbital": "4f",
-  "bindingEnergy": 5.0,
-  "crossSection": 6.87e-06
+  "crossSection": 0.00061631841
  },
  {
   "symbol": "Sm",
   "orbital": "4p",
   "bindingEnergy": 266.0,
-  "crossSection": 0.00156507
+  "crossSection": 0.0015693303
  },
  {
   "symbol": "Sm",
   "orbital": "4s",
   "bindingEnergy": 347.0,
-  "crossSection": 0.00067804
+  "crossSection": 0.00067900127
  },
  {
   "symbol": "Sm",
-  "orbital": "5p",
-  "bindingEnergy": 21.0,
-  "crossSection": 0.00021323
- },
- {
-  "symbol": "Sm",
-  "orbital": "5s",
-  "bindingEnergy": 37.0,
-  "crossSection": 0.00011579
- },
- {
-  "symbol": "Sn",
-  "orbital": "2p",
-  "bindingEnergy": 4156.0,
-  "crossSection": 0.01894764
- },
- {
-  "symbol": "Sn",
-  "orbital": "2s",
-  "bindingEnergy": 4465.0,
-  "crossSection": 0.00769094
- },
- {
-  "symbol": "Sn",
   "orbital": "3d",
-  "bindingEnergy": 493.0,
-  "crossSection": 0.00073375
+  "bindingEnergy": 1111.0,
+  "crossSection": 0.0032074943
  },
  {
-  "symbol": "Sn",
+  "symbol": "Sm",
   "orbital": "3p",
-  "bindingEnergy": 757.0,
-  "crossSection": 0.00297675
+  "bindingEnergy": 1541.0,
+  "crossSection": 0.0073306028
  },
  {
-  "symbol": "Sn",
+  "symbol": "Sm",
   "orbital": "3s",
-  "bindingEnergy": 885.0,
-  "crossSection": 0.0015576
+  "bindingEnergy": 1723.0,
+  "crossSection": 0.0027969432
+ },
+ {
+  "symbol": "Sm",
+  "orbital": "2p",
+  "bindingEnergy": 7312.0,
+  "crossSection": 0.046875295
+ },
+ {
+  "symbol": "Sm",
+  "orbital": "2s",
+  "bindingEnergy": 7737.0,
+  "crossSection": 0.011845647
  },
  {
   "symbol": "Sn",
   "orbital": "4d",
   "bindingEnergy": 25.0,
-  "crossSection": 0.00010118
+  "crossSection": 0.00010150859
  },
  {
   "symbol": "Sn",
   "orbital": "4p",
   "bindingEnergy": 84.0,
-  "crossSection": 0.00053289
+  "crossSection": 0.00053449873
  },
  {
   "symbol": "Sn",
   "orbital": "4s",
   "bindingEnergy": 137.0,
-  "crossSection": 0.00031993
+  "crossSection": 0.00032047124
  },
  {
-  "symbol": "Sr",
-  "orbital": "2p",
-  "bindingEnergy": 2007.0,
-  "crossSection": 0.00530831
- },
- {
-  "symbol": "Sr",
-  "orbital": "2s",
-  "bindingEnergy": 2216.0,
-  "crossSection": 0.00390168
- },
- {
-  "symbol": "Sr",
+  "symbol": "Sn",
   "orbital": "3d",
-  "bindingEnergy": 136.0,
-  "crossSection": 8.355e-05
+  "bindingEnergy": 493.0,
+  "crossSection": 0.00073585489
  },
  {
-  "symbol": "Sr",
+  "symbol": "Sn",
   "orbital": "3p",
-  "bindingEnergy": 280.0,
-  "crossSection": 0.00077998
+  "bindingEnergy": 757.0,
+  "crossSection": 0.0029859945
  },
  {
-  "symbol": "Sr",
+  "symbol": "Sn",
   "orbital": "3s",
-  "bindingEnergy": 359.0,
-  "crossSection": 0.00065928
+  "bindingEnergy": 885.0,
+  "crossSection": 0.0015606648
+ },
+ {
+  "symbol": "Sn",
+  "orbital": "2p",
+  "bindingEnergy": 4156.0,
+  "crossSection": 0.0189949
+ },
+ {
+  "symbol": "Sn",
+  "orbital": "2s",
+  "bindingEnergy": 4465.0,
+  "crossSection": 0.0077139511
  },
  {
   "symbol": "Sr",
   "orbital": "4p",
   "bindingEnergy": 21.0,
-  "crossSection": 9.195e-05
+  "crossSection": 9.2208933e-05
  },
  {
   "symbol": "Sr",
   "orbital": "4s",
   "bindingEnergy": 39.0,
-  "crossSection": 9.646e-05
+  "crossSection": 9.6646206e-05
  },
  {
-  "symbol": "Ta",
+  "symbol": "Sr",
   "orbital": "3d",
-  "bindingEnergy": 1793.0,
-  "crossSection": 0.00879929
+  "bindingEnergy": 136.0,
+  "crossSection": 8.3772062e-05
  },
  {
-  "symbol": "Ta",
+  "symbol": "Sr",
   "orbital": "3p",
-  "bindingEnergy": 2469.0,
-  "crossSection": 0.01320504
+  "bindingEnergy": 280.0,
+  "crossSection": 0.00078213739
+ },
+ {
+  "symbol": "Sr",
+  "orbital": "3s",
+  "bindingEnergy": 359.0,
+  "crossSection": 0.00066061871
+ },
+ {
+  "symbol": "Sr",
+  "orbital": "2p",
+  "bindingEnergy": 2007.0,
+  "crossSection": 0.0053201541
+ },
+ {
+  "symbol": "Sr",
+  "orbital": "2s",
+  "bindingEnergy": 2216.0,
+  "crossSection": 0.0039118557
  },
  {
   "symbol": "Ta",
-  "orbital": "3s",
-  "bindingEnergy": 2708.0,
-  "crossSection": 0.00408309
+  "orbital": "4f",
+  "bindingEnergy": 24.0,
+  "crossSection": 0.00010936809
+ },
+ {
+  "symbol": "Ta",
+  "orbital": "5p",
+  "bindingEnergy": 42.0,
+  "crossSection": 0.00042245801
+ },
+ {
+  "symbol": "Ta",
+  "orbital": "5s",
+  "bindingEnergy": 70.0,
+  "crossSection": 0.00018911361
  },
  {
   "symbol": "Ta",
   "orbital": "4d",
   "bindingEnergy": 238.0,
-  "crossSection": 0.00171296
- },
- {
-  "symbol": "Ta",
-  "orbital": "4f",
-  "bindingEnergy": 24.0,
-  "crossSection": 0.00010915
+  "crossSection": 0.0017167134
  },
  {
   "symbol": "Ta",
   "orbital": "4p",
   "bindingEnergy": 463.0,
-  "crossSection": 0.00295277
+  "crossSection": 0.0029579249
  },
  {
   "symbol": "Ta",
   "orbital": "4s",
   "bindingEnergy": 563.0,
-  "crossSection": 0.00106019
+  "crossSection": 0.0010610868
  },
  {
   "symbol": "Ta",
-  "orbital": "5p",
-  "bindingEnergy": 42.0,
-  "crossSection": 0.00042174
- },
- {
-  "symbol": "Ta",
-  "orbital": "5s",
-  "bindingEnergy": 70.0,
-  "crossSection": 0.00018896
- },
- {
-  "symbol": "Tb",
-  "orbital": "2p",
-  "bindingEnergy": 8252.0,
-  "crossSection": 0.05625167
- },
- {
-  "symbol": "Tb",
-  "orbital": "2s",
-  "bindingEnergy": 8708.0,
-  "crossSection": 0.01261549
- },
- {
-  "symbol": "Tb",
   "orbital": "3d",
-  "bindingEnergy": 1277.0,
-  "crossSection": 0.00433587
+  "bindingEnergy": 1793.0,
+  "crossSection": 0.0088153798
  },
  {
-  "symbol": "Tb",
+  "symbol": "Ta",
   "orbital": "3p",
-  "bindingEnergy": 1768.0,
-  "crossSection": 0.00876556
+  "bindingEnergy": 2469.0,
+  "crossSection": 0.013233808
  },
  {
-  "symbol": "Tb",
+  "symbol": "Ta",
   "orbital": "3s",
-  "bindingEnergy": 1968.0,
-  "crossSection": 0.00314167
- },
- {
-  "symbol": "Tb",
-  "orbital": "4d",
-  "bindingEnergy": 151.0,
-  "crossSection": 0.00083602
+  "bindingEnergy": 2708.0,
+  "crossSection": 0.0040885814
  },
  {
   "symbol": "Tb",
   "orbital": "4f",
   "bindingEnergy": 8.0,
-  "crossSection": 1.799e-05
- },
- {
-  "symbol": "Tb",
-  "orbital": "4p",
-  "bindingEnergy": 322.0,
-  "crossSection": 0.00189645
- },
- {
-  "symbol": "Tb",
-  "orbital": "4s",
-  "bindingEnergy": 396.0,
-  "crossSection": 0.00077595
+  "crossSection": 1.8002832e-05
  },
  {
   "symbol": "Tb",
   "orbital": "5p",
   "bindingEnergy": 29.0,
-  "crossSection": 0.00024921
+  "crossSection": 0.00024946906
  },
  {
   "symbol": "Tb",
   "orbital": "5s",
   "bindingEnergy": 46.0,
-  "crossSection": 0.0001298
+  "crossSection": 0.00012988336
  },
  {
-  "symbol": "Tc",
+  "symbol": "Tb",
+  "orbital": "4d",
+  "bindingEnergy": 151.0,
+  "crossSection": 0.0008370682
+ },
+ {
+  "symbol": "Tb",
+  "orbital": "4p",
+  "bindingEnergy": 322.0,
+  "crossSection": 0.0018985348
+ },
+ {
+  "symbol": "Tb",
+  "orbital": "4s",
+  "bindingEnergy": 396.0,
+  "crossSection": 0.00077638466
+ },
+ {
+  "symbol": "Tb",
+  "orbital": "3d",
+  "bindingEnergy": 1277.0,
+  "crossSection": 0.0043405292
+ },
+ {
+  "symbol": "Tb",
+  "orbital": "3p",
+  "bindingEnergy": 1768.0,
+  "crossSection": 0.0087759126
+ },
+ {
+  "symbol": "Tb",
+  "orbital": "3s",
+  "bindingEnergy": 1968.0,
+  "crossSection": 0.0031440535
+ },
+ {
+  "symbol": "Tb",
   "orbital": "2p",
-  "bindingEnergy": 2793.0,
-  "crossSection": 0.00956429
+  "bindingEnergy": 8252.0,
+  "crossSection": 0.056280142
+ },
+ {
+  "symbol": "Tb",
+  "orbital": "2s",
+  "bindingEnergy": 8708.0,
+  "crossSection": 0.012636743
  },
  {
   "symbol": "Tc",
-  "orbital": "2s",
-  "bindingEnergy": 3043.0,
-  "crossSection": 0.00539222
+  "orbital": "4p",
+  "bindingEnergy": 42.0,
+  "crossSection": 0.00021957654
+ },
+ {
+  "symbol": "Tc",
+  "orbital": "4s",
+  "bindingEnergy": 70.0,
+  "crossSection": 0.00017471389
  },
  {
   "symbol": "Tc",
   "orbital": "3d",
   "bindingEnergy": 258.0,
-  "crossSection": 0.00023367
+  "crossSection": 0.00023429004
  },
  {
   "symbol": "Tc",
   "orbital": "3p",
   "bindingEnergy": 448.0,
-  "crossSection": 0.0014669
+  "crossSection": 0.001471128
  },
  {
   "symbol": "Tc",
   "orbital": "3s",
   "bindingEnergy": 544.0,
-  "crossSection": 0.00098784
+  "crossSection": 0.00098981272
  },
  {
   "symbol": "Tc",
-  "orbital": "4p",
-  "bindingEnergy": 42.0,
-  "crossSection": 0.00021894
- },
- {
-  "symbol": "Tc",
-  "orbital": "4s",
-  "bindingEnergy": 70.0,
-  "crossSection": 0.00017439
- },
- {
-  "symbol": "Te",
   "orbital": "2p",
-  "bindingEnergy": 4612.0,
-  "crossSection": 0.0224502
+  "bindingEnergy": 2793.0,
+  "crossSection": 0.0095864946
  },
  {
-  "symbol": "Te",
+  "symbol": "Tc",
   "orbital": "2s",
-  "bindingEnergy": 4939.0,
-  "crossSection": 0.0083804
- },
- {
-  "symbol": "Te",
-  "orbital": "3d",
-  "bindingEnergy": 583.0,
-  "crossSection": 0.00097173
- },
- {
-  "symbol": "Te",
-  "orbital": "3p",
-  "bindingEnergy": 871.0,
-  "crossSection": 0.00353917
- },
- {
-  "symbol": "Te",
-  "orbital": "3s",
-  "bindingEnergy": 1006.0,
-  "crossSection": 0.00174194
+  "bindingEnergy": 3043.0,
+  "crossSection": 0.0054073955
  },
  {
   "symbol": "Te",
   "orbital": "4d",
   "bindingEnergy": 42.0,
-  "crossSection": 0.00015097
+  "crossSection": 0.00015146021
  },
  {
   "symbol": "Te",
   "orbital": "4p",
   "bindingEnergy": 103.0,
-  "crossSection": 0.00066744
+  "crossSection": 0.00066944578
  },
  {
   "symbol": "Te",
   "orbital": "4s",
   "bindingEnergy": 169.0,
-  "crossSection": 0.00037348
+  "crossSection": 0.00037409486
  },
  {
-  "symbol": "Th",
+  "symbol": "Te",
   "orbital": "3d",
-  "bindingEnergy": 3491.0,
-  "crossSection": 0.02807234
+  "bindingEnergy": 583.0,
+  "crossSection": 0.00097458125
  },
  {
-  "symbol": "Th",
+  "symbol": "Te",
   "orbital": "3p",
-  "bindingEnergy": 4830.0,
-  "crossSection": 0.02436031
+  "bindingEnergy": 871.0,
+  "crossSection": 0.0035502796
  },
  {
-  "symbol": "Th",
+  "symbol": "Te",
   "orbital": "3s",
-  "bindingEnergy": 5182.0,
-  "crossSection": 0.00571631
+  "bindingEnergy": 1006.0,
+  "crossSection": 0.0017453195
+ },
+ {
+  "symbol": "Te",
+  "orbital": "2p",
+  "bindingEnergy": 4612.0,
+  "crossSection": 0.022502812
+ },
+ {
+  "symbol": "Te",
+  "orbital": "2s",
+  "bindingEnergy": 4939.0,
+  "crossSection": 0.0084047328
  },
  {
   "symbol": "Th",
-  "orbital": "4d",
-  "bindingEnergy": 712.0,
-  "crossSection": 0.00591224
- },
- {
-  "symbol": "Th",
-  "orbital": "4f",
-  "bindingEnergy": 342.0,
-  "crossSection": 0.0010231
- },
- {
-  "symbol": "Th",
-  "orbital": "4p",
-  "bindingEnergy": 1168.0,
-  "crossSection": 0.00627094
- },
- {
-  "symbol": "Th",
-  "orbital": "4s",
-  "bindingEnergy": 1330.0,
-  "crossSection": 0.00176861
- },
- {
-  "symbol": "Th",
-  "orbital": "5d",
-  "bindingEnergy": 93.0,
-  "crossSection": 0.00109327
- },
- {
-  "symbol": "Th",
-  "orbital": "5p",
-  "bindingEnergy": 229.0,
-  "crossSection": 0.00145942
- },
- {
-  "symbol": "Th",
-  "orbital": "5s",
-  "bindingEnergy": 290.0,
-  "crossSection": 0.00046051
+  "orbital": "7s",
+  "bindingEnergy": 5.0,
+  "crossSection": 1.2059155e-05
  },
  {
   "symbol": "Th",
   "orbital": "6p",
   "bindingEnergy": 25.0,
-  "crossSection": 0.00025471
+  "crossSection": 0.00025538464
  },
  {
   "symbol": "Th",
   "orbital": "6s",
   "bindingEnergy": 41.0,
-  "crossSection": 9.734e-05
+  "crossSection": 9.7464735e-05
  },
  {
   "symbol": "Th",
-  "orbital": "7s",
-  "bindingEnergy": 5.0,
-  "crossSection": 1.204e-05
+  "orbital": "5d",
+  "bindingEnergy": 93.0,
+  "crossSection": 0.0010976699
  },
  {
-  "symbol": "Ti",
-  "orbital": "1s",
-  "bindingEnergy": 4966.0,
-  "crossSection": 0.00965196
+  "symbol": "Th",
+  "orbital": "5p",
+  "bindingEnergy": 229.0,
+  "crossSection": 0.0014635545
  },
  {
-  "symbol": "Ti",
-  "orbital": "2p",
-  "bindingEnergy": 460.0,
-  "crossSection": 0.00028825
+  "symbol": "Th",
+  "orbital": "5s",
+  "bindingEnergy": 290.0,
+  "crossSection": 0.00046117213
  },
  {
-  "symbol": "Ti",
-  "orbital": "2s",
-  "bindingEnergy": 561.0,
-  "crossSection": 0.00069146
+  "symbol": "Th",
+  "orbital": "4f",
+  "bindingEnergy": 342.0,
+  "crossSection": 0.0010266115
+ },
+ {
+  "symbol": "Th",
+  "orbital": "4d",
+  "bindingEnergy": 712.0,
+  "crossSection": 0.0059361152
+ },
+ {
+  "symbol": "Th",
+  "orbital": "4p",
+  "bindingEnergy": 1168.0,
+  "crossSection": 0.0062906271
+ },
+ {
+  "symbol": "Th",
+  "orbital": "4s",
+  "bindingEnergy": 1330.0,
+  "crossSection": 0.001771836
+ },
+ {
+  "symbol": "Th",
+  "orbital": "3d",
+  "bindingEnergy": 3491.0,
+  "crossSection": 0.02816423
+ },
+ {
+  "symbol": "Th",
+  "orbital": "3p",
+  "bindingEnergy": 4830.0,
+  "crossSection": 0.024466955
+ },
+ {
+  "symbol": "Th",
+  "orbital": "3s",
+  "bindingEnergy": 5182.0,
+  "crossSection": 0.0057343337
  },
  {
   "symbol": "Ti",
   "orbital": "3p",
   "bindingEnergy": 33.0,
-  "crossSection": 3.548e-05
+  "crossSection": 3.5553949e-05
  },
  {
   "symbol": "Ti",
   "orbital": "3s",
   "bindingEnergy": 59.0,
-  "crossSection": 9.454e-05
+  "crossSection": 9.4729267e-05
  },
  {
-  "symbol": "Tl",
-  "orbital": "3d",
-  "bindingEnergy": 2485.0,
-  "crossSection": 0.01593089
+  "symbol": "Ti",
+  "orbital": "2p",
+  "bindingEnergy": 460.0,
+  "crossSection": 0.00028880764
  },
  {
-  "symbol": "Tl",
-  "orbital": "3p",
-  "bindingEnergy": 3416.0,
-  "crossSection": 0.01831757
+  "symbol": "Ti",
+  "orbital": "2s",
+  "bindingEnergy": 561.0,
+  "crossSection": 0.00069293197
  },
  {
-  "symbol": "Tl",
-  "orbital": "3s",
-  "bindingEnergy": 3704.0,
-  "crossSection": 0.00496531
- },
- {
-  "symbol": "Tl",
-  "orbital": "4d",
-  "bindingEnergy": 406.0,
-  "crossSection": 0.00324232
- },
- {
-  "symbol": "Tl",
-  "orbital": "4f",
-  "bindingEnergy": 122.0,
-  "crossSection": 0.00035905
- },
- {
-  "symbol": "Tl",
-  "orbital": "4p",
-  "bindingEnergy": 721.0,
-  "crossSection": 0.00436339
- },
- {
-  "symbol": "Tl",
-  "orbital": "4s",
-  "bindingEnergy": 846.0,
-  "crossSection": 0.00139155
+  "symbol": "Ti",
+  "orbital": "1s",
+  "bindingEnergy": 4966.0,
+  "crossSection": 0.0096713417
  },
  {
   "symbol": "Tl",
   "orbital": "5d",
   "bindingEnergy": 15.0,
-  "crossSection": 0.00036388
+  "crossSection": 0.00036505836
  },
  {
   "symbol": "Tl",
   "orbital": "5p",
   "bindingEnergy": 95.0,
-  "crossSection": 0.00080115
+  "crossSection": 0.00080315877
+ },
+ {
+  "symbol": "Tl",
+  "orbital": "4f",
+  "bindingEnergy": 122.0,
+  "crossSection": 0.0003600783
  },
  {
   "symbol": "Tl",
   "orbital": "5s",
   "bindingEnergy": 136.0,
-  "crossSection": 0.00030155
+  "crossSection": 0.00030191558
  },
  {
-  "symbol": "Tm",
-  "orbital": "2p",
-  "bindingEnergy": 8648.0,
-  "crossSection": 0.04343636
- },
- {
-  "symbol": "Tm",
-  "orbital": "3d",
-  "bindingEnergy": 1515.0,
-  "crossSection": 0.00628801
- },
- {
-  "symbol": "Tm",
-  "orbital": "3p",
-  "bindingEnergy": 2090.0,
-  "crossSection": 0.01089934
- },
- {
-  "symbol": "Tm",
-  "orbital": "3s",
-  "bindingEnergy": 2307.0,
-  "crossSection": 0.00361483
- },
- {
-  "symbol": "Tm",
+  "symbol": "Tl",
   "orbital": "4d",
-  "bindingEnergy": 176.0,
-  "crossSection": 0.00120783
+  "bindingEnergy": 406.0,
+  "crossSection": 0.003253306
+ },
+ {
+  "symbol": "Tl",
+  "orbital": "4p",
+  "bindingEnergy": 721.0,
+  "crossSection": 0.004374964
+ },
+ {
+  "symbol": "Tl",
+  "orbital": "4s",
+  "bindingEnergy": 846.0,
+  "crossSection": 0.0013934928
+ },
+ {
+  "symbol": "Tl",
+  "orbital": "3d",
+  "bindingEnergy": 2485.0,
+  "crossSection": 0.015975436
+ },
+ {
+  "symbol": "Tl",
+  "orbital": "3p",
+  "bindingEnergy": 3416.0,
+  "crossSection": 0.018380967
+ },
+ {
+  "symbol": "Tl",
+  "orbital": "3s",
+  "bindingEnergy": 3704.0,
+  "crossSection": 0.0049771301
  },
  {
   "symbol": "Tm",
   "orbital": "4f",
   "bindingEnergy": 5.0,
-  "crossSection": 2.715e-05
- },
- {
-  "symbol": "Tm",
-  "orbital": "4p",
-  "bindingEnergy": 386.0,
-  "crossSection": 0.00238375
- },
- {
-  "symbol": "Tm",
-  "orbital": "4s",
-  "bindingEnergy": 471.0,
-  "crossSection": 0.00091165
+  "crossSection": 4.964716e-05
  },
  {
   "symbol": "Tm",
   "orbital": "5p",
   "bindingEnergy": 32.0,
-  "crossSection": 0.00029903
+  "crossSection": 0.00029911707
  },
  {
   "symbol": "Tm",
   "orbital": "5s",
   "bindingEnergy": 55.0,
-  "crossSection": 0.00014869
+  "crossSection": 0.00014871078
  },
  {
-  "symbol": "U",
-  "orbital": "3d",
-  "bindingEnergy": 3728.0,
-  "crossSection": 0.03149097
- },
- {
-  "symbol": "U",
-  "orbital": "3p",
-  "bindingEnergy": 5182.0,
-  "crossSection": 0.02563971
- },
- {
-  "symbol": "U",
-  "orbital": "3s",
-  "bindingEnergy": 5548.0,
-  "crossSection": 0.00582198
- },
- {
-  "symbol": "U",
+  "symbol": "Tm",
   "orbital": "4d",
-  "bindingEnergy": 778.0,
-  "crossSection": 0.00665528
+  "bindingEnergy": 176.0,
+  "crossSection": 0.001208355
  },
  {
-  "symbol": "U",
-  "orbital": "4f",
-  "bindingEnergy": 388.0,
-  "crossSection": 0.00125222
- },
- {
-  "symbol": "U",
+  "symbol": "Tm",
   "orbital": "4p",
-  "bindingEnergy": 1271.0,
-  "crossSection": 0.00672238
+  "bindingEnergy": 386.0,
+  "crossSection": 0.002384663
  },
  {
-  "symbol": "U",
+  "symbol": "Tm",
   "orbital": "4s",
-  "bindingEnergy": 1439.0,
-  "crossSection": 0.00184565
+  "bindingEnergy": 471.0,
+  "crossSection": 0.00091184279
  },
  {
-  "symbol": "U",
-  "orbital": "5d",
-  "bindingEnergy": 103.0,
-  "crossSection": 0.00127385
+  "symbol": "Tm",
+  "orbital": "3d",
+  "bindingEnergy": 1515.0,
+  "crossSection": 0.006290346
  },
  {
-  "symbol": "U",
-  "orbital": "5p",
-  "bindingEnergy": 257.0,
-  "crossSection": 0.00161027
+  "symbol": "Tm",
+  "orbital": "3p",
+  "bindingEnergy": 2090.0,
+  "crossSection": 0.010903911
  },
  {
-  "symbol": "U",
-  "orbital": "5s",
-  "bindingEnergy": 321.0,
-  "crossSection": 0.00049424
+  "symbol": "Tm",
+  "orbital": "3s",
+  "bindingEnergy": 2307.0,
+  "crossSection": 0.0036152655
  },
  {
-  "symbol": "U",
-  "orbital": "6p",
-  "bindingEnergy": 27.0,
-  "crossSection": 0.00026869
- },
- {
-  "symbol": "U",
-  "orbital": "6s",
-  "bindingEnergy": 44.0,
-  "crossSection": 0.00010274
+  "symbol": "Tm",
+  "orbital": "2p",
+  "bindingEnergy": 9617.0,
+  "crossSection": 0.043446237
  },
  {
   "symbol": "U",
   "orbital": "7s",
   "bindingEnergy": 4.8,
-  "crossSection": 1.118e-05
+  "crossSection": 1.1195984e-05
  },
  {
-  "symbol": "V",
-  "orbital": "1s",
-  "bindingEnergy": 5465.0,
-  "crossSection": 0.01124471
+  "symbol": "U",
+  "orbital": "6p",
+  "bindingEnergy": 27.0,
+  "crossSection": 0.00026939437
  },
  {
-  "symbol": "V",
-  "orbital": "2p",
-  "bindingEnergy": 520.0,
-  "crossSection": 0.00037267
+  "symbol": "U",
+  "orbital": "6s",
+  "bindingEnergy": 44.0,
+  "crossSection": 0.00010287473
  },
  {
-  "symbol": "V",
-  "orbital": "2s",
-  "bindingEnergy": 627.0,
-  "crossSection": 0.00081013
+  "symbol": "U",
+  "orbital": "5d",
+  "bindingEnergy": 103.0,
+  "crossSection": 0.0012790088
+ },
+ {
+  "symbol": "U",
+  "orbital": "5p",
+  "bindingEnergy": 257.0,
+  "crossSection": 0.0016148206
+ },
+ {
+  "symbol": "U",
+  "orbital": "5s",
+  "bindingEnergy": 321.0,
+  "crossSection": 0.00049495259
+ },
+ {
+  "symbol": "U",
+  "orbital": "4f",
+  "bindingEnergy": 388.0,
+  "crossSection": 0.0012565839
+ },
+ {
+  "symbol": "U",
+  "orbital": "4d",
+  "bindingEnergy": 778.0,
+  "crossSection": 0.0066824484
+ },
+ {
+  "symbol": "U",
+  "orbital": "4p",
+  "bindingEnergy": 1271.0,
+  "crossSection": 0.0067436042
+ },
+ {
+  "symbol": "U",
+  "orbital": "4s",
+  "bindingEnergy": 1439.0,
+  "crossSection": 0.0018491411
+ },
+ {
+  "symbol": "U",
+  "orbital": "3d",
+  "bindingEnergy": 3728.0,
+  "crossSection": 0.031592961
+ },
+ {
+  "symbol": "U",
+  "orbital": "3p",
+  "bindingEnergy": 5182.0,
+  "crossSection": 0.025752614
+ },
+ {
+  "symbol": "U",
+  "orbital": "3s",
+  "bindingEnergy": 5548.0,
+  "crossSection": 0.0058435629
  },
  {
   "symbol": "V",
   "orbital": "3p",
   "bindingEnergy": 37.0,
-  "crossSection": 4.669e-05
+  "crossSection": 4.6796482e-05
  },
  {
   "symbol": "V",
   "orbital": "3s",
   "bindingEnergy": 66.0,
-  "crossSection": 0.00011251
+  "crossSection": 0.00011273947
  },
  {
-  "symbol": "W",
-  "orbital": "3d",
-  "bindingEnergy": 1872.0,
-  "crossSection": 0.00952536
+  "symbol": "V",
+  "orbital": "2p",
+  "bindingEnergy": 520.0,
+  "crossSection": 0.0003734057
  },
  {
-  "symbol": "W",
-  "orbital": "3p",
-  "bindingEnergy": 2575.0,
-  "crossSection": 0.01380792
+  "symbol": "V",
+  "orbital": "2s",
+  "bindingEnergy": 627.0,
+  "crossSection": 0.0008118878
  },
  {
-  "symbol": "W",
-  "orbital": "3s",
-  "bindingEnergy": 2820.0,
-  "crossSection": 0.00419745
- },
- {
-  "symbol": "W",
-  "orbital": "4d",
-  "bindingEnergy": 256.0,
-  "crossSection": 0.00186515
+  "symbol": "V",
+  "orbital": "1s",
+  "bindingEnergy": 5465.0,
+  "crossSection": 0.011268526
  },
  {
   "symbol": "W",
   "orbital": "4f",
   "bindingEnergy": 34.0,
-  "crossSection": 0.00012917
- },
- {
-  "symbol": "W",
-  "orbital": "4p",
-  "bindingEnergy": 490.0,
-  "crossSection": 0.00311032
- },
- {
-  "symbol": "W",
-  "orbital": "4s",
-  "bindingEnergy": 594.0,
-  "crossSection": 0.00109964
+  "crossSection": 0.00012948829
  },
  {
   "symbol": "W",
   "orbital": "5p",
   "bindingEnergy": 45.0,
-  "crossSection": 0.00046212
+  "crossSection": 0.00046310128
  },
  {
   "symbol": "W",
   "orbital": "5s",
   "bindingEnergy": 76.0,
-  "crossSection": 0.00020177
+  "crossSection": 0.00020195006
  },
  {
-  "symbol": "Xe",
-  "orbital": "2p",
-  "bindingEnergy": 5107.0,
-  "crossSection": 0.02642304
- },
- {
-  "symbol": "Xe",
-  "orbital": "2s",
-  "bindingEnergy": 5453.0,
-  "crossSection": 0.00903267
- },
- {
-  "symbol": "Xe",
-  "orbital": "3d",
-  "bindingEnergy": 689.0,
-  "crossSection": 0.00126554
- },
- {
-  "symbol": "Xe",
-  "orbital": "3p",
-  "bindingEnergy": 1002.0,
-  "crossSection": 0.00416309
- },
- {
-  "symbol": "Xe",
-  "orbital": "3s",
-  "bindingEnergy": 1149.0,
-  "crossSection": 0.00193518
- },
- {
-  "symbol": "Xe",
+  "symbol": "W",
   "orbital": "4d",
-  "bindingEnergy": 70.0,
-  "crossSection": 0.00021556
+  "bindingEnergy": 256.0,
+  "crossSection": 0.0018703618
  },
  {
-  "symbol": "Xe",
+  "symbol": "W",
   "orbital": "4p",
-  "bindingEnergy": 147.0,
-  "crossSection": 0.00082221
+  "bindingEnergy": 490.0,
+  "crossSection": 0.0031171761
  },
  {
-  "symbol": "Xe",
+  "symbol": "W",
   "orbital": "4s",
-  "bindingEnergy": 213.0,
-  "crossSection": 0.00043167
+  "bindingEnergy": 594.0,
+  "crossSection": 0.0011008173
+ },
+ {
+  "symbol": "W",
+  "orbital": "3d",
+  "bindingEnergy": 1872.0,
+  "crossSection": 0.0095472053
+ },
+ {
+  "symbol": "W",
+  "orbital": "3p",
+  "bindingEnergy": 2575.0,
+  "crossSection": 0.013846293
+ },
+ {
+  "symbol": "W",
+  "orbital": "3s",
+  "bindingEnergy": 2820.0,
+  "crossSection": 0.0042043107
  },
  {
   "symbol": "Xe",
   "orbital": "5p",
   "bindingEnergy": 13.0,
-  "crossSection": 8.973e-05
+  "crossSection": 8.9998194e-05
  },
  {
   "symbol": "Xe",
   "orbital": "5s",
   "bindingEnergy": 23.0,
-  "crossSection": 6.449e-05
+  "crossSection": 6.4571021e-05
  },
  {
-  "symbol": "Y",
-  "orbital": "2p",
-  "bindingEnergy": 2156.0,
-  "crossSection": 0.00602032
+  "symbol": "Xe",
+  "orbital": "4d",
+  "bindingEnergy": 70.0,
+  "crossSection": 0.00021626381
  },
  {
-  "symbol": "Y",
-  "orbital": "2s",
-  "bindingEnergy": 2373.0,
-  "crossSection": 0.00418618
+  "symbol": "Xe",
+  "orbital": "4p",
+  "bindingEnergy": 147.0,
+  "crossSection": 0.00082468305
  },
  {
-  "symbol": "Y",
+  "symbol": "Xe",
+  "orbital": "4s",
+  "bindingEnergy": 213.0,
+  "crossSection": 0.00043236969
+ },
+ {
+  "symbol": "Xe",
   "orbital": "3d",
-  "bindingEnergy": 158.0,
-  "crossSection": 0.00010456
+  "bindingEnergy": 689.0,
+  "crossSection": 0.0012692781
  },
  {
-  "symbol": "Y",
+  "symbol": "Xe",
   "orbital": "3p",
-  "bindingEnergy": 311.0,
-  "crossSection": 0.00089414
+  "bindingEnergy": 1002.0,
+  "crossSection": 0.0041762309
  },
  {
-  "symbol": "Y",
+  "symbol": "Xe",
   "orbital": "3s",
-  "bindingEnergy": 392.0,
-  "crossSection": 0.00071938
+  "bindingEnergy": 1149.0,
+  "crossSection": 0.0019388716
+ },
+ {
+  "symbol": "Xe",
+  "orbital": "2p",
+  "bindingEnergy": 5107.0,
+  "crossSection": 0.026487621
+ },
+ {
+  "symbol": "Xe",
+  "orbital": "2s",
+  "bindingEnergy": 5453.0,
+  "crossSection": 0.0090617944
  },
  {
   "symbol": "Y",
   "orbital": "4p",
   "bindingEnergy": 24.0,
-  "crossSection": 0.0001136
+  "crossSection": 0.00011391858
  },
  {
   "symbol": "Y",
   "orbital": "4s",
   "bindingEnergy": 44.0,
-  "crossSection": 0.00011124
+  "crossSection": 0.00011144875
  },
  {
-  "symbol": "Yb",
-  "orbital": "2p",
-  "bindingEnergy": 8944.0,
-  "crossSection": 0.04566542
- },
- {
-  "symbol": "Yb",
+  "symbol": "Y",
   "orbital": "3d",
-  "bindingEnergy": 1576.0,
-  "crossSection": 0.0068646
+  "bindingEnergy": 158.0,
+  "crossSection": 0.00010483727
  },
  {
-  "symbol": "Yb",
+  "symbol": "Y",
   "orbital": "3p",
-  "bindingEnergy": 2173.0,
-  "crossSection": 0.01146597
+  "bindingEnergy": 311.0,
+  "crossSection": 0.00089663458
  },
  {
-  "symbol": "Yb",
+  "symbol": "Y",
   "orbital": "3s",
-  "bindingEnergy": 2398.0,
-  "crossSection": 0.00373428
+  "bindingEnergy": 392.0,
+  "crossSection": 0.00072082812
  },
  {
-  "symbol": "Yb",
-  "orbital": "4d",
-  "bindingEnergy": 191.0,
-  "crossSection": 0.00131587
+  "symbol": "Y",
+  "orbital": "2p",
+  "bindingEnergy": 2156.0,
+  "crossSection": 0.0060339343
+ },
+ {
+  "symbol": "Y",
+  "orbital": "2s",
+  "bindingEnergy": 2373.0,
+  "crossSection": 0.0041973712
  },
  {
   "symbol": "Yb",
   "orbital": "4f",
   "bindingEnergy": 3.0,
-  "crossSection": 6.2e-05
- },
- {
-  "symbol": "Yb",
-  "orbital": "4p",
-  "bindingEnergy": 389.0,
-  "crossSection": 0.00251388
- },
- {
-  "symbol": "Yb",
-  "orbital": "4s",
-  "bindingEnergy": 481.0,
-  "crossSection": 0.00094646
+  "crossSection": 6.2014695e-05
  },
  {
   "symbol": "Yb",
   "orbital": "5p",
   "bindingEnergy": 30.0,
-  "crossSection": 0.0003119
+  "crossSection": 0.00031197323
  },
  {
   "symbol": "Yb",
   "orbital": "5s",
   "bindingEnergy": 52.0,
-  "crossSection": 0.00015348
+  "crossSection": 0.0001534809
  },
  {
-  "symbol": "Zn",
+  "symbol": "Yb",
+  "orbital": "4d",
+  "bindingEnergy": 191.0,
+  "crossSection": 0.0013163561
+ },
+ {
+  "symbol": "Yb",
+  "orbital": "4p",
+  "bindingEnergy": 389.0,
+  "crossSection": 0.0025146191
+ },
+ {
+  "symbol": "Yb",
+  "orbital": "4s",
+  "bindingEnergy": 481.0,
+  "crossSection": 0.0009466148
+ },
+ {
+  "symbol": "Yb",
+  "orbital": "3d",
+  "bindingEnergy": 1576.0,
+  "crossSection": 0.0068668017
+ },
+ {
+  "symbol": "Yb",
+  "orbital": "3p",
+  "bindingEnergy": 2173.0,
+  "crossSection": 0.01146991
+ },
+ {
+  "symbol": "Yb",
+  "orbital": "3s",
+  "bindingEnergy": 2398.0,
+  "crossSection": 0.0037350028
+ },
+ {
+  "symbol": "Yb",
   "orbital": "2p",
-  "bindingEnergy": 1045.0,
-  "crossSection": 0.00160669
- },
- {
-  "symbol": "Zn",
-  "orbital": "2s",
-  "bindingEnergy": 1196.0,
-  "crossSection": 0.00195949
+  "bindingEnergy": 9978.0,
+  "crossSection": 0.045667494
  },
  {
   "symbol": "Zn",
   "orbital": "3d",
   "bindingEnergy": 10.0,
-  "crossSection": 8.41e-06
+  "crossSection": 8.4116234e-06
  },
  {
   "symbol": "Zn",
   "orbital": "3p",
   "bindingEnergy": 91.0,
-  "crossSection": 0.00020906
+  "crossSection": 0.00020923946
  },
  {
   "symbol": "Zn",
   "orbital": "3s",
   "bindingEnergy": 140.0,
-  "crossSection": 0.00028736
+  "crossSection": 0.0002875477
  },
  {
-  "symbol": "Zr",
+  "symbol": "Zn",
   "orbital": "2p",
-  "bindingEnergy": 2307.0,
-  "crossSection": 0.00679752
+  "bindingEnergy": 1045.0,
+  "crossSection": 0.0016077207
  },
  {
-  "symbol": "Zr",
+  "symbol": "Zn",
   "orbital": "2s",
-  "bindingEnergy": 2532.0,
-  "crossSection": 0.00447644
- },
- {
-  "symbol": "Zr",
-  "orbital": "3d",
-  "bindingEnergy": 181.0,
-  "crossSection": 0.00012954
- },
- {
-  "symbol": "Zr",
-  "orbital": "3p",
-  "bindingEnergy": 344.0,
-  "crossSection": 0.00101946
- },
- {
-  "symbol": "Zr",
-  "orbital": "3s",
-  "bindingEnergy": 430.0,
-  "crossSection": 0.00078235
+  "bindingEnergy": 1196.0,
+  "crossSection": 0.001960951
  },
  {
   "symbol": "Zr",
   "orbital": "4p",
   "bindingEnergy": 29.0,
-  "crossSection": 0.00013724
+  "crossSection": 0.0001376294
  },
  {
   "symbol": "Zr",
   "orbital": "4s",
   "bindingEnergy": 51.0,
-  "crossSection": 0.0001265
+  "crossSection": 0.00012674134
+ },
+ {
+  "symbol": "Zr",
+  "orbital": "3d",
+  "bindingEnergy": 181.0,
+  "crossSection": 0.00012988072
+ },
+ {
+  "symbol": "Zr",
+  "orbital": "3p",
+  "bindingEnergy": 344.0,
+  "crossSection": 0.0010223251
+ },
+ {
+  "symbol": "Zr",
+  "orbital": "3s",
+  "bindingEnergy": 430.0,
+  "crossSection": 0.00078391727
+ },
+ {
+  "symbol": "Zr",
+  "orbital": "2p",
+  "bindingEnergy": 2307.0,
+  "crossSection": 0.0068128124
+ },
+ {
+  "symbol": "Zr",
+  "orbital": "2s",
+  "bindingEnergy": 2532.0,
+  "crossSection": 0.0044884917
  }
 ]

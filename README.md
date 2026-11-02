@@ -66,8 +66,21 @@ What to expect without a network connection:
 1. **Shirley background** subtraction (iterative)
 2. **Peak detection** via Savitzky-Golay smoothing + prominence filtering
 3. **Charging correction** from C 1s reference (with SO doublet fallback for HAXPES)
-4. **Candidate matching** against NIST binding energy database (103 elements)
+4. **Candidate matching** against the elemental binding-energy table (103 elements)
 5. **Multi-heuristic scoring** and ranking with confidence thresholds
+
+## Reference data
+
+The binding-energy and photoionization cross-section tables under `src/data/`
+are generated from the data bundled with
+[toyomacro](https://github.com/stoyoda0012-cyber/toyomacro), pinned to a
+release recorded in `src/data/toyomacro-source.json`; the sources and the
+data-rights review are in toyomacro's
+[DATA_SOURCES.md](https://github.com/stoyoda0012-cyber/toyomacro/blob/main/docs/DATA_SOURCES.md).
+`npm run data:check` verifies the bundled files against that pin (CI runs it)
+and warns when a newer toyomacro release changed the tables;
+`npm run data:sync -- --tag vX.Y.Z` (needs [uv](https://docs.astral.sh/uv/))
+regenerates them from another release.
 
 ## Supported File Formats
 
