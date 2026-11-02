@@ -58,10 +58,12 @@ xps-peak-assign/
 ├── scripts/
 │   ├── sync-toyomacro-data.py   # Regenerate src/data/ from a pinned toyomacro release (needs uv)
 │   ├── check-toyomacro-pin.py   # Verify src/data/ against the pin; warn when toyomacro moved on
+│   ├── release-notes.py         # "## Release notes" section of a PR body (used by release.yml)
 │   └── export-samples.py        # NPL -> CSV sample exporter (one-shot)
 └── .github/workflows/
-    ├── ci.yml               # PR / non-main branches: lint + test + build
-    └── deploy.yml           # push to main -> build + deploy to GitHub Pages
+    ├── ci.yml               # PR / non-main branches: data pin check + lint + test + build
+    ├── deploy.yml           # push to main -> build + deploy to GitHub Pages
+    └── release.yml          # push to main -> tag vX.Y.Z + GitHub Release when package.json version is new
 ```
 
 ## Core Algorithm Pipeline
@@ -193,7 +195,9 @@ the diff. Do not loosen the assertions to make them pass.
 
 - Repo: https://github.com/stoyoda0012-cyber/xps-peak-assign
 - Live site: https://stoyoda0012-cyber.github.io/xps-peak-assign/ (deployed by `deploy.yml` on every push to `main`)
-- PR checks: `ci.yml` (Node 20: `npm ci`, lint, test, build)
+- PR checks: `ci.yml` (Node 20: `npm ci`, data pin check, lint, test, build)
+- Releases: `release.yml` (see Versioning and releases); it needs only the
+  default `GITHUB_TOKEN` with `contents: write`.
 - Pushing changes under `.github/workflows/` requires a token with the `workflow` scope
 
 ## Versioning and releases
@@ -206,13 +210,20 @@ GitHub Releases are the public history of what changed.
 For a PR that changes behaviour a user could notice (a fix, a feature):
 1. On the branch: `npm version patch --no-git-tag-version` (or `minor`)
    and commit it with the change. One bump per PR; refactors and docs do not bump.
-2. After the merge, on the updated `main`:
-   `git tag -a vX.Y.Z -m "vX.Y.Z" && git push origin vX.Y.Z`
-3. `gh release create vX.Y.Z --title "vX.Y.Z" --notes "..."` with 2-5 lines
-   written for users (what they will see differently), not a commit list.
+2. In the PR body, add a `## Release notes` section: 2-5 lines written for
+   users (what they will see differently), not a commit list. Japanese or
+   English, matching the audience of the change.
+3. Merge. `release.yml` runs on the push to `main`: if no tag `vX.Y.Z` exists
+   for the version in `package.json`, it creates the annotated tag on that
+   merge commit and publishes the GitHub Release with the notes from step 2
+   (GitHub-generated notes if the section is missing). A merge without a
+   version bump does nothing. The tag therefore always points at a `main`
+   commit the live site was built from.
 
-Do not create the tag before the merge: it must point at the `main` commit
-that the live site is built from.
+Never create the tag by hand before the merge, and do not create it after
+either unless the workflow failed (check the Release run first; it can be
+re-run from the Actions tab via `workflow_dispatch`, which releases the
+current `main` head if its version is untagged).
 
 ## Analytics
 
