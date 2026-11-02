@@ -30,6 +30,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # The bundled reference tables must be exactly what the toyomacro pin
+      # produces (fails otherwise). A newer toyomacro release that changed
+      # them only produces a warning annotation; see scripts/check-toyomacro-pin.py.
+      - name: Check reference-data pin
+        run: npm run data:check
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
       - name: Lint
         run: npm run lint
 

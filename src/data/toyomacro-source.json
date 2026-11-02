@@ -1,0 +1,40 @@
+{
+ "_comment": "Written by scripts/sync-toyomacro-data.py. Do not edit by hand; scripts/check-toyomacro-pin.py verifies the outputs against it.",
+ "repository": "https://github.com/stoyoda0012-cyber/toyomacro",
+ "tag": "v0.7.0",
+ "commit": "4645e207ca77b75a171ad691cd61f89d318c106e",
+ "version": "0.7.0",
+ "provenance": "https://github.com/stoyoda0012-cyber/toyomacro/blob/v0.7.0/docs/DATA_SOURCES.md",
+ "photonEnergies": {
+  "cross-sections-al.json": 1486.6,
+  "cross-sections-ga.json": 9251.7
+ },
+ "sources": {
+  "src/toyomacro/data/_cache/binding_energy.json": {
+   "sha256": "0165688493251181bca95878ad0c12eb2736d9bb29a5280217f5d9ade3cb1163",
+   "gitBlob": "ab120220c7d6dca1b6663d9038ff0d7b9b304b09"
+  },
+  "src/toyomacro/data/_cache/cross_section.json": {
+   "sha256": "3316f4a4e39c1f729f4b0a285c7f2366a6feea99d2de20d5b254a457d2135a09",
+   "gitBlob": "a9fbefa503045ab76d62aaca351c5b7598852976"
+  },
+  "src/toyomacro/data/_cache/scofield.json": {
+   "sha256": "fb366a98165aa938ef4ed8f255682bd141b9cca124a7a6db135ba88253277061",
+   "gitBlob": "38b46f3e2156a718571e913f0be89c5a63bae076"
+  }
+ },
+ "outputs": {
+  "binding-energies.json": {
+   "sha256": "8e4605db79fd5227107a63abf416ce487581c58a5296c585c77a682fdcfc8063",
+   "entries": 103
+  },
+  "cross-sections-al.json": {
+   "sha256": "89929680f94d69f27eb238c51a45325ed5193d991cf7c6d6bbc17a5da0de6501",
+   "entries": 750
+  },
+  "cross-sections-ga.json": {
+   "sha256": "8d9999e1fc0ea6ccb7dd315e80e6a5ec4fbfc18fa1e71044e092126570029d63",
+   "entries": 742
+  }
+ }
+}

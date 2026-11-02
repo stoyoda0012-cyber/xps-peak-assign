@@ -48,15 +48,17 @@ xps-peak-assign/
 │   │   ├── explain-detail.test.ts # Scoring-string -> explanation rows, score summary
 │   │   ├── helpers/         # analyse() (mirrors App.tsx), synthetic spectrum generator
 │   │   └── fixtures/        # Synthetic fixtures (e.g. HfO2/Si @ 7940 eV)
-│   ├── data/
+│   ├── data/                # Generated from toyomacro by scripts/sync-toyomacro-data.py
 │   │   ├── binding-energies.json  # Standard elemental BE table (103 elements)
-│   │   ├── cross-sections-al.json # Yeh & Lindau (1985) CS (Al Ka)
-│   │   └── cross-sections-ga.json # Scofield (1973) CS (Ga Ka, HAXPES)
+│   │   ├── cross-sections-al.json # Yeh & Lindau (1985) CS at Al Ka
+│   │   ├── cross-sections-ga.json # Scofield (1973) CS interpolated to Ga Ka (HAXPES)
+│   │   └── toyomacro-source.json  # The pin: toyomacro tag/commit + hashes of inputs and outputs
 │   └── i18n/
 │       └── translations.ts  # EN/JA bilingual strings
 ├── scripts/
-│   ├── convert-csv.py       # CSV -> JSON data converter (one-shot)
-│   └── export-samples.py    # NPL -> CSV sample exporter (one-shot)
+│   ├── sync-toyomacro-data.py   # Regenerate src/data/ from a pinned toyomacro release (needs uv)
+│   ├── check-toyomacro-pin.py   # Verify src/data/ against the pin; warn when toyomacro moved on
+│   └── export-samples.py        # NPL -> CSV sample exporter (one-shot)
 └── .github/workflows/
     ├── ci.yml               # PR / non-main branches: lint + test + build
     └── deploy.yml           # push to main -> build + deploy to GitHub Pages
@@ -80,13 +82,43 @@ xps-peak-assign/
 
 ## Data Provenance
 
+The three tables in `src/data/` are **generated, not hand-maintained**. Their
+single source is the public Python package
+[toyomacro](https://github.com/stoyoda0012-cyber/toyomacro) (same author),
+whose bundled reference tables carry the provenance and data-rights review
+(`docs/DATA_SOURCES.md` there). toyomacro itself is never modified from here.
+
+- `src/data/toyomacro-source.json` is the pin: the toyomacro tag and commit,
+  sha256 + git blob id of the three upstream files read, and sha256 of each
+  generated file. `MethodPage.tsx` shows the tag from it.
+- `npm run data:sync` (`scripts/sync-toyomacro-data.py`, needs `uv`)
+  regenerates everything at the pinned tag; `-- --tag vX.Y.Z` moves the pin.
+  It installs toyomacro into a throwaway environment and uses toyomacro's own
+  `CrossSection.lookup`, so the numbers equal what the Python tools produce.
+  `-- --check` regenerates in memory and fails on any difference.
+- `npm run data:check` (`scripts/check-toyomacro-pin.py`, stdlib only) runs
+  in CI. It **fails** when `src/data/*.json` is not what the pin records
+  (hand edit, or a sync without committing the record). It only **warns**
+  when a newer toyomacro release changed one of the source tables: the
+  policy is to pick upstream changes up when this repo's data is next worked
+  on, not on every release. Network trouble is reported and ignored.
+- When touching anything under `src/data/` or `src/lib/element-db.ts`: run
+  `npm run data:check` first, and if it reports a newer release, consider
+  moving the pin in the same PR (and explain the golden-test diff).
+
+Table contents:
+
 - `binding-energies.json`: the standard elemental core-level binding-energy
-  table (Bearden & Burr 1967 / Fuggle & Mårtensson 1980 lineage). It is
-  identical to toyomacro's `binding_energy.json`. It is **not** a NIST
-  database export.
+  table (Bearden & Burr 1967 / Fuggle & Mårtensson 1980 lineage), the whole
+  toyomacro table (no photon-energy cut; `element-db.ts` filters by source).
+  It is **not** a NIST database export.
 - `cross-sections-al.json`: Yeh & Lindau, *At. Data Nucl. Data Tables* 32, 1
-  (1985), subshell photoionization cross sections at Al Ka.
-- `cross-sections-ga.json`: Scofield, UCRL-51326 (1973), at Ga Ka (HAXPES).
+  (1985), the tabulated 1486.6 eV column. Lines whose BE-table energy is above
+  1486.6 eV are omitted (toyomacro reports them as below threshold).
+- `cross-sections-ga.json`: Scofield, UCRL-51326 (1973), interpolated to
+  9251.7 eV on Scofield's own photon-energy grid by toyomacro (PCHIP in
+  log-log). Doublets are summed per bare subshell; `bindingEnergy` is the
+  deepest component in the BE table and is informational only.
 - Only source `'Ga'` uses the Scofield table. Every other source, including
   `'Synchrotron'`, currently falls back to the Al Ka table (known bug F2,
   pinned in the golden tests).
@@ -111,8 +143,9 @@ xps-peak-assign/
 | `lib/scoring.ts` | `auto_identify.py` _score_candidates() |
 | `lib/auto-identify.ts` | `auto_identify.py` ElementIdentifier.identify() |
 
-Python source (private): the `peak_analysis/wide_spectrum/` package. Build
-scripts locate it via `XPS_SOURCE_ROOT` (see `scripts/`).
+Python source (private): the `peak_analysis/wide_spectrum/` package.
+`scripts/export-samples.py` locates it via `XPS_SOURCE_ROOT`. The reference
+tables no longer come from there; see Data Provenance (toyomacro).
 
 ## Key Conventions
 
@@ -136,6 +169,9 @@ npm run build    # Production build -> dist/
 npm run preview  # Serve dist/ at http://localhost:4173/xps-peak-assign/ (same base as Pages)
 npm run lint     # ESLint (must exit 0; `_`-prefixed unused args are allowed)
 npm test         # Vitest (golden + generator tests), Node environment
+npm run data:check          # src/data/ vs its toyomacro pin; warns if toyomacro moved on
+npm run data:sync           # regenerate src/data/ at the pinned toyomacro tag (needs uv)
+npm run data:sync -- --tag vX.Y.Z   # move the pin to another toyomacro release
 ```
 
 ## Tests

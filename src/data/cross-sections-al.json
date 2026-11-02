@@ -705,7 +705,7 @@
   "symbol": "Cu",
   "orbital": "4s",
   "bindingEnergy": 6.9,
-  "crossSection": 0.027
+  "crossSection": 0.00027
  },
  {
   "symbol": "Cu",
@@ -826,12 +826,6 @@
   "orbital": "4p",
   "bindingEnergy": 6.4,
   "crossSection": 0.00074
- },
- {
-  "symbol": "As",
-  "orbital": "2s",
-  "bindingEnergy": 1479.2,
-  "crossSection": 0.086
  },
  {
   "symbol": "As",
@@ -1951,12 +1945,6 @@
  },
  {
   "symbol": "Pr",
-  "orbital": "3s",
-  "bindingEnergy": 1362.1,
-  "crossSection": 0.064
- },
- {
-  "symbol": "Pr",
   "orbital": "3p",
   "bindingEnergy": 1220.9,
   "crossSection": 0.2681
@@ -2008,12 +1996,6 @@
   "orbital": "4f",
   "bindingEnergy": 11.0,
   "crossSection": 0.004
- },
- {
-  "symbol": "Nd",
-  "orbital": "3s",
-  "bindingEnergy": 1423.0,
-  "crossSection": 0.065
  },
  {
   "symbol": "Nd",
@@ -2665,7 +2647,7 @@
  },
  {
   "symbol": "Ta",
-  "orbital": "4S",
+  "orbital": "4s",
   "bindingEnergy": 470.7,
   "crossSection": 0.029
  },
@@ -2886,7 +2868,7 @@
   "crossSection": 0.02
  },
  {
-  "symbol": "lr",
+  "symbol": "Ir",
   "orbital": "6s",
   "bindingEnergy": 7.2,
   "crossSection": 0.00058
