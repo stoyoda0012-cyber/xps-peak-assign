@@ -3,9 +3,11 @@
 
 Used by .github/workflows/release.yml. Reads the PR body on stdin and prints
 the text under a ``## Release notes`` heading (any case; ``Release Notes``
-and ``リリースノート`` also match), up to the next ``## `` heading. Prints
-nothing, and exits 0, when there is no such section: the workflow then
-falls back to GitHub's generated notes.
+and ``リリースノート`` also match), up to the next ``## `` heading or a horizontal rule (``---``). Trailing
+attribution lines that tools append to a PR body ("Generated with/by Claude
+Code", a claude.ai session link) are dropped. Prints nothing, and exits 0,
+when there is no such section: the workflow then falls back to GitHub's
+generated notes.
 
     python3 scripts/release-notes.py < body.md
 """
@@ -17,6 +19,10 @@ import sys
 
 HEADING = re.compile(r"^##\s+(release\s*notes|リリースノート)\s*$", re.IGNORECASE)
 NEXT = re.compile(r"^##\s")
+RULE = re.compile(r"^\s*([-*_])(\s*\1){2,}\s*$")
+ATTRIBUTION = re.compile(
+    r"(generated (with|by) \[?claude code|https://claude\.ai/code/)", re.IGNORECASE
+)
 
 
 def extract(body: str) -> str:
@@ -28,9 +34,11 @@ def extract(body: str) -> str:
             if HEADING.match(line.strip()):
                 inside = True
             continue
-        if NEXT.match(line):
+        if NEXT.match(line) or RULE.match(line):
             break
         out.append(line)
+    while out and (not out[-1].strip() or ATTRIBUTION.search(out[-1])):
+        out.pop()
     return "\n".join(out).strip()
 
 
