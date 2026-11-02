@@ -211,8 +211,11 @@ For a PR that changes behaviour a user could notice (a fix, a feature):
 1. On the branch: `npm version patch --no-git-tag-version` (or `minor`)
    and commit it with the change. One bump per PR; refactors and docs do not bump.
 2. In the PR body, add a `## Release notes` section: 2-5 lines written for
-   users (what they will see differently), not a commit list. Japanese or
-   English, matching the audience of the change.
+   users (what they will see differently), not a commit list. Bilingual,
+   as the existing releases: English first (`**Fixed**` / `**Changed**`
+   lists), a `---` line, then the same in Japanese (`**修正**` / `**変更**`).
+   Keep it the last section of the body, or the extractor stops at the next
+   `## ` heading; the PR tooling's attribution footer is removed automatically.
 3. Merge. `release.yml` runs on the push to `main`: if no tag `vX.Y.Z` exists
    for the version in `package.json`, it creates the annotated tag on that
    merge commit and publishes the GitHub Release with the notes from step 2
