@@ -1,0 +1,83 @@
+name: Release
+
+# Tags and publishes a GitHub Release for the version in package.json, once,
+# when that version first reaches main. A PR that bumps the version (see
+# CLAUDE.md "Versioning and releases") is therefore all a release takes:
+# this workflow creates the annotated tag vX.Y.Z on the merge commit and the
+# Release, with notes taken from the merged PR's "## Release notes" section
+# (or GitHub's generated notes when the PR has none). A merge that does not
+# change the version does nothing here.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: read
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Read version and check for an existing tag
+        id: version
+        run: |
+          version=$(node -p "require('./package.json').version")
+          tag="v${version}"
+          echo "tag=${tag}" >> "$GITHUB_OUTPUT"
+          if git ls-remote --exit-code --tags origin "refs/tags/${tag}" >/dev/null; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "${tag} already exists; nothing to release."
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+            echo "${tag} is new; will tag ${GITHUB_SHA} and publish a release."
+          fi
+
+      - name: Collect release notes from the merged pull request
+        if: steps.version.outputs.exists == 'false'
+        id: notes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # The PR(s) this commit was merged from; the first is the merge PR.
+          gh api "repos/${GITHUB_REPOSITORY}/commits/${GITHUB_SHA}/pulls" \
+            --jq '.[0].body // ""' > pr-body.md || : > pr-body.md
+          python3 scripts/release-notes.py < pr-body.md > release-notes.md
+          if [ -s release-notes.md ]; then
+            echo "source=pr" >> "$GITHUB_OUTPUT"
+            echo "Notes from the pull request:"; cat release-notes.md
+          else
+            echo "source=generated" >> "$GITHUB_OUTPUT"
+            echo "The pull request has no '## Release notes' section; GitHub will generate the notes."
+          fi
+
+      - name: Create the annotated tag
+        if: steps.version.outputs.exists == 'false'
+        env:
+          TAG: ${{ steps.version.outputs.tag }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "$TAG" -m "$TAG" "$GITHUB_SHA"
+          git push origin "refs/tags/$TAG"
+
+      - name: Publish the release
+        if: steps.version.outputs.exists == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.version.outputs.tag }}
+        run: |
+          if [ "${{ steps.notes.outputs.source }}" = "pr" ]; then
+            gh release create "$TAG" --title "$TAG" --notes-file release-notes.md --verify-tag
+          else
+            gh release create "$TAG" --title "$TAG" --generate-notes --verify-tag
+          fi
+          echo "Published ${TAG}: $(gh release view "$TAG" --json url --jq .url)"
